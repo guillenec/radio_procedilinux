@@ -25,3 +25,8 @@
     b. npm run watch-css
 
 //FIN
+
+ guille@pescado  ~/repos_git/guille_webradio   master ✚  npm install nodemon node-sass
+
+
+# radio_web_merch
