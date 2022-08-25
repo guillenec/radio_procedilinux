@@ -1,0 +1,16 @@
+
+generar una página a elección de nuestro proyecto responsive usando grid para el layaout, flexbox para los componente y box modeling para los elementos.
+
+
+Observación:
+Avance poco.
+1- la pagina principal es responsive, como se pidió .. use grid para toda las estructura principal, (caja principal, header main y footer) y flexbox para algunas de las cajas hijas.. como en el footer donde genere la estructura secundaria usando grid y la 3er estructura correspondiente a las cajas hijas con flexbox y box moodeling.
+no tuve muchas complicaciones, pero a medida avanzaba me daba cuenta que para varias paginas y usando un solo css es muy engorroso usar grid.. quizás vuelva a armar todo y usare grid solo para algunas cajas determinadas, como la correspondiente a noticias de música, game y Linux.
+Para la próxima entrega ya comenzare a añadir la sección de merchandising y programas, en donde tratare de hacer alguna tarjeta que se expanda y tenga la información de los programas, como la hora , el genero .. acepto sugerencias..
+
+correcciones anterior: 
+1) eliminación de variables.. las venia usando porque quería hacer un botón para cambiar de modo claro a oscuro y creí que seria mas fácil así… mi idea era después solo cambar el nombre de la variable y tendríamos andando el modo oscuro.
+
+2) footer sugerencia sobre la frase de copyright… ya esta echo y no se si corresponde añadirle algo mas, en el mismo se encuentra mi información de contacto real, rede y demás.. y al final de la misma una frase de copyright.
+
+Creo que  no tenia mas correcciones. 
