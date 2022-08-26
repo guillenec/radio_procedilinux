@@ -152,6 +152,7 @@ footer {
                     &:hover {
                         background: #0097F4;
                         color: #fff;
+                        transition: .9s;
                     }
                 }
             }
@@ -165,13 +166,21 @@ footer {
 .main {
     width: 100%;
     height: auto;
-    background: rgb(231, 139, 139);
+    background: #fff;
     top: 0; //Para que el banner quede debajo del header
 
+    ul,
+    p {
+        //Elimina margin y paddin bootstrap
+        margin-bottom: 0;
+        padding-left: 0;
+    }
+
+    // VIDEO BANNER
     .banner_conteiner {
         position: relative;
         width: 100%;
-        height: 80vh;
+        height: 100vh;
         margin-top: 0;
 
         .video_banner {
@@ -208,25 +217,288 @@ footer {
             align-items: center;
             overflow: hidden;
 
-            h1, p{
+            h1,
+            p {
                 display: block;
                 width: 90%;
                 text-align: left;
                 color: #22102B;
                 margin-bottom: 0;
             }
-            h1{
+
+            h1 {
                 margin-top: 100px;
-                font-family:'Oswald', sans-serif;
+                font-family: 'Oswald', sans-serif;
                 font-size: 5rem;
                 font-weight: 600;
                 text-transform: capitalize;
                 padding-bottom: 10px;
             }
-            p{
+
+            p {
                 font-family: 'Quicksand', sans-serif;
                 font-weight: 500;
                 font-size: 18px;
+            }
+
+            strong {
+                font-weight: 700;
+                color: #000000;
+            }
+        }
+
+        .conteiner_buton {
+            position: relative;
+            min-height: 100vh;
+            background: rgba(34, 16, 43, 0.329);
+
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            .mini_redes,
+            .controls {
+                position: absolute;
+                display: flex;
+                border-radius: 10px;
+                overflow: hidden;
+                -webkit-box-shadow: 3px 5px 4px 1px rgba(0, 0, 0, 0.38);
+                -moz-box-shadow: 3px 5px 4px 1px rgba(0, 0, 0, 0.38);
+                box-shadow: 3px 5px 4px 1px rgba(0, 0, 0, 0.38);
+
+                li {
+                    list-style: none;
+
+                    a {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 50px;
+                        height: 50px;
+                        background: #fff;
+                        color: #22102B;
+
+                        &:hover {
+                            background: #0097F4;
+                            color: #fff;
+                            transition: .7s;
+                        }
+                    }
+                }
+            }
+
+            .mini_redes {
+                bottom: 15px;
+                left: 15px;
+                flex-direction: column;
+            }
+
+            .controls {
+                right: 15px;
+                bottom: 15px;
+                flex-direction: row;
+            }
+        }
+    }
+
+    //FIN VIDEO BANNER
+
+    //CLASES REUTILIZABLES DENTRO DEL MAIN
+    .width_80 {
+        //--mantiene el ancho en 80%
+        width: 80%;
+        margin: auto;
+    }
+
+    .top_50 {
+        // -- mantiene un  margen de 50px
+        margin-top: 50px;
+    }
+
+    .top_100 {
+        // -- mantiene un tiop de 100px
+        margin-top: 100px;
+    }
+
+    .titulo_general {
+        position: relative;
+        width: 100%;
+        height: 70px;
+        min-height: 70px;
+        background: #22102B;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 5px;
+        overflow: hidden;
+        -webkit-box-shadow: 3px 5px 4px 1px rgba(0, 0, 0, 0.38);
+        -moz-box-shadow: 3px 5px 4px 1px rgba(0, 0, 0, 0.38);
+        box-shadow: 3px 5px 4px 1px rgba(0, 0, 0, 0.38);
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 500px;
+            height: 1700%;
+            left: 27%;
+            background-image: conic-gradient(transparent, transparent, transparent, #a806d1);
+            animation: cono_360 5s linear infinite;
+            animation-delay: -2s;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 500px;
+            height: 1700%;
+            left: 27%;
+            background-image: conic-gradient(transparent, transparent, transparent, #0097F4);
+            animation: cono_360 5s linear infinite;
+        }
+
+        .cont_anima {
+            position: absolute;
+            inset: 4px;
+            border-radius: 4px;
+            background: #fff;
+            display: flex;
+            align-content: center;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 10px;
+            z-index: 1;
+
+            h2 {
+                font-family: 'Oswald', sans-serif;
+                text-transform: uppercase;
+                color: #22102B;
+                margin: 0;
+            }
+            .mid_h2{
+                text-align: center;
+            }
+            a{
+                text-decoration: none;
+                color: #22102B;
+                font-family: 'Oswald', sans-serif;
+                text-transform: uppercase;
+                text-align: center;
+                font-weight: 300;
+                border: 1px solid #0097F4;
+                padding: 5px 10px;
+                border-radius: 3px;
+                transition: .7s;
+                &:hover{
+                    border: 1px solid #22102B;
+                    color: #fff;
+                    background: #0097F4;
+                }
+            }
+        }
+
+        .mid_flex {
+            justify-content: center;
+            padding: 0 0;
+        }
+
+        @keyframes cono_360 {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+    }
+
+
+    // SECCION NOTICIAS
+    .noticias {
+        height: auto;
+
+        .noticias_grid {
+            width: 100%;
+            height: 800px;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(8, 1fr);
+            gap: 10px 10px;
+
+
+            .col1_1 {
+                grid-area: 1/1/5/5;
+            }
+
+            .col1_2 {
+                grid-area: 5/1/9/5;
+            }
+
+            .col2 {
+                grid-area: 1/5/9/9;
+
+            }
+
+            .col3_1 {
+                grid-area: 1/9/5/13;
+            }
+
+            .col3_2 {
+                grid-area: 5/9/9/13;
+            }
+
+            article{
+                position: relative;
+                width: 100%;
+                height: 100%;
+                border-radius: 4px;
+                border: solid 1px #333;
+                -webkit-box-shadow: 3px 5px 4px 1px rgba(0, 0, 0, 0.38);
+                -moz-box-shadow: 3px 5px 4px 1px rgba(0, 0, 0, 0.38);
+                box-shadow: 3px 5px 4px 1px rgba(0, 0, 0, 0.38);
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+                .subtitulo_noti{
+                    position: absolute;
+                    bottom: 3px;
+                    left: 0;
+                    width: 98%;
+                    height: 40%;
+                    margin-left: 1%;
+                    background: rgba(0, 150, 244, 0.400);
+                    backdrop-filter: blur(5px);
+                    -webkit-backdrop-filter: blur(5px);
+                    border-radius: 4px;
+                    //columna, contendra los items
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    padding: 5px;
+                    overflow: hidden;
+
+                    a, p{
+                        text-decoration: none;
+                        color: #fff;
+                    }
+                    a{
+                        display: block;
+                        font-family: 'Oswald', sans-serif;
+                        font-weight: 300;
+                        font-size: inherit;
+                    }
+                    p{
+                        font-family: 'Quicksand', sans-serif;
+                        font-weight: 400;
+                        color: #22102B;
+                    }
+                }
             }
         }
     }
