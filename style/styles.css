@@ -24,7 +24,7 @@ footer {
 .header {
   margin-top: 10px;
   position: fixed;
-  z-index: 1; }
+  z-index: 2; }
   .header ul {
     margin-bottom: 0;
     padding-left: 0; }
@@ -228,6 +228,10 @@ footer {
     margin-top: 50px; }
   .main .top_100 {
     margin-top: 100px; }
+  .main .zoom {
+    transition: .7s; }
+    .main .zoom:hover {
+      transform: scale(1.2); }
   .main .titulo_general {
     position: relative;
     width: 100%;
@@ -284,7 +288,7 @@ footer {
         font-family: 'Oswald', sans-serif;
         text-transform: uppercase;
         text-align: center;
-        font-weight: 300;
+        font-weight: 400;
         border: 1px solid #0097F4;
         padding: 5px 10px;
         border-radius: 3px;
@@ -329,7 +333,8 @@ footer {
         border: solid 1px #333;
         -webkit-box-shadow: 3px 5px 4px 1px rgba(0, 0, 0, 0.38);
         -moz-box-shadow: 3px 5px 4px 1px rgba(0, 0, 0, 0.38);
-        box-shadow: 3px 5px 4px 1px rgba(0, 0, 0, 0.38); }
+        box-shadow: 3px 5px 4px 1px rgba(0, 0, 0, 0.38);
+        overflow: hidden; }
         .main .noticias .noticias_grid article img {
           width: 100%;
           height: 100%;
@@ -350,15 +355,87 @@ footer {
           align-items: flex-start;
           padding: 5px;
           overflow: hidden; }
-          .main .noticias .noticias_grid article .subtitulo_noti a, .main .noticias .noticias_grid article .subtitulo_noti p {
+          .main .noticias .noticias_grid article .subtitulo_noti a,
+          .main .noticias .noticias_grid article .subtitulo_noti p {
             text-decoration: none;
             color: #fff; }
           .main .noticias .noticias_grid article .subtitulo_noti a {
             display: block;
             font-family: 'Oswald', sans-serif;
-            font-weight: 300;
+            font-weight: 400;
             font-size: inherit; }
+            .main .noticias .noticias_grid article .subtitulo_noti a:hover {
+              color: #22102B;
+              transition: .7s; }
           .main .noticias .noticias_grid article .subtitulo_noti p {
             font-family: 'Quicksand', sans-serif;
             font-weight: 400;
             color: #22102B; }
+  .main .programas {
+    position: relative;
+    height: 800px;
+    overflow: auto; }
+    .main .programas .linea_tiempo {
+      position: relative;
+      width: 100%;
+      height: auto; }
+      .main .programas .linea_tiempo::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 6px;
+        height: 100%;
+        background: #0097F4;
+        left: 50%;
+        margin-left: -3px; }
+      .main .programas .linea_tiempo .caja {
+        padding: 10px 40px;
+        position: relative;
+        width: 50%; }
+      .main .programas .linea_tiempo .left {
+        left: 0; }
+        .main .programas .linea_tiempo .left::after {
+          content: '';
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          background: #0097F4;
+          top: 15px;
+          right: -10px;
+          border-radius: 50%;
+          border: 10px solid #22102B; }
+        .main .programas .linea_tiempo .left::before {
+          content: '';
+          height: 0;
+          width: 0;
+          position: absolute;
+          top: 22px;
+          right: 30px;
+          background-color: none;
+          border: 10px solid #99D4FC;
+          border-width: 10px 0 10px 10px;
+          border-color: transparent transparent transparent var(--azul_auris_reflejo); }
+      .main .programas .linea_tiempo .right {
+        left: 50%; }
+        .main .programas .linea_tiempo .right::after {
+          content: '';
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          background: #0097F4;
+          top: 15px;
+          left: -10px;
+          border-radius: 50%;
+          border: 10px solid #22102B; }
+        .main .programas .linea_tiempo .right::before {
+          content: '';
+          height: 0;
+          width: 0;
+          position: absolute;
+          top: 22px;
+          left: 30px;
+          background-color: none;
+          border: 10px solid #99D4FC;
+          border-width: 10px 10px 10px 0;
+          border-color: transparent #99D4FC transparent transparent; }
