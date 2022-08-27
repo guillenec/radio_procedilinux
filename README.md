@@ -28,5 +28,7 @@
 
  guille@pescado  ~/repos_git/guille_webradio   master ✚  npm install nodemon node-sass
 
+//cae resumen
+//sass --watch scss/estilos.scss css/style.css
 
 # radio_web_merch
