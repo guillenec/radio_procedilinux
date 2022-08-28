@@ -1,0 +1,112 @@
+.galeria {
+    position: relative;
+    height: auto;
+
+    .cont_galeria {
+        position: relative;
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(22, 1fr);
+        gap: 10px 10px;
+
+        .img_1 {
+            grid-area: 1 / 1 / 4 / 7;
+        }
+        
+        .img_2 {
+            grid-area: 1 / 7 / 5 / 11;
+        }
+        
+        .img_3 {
+            grid-area: 4 / 4 / 8 / 7;
+        }
+        
+        .img_4 {
+            grid-area: 4 / 1 / 9 / 4;
+        }
+        
+        .img_5 {
+            grid-area: 5 / 7 / 8 / 11;
+        }
+        
+        .img_6 {
+            grid-area: 8 / 6 / 12 / 9;
+        }
+        
+        .img_7 {
+            grid-area: 8 / 9 / 12 / 11;
+        }
+        
+        .img_8 {
+            grid-area: 8 / 4 / 12 / 6;
+        }
+        
+        .img_9 {
+            grid-area: 9 / 1 / 14 / 4;
+        }
+        
+        .img_12 {
+            grid-area: 12 / 7 / 18 / 11;
+        }
+        
+        .img_13 {
+            grid-area: 12 / 4 / 17 / 7;
+        }
+        
+        .img_10 {
+            grid-area: 14 / 1 / 17 / 4;
+        }
+        
+        .img_14 {
+            grid-area: 17 / 5 / 23 / 7;
+        }
+        
+        .img_15 {
+            grid-area: 17 / 1 / 23 / 3;
+        }
+        
+        .img_16 {
+            grid-area: 17 / 3 / 20 / 5;
+        }
+        
+        .img_17 {
+            grid-area: 20 / 3 / 23 / 5;
+        }
+        
+        .img_11 {
+            grid-area: 18 / 7 / 23 / 11;
+        }
+
+        .img_1,
+        .img_2,
+        .img_3,
+        .img_4,
+        .img_5,
+        .img_6,
+        .img_7,
+        .img_8,
+        .img_9,
+        .img_10,
+        .img_11,
+        .img_12,
+        .img_13,
+        .img_14,
+        .img_15,
+        .img_16,
+        .img_17 {
+            border: solid 5px var(--azul_auris);
+            -webkit-box-shadow: $sombra_general;
+            -moz-box-shadow: $sombra_general;
+            box-shadow: $sombra_general;
+
+            img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}

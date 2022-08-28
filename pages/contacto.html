@@ -45,16 +45,61 @@
     </header>
     <!-- cuerpo, cotenido principal  animate__animated fadeInRight-->
     <main class="main">
-        <section class="noticias_music general">
-            <section class="titulo_general middle">
-                <h2>contactanos</h2>
+        <section class="width_80 top_100">
+            <section class="wow animate__animated animate__fadeInLeft titulo_general">
+                <div class="cont_anima mid_flex">
+                    <h2>formulario de contacto</h2>
+                </div>
+            </section>
+            <section class="row">
+                <section class="form_contac col-sm-12">
+                    <form action="#" method="POST">
+                            <legend>Gracia por contactarnos</legend>
+                            <div class="mb-3">
+                                <label for="nombre_inp" class="form-label">nombre</label>
+                                <input type="text" id="nombre_inp" class="form-control"
+                                    placeholder="nombre" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email_inp" class="form-label">email</label>
+                                <input type="email" id="email_inp" class="form-control"
+                                    placeholder="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="disabledSelect" class="form-label">Disabled select menu</label>
+                                <select id="disabledSelect" class="form-select">
+                                    <option>Disabled select</option>
+                                </select>
+
+                                <label for="email">email</label>
+                                <input type="email" placeholder="email@gmail.com" id="email" name="mail" required>
+                            </div>
+                            <div class="mb-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
+                                    <label class="form-check-label" for="disabledFieldsetCheck">
+                                        Can't check this
+                                    </label>
+                                </div>
+                            </div>
+                            <input class="btn btn-primary form_boton" type="submit" value="enviar">
+                    </form>
+                </section>
+                <section class="col-sm-6">
+                    <h1>gracias por contactarnos</h1>
+                    <p>Si quieres saber mas sobre nosotros o quieres usar alguno de nuestros servicios, promocion,aviso
+                        ,etc, rellena nuestro formulario y <strong>nosotrons nos pondremos en contacto contigo loa antes
+                            posioble.</strong></p>
+                    <p>muchas gracias...</p>
+                </section>
+                <section class="col-sm-6">
+                    <h1>contacto rapido</h1>
+
+                </section>
             </section>
             <section class="form_contacto">
                 <form action="#" method="POST">
-                    <label for="nombre">nombre</label>
-                    <input type="text" placeholder="nombre" id="nombre" name="nombre" required>
-                    <label for="email">email</label>
-                    <input type="email" placeholder="email@gmail.com" id="email" name="mail" required>
+                    
                     <label for="edad">edad</label>
                     <input type="number" placeholder="18" id="edad" name="edad" required>
                     <label for="consulta">motivo</label>

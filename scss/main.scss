@@ -45,7 +45,9 @@ footer {
     // -- mantiene un tiop de 100px
     margin-top: 100px;
 }
-
+.t_100{
+    top: 100px;
+}
 .zoom {
     transition: .7s;
 
@@ -59,6 +61,7 @@ footer {
     margin-top: 10px;
     position: fixed;
     z-index: 2;
+    top: 0;
 
     ul {
         // ELimina paddinmargin bootstrap
@@ -189,10 +192,10 @@ footer {
 
 //MAIN
 .main {
+    position: relative;
     width: 100%;
     height: auto;
     background: #fff;
-    top: 0; //Para que el banner quede debajo del header
 
     ul,
     p {
@@ -633,6 +636,7 @@ footer {
 
 //ESTILOS PIE
 .footer {
+    position: relative;
     height: auto;
     width: 100%;
 
@@ -926,3 +930,4 @@ footer {
     }
 }
 
+@import './sections/_galeria.scss';
