@@ -1,0 +1,176 @@
+.noticias_caja {
+    position: relative;
+    height: auto;
+
+    .noticias_music {
+        position: relative;
+        width: 100%;
+        height: 900px;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        gap: 10px 10px;
+
+        .noti_0 {
+            grid-area: 1/1/5/9;
+        }
+
+        .noti_1 {
+            grid-area: 1/9/3/13;
+        }
+
+        .noti_2 {
+            grid-area: 3/9/5/13;
+        }
+
+        .noti_3 {
+            grid-area: 5/9/7/13;
+        }
+
+        .noti_4 {
+            grid-area: 5/5/7/9;
+        }
+
+        .noti_5 {
+            grid-area: 5/1/7/5;
+        }
+    }
+
+    article {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        border-radius: 3px;
+        border: solid 2px #0097F4;
+            -webkit-box-shadow: $sombra_general;
+            -moz-box-shadow: $sombra_general;
+            box-shadow: $sombra_general;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .caja_text_noti {
+            position: absolute;
+            bottom: 5%;
+            left: 1%;
+            width: 98%;
+            height: auto;
+            background: rgba(0, 150, 244, 0.582);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border-radius: 1px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+
+            a {
+                position: relative;
+                display: block;
+                width: 98%;
+                height: 100%;
+                font-family: 'Oswald', sans-serif;
+                text-decoration: none;
+                color: #fff;
+                font-size: 20px;
+                font-weight: 400;
+                padding: 5 10px;
+                text-align: left;
+            }
+
+            p {
+                position: relative;
+                display: block;
+                width: 98%;
+                color: #22102B;
+                font-family: 'Quicksand', sans-serif;
+                font-size: 16px;
+            }
+        }
+
+        .caja_text_noti:hover {
+            backdrop-filter: blur(10px);
+        }
+
+        a:hover {
+            color: #22102B;
+            transition: .7s;
+        }
+    }
+
+    .noticias_game {
+        position: relative;
+        width: 100%;
+        height: 900px;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(11, 1fr);
+        gap: 10px 10px;
+
+
+        .noti_g_0 {
+            grid-area: 1 / 4 / 6 / 10;
+        }
+
+        .noti_g_1 {
+            grid-area: 1 / 1 / 6 / 4;
+        }
+
+        .noti_g_2 {
+            grid-area: 6 / 1 / 12 / 4;
+        }
+
+        .noti_g_3 {
+            grid-area: 1 / 10 / 6 / 13;
+        }
+
+        .noti_g_4 {
+            grid-area: 6 / 10 / 12 / 13;
+        }
+
+        .noti_g_5 {
+            grid-area: 6 / 4 / 12 / 10;
+        }
+    }
+
+    .noticias_linux {
+        position: relative;
+        width: 100%;
+        height: 900px;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(13, 1fr);
+        gap: 10px 10px;
+
+        .noti_l_0 {
+            grid-area: 1 / 7 / 10 / 13;
+        }
+        
+        .noti_l_2 {
+            grid-area: 1 / 4 / 6 / 7;
+        }
+        
+        .noti_l_3 {
+            grid-area: 1 / 1 / 6 / 4;
+        }
+        
+        .noti_l_1 {
+            grid-area: 6 / 1 / 14 / 7;
+        }
+        
+        .noti_l_4 {
+            grid-area: 10 / 7 / 14 / 10;
+        }
+        
+        .noti_l_5 {
+            grid-area: 10 / 10 / 14 / 13;
+        }
+    }
+
+}

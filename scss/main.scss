@@ -45,6 +45,9 @@ footer {
     // -- mantiene un tiop de 100px
     margin-top: 100px;
 }
+.top_100_head{
+    margin-top: calc(100px + 80px);
+}
 .t_100{
     top: 100px;
 }
@@ -931,3 +934,5 @@ footer {
 }
 
 @import './sections/_galeria.scss';
+@import './sections/_noticias.scss';
+
