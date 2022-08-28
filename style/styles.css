@@ -485,11 +485,13 @@ footer {
         flex-direction: row;
         justify-content: center;
         align-content: center;
-        align-items: center; }
+        align-items: center;
+        list-style: none; }
         .footer .footer_head .footer_head_cuerpo ul.redes_pie li {
           position: relative;
           height: 70px;
-          width: 70px; }
+          width: 70px;
+          list-style: none; }
           .footer .footer_head .footer_head_cuerpo ul.redes_pie li a {
             position: absolute;
             width: 100%;

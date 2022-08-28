@@ -674,11 +674,13 @@ footer {
                 justify-content: center;
                 align-content: center;
                 align-items: center;
+                list-style: none;
 
                 li {
                     position: relative;
                     height: 70px;
                     width: 70px;
+                    list-style: none;
 
                     a {
                         position: absolute;

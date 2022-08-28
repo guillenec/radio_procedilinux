@@ -8,155 +8,182 @@
     <link rel="shortcut icon" href="../icon/oddish.png">
     <link rel="stylesheet" href="../style/styles.css">
     <title>nosotros</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
-    <!-- contenedor principal grid-->
-    <div class="contain_generico">
-        <!-- header: cabecera -->
-        <header class="header">
-            <nav class="nav_menu">
-                <ul class="logo">
-                    <li class="img_logo"><a href="../index.html"><img src="../img/icon/astro101.png"
-                                alt="logo de radio"></a>
-                    </li>
-                    <li class="name_marca">
-                        <p>usuario</p>
-                    </li>
-                    <li class="modo_osc">
-                        <!-- se corresponde a futuro con un boton para cambiar de modo oscuro a modo claro -->
-                        <div class="togle_light">
-                            <span class="indicador"></span>
-                        </div>
-                    </li>
-                </ul>
-                <div class="toggle">
-                </div>
-                <ul class="menu">
-                    <li><a href="../index.html">inicio</a></li>
-                    <li><a href="../pages/noticias.html">noticias</a></li>
-                    <li><a href="../pages/programas.html">programas</a></li>
-                    <li><a href="../pages/nosotros.html">nosotros</a></li>
-                    <li><a href="../pages/multimedia.html">galeria</a></li>
-                    <li><a href="../pages/contacto.html">contacto</a></li>
-                </ul>
-            </nav>
-        </header>
+    <!-- header: cabecera -->
+    <header class="header">
+        <nav class="nav_menu">
+            <ul class="logo">
+                <li class="img_logo"><a href="../index.html"><img src="../img/icon/astro_cont.png"
+                            alt="logo de radio"></a>
+                </li>
+                <li class="name_marca">
+                    <p>usuario</p>
+                </li>
+                <li class="modo_osc">
+                    <!-- se corresponde a futuro con un boton para cambiar de modo oscuro a modo claro -->
+                    <div class="togle_light">
+                        <span class="indicador"></span>
+                    </div>
+                </li>
+            </ul>
+            <div class="toggle">
+            </div>
+            <ul class="menu">
+                <li><a href="../index.html">inicio</a></li>
+                <li><a href="./noticias.html">noticias</a></li>
+                <li><a href="./programas.html">programas</a></li>
+                <li><a href="./nosotros.html">nosotros</a></li>
+                <li><a href="./multimedia.html">galeria</a></li>
+                <li><a href="./contacto.html">contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- cuerpo, cotenido principal  animate__animated fadeInRight-->
     <main class="main">
-        <section class="noticias_music general">
-            <section>
-                <section class="titulo_general middle">
-                    <h2>Breve presentacion</h2>
+            <section class="noticias_music general">
+                <section>
+                    <section class="titulo_general middle">
+                        <h2>Breve presentacion</h2>
+                    </section>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, ex. Sunt illum ipsum assumenda
+                        facilis commodi esse deleniti vero aliquid labore, recusandae, fuga ad laborum neque distinctio
+                        aperiam eveniet ratione?</p>
                 </section>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, ex. Sunt illum ipsum assumenda
-                    facilis commodi esse deleniti vero aliquid labore, recusandae, fuga ad laborum neque distinctio
-                    aperiam eveniet ratione?</p>
+                <section>
+                    <section class="titulo_general middle">
+                        <h2>nos encontramos en:</h2>
+                    </section>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13139.645470645852!2d-58.450166279019015!3d-34.581109158530104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5dd4bd18a25%3A0x9acbfec876b40cd8!2sRock%20%26%20Pop!5e0!3m2!1ses-419!2sar!4v1658357833527!5m2!1ses-419!2sar"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </section>
+                <section>
+                    <section class="titulo_general middle">
+                        <h2>en nuestras redes encontraras mas información:</h2>
+                    </section>
+                    <div class="redes">
+                        <ul>
+                            <li>
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </li>
+                            <li>
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </li>
+                            <li>
+                                <ion-icon name="logo-twitter"></ion-icon>
+                            </li>
+                            <li>
+                                <ion-icon name="logo-twitch"></ion-icon>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
             </section>
-            <section>
-                <section class="titulo_general middle">
-                    <h2>nos encontramos en:</h2>
-                </section>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13139.645470645852!2d-58.450166279019015!3d-34.581109158530104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5dd4bd18a25%3A0x9acbfec876b40cd8!2sRock%20%26%20Pop!5e0!3m2!1ses-419!2sar!4v1658357833527!5m2!1ses-419!2sar"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </section>
-            <section>
-                <section class="titulo_general middle">
-                    <h2>en nuestras redes encontraras mas información:</h2>
-                </section>
-                <div class="redes">
-                    <ul>
-                        <li>
+    </main>
+    <!-- pie de la pagina -->
+    <!-- pie de la pagina -->
+    <footer class="footer top_100" id="nosotros">
+        <section class="footer_head">
+            <section class="footer_head_cuerpo width_80">
+                <a href="../index.html">
+                    <img src="../img/icon/astro101.png" alt="logo">
+                </a>
+                <ul class="redes_pie">
+                    <li>
+                        <a href="#">
                             <ion-icon name="logo-facebook"></ion-icon>
-                        </li>
-                        <li>
+                    </li></a>
+                    <li><a href="">
                             <ion-icon name="logo-instagram"></ion-icon>
-                        </li>
-                        <li>
-                            <ion-icon name="logo-twitter"></ion-icon>
-                        </li>
-                        <li>
+                    </li></a>
+                    <li><a href="">
+                            <ion-icon name="logo-whatsapp"></ion-icon>
+                    </li></a>
+                    <li><a href="">
                             <ion-icon name="logo-twitch"></ion-icon>
-                        </li>
-                    </ul>
-                </div>
+                    </li></a>
+                    <li><a href="">
+                            <ion-icon name="logo-vercel"></ion-icon>
+                    </li></a>
+                </ul>
             </section>
         </section>
-    </main>
-        <!-- pie de la pagina -->
-        <footer class="footer" id="nosotros">
-            <!--por las dudas, para el foother tratare de no usar flexbox-->
-            <section class="footer_head">
-                <section class="footer_head_cuerpo general">
-                    <a href="">
-                        <img src="../img/icon/astro101.png" alt="logo">
-                    </a>
-                    <ul class="redes_pie">
-                        <li>
-                            <a href="#">
-                                <ion-icon name="logo-facebook"></ion-icon>
-                        </li></a>
-                        <li><a href="">
-                                <ion-icon name="logo-instagram"></ion-icon>
-                        </li></a>
-                        <li><a href="">
-                                <ion-icon name="logo-whatsapp"></ion-icon>
-                        </li></a>
-                        <li><a href="">
-                                <ion-icon name="logo-twitch"></ion-icon>
-                        </li></a>
-                        <li><a href="">
-                                <ion-icon name="logo-vercel"></ion-icon>
-                        </li></a>
-                    </ul>
-                </section>
-            </section>
-            <section class="footer_main">
-                <section class="footer_main_cuerpo general">
-                    <section class="columna_1">
+        <!-- nosotros en el footer -->
+        <section class="footer_main">
+            <section class="container width_80">
+                <section class="footer_main_cuerpo row ">
+                    <section class="columna_1 col col-md-6">
                         <div class="logo_2"><img src="../img/icon/astro_cont.png" alt=""></div>
                         <ul class="links_2">
                             <li><a href="../index.html">inicio</a></li>
-                            <li><a href="../pages/nosotros.html">nosotros</a></li>
-                            <li><a href="../pages/contacto.html">contacto</a></li>
-                            <li><a href="../pages/noticias.html">noticias</a></li>
+                            <li><a href="./nosotros.html">nosotros</a></li>
+                            <li><a href="./contacto.html">contacto</a></li>
+                            <li><a href="./noticias.html">noticias</a></li>
                         </ul>
                     </section>
-                    <section class="columna_3">
+                    <section class="columna_3 col col-md-6">
                         <h2>suscríbite &#128521;</h2>
                         <form class="footer_form" action="" method="post">
                             <div class="content_input">
-                                <input type="text" id="username" class="text_input" autocomplete="off" placeholder="ingresa tu nombre" required>
+                                <input type="text" id="username" class="text_input" autocomplete="off"
+                                    placeholder="ingresa tu nombre" required>
                                 <label class="label" for="username">nombre</label>
                             </div>
                             <div class="content_input">
-                                <input type="mail" id="mail" autocomplete="off" placeholder="correo@mail.com" class="text_input" required>
+                                <input type="mail" id="mail" autocomplete="off" placeholder="correo@mail.com"
+                                    class="text_input" required>
                                 <label class="label" for="mail">@mail</label>
                             </div>
                             <input class="input_sub" type="submit" value="subscribirme">
                         </form>
                     </section>
-                    <section class="columna_2">
+                    <section class="columna_2 col col-md-12">
                         <ul class="contact_direct">
-                            <li><a href=""><ion-icon name="call-outline"></ion-icon>2944-396887</a></li>
-                            <li><a href="mailto:procedilinux@gmail.com??subject=Email%20Subject&body=Email%20Enviado%20Desde%20Radio%20guille»"><ion-icon name="mail-outline"></ion-icon>guillermoneculqueo@gmail.com</a></li>
-                            <li><a href="https://g.page/FmBariloche?share"><ion-icon name="location-outline"></ion-icon>Anasagasti 402 San Carlos de Bariloche, Río Negro</a></li>
+                            <li><a href="">
+                                    <ion-icon name="call-outline"></ion-icon>2944-396887
+                                </a></li>
+                            <li><a
+                                    href="mailto:procedilinux@gmail.com??subject=Email%20Subject&body=Email%20Enviado%20Desde%20Radio%20guille»">
+                                    <ion-icon name="mail-outline"></ion-icon>guillermoneculqueo@gmail.com
+                                </a></li>
+                            <li><a href="https://g.page/FmBariloche?share">
+                                    <ion-icon name="location-outline"></ion-icon>Anasagasti 402 San Carlos de Bariloche,
+                                    Río
+                                    Negro
+                                </a></li>
                         </ul>
                     </section>
                 </section>
             </section>
-            <section class="footer_bot">
-                <section class="footer_bot_cuerpo general"><p>© 2022, Todos los derechos reservados <strongg>noticias guille</strongg></section>
+        </section>
+        <section class="footer_bot">
+            <!-- seccion copyright-->
+            <section class="footer_bot_cuerpo general">
+                <p>© 2022, Todos los derechos reservados <strongg>noticias guille</strongg>
             </section>
-        </footer>
-    </div>
-
+        </section>
+    </footer>
     <!-- para el toggle -->
     <script src="../js/toggle.js"></script>
     <!--Icons open-source-->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <!-- wow -->
+    <script src="../js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
 </body>
 
 </html>

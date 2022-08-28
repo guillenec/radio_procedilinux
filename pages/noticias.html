@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../icon/oddish.png">
     <link rel="stylesheet" href="../style/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>noticias</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 
 <body>
@@ -32,11 +33,11 @@
             </div>
             <ul class="menu">
                 <li><a href="../index.html">inicio</a></li>
-                <li><a href="../pages/noticias.html">noticias</a></li>
-                <li><a href="../pages/programas.html">programas</a></li>
-                <li><a href="../pages/nosotros.html">nosotros</a></li>
-                <li><a href="../pages/multimedia.html">galeria</a></li>
-                <li><a href="../pages/contacto.html">contacto</a></li>
+                <li><a href="./noticias.html">noticias</a></li>
+                <li><a href="./programas.html">programas</a></li>
+                <li><a href="./nosotros.html">nosotros</a></li>
+                <li><a href="./multimedia.html">galeria</a></li>
+                <li><a href="./contacto.html">contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -244,13 +245,12 @@
             </section>
         </section>
     </main>
-    <!-- pie de la pagina -->
-    <footer class="footer margin_top_1" id="nosotros">
-        <!--por las dudas, para el foother tratare de no usar flexbox-->
+    <!-- pie de la pagina -->    <!-- pie de la pagina -->
+    <footer class="footer top_100" id="nosotros">
         <section class="footer_head">
-            <section class="footer_head_cuerpo general">
-                <a href="">
-                    <img src="../img/icon/logo97.png" alt="logo">
+            <section class="footer_head_cuerpo width_80">
+                <a href="../index.html">
+                    <img src="../img/icon/astro101.png" alt="logo">
                 </a>
                 <ul class="redes_pie">
                     <li>
@@ -272,18 +272,20 @@
                 </ul>
             </section>
         </section>
+        <!-- nosotros en el footer -->
         <section class="footer_main">
-            <section class="footer_main_cuerpo general">
-                <section class="columna_1">
-                    <div class="logo_2"><img src="../img/icon/astro101.png" alt=""></div>
+            <section class="container width_80">
+            <section class="footer_main_cuerpo row ">
+                <section class="columna_1 col col-md-6">
+                    <div class="logo_2"><img src="../img/icon/astro_cont.png" alt=""></div>
                     <ul class="links_2">
                         <li><a href="../index.html">inicio</a></li>
-                        <li><a href="../pages/nosotros.html">nosotros</a></li>
-                        <li><a href="../pages/contacto.html">contacto</a></li>
-                        <li><a href="../pages/noticias.html">noticias</a></li>
+                        <li><a href="./nosotros.html">nosotros</a></li>
+                        <li><a href="./contacto.html">contacto</a></li>
+                        <li><a href="./noticias.html">noticias</a></li>
                     </ul>
                 </section>
-                <section class="columna_3">
+                <section class="columna_3 col col-md-6">
                     <h2>suscríbite &#128521;</h2>
                     <form class="footer_form" action="" method="post">
                         <div class="content_input">
@@ -299,7 +301,7 @@
                         <input class="input_sub" type="submit" value="subscribirme">
                     </form>
                 </section>
-                <section class="columna_2">
+                <section class="columna_2 col col-md-12">
                     <ul class="contact_direct">
                         <li><a href="">
                                 <ion-icon name="call-outline"></ion-icon>2944-396887
@@ -311,27 +313,32 @@
                         <li><a href="https://g.page/FmBariloche?share">
                                 <ion-icon name="location-outline"></ion-icon>Anasagasti 402 San Carlos de Bariloche, Río
                                 Negro
-                            </a></li>
+                        </a></li>
                     </ul>
                 </section>
             </section>
+            </section>
         </section>
         <section class="footer_bot">
+            <!-- seccion copyright-->
             <section class="footer_bot_cuerpo general">
                 <p>© 2022, Todos los derechos reservados <strongg>noticias guille</strongg>
             </section>
         </section>
     </footer>
-
     <!-- para el toggle -->
     <script src="../js/toggle.js"></script>
     <!--Icons open-source-->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <!-- wow -->
     <script src="../js/wow.min.js"></script>
     <script>
     new WOW().init();
     </script>
+
 </body>
 
 </html>
