@@ -61,25 +61,25 @@
                                     placeholder="nombre" required>
                             </div>
                             <div class="mb-3">
+                                <label for="edad_inp" class="form-label">edad</label>
+                                <input type="number" id="edad_inp" class="form-control"
+                                    placeholder="edad" required>
+                            </div>
+                            <div class="mb-3">
                                 <label for="email_inp" class="form-label">email</label>
                                 <input type="email" id="email_inp" class="form-control"
                                     placeholder="email" required>
                             </div>
                             <div class="mb-3">
-                                <label for="disabledSelect" class="form-label">Disabled select menu</label>
-                                <select id="disabledSelect" class="form-select">
-                                    <option>Disabled select</option>
-                                </select>
-
-                                <label for="email">email</label>
-                                <input type="email" placeholder="email@gmail.com" id="email" name="mail" required>
+                                <label for="tel_inp" class="form-label">telefono</label>
+                                <input type="number" id="tel_inp" class="form-control"
+                                    placeholder="telefono" required>
                             </div>
                             <div class="mb-3">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
-                                    <label class="form-check-label" for="disabledFieldsetCheck">
-                                        Can't check this
-                                    </label>
+                                <label for="motivo_inp" class="form-label">motivo</label>
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Leave a comment here" id="motivo"></textarea>
+                                    <label for="floatingTextarea">escribe aqui...</label>
                                 </div>
                             </div>
                             <input class="btn btn-primary form_boton" type="submit" value="enviar">
@@ -100,10 +100,8 @@
             <section class="form_contacto">
                 <form action="#" method="POST">
                     
-                    <label for="edad">edad</label>
-                    <input type="number" placeholder="18" id="edad" name="edad" required>
-                    <label for="consulta">motivo</label>
-                    <textarea name="consulta" id="consulta" cols="30" rows="10"></textarea>
+                    
+                   
                     <input class="form_boton" type="submit" value="enviar">
                 </form>
             </section>
