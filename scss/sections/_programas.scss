@@ -16,19 +16,6 @@ font-family: 'Quicksand', sans-serif;
     justify-content: center;
     align-items: center;
 
-    .lunes{
-    }
-    .martes{
-    }
-    .miercoles{
-    }
-    .jueves{
-    }
-    .viernes{
-    }
-    .sabado{
-        grid-column: 3;
-    }
     .calendario_dia {
         margin: 50px;
         width: auto;
@@ -91,14 +78,13 @@ font-family: 'Quicksand', sans-serif;
         .dias_semana {
             position: relative;
             display: block;
-            width: 600px;
+            min-width: 600px;
             height: 100%;
 
             .accordion-body {
                 position: relative;
                 width: 100%;
                 height: 100%;
-                background: #aed9f3;
                 border-radius: 0 10px 10px 0;
                 display: grid;
                 grid-template-columns: repeat(18, 1fr);
@@ -110,34 +96,59 @@ font-family: 'Quicksand', sans-serif;
                 justify-items: stretch;
                 position: relative;
 
+        
+                div{
+                    position: relative;
+                    border: solid thin #22102b54;
+                    width: 100%;
+                    height: 100%;
+                }
+                .hd_hs{
+                    border: solid thin #0096f4ab;
+                    display: flex;
+                    align-content: center;
+                    justify-content: center;
+                    align-items: center;
+                    
+                    span{
+                        font-family: 'Oswald', sans-serif;
+                        font-weight: 400;
+                        text-align: center;
+                    }
+                }
+                section{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    align-content: center;
+                    
+                    p{
+                        width: 100%;
+                        font-family: 'Quicksand', sans-serif;
+                        font-weight: 600;
+                        text-align: center;
+                        color: #22102B;
+                    }
+                }
                 .titulo_cal {
                     grid-area: 1 / 1 / 1 / 19;
                     position: relative;
-                    border-radius: 0 20px 0 0;
-                    display: grid;
-                    align-items: center;
+                    border-radius: 0 10px 0 0;
+                    display: flex;
+                    align-content: center;
+                    align-items: flex-end;
+                    justify-content: flex-end;
 
                     h2 {
                         font-family: 'Dancing Script', cursive;
                         font-size: 30px;
                         text-transform: capitalize;
-                        text-align: end;
                         padding-right: 20px;
+                        align-self: flex-end;
                     }
                 }
             }
 
-            div {
-                position: relative;
-                width: 100%;
-
-                span {
-                    font-family: 'Quicksand', sans-serif;
-                    font-size: 18px;
-                    font-weight: 700;
-
-                }
-            }
 
             .titulo_cal {
                 grid-area: 1 / 1 / 2 / 19;
@@ -345,7 +356,7 @@ font-family: 'Quicksand', sans-serif;
 
             .col9_f6 {
                 grid-area: 8 / 17 / 9 / 19;
-                border-radius: 0 0 20px 0;
+                border-radius: 0 0 10px 0;
             }
 
             .col8_f4 {
@@ -432,5 +443,22 @@ font-family: 'Quicksand', sans-serif;
 
     }
 
+    .programas_carou{
+        position: relative;
+        height: auto;
+
+        .caja_carrusel{
+            position: relative;
+            width: 100%;
+            height: auto;
+            background: #53f08f;
+
+            .carousel-inner{
+                width: 100%;
+                height: auto;
+                display: flex;
+            }
+        }
+    }
 
 }

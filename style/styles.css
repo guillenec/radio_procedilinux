@@ -1050,8 +1050,6 @@ font-family: 'Quicksand', sans-serif;
   align-content: center;
   justify-content: center;
   align-items: center; }
-  .horarios_base .sabado {
-    grid-column: 3; }
   .horarios_base .calendario_dia {
     margin: 50px;
     width: auto;
@@ -1100,13 +1098,12 @@ font-family: 'Quicksand', sans-serif;
     .horarios_base .calendario_dia .dias_semana {
       position: relative;
       display: block;
-      width: 600px;
+      min-width: 600px;
       height: 100%; }
       .horarios_base .calendario_dia .dias_semana .accordion-body {
         position: relative;
         width: 100%;
         height: 100%;
-        background: #aed9f3;
         border-radius: 0 10px 10px 0;
         display: grid;
         grid-template-columns: repeat(18, 1fr);
@@ -1117,25 +1114,46 @@ font-family: 'Quicksand', sans-serif;
         align-items: center;
         justify-items: stretch;
         position: relative; }
+        .horarios_base .calendario_dia .dias_semana .accordion-body div {
+          position: relative;
+          border: solid thin #22102b54;
+          width: 100%;
+          height: 100%; }
+        .horarios_base .calendario_dia .dias_semana .accordion-body .hd_hs {
+          border: solid thin #0096f4ab;
+          display: flex;
+          align-content: center;
+          justify-content: center;
+          align-items: center; }
+          .horarios_base .calendario_dia .dias_semana .accordion-body .hd_hs span {
+            font-family: 'Oswald', sans-serif;
+            font-weight: 400;
+            text-align: center; }
+        .horarios_base .calendario_dia .dias_semana .accordion-body section {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          align-content: center; }
+          .horarios_base .calendario_dia .dias_semana .accordion-body section p {
+            width: 100%;
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 600;
+            text-align: center;
+            color: #22102B; }
         .horarios_base .calendario_dia .dias_semana .accordion-body .titulo_cal {
           grid-area: 1 / 1 / 1 / 19;
           position: relative;
-          border-radius: 0 20px 0 0;
-          display: grid;
-          align-items: center; }
+          border-radius: 0 10px 0 0;
+          display: flex;
+          align-content: center;
+          align-items: flex-end;
+          justify-content: flex-end; }
           .horarios_base .calendario_dia .dias_semana .accordion-body .titulo_cal h2 {
             font-family: 'Dancing Script', cursive;
             font-size: 30px;
             text-transform: capitalize;
-            text-align: end;
-            padding-right: 20px; }
-      .horarios_base .calendario_dia .dias_semana div {
-        position: relative;
-        width: 100%; }
-        .horarios_base .calendario_dia .dias_semana div span {
-          font-family: 'Quicksand', sans-serif;
-          font-size: 18px;
-          font-weight: 700; }
+            padding-right: 20px;
+            align-self: flex-end; }
       .horarios_base .calendario_dia .dias_semana .titulo_cal {
         grid-area: 1 / 1 / 2 / 19; }
       .horarios_base .calendario_dia .dias_semana .hs1 {
@@ -1240,7 +1258,7 @@ font-family: 'Quicksand', sans-serif;
         grid-area: 7 / 17 / 8 / 19; }
       .horarios_base .calendario_dia .dias_semana .col9_f6 {
         grid-area: 8 / 17 / 9 / 19;
-        border-radius: 0 0 20px 0; }
+        border-radius: 0 0 10px 0; }
       .horarios_base .calendario_dia .dias_semana .col8_f4 {
         grid-area: 6 / 15 / 7 / 17; }
       .horarios_base .calendario_dia .dias_semana .col8_f5 {
@@ -1289,3 +1307,15 @@ font-family: 'Quicksand', sans-serif;
         position: absolute;
         width: 100%;
         height: 100%; }
+  .horarios_base .programas_carou {
+    position: relative;
+    height: auto; }
+    .horarios_base .programas_carou .caja_carrusel {
+      position: relative;
+      width: 100%;
+      height: auto;
+      background: #53f08f; }
+      .horarios_base .programas_carou .caja_carrusel .carousel-inner {
+        width: 100%;
+        height: auto;
+        display: flex; }
