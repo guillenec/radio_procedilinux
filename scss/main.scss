@@ -2,6 +2,10 @@
 
 $sombra_general: 3px 5px 4px 1px rgba(0, 0, 0, 0.38);
 
+//paleta de colores
+$blue_astro:#0097F4;
+$purp_casco: #22102B;
+
 /*
 font-family: 'Dancing Script', cursive;
 font-family: 'Oswald', sans-serif;
@@ -32,6 +36,7 @@ footer {
 //CLASES REUTILIZABLES DENTRO DEL MAIN
 .width_80 {
     //--mantiene el ancho en 80%
+    position: relative;
     width: 80%;
     margin: auto;
 }
@@ -76,7 +81,6 @@ footer {
         position: relative;
         width: 98%;
         height: 70px;
-        background: rgb(221, 85, 85);
         margin: auto;
         border-radius: 5px;
         background: #ffffff;
@@ -935,4 +939,6 @@ footer {
 
 @import './sections/_galeria.scss';
 @import './sections/_noticias.scss';
+@import './sections/_contacto.scss';
+@import './sections/_programas.scss';
 

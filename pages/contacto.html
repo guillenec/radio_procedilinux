@@ -45,56 +45,68 @@
     </header>
     <!-- cuerpo, cotenido principal  animate__animated fadeInRight-->
     <main class="main">
-        <section class="width_80 top_100">
+        <section class="contacto width_80 top_100_head">
             <section class="wow animate__animated animate__fadeInLeft titulo_general">
                 <div class="cont_anima mid_flex">
                     <h2>formulario de contacto</h2>
                 </div>
             </section>
-            <section class="row">
-                <section class="form_contac col-sm-12 top_50">
-                    <form action="#" method="POST">
-                            <legend>Gracia por contactarnos</legend>
-                            <div class="mb-3">
-                                <label for="nombre_inp" class="form-label">nombre</label>
-                                <input type="text" id="nombre_inp" class="form-control"
-                                    placeholder="nombre" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="edad_inp" class="form-label">edad</label>
-                                <input type="number" id="edad_inp" class="form-control"
-                                    placeholder="edad" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="email_inp" class="form-label">email</label>
-                                <input type="email" id="email_inp" class="form-control"
-                                    placeholder="email" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="tel_inp" class="form-label">telefono</label>
-                                <input type="number" id="tel_inp" class="form-control"
-                                    placeholder="telefono" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="motivo_inp" class="form-label">motivo</label>
-                                <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a comment here" id="motivo"></textarea>
-                                    <label for="floatingTextarea">escribe aqui...</label>
-                                </div>
-                            </div>
-                            <input class="btn btn-primary form_boton" type="submit" value="enviar">
-                    </form>
-                </section>
-                <section class="col-sm-6 top_50">
+            <section class="row cuerpo_contact">
+                <section class="col-sm-6 titulo_cont">
                     <h1>gracias por contactarnos</h1>
                     <p>Si quieres saber mas sobre nosotros o quieres usar alguno de nuestros servicios, promocion,aviso
-                        ,etc, rellena nuestro formulario y <strong>nosotrons nos pondremos en contacto contigo loa antes
+                        ,etc, rellena nuestro formulario y <strong>nosotrons nos pondremos en contacto contigo lo antes
                             posioble.</strong></p>
                     <p>muchas gracias...</p>
                 </section>
-                <section class="col-sm-6 top_50">
+                <section class="col-sm-6 form_contact">
+                    <form action="#" method="POST">
+                        <div class="mb-3">
+                            <input type="text" id="nombre_inp" class="form-control" placeholder="nombre" required>
+                            <label for="nombre_inp" class="form-label">nombre</label>
+                        </div>
+                        <div class="mb-3">
+                            <input type="number" id="edad_inp" class="form-control" placeholder="edad" required>
+                            <label for="edad_inp" class="form-label">edad</label>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" id="email_inp" class="form-control" placeholder="email" required>
+                            <label for="email_inp" class="form-label">email</label>
+                        </div>
+                        <div class="mb-3">
+                            <input type="number" id="tel_inp" class="form-control" placeholder="telefono" required>
+                            <label for="tel_inp" class="form-label">telefono</label>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="motivo"></textarea>
+                            <label for="motivo_inp" class="form-label">motivo</label>
+                        </div>
+                        <input class="btn btn-primary form_boton" type="submit" value="enviar">
+                    </form>
+                </section>
+                <section class="col-sm-6 contacto_rapido">
                     <h1>contacto rapido</h1>
-
+                    <section class="caja_rapido">
+                        <ul>
+                            <li><a href="">
+                                    <ion-icon name="call-outline"></ion-icon>2944-396887
+                                </a></li>
+                            <li><a
+                                    href="mailto:procedilinux@gmail.com??subject=Email%20Subject&body=Email%20Enviado%20Desde%20Radio%20guille»">
+                                    <ion-icon name="mail-outline"></ion-icon>guillermoneculqueo@gmail.com
+                                </a></li>
+                            <li><a href="https://g.page/FmBariloche?share">
+                                    <ion-icon name="location-outline"></ion-icon>Anasagasti 402 San Carlos de Bariloche,
+                                    Río
+                                    Negro
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                </section>
+                <section class="col-sm-6 mapa">
+                    <h1>Nos encuentras en</h1>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5053.606910226981!2d-71.30417631001853!3d-41.13686943917295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961a7b95b160b29b%3A0xe6fe7fd570ccab3b!2sRadio%20Con%20Vos%20Patagonia!5e0!3m2!1ses-419!2sar!4v1661726147585!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </section>
             </section>
         </section>
@@ -166,10 +178,9 @@
                                     <ion-icon name="mail-outline"></ion-icon>guillermoneculqueo@gmail.com
                                 </a></li>
                             <li><a href="https://g.page/FmBariloche?share">
-                                    <ion-icon name="location-outline"></ion-icon>Anasagasti 402 San Carlos de Bariloche,
-                                    Río
-                                    Negro
-                                </a></li>
+                                    <ion-icon name="location-outline"></ion-icon>Anasagasti 402 San Carlos de Bariloche,Río Negro
+                                </a>
+                            </li>
                         </ul>
                     </section>
                 </section>

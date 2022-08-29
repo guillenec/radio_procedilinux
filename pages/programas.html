@@ -8,8 +8,9 @@
     <link rel="shortcut icon" href="../icon/oddish.png">
     <link rel="stylesheet" href="../style/styles.css">
     <title>programas</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
@@ -17,7 +18,8 @@
     <header class="header">
         <nav class="nav_menu">
             <ul class="logo">
-                <li class="img_logo"><a href="../index.html"><img src="../img/icon/astro_cont.png" alt="logo de radio"></a>
+                <li class="img_logo"><a href="../index.html"><img src="../img/icon/astro_cont.png"
+                            alt="logo de radio"></a>
                 </li>
                 <li class="name_marca">
                     <p>usuario</p>
@@ -43,17 +45,31 @@
     </header>
     <!-- cuerpo, cotenido principal  animate__animated fadeInRight-->
     <main class="main">
-            <section class="horarios_base general_programas">
-                <!--dia lunes-->
-                <section class="calendario_dia">
-                    <section class="cont_izq_dia">
-                        <div class="header_calend"></div>
-                        <div class="cuerpo_calend">
-                            <h1>lunes</h1>
-                            <h2>itinerario</h2>
-                        </div>
-                    </section>
-                    <section class="dias_semana">
+        <section class="horarios_base width_80 top_100_head">
+            <section class="wow animate__animated animate__fadeInLeft titulo_general">
+                <div class="cont_anima mid_flex">
+                    <h2>programacion general</h2>
+                </div>
+            </section>
+            <!-- dia lunes -->
+            <section class="calendario_dia accordion lunes">
+                <section class="cont_izq_dia">
+                    <div class="header_calend accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                presiona
+                            </button>
+                        </h2>
+                    </div>
+                    <div class="cuerpo_calend">
+                        <h1>lunes</h1>
+                        <h2>itinerario</h2>
+                    </div>
+                </section>
+                <section id="collapseOne" class="dias_semana accordion-collapse collapse show"
+                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
                         <div class="titulo_cal">
                             <h2>lunes</h2>
                         </div>
@@ -67,7 +83,7 @@
                         <div class="hs7"><span>20hs-21hs</span></div>
                         <div class="hs8"><span>22hs-23hs</span></div>
                         <div class="hs9"><span>00hs-01hs</span></div>
-            
+
                         <!--Cuerpo cuadraditos para filas ycolumns-->
                         <div class="col1_f1"></div>
                         <div class="col2_f1"></div>
@@ -131,19 +147,27 @@
                         <section class="prog_4"></section>
                         <section class="prog_5"></section>
                         <section class="prog_6"></section>
-            
-                    </section>
+                    </div>
                 </section>
-                <!--dia martes-->
-                <section class="calendario_dia">
-                    <section class="cont_izq_dia">
-                        <div class="header_calend"></div>
-                        <div class="cuerpo_calend">
-                            <h1>martes</h1>
-                            <h2>itinerario</h2>
-                        </div>
-                    </section>
-                    <section class="dias_semana">
+            </section>
+            <!-- dia martes -->
+            <section class="calendario_dia accordion martes">
+                <section class="cont_izq_dia">
+                    <div class="header_calend accordion-item">
+                        <h2 class="accordion-header" id="heading2">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                                presiona
+                            </button>
+                        </h2>
+                    </div>
+                    <div class="cuerpo_calend">
+                        <h1>martes</h1>
+                        <h2>itinerario</h2>
+                    </div>
+                </section>
+                <section id="collapse2" class="dias_semana accordion-collapse collapse show" aria-labelledby="heading2">
+                    <div class="accordion-body">
                         <div class="titulo_cal">
                             <h2>martes</h2>
                         </div>
@@ -157,7 +181,7 @@
                         <div class="hs7"><span>20hs-21hs</span></div>
                         <div class="hs8"><span>22hs-23hs</span></div>
                         <div class="hs9"><span>00hs-01hs</span></div>
-            
+
                         <!--Cuerpo cuadraditos para filas ycolumns-->
                         <div class="col1_f1"></div>
                         <div class="col2_f1"></div>
@@ -221,19 +245,27 @@
                         <section class="prog_4"></section>
                         <section class="prog_5"></section>
                         <section class="prog_6"></section>
-            
-                    </section>
+                    </div>
                 </section>
-                <!--dia miercoles-->
-                <section class="calendario_dia">
-                    <section class="cont_izq_dia">
-                        <div class="header_calend"></div>
-                        <div class="cuerpo_calend">
-                            <h1>miercoles</h1>
-                            <h2>itinerario</h2>
-                        </div>
-                    </section>
-                    <section class="dias_semana">
+            </section>
+            <!-- dia miercoles -->
+            <section class="calendario_dia accordion miercoles">
+                <section class="cont_izq_dia">
+                    <div class="header_calend accordion-item">
+                        <h2 class="accordion-header" id="heading3">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                                presiona
+                            </button>
+                        </h2>
+                    </div>
+                    <div class="cuerpo_calend">
+                        <h1>miercoles</h1>
+                        <h2>itinerario</h2>
+                    </div>
+                </section>
+                <section id="collapse3" class="dias_semana accordion-collapse collapse show" aria-labelledby="heading3">
+                    <div class="accordion-body">
                         <div class="titulo_cal">
                             <h2>miercoles</h2>
                         </div>
@@ -247,7 +279,7 @@
                         <div class="hs7"><span>20hs-21hs</span></div>
                         <div class="hs8"><span>22hs-23hs</span></div>
                         <div class="hs9"><span>00hs-01hs</span></div>
-            
+
                         <!--Cuerpo cuadraditos para filas ycolumns-->
                         <div class="col1_f1"></div>
                         <div class="col2_f1"></div>
@@ -311,19 +343,27 @@
                         <section class="prog_4"></section>
                         <section class="prog_5"></section>
                         <section class="prog_6"></section>
-            
-                    </section>
+                    </div>
                 </section>
-                <!--dia jueves-->
-                <section class="calendario_dia">
-                    <section class="cont_izq_dia">
-                        <div class="header_calend"></div>
-                        <div class="cuerpo_calend">
-                            <h1>jueves</h1>
-                            <h2>itinerario</h2>
-                        </div>
-                    </section>
-                    <section class="dias_semana">
+            </section>
+            <!-- dia jueves -->
+            <section class="calendario_dia accordion jueves">
+                <section class="cont_izq_dia">
+                    <div class="header_calend accordion-item">
+                        <h2 class="accordion-header" id="heading4">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                                presiona
+                            </button>
+                        </h2>
+                    </div>
+                    <div class="cuerpo_calend">
+                        <h1>jueves</h1>
+                        <h2>itinerario</h2>
+                    </div>
+                </section>
+                <section id="collapse4" class="dias_semana accordion-collapse collapse show" aria-labelledby="heading4">
+                    <div class="accordion-body">
                         <div class="titulo_cal">
                             <h2>jueves</h2>
                         </div>
@@ -337,7 +377,7 @@
                         <div class="hs7"><span>20hs-21hs</span></div>
                         <div class="hs8"><span>22hs-23hs</span></div>
                         <div class="hs9"><span>00hs-01hs</span></div>
-            
+
                         <!--Cuerpo cuadraditos para filas ycolumns-->
                         <div class="col1_f1"></div>
                         <div class="col2_f1"></div>
@@ -401,19 +441,27 @@
                         <section class="prog_4"></section>
                         <section class="prog_5"></section>
                         <section class="prog_6"></section>
-            
-                    </section>
+                    </div>
                 </section>
-                <!--dia viernes-->
-                <section class="calendario_dia">
-                    <section class="cont_izq_dia">
-                        <div class="header_calend"></div>
-                        <div class="cuerpo_calend">
-                            <h1>viernes</h1>
-                            <h2>itinerario</h2>
-                        </div>
-                    </section>
-                    <section class="dias_semana">
+            </section>
+            <!-- dia viernes -->
+            <section class="calendario_dia accordion viernes">
+                <section class="cont_izq_dia">
+                    <div class="header_calend accordion-item">
+                        <h2 class="accordion-header" id="heading5">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
+                                presiona
+                            </button>
+                        </h2>
+                    </div>
+                    <div class="cuerpo_calend">
+                        <h1>viernes</h1>
+                        <h2>itinerario</h2>
+                    </div>
+                </section>
+                <section id="collapse5" class="dias_semana accordion-collapse collapse show" aria-labelledby="heading5">
+                    <div class="accordion-body">
                         <div class="titulo_cal">
                             <h2>viernes</h2>
                         </div>
@@ -427,7 +475,7 @@
                         <div class="hs7"><span>20hs-21hs</span></div>
                         <div class="hs8"><span>22hs-23hs</span></div>
                         <div class="hs9"><span>00hs-01hs</span></div>
-            
+
                         <!--Cuerpo cuadraditos para filas ycolumns-->
                         <div class="col1_f1"></div>
                         <div class="col2_f1"></div>
@@ -491,19 +539,27 @@
                         <section class="prog_4"></section>
                         <section class="prog_5"></section>
                         <section class="prog_6"></section>
-            
-                    </section>
+                    </div>
                 </section>
-                <!--dia-->
-                <section class="calendario_dia">
-                    <section class="cont_izq_dia">
-                        <div class="header_calend"></div>
-                        <div class="cuerpo_calend">
-                            <h1>sabado</h1>
-                            <h2>itinerario</h2>
-                        </div>
-                    </section>
-                    <section class="dias_semana">
+            </section>
+            <!-- dia viernes -->
+            <section class="calendario_dia accordion sabado">
+                <section class="cont_izq_dia">
+                    <div class="header_calend accordion-item">
+                        <h2 class="accordion-header" id="heading6">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse6" aria-expanded="true" aria-controls="collapse6">
+                                presiona
+                            </button>
+                        </h2>
+                    </div>
+                    <div class="cuerpo_calend">
+                        <h1>sabado</h1>
+                        <h2>itinerario</h2>
+                    </div>
+                </section>
+                <section id="collapse6" class="dias_semana accordion-collapse collapse show" aria-labelledby="heading6">
+                    <div class="accordion-body">
                         <div class="titulo_cal">
                             <h2>sabado</h2>
                         </div>
@@ -517,7 +573,7 @@
                         <div class="hs7"><span>20hs-21hs</span></div>
                         <div class="hs8"><span>22hs-23hs</span></div>
                         <div class="hs9"><span>00hs-01hs</span></div>
-            
+
                         <!--Cuerpo cuadraditos para filas ycolumns-->
                         <div class="col1_f1"></div>
                         <div class="col2_f1"></div>
@@ -581,103 +637,61 @@
                         <section class="prog_4"></section>
                         <section class="prog_5"></section>
                         <section class="prog_6"></section>
-            
-                    </section>
+                    </div>
                 </section>
-                <!--dia-->
-                <section class="calendario_dia">
-                    <section class="cont_izq_dia">
-                        <div class="header_calend"></div>
-                        <div class="cuerpo_calend">
-                            <h1>Domingo</h1>
-                            <h2>itinerario</h2>
-                        </div>
-                    </section>
-                    <section class="dias_semana">
-                        <div class="titulo_cal">
-                            <h2>domingo</h2>
-                        </div>
-                        <!--Cabecera-->
-                        <div class="hs1"><span>08hs-09hs</span></div>
-                        <div class="hs2"><span>10hs-11hs</span></div>
-                        <div class="hs3"><span>12hs-13hs</span></div>
-                        <div class="hs4"><span>14hs-15hs</span></div>
-                        <div class="hs5"><span>16hs-17hs</span></div>
-                        <div class="hs6"><span>18hs-19hs</span></div>
-                        <div class="hs7"><span>20hs-21hs</span></div>
-                        <div class="hs8"><span>22hs-23hs</span></div>
-                        <div class="hs9"><span>00hs-01hs</span></div>
-            
-                        <!--Cuerpo cuadraditos para filas ycolumns-->
-                        <div class="col1_f1"></div>
-                        <div class="col2_f1"></div>
-                        <div class="col3_f1"></div>
-                        <div class="col4_f1"></div>
-                        <div class="col5_f1"></div>
-                        <div class="col6_f1"></div>
-                        <div class="col7_f1"></div>
-                        <div class="col8_f1"></div>
-                        <div class="col9_f1"></div>
-                        <div class="col1_f2"></div>
-                        <div class="col1_f3"></div>
-                        <div class="col1_f4"></div>
-                        <div class="col1_f5"></div>
-                        <div class="col1_f6"></div>
-                        <div class="col2_f2"></div>
-                        <div class="col2_f3"></div>
-                        <div class="col2_f4"></div>
-                        <div class="col2_f5"></div>
-                        <div class="col2_f6"></div>
-                        <div class="col3_f2"></div>
-                        <div class="col3_f3"></div>
-                        <div class="col3_f4"></div>
-                        <div class="col3_f5"></div>
-                        <div class="col3_f6"></div>
-                        <div class="col4_f2"></div>
-                        <div class="col4_f3"></div>
-                        <div class="col4_f4"></div>
-                        <div class="col4_f5"></div>
-                        <div class="col4_f6"></div>
-                        <div class="col5_f2"></div>
-                        <div class="col6_f2"></div>
-                        <div class="col7_f2"></div>
-                        <div class="col8_f2"></div>
-                        <div class="col9_f2"></div>
-                        <div class="col5_f3"></div>
-                        <div class="col6_f3"></div>
-                        <div class="col7_f3"></div>
-                        <div class="col8_f3"></div>
-                        <div class="col9_f3"></div>
-                        <div class="col9_f4"></div>
-                        <div class="col9_f5"></div>
-                        <div class="col9_f6"></div>
-                        <div class="col8_f4"></div>
-                        <div class="col8_f5"></div>
-                        <div class="col8_f6"></div>
-                        <div class="col7_f4"></div>
-                        <div class="col6_f4"></div>
-                        <div class="col5_f4"></div>
-                        <div class="col5_f5"></div>
-                        <div class="col5_f6"></div>
-                        <div class="col6_f5"></div>
-                        <div class="col6_f6"></div>
-                        <div class="col7_f5"></div>
-                        <div class="col7_f6"></div>
-
-                        <!--Programas-->
-                        <section class="prog_1"></section>
-                        <section class="prog_2"></section>
-                        <section class="prog_3"></section>
-                        <section class="prog_4"></section>
-                        <section class="prog_5"></section>
-                        <section class="prog_6"></section>
-            
-                    </section>
-                </section>
-                <!--dia-->
             </section>
+        </section>
+        <section class="programas_carou width_80 top_100">
+            <section class="wow animate__animated animate__fadeInLeft titulo_general">
+                <div class="cont_anima mid_flex">
+                    <h2>nuestros programas</h2>
+                </div>
+            </section>
+            <section>
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <!-- elemento 1 -->
+                            <div class="card" style="width: 18rem;">
+                                <img src="..." class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="carousel-item">
+                            <!-- elemento 2 -->
+                            <div class="card" style="width: 18rem;">
+                                <img src="..." class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="carousel-item">
+                            <!-- elemento 3 -->
+                            <div class="card" style="width: 18rem;">
+                                <img src="..." class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+        </section>
     </main>
-    <!-- pie de la pagina -->    <!-- pie de la pagina -->
+    <!-- pie de la pagina -->
+    <!-- pie de la pagina -->
     <footer class="footer top_100" id="nosotros">
         <section class="footer_head">
             <section class="footer_head_cuerpo width_80">
@@ -707,48 +721,49 @@
         <!-- nosotros en el footer -->
         <section class="footer_main">
             <section class="container width_80">
-            <section class="footer_main_cuerpo row ">
-                <section class="columna_1 col col-md-6">
-                    <div class="logo_2"><img src="../img/icon/astro_cont.png" alt=""></div>
-                    <ul class="links_2">
-                        <li><a href="../index.html">inicio</a></li>
-                        <li><a href="./nosotros.html">nosotros</a></li>
-                        <li><a href="./contacto.html">contacto</a></li>
-                        <li><a href="./noticias.html">noticias</a></li>
-                    </ul>
+                <section class="footer_main_cuerpo row ">
+                    <section class="columna_1 col col-md-6">
+                        <div class="logo_2"><img src="../img/icon/astro_cont.png" alt=""></div>
+                        <ul class="links_2">
+                            <li><a href="../index.html">inicio</a></li>
+                            <li><a href="./nosotros.html">nosotros</a></li>
+                            <li><a href="./contacto.html">contacto</a></li>
+                            <li><a href="./noticias.html">noticias</a></li>
+                        </ul>
+                    </section>
+                    <section class="columna_3 col col-md-6">
+                        <h2>suscríbite &#128521;</h2>
+                        <form class="footer_form" action="" method="post">
+                            <div class="content_input">
+                                <input type="text" id="username" class="text_input" autocomplete="off"
+                                    placeholder="ingresa tu nombre" required>
+                                <label class="label" for="username">nombre</label>
+                            </div>
+                            <div class="content_input">
+                                <input type="mail" id="mail" autocomplete="off" placeholder="correo@mail.com"
+                                    class="text_input" required>
+                                <label class="label" for="mail">@mail</label>
+                            </div>
+                            <input class="input_sub" type="submit" value="subscribirme">
+                        </form>
+                    </section>
+                    <section class="columna_2 col col-md-12">
+                        <ul class="contact_direct">
+                            <li><a href="">
+                                    <ion-icon name="call-outline"></ion-icon>2944-396887
+                                </a></li>
+                            <li><a
+                                    href="mailto:procedilinux@gmail.com??subject=Email%20Subject&body=Email%20Enviado%20Desde%20Radio%20guille»">
+                                    <ion-icon name="mail-outline"></ion-icon>guillermoneculqueo@gmail.com
+                                </a></li>
+                            <li><a href="https://g.page/FmBariloche?share">
+                                    <ion-icon name="location-outline"></ion-icon>Anasagasti 402 San Carlos de Bariloche,
+                                    Río
+                                    Negro
+                                </a></li>
+                        </ul>
+                    </section>
                 </section>
-                <section class="columna_3 col col-md-6">
-                    <h2>suscríbite &#128521;</h2>
-                    <form class="footer_form" action="" method="post">
-                        <div class="content_input">
-                            <input type="text" id="username" class="text_input" autocomplete="off"
-                                placeholder="ingresa tu nombre" required>
-                            <label class="label" for="username">nombre</label>
-                        </div>
-                        <div class="content_input">
-                            <input type="mail" id="mail" autocomplete="off" placeholder="correo@mail.com"
-                                class="text_input" required>
-                            <label class="label" for="mail">@mail</label>
-                        </div>
-                        <input class="input_sub" type="submit" value="subscribirme">
-                    </form>
-                </section>
-                <section class="columna_2 col col-md-12">
-                    <ul class="contact_direct">
-                        <li><a href="">
-                                <ion-icon name="call-outline"></ion-icon>2944-396887
-                            </a></li>
-                        <li><a
-                                href="mailto:procedilinux@gmail.com??subject=Email%20Subject&body=Email%20Enviado%20Desde%20Radio%20guille»">
-                                <ion-icon name="mail-outline"></ion-icon>guillermoneculqueo@gmail.com
-                            </a></li>
-                        <li><a href="https://g.page/FmBariloche?share">
-                                <ion-icon name="location-outline"></ion-icon>Anasagasti 402 San Carlos de Bariloche, Río
-                                Negro
-                        </a></li>
-                    </ul>
-                </section>
-            </section>
             </section>
         </section>
         <section class="footer_bot">
@@ -764,11 +779,13 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <!-- Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
     <!-- wow -->
     <script src="../js/wow.min.js"></script>
     <script>
-    new WOW().init();
+        new WOW().init();
     </script>
 
 </body>

@@ -1,0 +1,206 @@
+.contacto {
+    position: relative;
+    height: auto;
+
+    h1 {
+        margin-top: 10px;
+        text-align: left;
+        text-transform: capitalize;
+        font-weight: 400;
+        font-family: 'Oswald', sans-serif;
+    }
+
+    p {
+        margin-top: 10px;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 500;
+        line-height: 2rem;
+    }
+
+    .cuerpo_contact {
+        position: relative;
+        margin-top: 30px;
+        position: relative;
+        width: 100%;
+        height: auto;
+        --bs-gutter-x: 0;
+
+        .titulo_cont {
+            position: relative;
+        }
+
+        .form_contact {
+            position: relative;
+
+            form {
+                position: relative;
+                width: 100%;
+                padding: 5px;
+
+                div {
+                    position: relative;
+                    width: 100%;
+                    height: auto;
+                    margin: 0;
+                    padding: 0;
+
+                    label {
+                        position: absolute;
+                        font-family: 'Quicksand', sans-serif;
+                        font-weight: 700;
+                        font-size: 18px;
+                        text-transform: capitalize;
+                        left: 20px;
+                        top: 13px;
+                        transition: .5s;
+                        padding: 0 2px;
+                        z-index: 1;
+                        color: #b3b3b3;
+                        margin-bottom: 0;
+
+                        &::before {
+                            content: '';
+                            height: 4px;
+                            background: transparent;
+                            position: absolute;
+                            left: 0;
+                            top: 12px;
+                            width: 100%;
+                            z-index: -1;
+                        }
+                    }
+
+                    input,
+                    textarea {
+                        width: 100%;
+                        margin: 5px 0;
+                        padding: 10px 10px;
+                        border: 3px solid #22102B;
+                        background: #22102B;
+                        border-radius: 4px;
+                        font-size: 18px;
+                        outline: none;
+                        transition: .5s;
+                        color: #fff;
+                        -webkit-box-shadow: $sombra_general;
+                        -moz-box-shadow: $sombra_general;
+                        box-shadow: $sombra_general;
+
+                        &:focus {
+                            border: 3px solid #0097F4;
+                        }
+
+                        &:focus+label {
+                            top: -13px;
+                            color: #0097F4;
+
+                            &::before {
+                                background: #22102B;
+                            }
+                        }
+
+                        &::placeholder {
+                            font-size: 18px;
+                            opacity: 0;
+                            transition: .5s;
+                            color: #22102B;
+                        }
+
+                        &:focus::placeholder {
+                            opacity: 1;
+                            transition: .5s;
+                        }
+                    }
+                }
+
+                .btn {
+                    padding: 10px 10px;
+                    font-family: 'Quicksand', sans-serif;
+                    font-weight: 700;
+                    font-size: 18px;
+                    text-transform: capitalize;
+                    background: #fff;
+                    color: #a806d1;
+                    border: #0097F4 thin solid;
+                    transition: .5s;
+                    -webkit-box-shadow: $sombra_general;
+                    -moz-box-shadow: $sombra_general;
+                    box-shadow: $sombra_general;
+                }
+
+                .btn:hover {
+                    color: #fff;
+                    background: #0097F4;
+                    border: #0097F4 thin solid;
+                    transition: .9s;
+                }
+            }
+        }
+
+        .contacto_rapido {
+
+            .caja_rapido {
+                width: 100%;
+                height: 100%;
+                padding: 5px;
+
+                ul {
+                    list-style: none;
+                    display: block;
+
+                    li {
+                        width: 100%;
+                        margin: 15px 0;
+
+                        a {
+                            display: block;
+                            width: 100%;
+                            padding: 10px;
+                            text-decoration: none;
+                            font-family: 'Quicksand', sans-serif;
+                            font-weight: 600;
+                            color: #22102B;
+                            display: flex;
+                            align-content: center;
+                            justify-content: flex-start;
+                            align-items: center;
+                            transition: .7s;
+
+                            ion-icon {
+                                padding: 0 10px 0 0;
+                                font-size: 25px;
+                            }
+
+                            &:hover {
+                                color: #0097F4;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .mapa {
+            iframe {
+                width: 100%;
+                height: 240px;
+                border-radius: 5px;
+                border: solid 2px #0097F4;
+                -webkit-box-shadow: $sombra_general;
+                -moz-box-shadow: $sombra_general;
+                box-shadow: $sombra_general;
+            }
+        }
+    }
+
+    .titulo_cont,
+    .form_contact,
+    .contacto_rapido,
+    .mapa {
+        margin-top: 50px;
+        height: min-content;
+        padding: 10px;
+    }
+
+}
