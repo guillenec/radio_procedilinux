@@ -1,0 +1,272 @@
+@media screen and (max-width: $lg) {
+    .programas_carou {
+        .caja_carrusel {
+            .carousel {
+                height: auto;
+
+                .carousel-inner {
+                    width: 100%;
+                    height: 100%;
+
+                    .carousel-item {
+                        height: 100%;
+                        width: 100%;
+
+                        .row {
+                            position: relative;
+                            width: 100%;
+                            height: 1700px;
+                            --bs-gutter-x: 0;
+
+                            .card {
+                                position: relative;
+                                width: 400px;
+                                height: 500px;
+                                margin: auto;
+                                padding: 5px;
+                                align-content: flex-start;
+                                justify-content: center;
+                                align-items: center;
+                                -webkit-box-shadow: $sombra_general;
+                                -moz-box-shadow: $sombra_general;
+                                box-shadow: $sombra_general;
+
+                                img {
+                                    position: relative;
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                }
+
+                                .card-body {
+                                    position: absolute;
+                                    background: #333;
+                                    width: 96%;
+                                    height: 30%;
+                                    bottom: 10px;
+                                    background: rgba(0, 150, 244, 0.644);
+                                    backdrop-filter: blur(5px);
+                                    -webkit-backdrop-filter: blur(5px);
+                                    border-radius: 4px;
+
+                                    a {
+                                        text-decoration: none;
+                                        text-align: center;
+                                        color: #22102B;
+
+                                        h2 {
+                                            font-family: $titulo;
+                                            text-transform: capitalize;
+                                        }
+                                    }
+
+                                    ul {
+                                        list-style: none;
+
+                                        li {
+                                            display: block;
+                                            width: 100%;
+                                            margin-top: 5px;
+
+                                            p {
+                                                font-family: $parrafo;
+                                                font-weight: 500;
+                                                padding-left: 5px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: $md) {
+
+    .horarios_base {
+
+        .calendario_dia {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            justify-content: flex-start;
+            align-items: center;
+            margin: 30px 1% 0 1%;
+
+            .cont_izq_dia {
+                width: 100%;
+                height: 230px;
+                border-radius: 10px 10px 0 0;
+
+                .header_calend {
+                    width: 100%;
+                    height: 70px;
+                }
+
+                .cuerpo_calend {
+                    width: 100%;
+                    height: 150px;
+
+                    h1 {
+                        font-family: 'Oswald', sans-serif;
+                    }
+
+                    h2 {
+                        font-family: 'Quicksand', sans-serif;
+
+                    }
+                }
+            }
+
+            .dias_semana {
+                position: relative;
+                display: block;
+                min-width: auto;
+                width: 100%;
+                height: 100%;
+
+                .accordion-body {
+                    gap: 5px 5px;
+                    align-content: center;
+                    justify-content: start;
+                    align-items: center;
+                    justify-items: stretch;
+                    position: relative;
+                    padding: 2px;
+
+                    .hd_hs {
+                        span {
+                            font-family: 'Oswald', sans-serif;
+                            font-weight: 300;
+                            text-align: center;
+                        }
+                    }
+
+                    section {
+
+                        p {
+                            font-weight: 400;
+                        }
+                    }
+
+                    .titulo_cal {
+                        border-radius: 0 0 0 0;
+
+                        h2 {
+                            font-size: 25px;
+                        }
+                    }
+                }
+
+
+
+                .col1_f6 {
+                    grid-area: 8 / 1 / 9 / 3;
+                    border-radius: 0 0 0 10px;
+                }
+
+                .col9_f6 {
+                    grid-area: 8 / 17 / 9 / 19;
+                    border-radius: 0 0 10px 0;
+                }
+
+            }
+
+        }
+
+
+    }
+
+    .programas_carou {
+        .caja_carrusel {
+            .carousel {
+                height: auto;
+
+                .carousel-inner {
+                    width: 100%;
+                    height: 100%;
+
+                    .carousel-item {
+                        height: 100%;
+                        width: 100%;
+
+                        .row {
+                            position: relative;
+                            width: 100%;
+                            height: 1700px;
+                            --bs-gutter-x: 0;
+
+                            .card {
+                                position: relative;
+                                width: 400px;
+                                height: 500px;
+                                margin: auto;
+                                padding: 5px;
+                                align-content: flex-start;
+                                justify-content: center;
+                                align-items: center;
+                                -webkit-box-shadow: $sombra_general;
+                                -moz-box-shadow: $sombra_general;
+                                box-shadow: $sombra_general;
+
+                                img {
+                                    position: relative;
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                }
+
+                                .card-body {
+                                    position: absolute;
+                                    background: #333;
+                                    width: 96%;
+                                    height: 30%;
+                                    bottom: 10px;
+                                    background: rgba(0, 150, 244, 0.644);
+                                    backdrop-filter: blur(5px);
+                                    -webkit-backdrop-filter: blur(5px);
+                                    border-radius: 4px;
+
+                                    a {
+                                        text-decoration: none;
+                                        text-align: center;
+                                        color: #22102B;
+
+                                        h2 {
+                                            font-family: $titulo;
+                                            text-transform: capitalize;
+                                        }
+                                    }
+
+                                    ul {
+                                        list-style: none;
+
+                                        li {
+                                            display: block;
+                                            width: 100%;
+                                            margin-top: 5px;
+
+                                            p {
+                                                font-family: $parrafo;
+                                                font-weight: 500;
+                                                padding-left: 5px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
