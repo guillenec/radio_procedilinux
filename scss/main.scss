@@ -6,6 +6,7 @@ $sombra_general: 3px 5px 4px 1px rgba(0, 0, 0, 0.38);
 $blue_astro: #0097F4;
 $purp_casco: #22102B;
 
+$titulo: "'Dancing Script', cursive";
 /*
 font-family: 'Dancing Script', cursive;
 font-family: 'Oswald', sans-serif;
@@ -1019,6 +1020,7 @@ $xl: 1199.98px;
                 justify-content: center;
                 align-items: center;
                 transition: all .5s ease-in-out;
+                margin-top: 5px;
 
                 &::before,
                 &::after {
@@ -1321,4 +1323,5 @@ $xl: 1199.98px;
     }
 }
 @import './media_querys/_noticias.scss';
+@import './media_querys/galeria.scss';
 
