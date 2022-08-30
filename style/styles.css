@@ -1628,6 +1628,7 @@ font-family: 'Quicksand', sans-serif;
     .galeria .cont_galeria .img_11 {
       grid-area: 21/7/23/13; } }
 
+<<<<<<< HEAD
 @media screen and (max-width: 991.98px) {
   .programas_carou .caja_carrusel .carousel {
     height: auto; }
@@ -1687,6 +1688,8 @@ font-family: 'Quicksand', sans-serif;
                     font-weight: 500;
                     padding-left: 5px; } }
 
+=======
+>>>>>>> ba19bc023bae95adda8e04e93fc758aae64546ba
 @media screen and (max-width: 767.98px) {
   .horarios_base .calendario_dia {
     width: 100%;
@@ -1741,6 +1744,7 @@ font-family: 'Quicksand', sans-serif;
       .horarios_base .calendario_dia .dias_semana .col9_f6 {
         grid-area: 8 / 17 / 9 / 19;
         border-radius: 0 0 10px 0; }
+<<<<<<< HEAD
   .programas_carou .caja_carrusel .carousel {
     height: auto; }
     .programas_carou .caja_carrusel .carousel .carousel-inner {
@@ -1798,3 +1802,17 @@ font-family: 'Quicksand', sans-serif;
                     font-family: "Quicksand", sans-serif;
                     font-weight: 500;
                     padding-left: 5px; } }
+=======
+  .horarios_base .programas_carou {
+    position: relative;
+    height: auto; }
+    .horarios_base .programas_carou .caja_carrusel {
+      position: relative;
+      width: 100%;
+      height: auto;
+      background: #53f08f; }
+      .horarios_base .programas_carou .caja_carrusel .carousel-inner {
+        width: 100%;
+        height: auto;
+        display: flex; } }
+>>>>>>> ba19bc023bae95adda8e04e93fc758aae64546ba
