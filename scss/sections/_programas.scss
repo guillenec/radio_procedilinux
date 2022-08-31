@@ -444,21 +444,21 @@ font-family: 'Quicksand', sans-serif;
 
     }
 
-    .programas_carou{
+}
+
+.programas_carou{
+    position: relative;
+    height: auto;
+
+    .caja_carrusel{
         position: relative;
+        width: 100%;
         height: auto;
 
-        .caja_carrusel{
-            position: relative;
+        .carousel-inner{
             width: 100%;
             height: auto;
-
-            .carousel-inner{
-                width: 100%;
-                height: auto;
-                display: flex;
-            }
+            display: flex;
         }
     }
-
 }
