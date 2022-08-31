@@ -6,8 +6,9 @@ $sombra_general: 3px 5px 4px 1px rgba(0, 0, 0, 0.38);
 $blue_astro: #0097F4;
 $purp_casco: #22102B;
 
-$titulo:'Oswald', sans-serif;
-$parrafo:'Quicksand', sans-serif;
+$titulo: 'Oswald', sans-serif;
+$parrafo: 'Quicksand', sans-serif;
+
 /*
 font-family: 'Dancing Script', cursive;
 font-family: 'Oswald', sans-serif;
@@ -683,7 +684,7 @@ footer {
             ul.redes_pie {
                 position: relative;
                 display: block;
-                width: auto;
+                width: calc(100% - 120px);
                 height: 100%;
                 display: flex;
                 flex-direction: row;
@@ -941,8 +942,9 @@ footer {
         }
     }
 
-    .footer_bot{
-        height: 100px;   
+    .footer_bot {
+        height: 100px;
+
         .footer_bot_cuerpo {
             position: relative;
             height: 100%;
@@ -1197,19 +1199,45 @@ $xl: 1199.98px;
 
     .footer {
         .footer_head {
-            height: auto;
-            padding: 5px 0;
+            //head footer
+            height: 190px;
 
             .footer_head_cuerpo {
+                position: relative;
+                height: 100%;
+                align-content: center;
                 justify-content: center;
+                align-items: center;
+
+                a {
+
+                    width: 80px;
+                    height: 80px;
+                }
 
                 ul.redes_pie {
-                    width: max-content;
-                    height: auto;
-                    margin: auto;
+
+                    width: calc(100% - 80px);
+                    height: 100%;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-content: center;
+                    align-items: center;
+                    padding-left: 0;
+                    margin-bottom: 0;
+
+                    li {
+                        position: relative;
+                        height: 60px;
+                        width: 60px;
+                        list-style: none;
+                    }
                 }
+
             }
         }
+
 
         .footer_main {
             .container {
@@ -1243,14 +1271,16 @@ $xl: 1199.98px;
                             }
                         }
                     }
-                    .columna_3{ 
-                        
-                        h2{
+
+                    .columna_3 {
+
+                        h2 {
                             font-size: 19px;
                         }
-                        form{
-                            .content_input{
-                                .label{
+
+                        form {
+                            .content_input {
+                                .label {
                                     font-weight: 600;
                                     font-size: 15px;
                                     text-transform: capitalize;
@@ -1258,25 +1288,29 @@ $xl: 1199.98px;
                                     top: 18px;
                                     padding: 0 1px;
                                 }
-                                .text_input{
+
+                                .text_input {
                                     &:focus+.label {
-                                    font-size: 15px;
+                                        font-size: 15px;
                                     }
-                                    &::placeholder{
+
+                                    &::placeholder {
                                         font-size: 15px;
                                     }
                                 }
                             }
+
                             .input_sub {
                                 padding: 10px 10px;
                                 font-size: 12px;
                             }
-                            
+
                         }
                     }
+
                     .columna_2 {
                         display: block;
-                        padding: 10px ;
+                        padding: 10px;
 
                         .contact_direct {
                             display: block;
@@ -1290,7 +1324,7 @@ $xl: 1199.98px;
                                 height: auto;
 
                                 a {
-                                    
+
                                     font-size: 15px;
                                     padding: 10px;
                                     color: #fff;
@@ -1303,18 +1337,19 @@ $xl: 1199.98px;
                         }
                     }
 
-                    
+
                 }
             }
         }
 
-        .footer_bot{
-            .footer_bot_cuerpo{
-                p{
+        .footer_bot {
+            .footer_bot_cuerpo {
+                p {
                     font-size: 14px;
                 }
             }
         }
+
     }
 }
 
@@ -1323,6 +1358,7 @@ $xl: 1199.98px;
         width: 100%;
     }
 }
+
 @import './media_querys/_noticias.scss';
 @import './media_querys/galeria.scss';
 @import './media_querys/_programas.scss';
