@@ -12,7 +12,7 @@
 
     p {
         margin-top: 10px;
-        font-family: 'Quicksand', sans-serif;
+        font-family: $parrafo, sans-serif;
         font-weight: 500;
         line-height: 2rem;
     }
@@ -46,7 +46,7 @@
 
                     label {
                         position: absolute;
-                        font-family: 'Quicksand', sans-serif;
+                        font-family: $parrafo;
                         font-weight: 700;
                         font-size: 18px;
                         text-transform: capitalize;
@@ -81,18 +81,18 @@
                         font-size: 18px;
                         outline: none;
                         transition: .5s;
-                        color: #fff;
+                        color: $pri_white;
                         -webkit-box-shadow: $sombra_general;
                         -moz-box-shadow: $sombra_general;
                         box-shadow: $sombra_general;
 
                         &:focus {
-                            border: 3px solid #0097F4;
+                            border: 3px solid $pri_blue;
                         }
 
                         &:focus+label {
                             top: -13px;
-                            color: #0097F4;
+                            color: $pri_blue;
 
                             &::before {
                                 background: #22102B;
@@ -115,13 +115,13 @@
 
                 .btn {
                     padding: 10px 10px;
-                    font-family: 'Quicksand', sans-serif;
+                    font-family: $parrafo;
                     font-weight: 700;
                     font-size: 18px;
                     text-transform: capitalize;
-                    background: #fff;
+                    background: $pri_white;
                     color: #a806d1;
-                    border: #0097F4 thin solid;
+                    border: $pri_blue thin solid;
                     transition: .5s;
                     -webkit-box-shadow: $sombra_general;
                     -moz-box-shadow: $sombra_general;
@@ -129,9 +129,9 @@
                 }
 
                 .btn:hover {
-                    color: #fff;
-                    background: #0097F4;
-                    border: #0097F4 thin solid;
+                    color: $pri_white;
+                    background: $pri_blue;
+                    border: $pri_blue thin solid;
                     transition: .9s;
                 }
             }
@@ -157,7 +157,7 @@
                             width: 100%;
                             padding: 10px;
                             text-decoration: none;
-                            font-family: 'Quicksand', sans-serif;
+                            font-family: $parrafo;
                             font-weight: 600;
                             color: #22102B;
                             display: flex;
@@ -172,7 +172,7 @@
                             }
 
                             &:hover {
-                                color: #0097F4;
+                                color: $pri_blue;
                             }
                         }
                     }
@@ -186,7 +186,7 @@
                 width: 100%;
                 height: 240px;
                 border-radius: 5px;
-                border: solid 2px #0097F4;
+                border: solid 2px $pri_blue;
                 -webkit-box-shadow: $sombra_general;
                 -moz-box-shadow: $sombra_general;
                 box-shadow: $sombra_general;

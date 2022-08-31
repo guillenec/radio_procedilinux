@@ -3,11 +3,17 @@
 $sombra_general: 3px 5px 4px 1px rgba(0, 0, 0, 0.38);
 
 //paleta de colores
-$blue_astro: #0097F4;
-$purp_casco: #22102B;
+$pri_blue: hsl(203, 100%, 48%);
+$sec_blue:#0096f494;
+$pri_purp: hsl(279, 45%, 12%);
+$sec_purp: #a806d1;
+$pri_white: #ffffff;
+$pri_yellow:#ffff00;
+$caja_opaca:rgba(255, 255, 255, 0.308);
 
 $titulo: 'Oswald', sans-serif;
 $parrafo: 'Quicksand', sans-serif;
+$titulo_dancing: 'Dancing Script', cursive;
 
 /*
 font-family: 'Dancing Script', cursive;
@@ -89,11 +95,11 @@ footer {
         height: 70px;
         margin: auto;
         border-radius: 5px;
-        background: #ffffff;
+        background: $pri_white;
         -webkit-box-shadow: $sombra_general;
         -moz-box-shadow: $sombra_general;
         box-shadow: $sombra_general;
-        font-family: 'Oswald', sans-serif;
+        font-family: $titulo;
         display: flex;
         justify-content: space-between;
         overflow: hidden;
@@ -123,7 +129,7 @@ footer {
                 a {
                     display: block;
                     position: relative;
-                    background: #22102B;
+                    background: $pri_purp;
                     width: 100%;
                     height: 100%;
                     border-radius: 50%;
@@ -144,11 +150,11 @@ footer {
 
                 p {
                     margin-bottom: 0;
-                    font-family: 'Quicksand', sans-serif;
+                    font-family: $parrafo;
                     font-weight: 700;
                     font-size: 20px;
                     text-transform: capitalize;
-                    color: #22102B;
+                    color: $pri_purp;
                 }
             }
 
@@ -156,7 +162,7 @@ footer {
             .modo_osc {
                 width: 90px;
                 height: 60px;
-                border: solid thin #22102B;
+                border: solid thin $pri_purp;
             }
 
         }
@@ -182,19 +188,19 @@ footer {
                     display: flex;
                     justify-content: center;
                     width: 120px;
-                    color: #22102B;
-                    font-family: 'Poppins', sans-serif;
+                    color: $pri_purp;
+                    font-family: $titulo;
                     font-size: 18px;
                     font-weight: 400px;
                     text-transform: capitalize;
                     text-decoration: none;
-                    border: solid thin #fff;
+                    border: solid thin $pri_white;
                     border-radius: 4px;
                     padding: 10px;
 
                     &:hover {
-                        background: #0097F4;
-                        color: #fff;
+                        background: $pri_blue;
+                        color: $pri_white;
                         transition: .9s;
                     }
                 }
@@ -208,7 +214,7 @@ footer {
     position: relative;
     width: 100%;
     height: auto;
-    background: #fff;
+    background: $pri_white;
 
     ul,
     p {
@@ -230,7 +236,7 @@ footer {
             left: 0;
             width: 100%;
             height: 100%;
-            background: #22102B;
+            background: $pri_purp;
 
             video {
                 position: absolute;
@@ -246,7 +252,7 @@ footer {
             position: absolute;
             width: 40%;
             height: 100%;
-            background: rgba(255, 255, 255, 0.308);
+            background: $caja_opaca;
             box-shadow: 10px 0 15px rgba(0, 0, 0, 0.05);
             backdrop-filter: blur(10px);
             overflow: hidden;
@@ -263,13 +269,13 @@ footer {
                 display: block;
                 width: 90%;
                 text-align: left;
-                color: #22102B;
+                color: $pri_purp;
                 margin-bottom: 0;
             }
 
             h1 {
                 margin-top: 100px;
-                font-family: 'Oswald', sans-serif;
+                font-family: $titulo, sans-serif;
                 font-size: 5rem;
                 font-weight: 600;
                 text-transform: capitalize;
@@ -277,21 +283,21 @@ footer {
             }
 
             p {
-                font-family: 'Quicksand', sans-serif;
+                font-family: $parrafo, sans-serif;
                 font-weight: 500;
                 font-size: 18px;
             }
 
             strong {
                 font-weight: 700;
-                color: #000000;
+                color: #000;
             }
         }
 
         .conteiner_buton {
             position: relative;
             min-height: 100vh;
-            background: rgba(34, 16, 43, 0.329);
+            background: #22102b54;
 
             display: flex;
             justify-content: flex-start;
@@ -316,12 +322,12 @@ footer {
                         align-items: center;
                         width: 50px;
                         height: 50px;
-                        background: #fff;
-                        color: #22102B;
+                        background: $pri_white;
+                        color: $pri_purp;
 
                         &:hover {
-                            background: #0097F4;
-                            color: #fff;
+                            background: $pri_blue;
+                            color: $pri_white;
                             transition: .7s;
                         }
                     }
@@ -350,7 +356,7 @@ footer {
         width: 100%;
         height: 70px;
         min-height: 70px;
-        background: #22102B;
+        background: $pri_purp;
         border-radius: 5px;
         display: flex;
         justify-content: space-between;
@@ -378,7 +384,7 @@ footer {
             width: 500px;
             height: 1700%;
             left: 27%;
-            background-image: conic-gradient(transparent, transparent, transparent, #0097F4);
+            background-image: conic-gradient(transparent, transparent, transparent, $pri_blue);
             animation: cono_360 5s linear infinite;
         }
 
@@ -386,7 +392,7 @@ footer {
             position: absolute;
             inset: 4px;
             border-radius: 4px;
-            background: #fff;
+            background: $pri_white;
             display: flex;
             align-content: center;
             justify-content: space-between;
@@ -395,9 +401,9 @@ footer {
             z-index: 1;
 
             h2 {
-                font-family: 'Oswald', sans-serif;
+                font-family: $titulo, sans-serif;
                 text-transform: uppercase;
-                color: #22102B;
+                color: $pri_purp;
                 margin: 0;
             }
 
@@ -407,20 +413,20 @@ footer {
 
             a {
                 text-decoration: none;
-                color: #22102B;
-                font-family: 'Oswald', sans-serif;
+                color: $pri_purp;
+                font-family: $titulo, sans-serif;
                 text-transform: uppercase;
                 text-align: center;
                 font-weight: 400;
-                border: 1px solid #0097F4;
+                border: 1px solid $pri_blue;
                 padding: 5px 10px;
                 border-radius: 3px;
                 transition: .7s;
 
                 &:hover {
-                    border: 1px solid #22102B;
-                    color: #fff;
-                    background: #0097F4;
+                    border: 1px solid $pri_purp;
+                    color: $pri_white;
+                    background: $pri_blue;
                 }
             }
         }
@@ -503,7 +509,7 @@ footer {
                     width: 98%;
                     height: 40%;
                     margin-left: 1%;
-                    background: rgba(0, 150, 244, 0.400);
+                    background: $sec_blue;
                     backdrop-filter: blur(5px);
                     -webkit-backdrop-filter: blur(5px);
                     border-radius: 4px;
@@ -517,25 +523,25 @@ footer {
                     a,
                     p {
                         text-decoration: none;
-                        color: #fff;
+                        color: $pri_white;
                     }
 
                     a {
                         display: block;
-                        font-family: 'Oswald', sans-serif;
+                        font-family: $titulo, sans-serif;
                         font-weight: 400;
                         font-size: inherit;
 
                         &:hover {
-                            color: #22102B;
+                            color: $pri_purp;
                             transition: .7s;
                         }
                     }
 
                     p {
-                        font-family: 'Quicksand', sans-serif;
+                        font-family: $parrafo, sans-serif;
                         font-weight: 400;
-                        color: #22102B;
+                        color: $pri_purp;
                     }
                 }
             }
@@ -560,7 +566,7 @@ footer {
                 bottom: 0;
                 width: 6px;
                 height: 100%;
-                background: #0097F4;
+                background: $pri_blue;
                 left: 50%;
                 margin-left: -3px;
             }
@@ -571,7 +577,7 @@ footer {
                 width: 50%;
 
                 .content_time {
-                    background: #0096f49f;
+                    background: $sec_blue;
                     padding: 20px 30px;
                     border-radius: 5px;
                     -webkit-box-shadow: $sombra_general;
@@ -594,11 +600,11 @@ footer {
                     position: absolute;
                     width: 10px;
                     height: 10px;
-                    background: #0097F4;
+                    background: $pri_blue;
                     top: 15px;
                     right: -10px;
                     border-radius: 50%;
-                    border: 10px solid #22102B;
+                    border: 10px solid $pri_purp;
                     z-index: 1;
                 }
 
@@ -610,9 +616,9 @@ footer {
                     top: 22px;
                     right: 30px;
                     background-color: none;
-                    border: 10px solid #0096f49f;
+                    border: 10px solid $sec_blue;
                     border-width: 10px 0 10px 10px;
-                    border-color: transparent transparent transparent #0096f49f;
+                    border-color: transparent transparent transparent $sec_blue;
                 }
             }
 
@@ -622,11 +628,11 @@ footer {
                     position: absolute;
                     width: 10px;
                     height: 10px;
-                    background: #0097F4;
+                    background: $pri_blue;
                     top: 15px;
                     left: -10px;
                     border-radius: 50%;
-                    border: 10px solid #22102B;
+                    border: 10px solid $pri_purp;
                 }
 
                 &::before {
@@ -637,9 +643,9 @@ footer {
                     top: 22px;
                     left: 30px;
                     background-color: none;
-                    border: 10px solid #0096f49f;
+                    border: 10px solid $sec_blue;
                     border-width: 10px 10px 10px 0;
-                    border-color: transparent #0096f49f transparent transparent;
+                    border-color: transparent $sec_blue transparent transparent;
                 }
             }
 
@@ -658,7 +664,7 @@ footer {
         position: relative;
         width: 100%;
         height: 120px;
-        background: #22102B;
+        background: $pri_purp;
 
         .footer_head_cuerpo {
             position: relative;
@@ -703,8 +709,8 @@ footer {
                         position: absolute;
                         width: 100%;
                         height: 100%;
-                        color: white;
-                        border: solid thin #22102B;
+                        color: $pri_white;
+                        border: solid thin $pri_purp;
                         display: grid;
                         place-content: center;
                         transition: .5s;
@@ -714,8 +720,8 @@ footer {
                         }
 
                         &:hover {
-                            color: #0097F4;
-                            border: solid thin #0097F4;
+                            color: $pri_blue;
+                            border: solid thin $pri_blue;
                         }
                     }
                 }
@@ -727,7 +733,7 @@ footer {
         position: relative;
         width: 100%;
         height: auto;
-        background: #0097F4;
+        background: $pri_blue;
 
         .container {
             width: 100%;
@@ -766,17 +772,17 @@ footer {
                             a {
                                 display: block;
                                 width: 100%;
-                                font-family: 'Oswald', sans-serif;
+                                font-family: $titulo, sans-serif;
                                 font-weight: 500;
                                 font-size: 20px;
-                                color: #fff;
+                                color: $pri_white;
                                 text-decoration: none;
                                 padding: 5px;
                                 text-transform: capitalize;
                                 transition: .7s;
 
                                 &:hover {
-                                    color: yellow;
+                                    color: $pri_yellow;
                                 }
                             }
                         }
@@ -793,10 +799,10 @@ footer {
 
                     h2 {
                         width: 90%;
-                        font-family: 'Quicksand', sans-serif;
+                        font-family: $parrafo, sans-serif;
                         text-transform: capitalize;
                         text-align: center;
-                        color: #fff;
+                        color: $pri_white;
                         margin-top: 20px;
                     }
 
@@ -815,7 +821,7 @@ footer {
 
                             .label {
                                 position: absolute;
-                                font-family: 'Quicksand', sans-serif;
+                                font-family: $parrafo, sans-serif;
                                 font-weight: 700;
                                 font-size: 18px;
                                 text-transform: capitalize;
@@ -830,7 +836,7 @@ footer {
                                     position: absolute;
                                     content: '';
                                     height: 5px;
-                                    background: #22102B;
+                                    background: $pri_purp;
                                     left: 0;
                                     top: 10px;
                                     width: 100%;
@@ -842,21 +848,21 @@ footer {
                                 width: 100%;
                                 margin: 5px 0;
                                 padding: 10px 10px;
-                                border: 3px solid #22102B;
-                                background: #22102B;
+                                border: 3px solid $pri_purp;
+                                background: $pri_purp;
                                 border-radius: 4px;
                                 font-size: 18px;
                                 outline: none;
                                 transition: .7s;
-                                color: #fff;
+                                color: $pri_white;
 
                                 &:focus {
-                                    border: 3px solid yellow;
+                                    border: 3px solid $pri_yellow;
                                 }
 
                                 &:focus+.label {
                                     top: -5px;
-                                    color: yellow;
+                                    color: $pri_yellow;
                                     font-size: 18px;
                                 }
 
@@ -875,24 +881,24 @@ footer {
                             width: 60%;
                             margin: 5px 0;
                             padding: 10px 10px;
-                            border: 3px solid #22102B;
-                            background: #22102B;
+                            border: 3px solid $pri_purp;
+                            background: $pri_purp;
                             border-radius: 4px;
                             font-size: 15px;
                             outline: none;
                             transition: .5s;
-                            color: #fff;
+                            color: $pri_white;
                             transition: .7s;
 
                             &:hover {
-                                border: 3px solid yellow;
-                                color: yellow;
+                                border: 3px solid $pri_yellow;
+                                color: $pri_yellow;
                             }
 
                             &:focus {
-                                border: 3px solid yellow;
-                                color: #22102B;
-                                background: yellow;
+                                border: 3px solid $pri_yellow;
+                                color: $pri_purp;
+                                background: $pri_yellow;
                             }
                         }
                     }
@@ -922,12 +928,12 @@ footer {
                                 justify-content: flex-start;
                                 align-items: center;
                                 /*font-family: 'Oswald', sans-serif;*/
-                                font-family: 'Quicksand', sans-serif;
+                                font-family: $parrafo, sans-serif;
                                 text-decoration: none;
                                 font-weight: 500;
                                 font-size: 17px;
                                 padding: 10px;
-                                color: #fff;
+                                color: $pri_white;
 
                                 ion-icon {
                                     padding: 0 10px 0 15px;
@@ -957,9 +963,9 @@ footer {
 
             p {
                 display: block;
-                font-family: 'Quicksand', sans-serif;
+                font-family: $parrafo, sans-serif;
                 font-weight: 500;
-                color: #22102B;
+                color: $pri_purp;
                 font-size: 18px;
                 text-align: center;
             }
@@ -1031,7 +1037,7 @@ $xl: 1199.98px;
                     position: absolute;
                     width: 30px;
                     height: 3px;
-                    background-color: #22102B;
+                    background-color: $pri_purp;
                 }
 
                 &::before {
@@ -1087,7 +1093,7 @@ $xl: 1199.98px;
                 h1,
                 p {
                     text-align: left;
-                    color: #22102B;
+                    color: $pri_purp;
                     margin: 5px 0;
                     overflow: hidden;
                 }
@@ -1187,9 +1193,9 @@ $xl: 1199.98px;
                     top: 15px;
                     left: -2px;
                     background-color: none;
-                    border: 10px solid #0096f49f;
+                    border: 10px solid $sec_blue;
                     border-width: 15px 15px 15px 0;
-                    border-color: transparent #0096f49f transparent #0096f49f;
+                    border-color: transparent $sec_blue transparent $sec_blue;
                     z-index: 1;
                 }
 
@@ -1265,7 +1271,7 @@ $xl: 1199.98px;
                                 a {
                                     font-weight: 400;
                                     font-size: 18px;
-                                    color: #22102B;
+                                    color: $pri_purp;
                                     overflow: hidden;
                                 }
                             }
@@ -1327,7 +1333,7 @@ $xl: 1199.98px;
 
                                     font-size: 15px;
                                     padding: 10px;
-                                    color: #fff;
+                                    color: $pri_white;
 
                                     ion-icon {
                                         font-size: 20px;
@@ -1362,3 +1368,6 @@ $xl: 1199.98px;
 @import './media_querys/_noticias.scss';
 @import './media_querys/galeria.scss';
 @import './media_querys/_programas.scss';
+
+@import url('../img/icon/astro101.png');
+

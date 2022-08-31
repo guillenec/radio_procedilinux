@@ -40,11 +40,11 @@
 
                                 .card-body {
                                     position: absolute;
-                                    background: #333;
+                                    background: $pri_purp;
                                     width: 96%;
                                     height: 30%;
                                     bottom: 10px;
-                                    background: rgba(0, 150, 244, 0.644);
+                                    background: $sec_blue;
                                     backdrop-filter: blur(5px);
                                     -webkit-backdrop-filter: blur(5px);
                                     border-radius: 4px;
@@ -115,11 +115,11 @@
                     height: 150px;
 
                     h1 {
-                        font-family: 'Oswald', sans-serif;
+                        font-family: $titulo;
                     }
 
                     h2 {
-                        font-family: 'Quicksand', sans-serif;
+                        font-family: $parrafo;
 
                     }
                 }
@@ -145,7 +145,7 @@
                     .hd_hs {
                         span {
     
-                            font-family: 'Oswald', sans-serif;
+                            font-family: $titulo, sans-serif;
                             font-weight: 300;
                             text-align: center;
                         }
