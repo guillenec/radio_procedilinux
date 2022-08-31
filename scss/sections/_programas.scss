@@ -8,7 +8,7 @@ font-family: 'Quicksand', sans-serif;
 .horarios_base {
     position: relative;
     height: auto;
-    color: #22102B;
+    color: $pri_purp;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -20,8 +20,8 @@ font-family: 'Quicksand', sans-serif;
         margin: 50px;
         width: auto;
         height: 500px;
-        background: #fff;
-        border: solid thin #0097F4;
+        background: $pri_white;
+        border: solid thin $pri_blue;
         border-radius: 10px;
         display: flex;
         align-content: center;
@@ -35,7 +35,7 @@ font-family: 'Quicksand', sans-serif;
             position: relative;
             width: 180px;
             height: 100%;
-            background: hsl(203, 100%, 48%);
+            background: $pri_blue;
             border-radius: 10px 0 0 10px;
             padding: 5px;
 
@@ -59,13 +59,13 @@ font-family: 'Quicksand', sans-serif;
                 align-items: center;
 
                 h1 {
-                    font-family: 'Oswald', sans-serif;
+                    font-family: $titulo;
                     text-transform: capitalize;
-                    color: #fff;
+                    color: $pri_white;
                 }
 
                 h2 {
-                    font-family: 'Quicksand', sans-serif;
+                    font-family: $titulo;
 
                 }
             }
@@ -104,14 +104,14 @@ font-family: 'Quicksand', sans-serif;
                     height: 100%;
                 }
                 .hd_hs{
-                    border: solid thin #0096f4ab;
+                    border: solid thin $sec_blue;
                     display: flex;
                     align-content: center;
                     justify-content: center;
                     align-items: center;
                     
                     span{
-                        font-family: 'Oswald', sans-serif;
+                        font-family: $titulo;
                         font-weight: 400;
                         text-align: center;
                     }
@@ -124,10 +124,10 @@ font-family: 'Quicksand', sans-serif;
                     
                     p{
                         width: 100%;
-                        font-family: 'Quicksand', sans-serif;
+                        font-family: $titulo;
                         font-weight: 600;
                         text-align: center;
-                        color: #22102B;
+                        color: $pri_purp;
                         overflow: auto;
                     }
                 }
@@ -141,7 +141,7 @@ font-family: 'Quicksand', sans-serif;
                     justify-content: flex-end;
 
                     h2 {
-                        font-family: 'Dancing Script', cursive;
+                        font-family: $titulo_dancing;
                         font-size: 30px;
                         text-transform: capitalize;
                         padding-right: 20px;

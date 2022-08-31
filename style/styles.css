@@ -5,6 +5,7 @@ font-family: 'Oswald', sans-serif;
 font-family: 'Quicksand', sans-serif;
 */
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Oswald:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("../img/icon/astro101.png");
 html {
   scroll-behavior: smooth; }
 
@@ -62,7 +63,7 @@ footer {
     -webkit-box-shadow: 3px 5px 4px 1px rgba(0, 0, 0, 0.38);
     -moz-box-shadow: 3px 5px 4px 1px rgba(0, 0, 0, 0.38);
     box-shadow: 3px 5px 4px 1px rgba(0, 0, 0, 0.38);
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
     display: flex;
     justify-content: space-between;
     overflow: hidden;
@@ -85,7 +86,7 @@ footer {
         .header .nav_menu .logo .img_logo a {
           display: block;
           position: relative;
-          background: #22102B;
+          background: #23112c;
           width: 100%;
           height: 100%;
           border-radius: 50%;
@@ -100,15 +101,15 @@ footer {
         text-align: center; }
         .header .nav_menu .logo .name_marca p {
           margin-bottom: 0;
-          font-family: 'Quicksand', sans-serif;
+          font-family: "Quicksand", sans-serif;
           font-weight: 700;
           font-size: 20px;
           text-transform: capitalize;
-          color: #22102B; }
+          color: #23112c; }
       .header .nav_menu .logo .modo_osc {
         width: 90px;
         height: 60px;
-        border: solid thin #22102B; }
+        border: solid thin #23112c; }
     .header .nav_menu .toggle {
       display: none; }
     .header .nav_menu .menu {
@@ -125,25 +126,25 @@ footer {
           display: flex;
           justify-content: center;
           width: 120px;
-          color: #22102B;
-          font-family: 'Poppins', sans-serif;
+          color: #23112c;
+          font-family: "Oswald", sans-serif;
           font-size: 18px;
           font-weight: 400px;
           text-transform: capitalize;
           text-decoration: none;
-          border: solid thin #fff;
+          border: solid thin #ffffff;
           border-radius: 4px;
           padding: 10px; }
           .header .nav_menu .menu li a:hover {
-            background: #0097F4;
-            color: #fff;
+            background: #0097f5;
+            color: #ffffff;
             transition: .9s; }
 
 .main {
   position: relative;
   width: 100%;
   height: auto;
-  background: #fff; }
+  background: #ffffff; }
   .main ul,
   .main p {
     margin-bottom: 0;
@@ -159,7 +160,7 @@ footer {
       left: 0;
       width: 100%;
       height: 100%;
-      background: #22102B; }
+      background: #23112c; }
       .main .banner_conteiner .video_banner video {
         position: absolute;
         top: 0;
@@ -187,26 +188,26 @@ footer {
         display: block;
         width: 90%;
         text-align: left;
-        color: #22102B;
+        color: #23112c;
         margin-bottom: 0; }
       .main .banner_conteiner .caja_opaca h1 {
         margin-top: 100px;
-        font-family: 'Oswald', sans-serif;
+        font-family: "Oswald", sans-serif, sans-serif;
         font-size: 5rem;
         font-weight: 600;
         text-transform: capitalize;
         padding-bottom: 10px; }
       .main .banner_conteiner .caja_opaca p {
-        font-family: 'Quicksand', sans-serif;
+        font-family: "Quicksand", sans-serif, sans-serif;
         font-weight: 500;
         font-size: 18px; }
       .main .banner_conteiner .caja_opaca strong {
         font-weight: 700;
-        color: #000000; }
+        color: #0000; }
     .main .banner_conteiner .conteiner_buton {
       position: relative;
       min-height: 100vh;
-      background: rgba(34, 16, 43, 0.329);
+      background: #22102b54;
       display: flex;
       justify-content: flex-start;
       align-items: center; }
@@ -229,12 +230,12 @@ footer {
             align-items: center;
             width: 50px;
             height: 50px;
-            background: #fff;
-            color: #22102B; }
+            background: #ffffff;
+            color: #23112c; }
             .main .banner_conteiner .conteiner_buton .mini_redes li a:hover,
             .main .banner_conteiner .conteiner_buton .controls li a:hover {
-              background: #0097F4;
-              color: #fff;
+              background: #0097f5;
+              color: #ffffff;
               transition: .7s; }
       .main .banner_conteiner .conteiner_buton .mini_redes {
         bottom: 15px;
@@ -249,7 +250,7 @@ footer {
     width: 100%;
     height: 70px;
     min-height: 70px;
-    background: #22102B;
+    background: #23112c;
     border-radius: 5px;
     display: flex;
     justify-content: space-between;
@@ -274,13 +275,13 @@ footer {
       width: 500px;
       height: 1700%;
       left: 27%;
-      background-image: conic-gradient(transparent, transparent, transparent, #0097F4);
+      background-image: conic-gradient(transparent, transparent, transparent, #0097f5);
       animation: cono_360 5s linear infinite; }
     .main .titulo_general .cont_anima {
       position: absolute;
       inset: 4px;
       border-radius: 4px;
-      background: #fff;
+      background: #ffffff;
       display: flex;
       align-content: center;
       justify-content: space-between;
@@ -288,27 +289,27 @@ footer {
       padding: 0 10px;
       z-index: 1; }
       .main .titulo_general .cont_anima h2 {
-        font-family: 'Oswald', sans-serif;
+        font-family: "Oswald", sans-serif, sans-serif;
         text-transform: uppercase;
-        color: #22102B;
+        color: #23112c;
         margin: 0; }
       .main .titulo_general .cont_anima .mid_h2 {
         text-align: center; }
       .main .titulo_general .cont_anima a {
         text-decoration: none;
-        color: #22102B;
-        font-family: 'Oswald', sans-serif;
+        color: #23112c;
+        font-family: "Oswald", sans-serif, sans-serif;
         text-transform: uppercase;
         text-align: center;
         font-weight: 400;
-        border: 1px solid #0097F4;
+        border: 1px solid #0097f5;
         padding: 5px 10px;
         border-radius: 3px;
         transition: .7s; }
         .main .titulo_general .cont_anima a:hover {
-          border: 1px solid #22102B;
-          color: #fff;
-          background: #0097F4; }
+          border: 1px solid #23112c;
+          color: #ffffff;
+          background: #0097f5; }
     .main .titulo_general .mid_flex {
       justify-content: center;
       padding: 0 0; }
@@ -358,7 +359,7 @@ footer {
           width: 98%;
           height: 40%;
           margin-left: 1%;
-          background: rgba(0, 150, 244, 0.4);
+          background: #0096f494;
           backdrop-filter: blur(5px);
           -webkit-backdrop-filter: blur(5px);
           border-radius: 4px;
@@ -370,19 +371,19 @@ footer {
           .main .noticias .noticias_grid article .subtitulo_noti a,
           .main .noticias .noticias_grid article .subtitulo_noti p {
             text-decoration: none;
-            color: #fff; }
+            color: #ffffff; }
           .main .noticias .noticias_grid article .subtitulo_noti a {
             display: block;
-            font-family: 'Oswald', sans-serif;
+            font-family: "Oswald", sans-serif, sans-serif;
             font-weight: 400;
             font-size: inherit; }
             .main .noticias .noticias_grid article .subtitulo_noti a:hover {
-              color: #22102B;
+              color: #23112c;
               transition: .7s; }
           .main .noticias .noticias_grid article .subtitulo_noti p {
-            font-family: 'Quicksand', sans-serif;
+            font-family: "Quicksand", sans-serif, sans-serif;
             font-weight: 400;
-            color: #22102B; }
+            color: #23112c; }
   .main .programas {
     position: relative;
     height: auto;
@@ -398,7 +399,7 @@ footer {
         bottom: 0;
         width: 6px;
         height: 100%;
-        background: #0097F4;
+        background: #0097f5;
         left: 50%;
         margin-left: -3px; }
       .main .programas .linea_tiempo .caja {
@@ -406,7 +407,7 @@ footer {
         position: relative;
         width: 50%; }
         .main .programas .linea_tiempo .caja .content_time {
-          background: #0096f49f;
+          background: #0096f494;
           padding: 20px 30px;
           border-radius: 5px;
           -webkit-box-shadow: 3px 5px 4px 1px rgba(0, 0, 0, 0.38);
@@ -421,11 +422,11 @@ footer {
         position: absolute;
         width: 10px;
         height: 10px;
-        background: #0097F4;
+        background: #0097f5;
         top: 15px;
         right: -10px;
         border-radius: 50%;
-        border: 10px solid #22102B;
+        border: 10px solid #23112c;
         z-index: 1; }
       .main .programas .linea_tiempo .left::before {
         content: '';
@@ -435,19 +436,19 @@ footer {
         top: 22px;
         right: 30px;
         background-color: none;
-        border: 10px solid #0096f49f;
+        border: 10px solid #0096f494;
         border-width: 10px 0 10px 10px;
-        border-color: transparent transparent transparent #0096f49f; }
+        border-color: transparent transparent transparent #0096f494; }
       .main .programas .linea_tiempo .right::after {
         content: '';
         position: absolute;
         width: 10px;
         height: 10px;
-        background: #0097F4;
+        background: #0097f5;
         top: 15px;
         left: -10px;
         border-radius: 50%;
-        border: 10px solid #22102B; }
+        border: 10px solid #23112c; }
       .main .programas .linea_tiempo .right::before {
         content: '';
         height: 0;
@@ -456,9 +457,9 @@ footer {
         top: 22px;
         left: 30px;
         background-color: none;
-        border: 10px solid #0096f49f;
+        border: 10px solid #0096f494;
         border-width: 10px 10px 10px 0;
-        border-color: transparent #0096f49f transparent transparent; }
+        border-color: transparent #0096f494 transparent transparent; }
 
 .footer {
   position: relative;
@@ -468,7 +469,7 @@ footer {
     position: relative;
     width: 100%;
     height: 120px;
-    background: #22102B; }
+    background: #23112c; }
     .footer .footer_head .footer_head_cuerpo {
       position: relative;
       height: 100%;
@@ -505,21 +506,21 @@ footer {
             position: absolute;
             width: 100%;
             height: 100%;
-            color: white;
-            border: solid thin #22102B;
+            color: #ffffff;
+            border: solid thin #23112c;
             display: grid;
             place-content: center;
             transition: .5s; }
             .footer .footer_head .footer_head_cuerpo ul.redes_pie li a ion-icon {
               font-size: 30px; }
             .footer .footer_head .footer_head_cuerpo ul.redes_pie li a:hover {
-              color: #0097F4;
-              border: solid thin #0097F4; }
+              color: #0097f5;
+              border: solid thin #0097f5; }
   .footer .footer_main {
     position: relative;
     width: 100%;
     height: auto;
-    background: #0097F4; }
+    background: #0097f5; }
     .footer .footer_main .container {
       width: 100%;
       height: 100%; }
@@ -548,16 +549,16 @@ footer {
               .footer .footer_main .container .footer_main_cuerpo .columna_1 .links_2 li a {
                 display: block;
                 width: 100%;
-                font-family: 'Oswald', sans-serif;
+                font-family: "Oswald", sans-serif, sans-serif;
                 font-weight: 500;
                 font-size: 20px;
-                color: #fff;
+                color: #ffffff;
                 text-decoration: none;
                 padding: 5px;
                 text-transform: capitalize;
                 transition: .7s; }
                 .footer .footer_main .container .footer_main_cuerpo .columna_1 .links_2 li a:hover {
-                  color: yellow; }
+                  color: #ffff00; }
         .footer .footer_main .container .footer_main_cuerpo .columna_3 {
           display: flex;
           height: auto;
@@ -566,10 +567,10 @@ footer {
           align-content: center; }
           .footer .footer_main .container .footer_main_cuerpo .columna_3 h2 {
             width: 90%;
-            font-family: 'Quicksand', sans-serif;
+            font-family: "Quicksand", sans-serif, sans-serif;
             text-transform: capitalize;
             text-align: center;
-            color: #fff;
+            color: #ffffff;
             margin-top: 20px; }
           .footer .footer_main .container .footer_main_cuerpo .columna_3 form {
             position: relative;
@@ -584,7 +585,7 @@ footer {
               padding: 0; }
               .footer .footer_main .container .footer_main_cuerpo .columna_3 form .content_input .label {
                 position: absolute;
-                font-family: 'Quicksand', sans-serif;
+                font-family: "Quicksand", sans-serif, sans-serif;
                 font-weight: 700;
                 font-size: 18px;
                 text-transform: capitalize;
@@ -598,7 +599,7 @@ footer {
                   position: absolute;
                   content: '';
                   height: 5px;
-                  background: #22102B;
+                  background: #23112c;
                   left: 0;
                   top: 10px;
                   width: 100%;
@@ -607,18 +608,18 @@ footer {
                 width: 100%;
                 margin: 5px 0;
                 padding: 10px 10px;
-                border: 3px solid #22102B;
-                background: #22102B;
+                border: 3px solid #23112c;
+                background: #23112c;
                 border-radius: 4px;
                 font-size: 18px;
                 outline: none;
                 transition: .7s;
-                color: #fff; }
+                color: #ffffff; }
                 .footer .footer_main .container .footer_main_cuerpo .columna_3 form .content_input .text_input:focus {
-                  border: 3px solid yellow; }
+                  border: 3px solid #ffff00; }
                 .footer .footer_main .container .footer_main_cuerpo .columna_3 form .content_input .text_input:focus + .label {
                   top: -5px;
-                  color: yellow;
+                  color: #ffff00;
                   font-size: 18px; }
                 .footer .footer_main .container .footer_main_cuerpo .columna_3 form .content_input .text_input::placeholder {
                   font-size: 18px;
@@ -629,21 +630,21 @@ footer {
               width: 60%;
               margin: 5px 0;
               padding: 10px 10px;
-              border: 3px solid #22102B;
-              background: #22102B;
+              border: 3px solid #23112c;
+              background: #23112c;
               border-radius: 4px;
               font-size: 15px;
               outline: none;
               transition: .5s;
-              color: #fff;
+              color: #ffffff;
               transition: .7s; }
               .footer .footer_main .container .footer_main_cuerpo .columna_3 form .input_sub:hover {
-                border: 3px solid yellow;
-                color: yellow; }
+                border: 3px solid #ffff00;
+                color: #ffff00; }
               .footer .footer_main .container .footer_main_cuerpo .columna_3 form .input_sub:focus {
-                border: 3px solid yellow;
-                color: #22102B;
-                background: yellow; }
+                border: 3px solid #ffff00;
+                color: #23112c;
+                background: #ffff00; }
         .footer .footer_main .container .footer_main_cuerpo .columna_2 {
           height: 50%;
           display: flex; }
@@ -665,12 +666,12 @@ footer {
                 justify-content: flex-start;
                 align-items: center;
                 /*font-family: 'Oswald', sans-serif;*/
-                font-family: 'Quicksand', sans-serif;
+                font-family: "Quicksand", sans-serif, sans-serif;
                 text-decoration: none;
                 font-weight: 500;
                 font-size: 17px;
                 padding: 10px;
-                color: #fff; }
+                color: #ffffff; }
                 .footer .footer_main .container .footer_main_cuerpo .columna_2 .contact_direct li a ion-icon {
                   padding: 0 10px 0 15px;
                   font-size: 23px; }
@@ -687,9 +688,9 @@ footer {
       align-items: center; }
       .footer .footer_bot .footer_bot_cuerpo p {
         display: block;
-        font-family: 'Quicksand', sans-serif;
+        font-family: "Quicksand", sans-serif, sans-serif;
         font-weight: 500;
-        color: #22102B;
+        color: #23112c;
         font-size: 18px;
         text-align: center; }
 
@@ -850,13 +851,13 @@ footer {
         position: relative;
         display: block;
         width: 98%;
-        color: #22102B;
+        color: #23112c;
         font-family: 'Quicksand', sans-serif;
         font-size: 16px; }
     .noticias_caja article .caja_text_noti:hover {
       backdrop-filter: blur(10px); }
     .noticias_caja article a:hover {
-      color: #22102B;
+      color: #23112c;
       transition: .7s; }
   .noticias_caja .noticias_game {
     position: relative;
@@ -1061,7 +1062,7 @@ font-family: 'Quicksand', sans-serif;
 .horarios_base {
   position: relative;
   height: auto;
-  color: #22102B;
+  color: #23112c;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -1072,8 +1073,8 @@ font-family: 'Quicksand', sans-serif;
     margin: 50px;
     width: auto;
     height: 500px;
-    background: #fff;
-    border: solid thin #0097F4;
+    background: #ffffff;
+    border: solid thin #0097f5;
     border-radius: 10px;
     display: flex;
     align-content: center;
@@ -1106,11 +1107,11 @@ font-family: 'Quicksand', sans-serif;
         justify-content: center;
         align-items: center; }
         .horarios_base .calendario_dia .cont_izq_dia .cuerpo_calend h1 {
-          font-family: 'Oswald', sans-serif;
+          font-family: "Oswald", sans-serif;
           text-transform: capitalize;
-          color: #fff; }
+          color: #ffffff; }
         .horarios_base .calendario_dia .cont_izq_dia .cuerpo_calend h2 {
-          font-family: 'Quicksand', sans-serif; }
+          font-family: "Oswald", sans-serif; }
     .horarios_base .calendario_dia .dias_semana.show {
       display: none; }
     .horarios_base .calendario_dia .dias_semana {
@@ -1138,13 +1139,13 @@ font-family: 'Quicksand', sans-serif;
           width: 100%;
           height: 100%; }
         .horarios_base .calendario_dia .dias_semana .accordion-body .hd_hs {
-          border: solid thin #0096f4ab;
+          border: solid thin #0096f494;
           display: flex;
           align-content: center;
           justify-content: center;
           align-items: center; }
           .horarios_base .calendario_dia .dias_semana .accordion-body .hd_hs span {
-            font-family: 'Oswald', sans-serif;
+            font-family: "Oswald", sans-serif;
             font-weight: 400;
             text-align: center; }
         .horarios_base .calendario_dia .dias_semana .accordion-body section {
@@ -1154,10 +1155,10 @@ font-family: 'Quicksand', sans-serif;
           align-content: center; }
           .horarios_base .calendario_dia .dias_semana .accordion-body section p {
             width: 100%;
-            font-family: 'Quicksand', sans-serif;
+            font-family: "Oswald", sans-serif;
             font-weight: 600;
             text-align: center;
-            color: #22102B;
+            color: #23112c;
             overflow: auto; }
         .horarios_base .calendario_dia .dias_semana .accordion-body .titulo_cal {
           grid-area: 1 / 1 / 1 / 19;
@@ -1168,7 +1169,7 @@ font-family: 'Quicksand', sans-serif;
           align-items: flex-end;
           justify-content: flex-end; }
           .horarios_base .calendario_dia .dias_semana .accordion-body .titulo_cal h2 {
-            font-family: 'Dancing Script', cursive;
+            font-family: "Dancing Script", cursive;
             font-size: 30px;
             text-transform: capitalize;
             padding-right: 20px;
@@ -1375,7 +1376,7 @@ font-family: 'Quicksand', sans-serif;
       position: absolute;
       width: 30px;
       height: 3px;
-      background-color: #22102B; }
+      background-color: #23112c; }
     .header .nav_menu .toggle::before {
       transform: translateY(-10px);
       box-shadow: 0 10px #381A46;
@@ -1412,7 +1413,7 @@ font-family: 'Quicksand', sans-serif;
       .main .banner_conteiner .caja_opaca h1,
       .main .banner_conteiner .caja_opaca p {
         text-align: left;
-        color: #22102B;
+        color: #23112c;
         margin: 5px 0;
         overflow: hidden; }
       .main .banner_conteiner .caja_opaca h1 {
@@ -1465,9 +1466,9 @@ font-family: 'Quicksand', sans-serif;
     top: 15px;
     left: -2px;
     background-color: none;
-    border: 10px solid #0096f49f;
+    border: 10px solid #0096f494;
     border-width: 15px 15px 15px 0;
-    border-color: transparent #0096f49f transparent #0096f49f;
+    border-color: transparent #0096f494 transparent #0096f494;
     z-index: 1; }
   .footer .footer_head {
     height: 190px; }
@@ -1510,7 +1511,7 @@ font-family: 'Quicksand', sans-serif;
     .footer .footer_main .container .footer_main_cuerpo .columna_1 .links_2 li a {
       font-weight: 400;
       font-size: 18px;
-      color: #22102B;
+      color: #23112c;
       overflow: hidden; }
   .footer .footer_main .container .footer_main_cuerpo .columna_3 h2 {
     font-size: 19px; }
@@ -1543,7 +1544,7 @@ font-family: 'Quicksand', sans-serif;
         .footer .footer_main .container .footer_main_cuerpo .columna_2 .contact_direct li a {
           font-size: 15px;
           padding: 10px;
-          color: #fff; }
+          color: #ffffff; }
           .footer .footer_main .container .footer_main_cuerpo .columna_2 .contact_direct li a ion-icon {
             font-size: 20px; }
   .footer .footer_bot .footer_bot_cuerpo p {
@@ -1678,11 +1679,11 @@ font-family: 'Quicksand', sans-serif;
               object-fit: cover; }
             .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body {
               position: absolute;
-              background: #333;
+              background: #23112c;
               width: 96%;
               height: 30%;
               bottom: 10px;
-              background: rgba(0, 150, 244, 0.644);
+              background: #0096f494;
               backdrop-filter: blur(5px);
               -webkit-backdrop-filter: blur(5px);
               border-radius: 4px; }
@@ -1725,9 +1726,9 @@ font-family: 'Quicksand', sans-serif;
         width: 100%;
         height: 150px; }
         .horarios_base .calendario_dia .cont_izq_dia .cuerpo_calend h1 {
-          font-family: 'Oswald', sans-serif; }
+          font-family: "Oswald", sans-serif; }
         .horarios_base .calendario_dia .cont_izq_dia .cuerpo_calend h2 {
-          font-family: 'Quicksand', sans-serif; }
+          font-family: "Quicksand", sans-serif; }
     .horarios_base .calendario_dia .dias_semana {
       position: relative;
       display: block;
@@ -1743,7 +1744,7 @@ font-family: 'Quicksand', sans-serif;
         position: relative;
         padding: 2px; }
         .horarios_base .calendario_dia .dias_semana .accordion-body .hd_hs span {
-          font-family: 'Oswald', sans-serif;
+          font-family: "Oswald", sans-serif, sans-serif;
           font-weight: 300;
           text-align: center; }
         .horarios_base .calendario_dia .dias_semana .accordion-body section p {
