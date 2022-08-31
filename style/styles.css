@@ -203,7 +203,7 @@ footer {
         font-size: 18px; }
       .main .banner_conteiner .caja_opaca strong {
         font-weight: 700;
-        color: #000; }
+        color: #000000; }
     .main .banner_conteiner .conteiner_buton {
       position: relative;
       min-height: 100vh;
@@ -493,7 +493,7 @@ footer {
         height: 100%;
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: flex-end;
         align-content: center;
         align-items: center;
         list-style: none; }
@@ -1485,7 +1485,7 @@ font-family: 'Quicksand', sans-serif;
         height: 100%;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: flex-end;
         align-content: center;
         align-items: center;
         padding-left: 0;
