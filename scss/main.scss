@@ -532,6 +532,7 @@ footer {
                         font-family: $titulo, sans-serif;
                         font-weight: 400;
                         font-size: inherit;
+                        
 
                         &:hover {
                             color: $pri_purp;
@@ -992,12 +993,11 @@ $xl: 1199.98px;
             width: calc(100% - 350px);
 
             li {
-                margin-left: 2px;
+                margin-left: 1px;
 
                 a {
-                    width: 100px;
-                    font-size: 18px;
-                    font-weight: 400px;
+                    width: 99px;
+                    font-weight: 300px;
 
                 }
             }
@@ -1181,6 +1181,44 @@ $xl: 1199.98px;
                 .col3_2 {
                     grid-area: 7/7/9/13;
                 }
+
+                article {
+
+                    img {
+
+                    }
+    
+                    .subtitulo_noti {
+                        width: 99%;
+                        height: 50%;
+                        margin-left: .5%;
+    
+                        a,
+                        p {
+                            text-decoration: none;
+                            color: $pri_white;
+                        }
+    
+                        a {
+                            font-weight: 400;
+                            font-size: inherit;
+                            font-size: 23px;
+                            
+    
+                            &:hover {
+                                color: $pri_purp;
+                                transition: .7s;
+                            }
+                        }
+    
+                        p {
+                            font-weight: 400;
+                            font-size: 18px;
+                        }
+                    }
+                }
+                //--- fin ---
+
             }
         }
 
@@ -1251,7 +1289,7 @@ $xl: 1199.98px;
                     height: 100%;
                     flex-direction: row;
                     flex-wrap: wrap;
-                    justify-content: flex-end;
+                    justify-content: center;
                     align-content: center;
                     align-items: center;
                     padding-left: 0;
@@ -1271,7 +1309,10 @@ $xl: 1199.98px;
 
         .footer_main {
             .container {
+                --bs-gutter-x: 0; 
+
                 .footer_main_cuerpo {
+                        --bs-gutter-x: 0; 
                     .columna_1 {
 
                         .logo_2 {
@@ -1386,6 +1427,88 @@ $xl: 1199.98px;
 @media screen and (max-width: $sm) {
     .width_80 {
         width: 100%;
+    }
+    .main {
+        .banner_conteiner {
+            .caja_opaca {
+                width: 98%;
+                margin: 30% 1%;
+
+                h1,
+                p {
+                    width: 98%;
+                }
+
+                h1 {
+                    font-size: 3.5em;
+                    line-height: 1.5em;
+                }
+
+                p {
+                    font-size: 15px;
+                }
+            }
+        }
+
+        //Noticias
+        .noticias {
+            .noticias_grid {
+                article {
+                    .subtitulo_noti {
+                        width: 99%;
+                        height: 50%;
+                        margin-left: .5%;
+    
+                        a {
+                            font-weight: 400;
+                            font-size: inherit;
+                            font-size: 20px;
+                        }
+    
+                        p {
+                            font-weight: 300;
+                            font-size: 15px;
+                        }
+                    }
+                }
+                //--- fin ---
+
+            }
+        }
+
+        .programas {
+            .linea_tiempo {
+                &::before {
+                    left: 10px;
+                    margin-left: -1px;
+                }
+
+                .caja {
+                    padding: 10px;
+                    position: relative;
+                    width: 80%;
+
+                    .content_time{
+                        border-radius: 7px;
+                        h3{
+                            color: #381A46;
+                            font-size: 19px;
+                        }
+                        p{
+                            font-size: 15px;
+                        }
+                    }
+                }
+                .caja.left {
+                    left: 40px;
+                }
+    
+                .caja.right {
+                    left: 40px;
+                }
+
+            }
+        }
     }
 }
 
