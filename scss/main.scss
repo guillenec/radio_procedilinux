@@ -110,7 +110,7 @@ footer {
         //ul
         .logo {
             position: relative;
-            width: 300px;
+            width: 350px;
             height: 70px;
             display: flex;
             justify-content: space-between;
@@ -146,7 +146,7 @@ footer {
             }
 
             .name_marca {
-                width: 100px;
+                width: 150px;
                 text-align: center;
 
                 p {
@@ -174,7 +174,7 @@ footer {
 
         //menu navegacion
         .menu {
-            width: calc(100% - 300px);
+            width: calc(100% - 360px);
             display: flex;
             flex-wrap: wrap;
             justify-content: flex-end;
@@ -983,6 +983,29 @@ $sm: 575.98px;
 $md: 767.98px;
 $lg: 991.98px;
 $xl: 1199.98px;
+@media screen and (max-width: $xl){
+
+//ESTILOS HEADER
+.header {
+    .nav_menu {        //menu navegacion
+        .menu {
+            width: calc(100% - 350px);
+
+            li {
+                margin-left: 2px;
+
+                a {
+                    width: 100px;
+                    font-size: 18px;
+                    font-weight: 400px;
+
+                }
+            }
+        }
+    }
+}
+
+}
 
 @media screen and (max-width: $lg) {
     .width_80 {
