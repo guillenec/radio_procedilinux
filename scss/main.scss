@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Oswald:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap');
 
-$sombra_general: 3px 5px 4px 1px rgba(0, 0, 0, 0.38);
+//sombra cajas
+$sombra_general: (3px 5px 4px 1px hwb(0 0% 100% / 0.38));
+
+//sombra boton_sombra
+$s_night_1: (0 4px 10px rgba(56, 26, 70, 0.527));
+$s_night_2: (inset 0 4px 4px rgba(129, 72, 153, 0.5));
+$s_night_3: (inset 0 -4px 4px rgba(101, 32, 133, 0.5));
 
 //paleta de colores
 $pri_blue: hsl(203, 100%, 48%);
@@ -12,9 +18,9 @@ $pri_yellow:#ffff00;
 $caja_opaca:rgba(255, 255, 255, 0.308);
 
 $strong_titulo:#0000;
-$titulo: 'Oswald', sans-serif;
-$parrafo: 'Quicksand', sans-serif;
-$titulo_dancing: 'Dancing Script', cursive;
+$titulo: ('Oswald', sans-serif);
+$parrafo: ('Quicksand', sans-serif);
+$titulo_dancing: ('Dancing Script', cursive);
 
 /*
 font-family: 'Dancing Script', cursive;
@@ -176,7 +182,7 @@ footer {
                     background: $pri_purp;
                     border-radius: 100px;
                     box-shadow:  0 4px 10px rgba(56, 26, 70, 0.527),
-                    inset 0 4px 4px rgba(56, 26, 70, 0.5),
+                    inset 0 4px 4px rgba(129, 72, 153, 0.5),
                     inset 0 -4px 4px rgba(101, 32, 133, 0.5);
                     transition: .7s;
                     cursor: pointer;
@@ -195,20 +201,21 @@ footer {
                         inset 0 -2px 2px 2px rgba(100, 61, 120, 0.878);
                         transition: .7s;
                     }
-                }
-                .toggle_light.oscuro{
-                    background: #fff;
-                    box-shadow: inset 0 4px 10px rgba(56, 26, 70, 0.527),
-                    inset 0 4px 4px rgba(158, 60, 204, 0.4),
-                    inset 0 -4px 4px rgba(177, 57, 233, 0.5);
-                    transition: .5s;
 
-                    .indicador{
-                        left: 40px;
-                        background: linear-gradient(to bottom, #eaeaea, #f9f9f9);
-                        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.7),
-                            inset 0 3px 3px rgba(255, 255, 255, 0.1),
-                            inset 0 -2px 2px rgba(255, 255, 255, .2);
+                    &.oscuro{
+                        background: #fff;
+                        box-shadow: inset 0 4px 10px rgba(56, 26, 70, 0.527),
+                        inset 0 4px 4px rgba(129, 72, 153, 0.5),
+                        inset 0 -4px 4px rgba(101, 32, 133, 0.5);
+                        transition: .5s;
+    
+                        .indicador{
+                            left: 40px;
+                            background: linear-gradient(to bottom, #eaeaea, #f9f9f9);
+                            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.7),
+                                inset 0 3px 3px rgba(255, 255, 255, 0.1),
+                                inset 0 -2px 2px rgba(255, 255, 255, .2);
+                        }
                     }
                 }
             }
@@ -1700,5 +1707,4 @@ $xl: 1200px;
 @import './media_querys/galeria.scss';
 @import './media_querys/_programas.scss';
 
-@import url('../img/icon/astro101.png');
 
