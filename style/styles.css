@@ -132,7 +132,8 @@ footer {
             background: linear-gradient(to bottom, #763794, #381a46);
             border-radius: 50%;
             transform: scale(0.9);
-            box-shadow: 0 3px 10px #1d0727, inset 0 3px 3px rgba(98, 59, 120, 0.878), inset 0 -2px 2px 2px rgba(100, 61, 120, 0.878); }
+            box-shadow: 0 3px 10px #1d0727, inset 0 3px 3px rgba(98, 59, 120, 0.878), inset 0 -2px 2px 2px rgba(100, 61, 120, 0.878);
+            transition: .7s; }
         .header .nav_menu .logo .modo_osc .toggle_light.oscuro {
           background: #fff;
           box-shadow: inset 0 4px 10px rgba(56, 26, 70, 0.527), inset 0 4px 4px rgba(158, 60, 204, 0.4), inset 0 -4px 4px rgba(177, 57, 233, 0.5);
