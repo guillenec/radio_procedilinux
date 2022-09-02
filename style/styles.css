@@ -1115,7 +1115,7 @@ font-family: 'Quicksand', sans-serif;
       width: 180px;
       height: 100%;
       background: #0097f5;
-      border-radius: 10px 0 0 10px;
+      border-radius: 10px 10px 10px 10px;
       padding: 5px; }
       .horarios_base .calendario_dia .cont_izq_dia .header_calend {
         width: 100%;
