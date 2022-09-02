@@ -109,7 +109,38 @@ footer {
       .header .nav_menu .logo .modo_osc {
         width: 90px;
         height: 60px;
-        border: solid thin #23112c; }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap; }
+        .header .nav_menu .logo .modo_osc .toggle_light {
+          position: absolute;
+          display: block;
+          width: 80px;
+          height: 40px;
+          background: #23112c;
+          border-radius: 100px;
+          box-shadow: 0 4px 10px rgba(56, 26, 70, 0.527), inset 0 4px 4px rgba(56, 26, 70, 0.5), inset 0 -4px 4px rgba(101, 32, 133, 0.5);
+          transition: .7s;
+          cursor: pointer; }
+          .header .nav_menu .logo .modo_osc .toggle_light .indicador {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(to bottom, #763794, #381a46);
+            border-radius: 50%;
+            transform: scale(0.9);
+            box-shadow: 0 3px 10px #1d0727, inset 0 3px 3px rgba(98, 59, 120, 0.878), inset 0 -2px 2px 2px rgba(100, 61, 120, 0.878); }
+        .header .nav_menu .logo .modo_osc .toggle_light.oscuro {
+          background: #fff;
+          box-shadow: inset 0 4px 10px rgba(56, 26, 70, 0.527), inset 0 4px 4px rgba(158, 60, 204, 0.4), inset 0 -4px 4px rgba(177, 57, 233, 0.5);
+          transition: .5s; }
+          .header .nav_menu .logo .modo_osc .toggle_light.oscuro .indicador {
+            left: 40px;
+            background: linear-gradient(to bottom, #eaeaea, #f9f9f9);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.7), inset 0 3px 3px rgba(255, 255, 255, 0.1), inset 0 -2px 2px rgba(255, 255, 255, 0.2); }
     .header .nav_menu .toggle {
       display: none; }
     .header .nav_menu .menu {
@@ -1435,7 +1466,7 @@ font-family: 'Quicksand', sans-serif;
                       font-weight: 500;
                       padding-left: 5px; }
 
-@media screen and (max-width: 1199.98px) {
+@media screen and (max-width: 1200px) {
   .header .nav_menu .menu {
     width: calc(100% - 350px); }
     .header .nav_menu .menu li {
@@ -1498,7 +1529,7 @@ font-family: 'Quicksand', sans-serif;
     border-color: transparent #0096f494 transparent #0096f494;
     z-index: 1; } }
 
-@media screen and (max-width: 991.98px) {
+@media screen and (max-width: 992px) {
   .width_80 {
     width: 90%; }
   .header .nav_menu.active {
@@ -1577,7 +1608,7 @@ font-family: 'Quicksand', sans-serif;
       .main .banner_conteiner .caja_opaca h1 {
         margin-top: 0; } }
 
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 768px) {
   .width_80 {
     width: 98%; }
   .main .banner_conteiner .caja_opaca {
@@ -1730,7 +1761,7 @@ font-family: 'Quicksand', sans-serif;
   .footer .footer_bot .footer_bot_cuerpo p {
     font-size: 14px; } }
 
-@media screen and (max-width: 575.98px) {
+@media screen and (max-width: 576px) {
   .width_80 {
     width: 100%; }
   .main .banner_conteiner .caja_opaca {
@@ -1789,7 +1820,7 @@ font-family: 'Quicksand', sans-serif;
   .main .programas .linea_tiempo .caja.right {
     left: 40px; } }
 
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 768px) {
   .noticias_caja .noticias_music {
     position: relative;
     grid-template-rows: repeat(8, 1fr);
@@ -1843,7 +1874,7 @@ font-family: 'Quicksand', sans-serif;
     .noticias_caja .noticias_linux .noti_l_5 {
       grid-area: 5 / 7 / 6 / 13; } }
 
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 768px) {
   .galeria .cont_galeria {
     grid-template-rows: repeat(22, 1fr); }
     .galeria .cont_galeria .img_1 {
@@ -1881,7 +1912,7 @@ font-family: 'Quicksand', sans-serif;
     .galeria .cont_galeria .img_11 {
       grid-area: 21/7/23/13; } }
 
-@media screen and (max-width: 1199.98px) {
+@media screen and (max-width: 1200px) {
   .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item {
     height: 100%;
     width: 100%; }
@@ -1904,7 +1935,7 @@ font-family: 'Quicksand', sans-serif;
             font-size: 15px;
             font-weight: 500; } }
 
-@media screen and (max-width: 991.98px) {
+@media screen and (max-width: 992px) {
   .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row {
     min-height: 1000px;
     --bs-gutter-x: 0; }
@@ -1921,7 +1952,7 @@ font-family: 'Quicksand', sans-serif;
           .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body ul li p {
             font-size: 17px; } }
 
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 768px) {
   .horarios_base .calendario_dia {
     width: 100%;
     height: auto;
@@ -1991,7 +2022,7 @@ font-family: 'Quicksand', sans-serif;
           .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body ul li p {
             font-size: 15px; } }
 
-@media screen and (max-width: 575.98px) {
+@media screen and (max-width: 576px) {
   .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row {
     height: auto;
     --bs-gutter-x: 0; }

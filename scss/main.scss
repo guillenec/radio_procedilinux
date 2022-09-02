@@ -163,7 +163,53 @@ footer {
             .modo_osc {
                 width: 90px;
                 height: 60px;
-                border: solid thin $pri_purp;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: nowrap;
+
+                .toggle_light{
+                    position: absolute;
+                    display: block;
+                    width: 80px;
+                    height: 40px;
+                    background: $pri_purp;
+                    border-radius: 100px;
+                    box-shadow:  0 4px 10px rgba(56, 26, 70, 0.527),
+                    inset 0 4px 4px rgba(56, 26, 70, 0.5),
+                    inset 0 -4px 4px rgba(101, 32, 133, 0.5);
+                    transition: .7s;
+                    cursor: pointer;
+
+                    .indicador{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 40px;
+                        height: 40px;
+                        background: linear-gradient(to bottom,#763794, #381a46);
+                        border-radius: 50%;
+                        transform: scale(.9);
+                        box-shadow: 0 3px 10px #1d0727,
+                        inset 0 3px 3px rgba(98, 59, 120, 0.878),
+                        inset 0 -2px 2px 2px rgba(100, 61, 120, 0.878);
+                    }
+                }
+                .toggle_light.oscuro{
+                    background: #fff;
+                    box-shadow: inset 0 4px 10px rgba(56, 26, 70, 0.527),
+                    inset 0 4px 4px rgba(158, 60, 204, 0.4),
+                    inset 0 -4px 4px rgba(177, 57, 233, 0.5);
+                    transition: .5s;
+
+                    .indicador{
+                        left: 40px;
+                        background: linear-gradient(to bottom, #eaeaea, #f9f9f9);
+                        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.7),
+                            inset 0 3px 3px rgba(255, 255, 255, 0.1),
+                            inset 0 -2px 2px rgba(255, 255, 255, .2);
+                    }
+                }
             }
 
         }
@@ -1019,10 +1065,10 @@ footer {
 @import './sections/_contacto.scss';
 @import './sections/_programas.scss';
 
-$sm: 575.98px;
-$md: 767.98px;
-$lg: 991.98px;
-$xl: 1199.98px;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
 @media screen and (max-width: $xl){
 
 //ESTILOS HEADER
