@@ -935,10 +935,14 @@ footer {
     text-align: left;
     text-transform: capitalize;
     font-weight: 400;
-    font-family: 'Oswald', sans-serif; }
+    font-family: "Oswald", sans-serif; }
+  .contacto h2 {
+    font-family: "Oswald", sans-serif;
+    text-transform: capitalize;
+    font-weight: 400; }
   .contacto p {
     margin-top: 10px;
-    font-family: "Quicksand", sans-serif, sans-serif;
+    font-family: "Quicksand", sans-serif;
     font-weight: 500;
     line-height: 2rem; }
   .contacto .cuerpo_contact {
@@ -950,6 +954,15 @@ footer {
     --bs-gutter-x: 0; }
     .contacto .cuerpo_contact .titulo_cont {
       position: relative; }
+      .contacto .cuerpo_contact .titulo_cont .cont_astro_cont {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-content: center; }
+        .contacto .cuerpo_contact .titulo_cont .cont_astro_cont img {
+          width: 250px;
+          height: 250px; }
     .contacto .cuerpo_contact .form_contact {
       position: relative; }
       .contacto .cuerpo_contact .form_contact form {

@@ -7,12 +7,17 @@
         text-align: left;
         text-transform: capitalize;
         font-weight: 400;
-        font-family: 'Oswald', sans-serif;
+        font-family: $titulo;
+    }
+    h2{
+        font-family: $titulo;
+        text-transform: capitalize;
+        font-weight: 400;
     }
 
     p {
         margin-top: 10px;
-        font-family: $parrafo, sans-serif;
+        font-family: $parrafo;
         font-weight: 500;
         line-height: 2rem;
     }
@@ -27,6 +32,18 @@
 
         .titulo_cont {
             position: relative;
+
+            .cont_astro_cont {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                align-content: center;
+                img{
+                    width: 250px;
+                    height: 250px;
+                }
+            }
         }
 
         .form_contact {
