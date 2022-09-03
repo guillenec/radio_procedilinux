@@ -1,0 +1,319 @@
+//Footer
+.footer {
+    position: relative;
+    height: auto;
+    width: 100%;
+
+    .footer_head {
+        //head footer
+        position: relative;
+        width: 100%;
+        height: 120px;
+        background: $pri_purp;
+
+        .footer_head_cuerpo {
+            position: relative;
+            height: 100%;
+            display: flex;
+            align-content: center;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            a {
+                position: relative;
+                display: block;
+                width: 120px;
+                height: 120px;
+
+                img {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            ul.redes_pie {
+                position: relative;
+                display: block;
+                width: calc(100% - 120px);
+                height: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                align-content: center;
+                align-items: center;
+                list-style: none;
+
+                li {
+                    position: relative;
+                    height: 70px;
+                    width: 70px;
+                    list-style: none;
+
+                    a {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        color: $pri_white;
+                        border: solid thin $pri_purp;
+                        display: grid;
+                        place-content: center;
+                        transition: .5s;
+
+                        ion-icon {
+                            font-size: 30px;
+                        }
+
+                        &:hover {
+                            color: $pri_blue;
+                            border: solid thin $pri_blue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer_main {
+        position: relative;
+        width: 100%;
+        height: auto;
+        background: $pri_blue;
+
+        .container {
+            width: 100%;
+            height: 100%;
+
+            .footer_main_cuerpo {
+                position: relative;
+                width: 100%;
+                height: auto;
+
+                .columna_1 {
+                    display: flex;
+                    height: auto;
+
+                    .logo_2 {
+                        width: 70%;
+                        height: auto;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: scale-down;
+                        }
+                    }
+
+                    .links_2 {
+                        width: 30%;
+                        height: 100%;
+                        list-style: none;
+                        padding: 10px;
+
+                        li {
+                            width: 100%;
+                            margin: 10px 0;
+
+                            a {
+                                display: block;
+                                width: 100%;
+                                font-family: $titulo, sans-serif;
+                                font-weight: 500;
+                                font-size: 20px;
+                                color: $pri_white;
+                                text-decoration: none;
+                                padding: 5px;
+                                text-transform: capitalize;
+                                transition: .7s;
+
+                                &:hover {
+                                    color: $pri_yellow;
+                                }
+                            }
+                        }
+                    }
+
+                }
+
+                .columna_3 {
+                    display: flex;
+                    height: auto;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    align-content: center;
+
+                    h2 {
+                        width: 90%;
+                        font-family: $parrafo, sans-serif;
+                        text-transform: capitalize;
+                        text-align: center;
+                        color: $pri_white;
+                        margin-top: 20px;
+                    }
+
+                    form {
+                        position: relative;
+                        width: 90%;
+                        padding: 5px;
+                        margin: 10px auto;
+
+                        .content_input {
+                            position: relative;
+                            width: 100%;
+                            height: auto;
+                            margin: 0;
+                            padding: 0;
+
+                            .label {
+                                position: absolute;
+                                font-family: $parrafo, sans-serif;
+                                font-weight: 700;
+                                font-size: 18px;
+                                text-transform: capitalize;
+                                left: 20px;
+                                top: 17px;
+                                transition: .7s;
+                                padding: 0 2px;
+                                z-index: 1;
+                                color: #b3b3b3;
+
+                                &::before {
+                                    position: absolute;
+                                    content: '';
+                                    height: 5px;
+                                    background: $pri_purp;
+                                    left: 0;
+                                    top: 10px;
+                                    width: 100%;
+                                    z-index: -1;
+                                }
+                            }
+
+                            .text_input {
+                                width: 100%;
+                                margin: 5px 0;
+                                padding: 10px 10px;
+                                border: 3px solid $pri_purp;
+                                background: $pri_purp;
+                                border-radius: 4px;
+                                font-size: 18px;
+                                outline: none;
+                                transition: .7s;
+                                color: $pri_white;
+
+                                &:focus {
+                                    border: 3px solid $pri_yellow;
+                                }
+
+                                &:focus+.label {
+                                    top: -5px;
+                                    color: $pri_yellow;
+                                    font-size: 18px;
+                                }
+
+                                &::placeholder {
+                                    font-size: 18px;
+                                    opacity: 0;
+                                }
+
+                                &:focus::placeholder {
+                                    opacity: 1;
+                                }
+                            }
+                        }
+
+                        .input_sub {
+                            width: 60%;
+                            margin: 5px 0;
+                            padding: 10px 10px;
+                            border: 3px solid $pri_purp;
+                            background: $pri_purp;
+                            border-radius: 4px;
+                            font-size: 15px;
+                            outline: none;
+                            transition: .5s;
+                            color: $pri_white;
+                            transition: .7s;
+
+                            &:hover {
+                                border: 3px solid $pri_yellow;
+                                color: $pri_yellow;
+                            }
+
+                            &:focus {
+                                border: 3px solid $pri_yellow;
+                                color: $pri_purp;
+                                background: $pri_yellow;
+                            }
+                        }
+                    }
+                }
+
+                .columna_2 {
+                    height: 50%;
+                    display: flex;
+
+                    .contact_direct {
+                        display: block;
+                        width: 100%;
+
+                        li {
+                            display: block;
+                            width: 100%;
+                            list-style: none;
+                            margin: 2px 0;
+
+                            a {
+                                width: 100%;
+                                height: 100%;
+                                display: flex;
+                                flex-direction: row;
+                                flex-wrap: wrap;
+                                align-items: flex-start;
+                                justify-content: flex-start;
+                                align-items: center;
+                                /*font-family: 'Oswald', sans-serif;*/
+                                font-family: $parrafo, sans-serif;
+                                text-decoration: none;
+                                font-weight: 500;
+                                font-size: 17px;
+                                padding: 10px;
+                                color: $pri_white;
+
+                                ion-icon {
+                                    padding: 0 10px 0 15px;
+                                    font-size: 23px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    .footer_bot {
+        height: 100px;
+
+        .footer_bot_cuerpo {
+            position: relative;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+
+            p {
+                display: block;
+                font-family: $parrafo, sans-serif;
+                font-weight: 500;
+                color: $pri_purp;
+                font-size: 18px;
+                text-align: center;
+            }
+        }
+    }
+}

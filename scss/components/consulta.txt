@@ -1,0 +1,15 @@
+consulta..
+deberia de dividir cada componente y meterlo aqui ??
+
+por ejemplo, el boton de modo oscuro sacarlo y meterlo aca ??
+las imagenes generales o el carrousel ?
+los formularios ??
+
+como los inserto despues en mi main??
+con import '';?? 
+es necesario hacer esto para este proyecto ??
+
+estaria bueno que nos den buenas practicas para que subdividir, como, que tipo de arbol de directorios emplear .. etc
+
+actualmente me estoy basando en esto .. 
+https://latteandcode.medium.com/c%C3%B3mo-organizar-los-archivos-sass-de-tu-proyecto-c8b02242d95

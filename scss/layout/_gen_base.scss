@@ -1,0 +1,41 @@
+//estilos multiples para reutilizar codigo
+header,
+main,
+footer {
+    width: 100%;
+    position: relative;
+}
+
+//CLASES REUTILIZABLES DENTRO DEL MAIN
+.width_80 {
+    //--mantiene el ancho en 80%
+    position: relative;
+    width: 80%;
+    margin: auto;
+}
+
+.top_50 {
+    // -- mantiene un  margen de 50px
+    margin-top: 50px;
+}
+
+.top_100 {
+    // -- mantiene un tiop de 100px
+    margin-top: 100px;
+}
+
+.top_100_head {
+    margin-top: calc(100px + 80px);
+}
+
+.t_100 {
+    top: 100px;
+}
+
+.zoom {
+    transition: .7s;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}
