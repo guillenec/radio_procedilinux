@@ -34,14 +34,11 @@
             position: relative;
 
             .cont_astro_cont {
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                align-content: center;
-                align-content: center;
+                width: 250px;
+                height: 250px;
+                margin: auto;
                 img{
-                    width: 250px;
-                    height: 250px;
+                    @include img_100(100%,100%);
                 }
             }
         }

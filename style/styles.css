@@ -87,9 +87,10 @@ footer {
           overflow: hidden;
           cursor: pointer; }
           .header .nav_menu .logo .img_logo a img {
-            position: absolute;
+            position: relative;
             width: 100%;
-            height: 100%; }
+            height: 100%;
+            object-fit: cover; }
       .header .nav_menu .logo .name_marca {
         width: 150px;
         text-align: center; }
@@ -375,6 +376,7 @@ footer {
         box-shadow: 3px 5px 4px 1px hwb(0 0% 100%/0.38);
         overflow: hidden; }
         .main .noticias .noticias_grid article img {
+          position: relative;
           width: 100%;
           height: 100%;
           object-fit: cover; }
@@ -453,10 +455,10 @@ footer {
             padding: 5px;
             overflow: hidden; }
             .main .programas .linea_tiempo .caja .content_time .img_prog img {
+              position: relative;
               width: 100%;
               height: 100%;
-              object-fit: cover;
-              border-radius: 3px; }
+              object-fit: cover; }
           .main .programas .linea_tiempo .caja .content_time .tit_targ_prog {
             width: calc(100% - 170px); }
             .main .programas .linea_tiempo .caja .content_time .tit_targ_prog h2, .main .programas .linea_tiempo .caja .content_time .tit_targ_prog p {
@@ -538,7 +540,8 @@ footer {
         .footer .footer_head .footer_head_cuerpo a img {
           position: relative;
           width: 100%;
-          height: 100%; }
+          height: 100%;
+          object-fit: cover; }
       .footer .footer_head .footer_head_cuerpo ul.redes_pie {
         position: relative;
         display: block;
@@ -588,9 +591,10 @@ footer {
             width: 70%;
             height: auto; }
             .footer .footer_main .container .footer_main_cuerpo .columna_1 .logo_2 img {
+              position: relative;
               width: 100%;
               height: 100%;
-              object-fit: scale-down; }
+              object-fit: cover; }
           .footer .footer_main .container .footer_main_cuerpo .columna_1 .links_2 {
             width: 30%;
             height: 100%;
@@ -830,7 +834,7 @@ footer {
       .galeria .cont_galeria .img_15 img,
       .galeria .cont_galeria .img_16 img,
       .galeria .cont_galeria .img_17 img {
-        display: block;
+        position: relative;
         width: 100%;
         height: 100%;
         object-fit: cover; }
@@ -869,6 +873,7 @@ footer {
     -moz-box-shadow: 3px 5px 4px 1px hwb(0 0% 100%/0.38);
     box-shadow: 3px 5px 4px 1px hwb(0 0% 100%/0.38); }
     .noticias_caja article img {
+      position: relative;
       width: 100%;
       height: 100%;
       object-fit: cover; }
@@ -981,14 +986,14 @@ footer {
     .contacto .cuerpo_contact .titulo_cont {
       position: relative; }
       .contacto .cuerpo_contact .titulo_cont .cont_astro_cont {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        align-content: center; }
+        width: 250px;
+        height: 250px;
+        margin: auto; }
         .contacto .cuerpo_contact .titulo_cont .cont_astro_cont img {
-          width: 250px;
-          height: 250px; }
+          position: relative;
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
     .contacto .cuerpo_contact .form_contact {
       position: relative; }
       .contacto .cuerpo_contact .form_contact form {

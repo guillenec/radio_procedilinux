@@ -286,9 +286,7 @@
                 overflow: hidden;
 
                 img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
+                    @include img_100(100%,100%);
                 }
 
                 .subtitulo_noti {
@@ -389,10 +387,7 @@
                         overflow: hidden;
 
                         img{
-                            width: 100%;
-                            height: 100%;
-                            object-fit: cover;
-                            border-radius: 3px;
+                            @include img_100(100%,100%);
                         }
                     }
 
