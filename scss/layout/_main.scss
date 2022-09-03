@@ -20,27 +20,19 @@
         margin-top: 0;
 
         .video_banner {
-            position: absolute;
-            top: 0;
+            @include caja_abs_top(100%, 100%, 0 ,"t");
             left: 0;
-            width: 100%;
-            height: 100%;
             background: $pri_purp;
 
             video {
-                position: absolute;
-                top: 0;
+                @include caja_abs_top(100%, 100%, 0 ,"t");
                 left: 0;
-                width: 100%;
-                height: 100%;
                 object-fit: cover;
             }
         }
 
         .caja_opaca {
-            position: absolute;
-            width: 40%;
-            height: 100%;
+            @include caja_abs_top(40%, 100%, 0, "t");
             background: $caja_opaca;
             box-shadow: 10px 0 15px rgba(0, 0, 0, 0.05);
             backdrop-filter: blur(10px);
@@ -81,7 +73,7 @@
                 font-weight: 700;
                 color: #000000;
             }
-            
+
         }
 
         .conteiner_buton {
@@ -287,15 +279,12 @@
                 overflow: hidden;
 
                 img {
-                    @include img_100(100%,100%);
+                    @include img_100(100%, 100%);
                 }
 
                 .subtitulo_noti {
-                    position: absolute;
-                    bottom: 3px;
+                    @include caja_abs_top(98%, 40%, 3px,"b");
                     left: 0;
-                    width: 98%;
-                    height: 40%;
                     margin-left: 1%;
                     background: $sec_blue;
                     backdrop-filter: blur(5px);
@@ -319,7 +308,7 @@
                         font-family: $titulo, sans-serif;
                         font-weight: 400;
                         font-size: inherit;
-                        
+
 
                         &:hover {
                             color: $pri_purp;
@@ -378,37 +367,40 @@
                     justify-content: space-between;
                     align-items: center;
 
-                    .img_prog{
+                    .img_prog {
                         width: 160px;
                         height: 200px;
                         border-radius: 5px;
                         object-fit: cover;
-                        background:$pri_white;
+                        background: $pri_white;
                         padding: 5px;
                         overflow: hidden;
 
-                        img{
-                            @include img_100(100%,100%);
+                        img {
+                            @include img_100(100%, 100%);
                         }
                     }
 
-                    .tit_targ_prog{
+                    .tit_targ_prog {
                         width: calc(100% - 170px);
-                        h2, p{
+
+                        h2,
+                        p {
                             display: block;
                             width: 100%;
                         }
+
                         h3 {
-                            color:$pri_purp;
+                            color: $pri_purp;
                         }
-                
+
                         p {
                             color: $pri_purp;
                         }
 
-                    }    
+                    }
                 }
-    
+
             }
 
             .caja.left {
@@ -422,11 +414,8 @@
             .left {
                 &::after {
                     content: '';
-                    position: absolute;
-                    width: 10px;
-                    height: 10px;
+                    @include caja_abs_top(10px, 10px, 15px,"t");
                     background: $pri_blue;
-                    top: 15px;
                     right: -10px;
                     border-radius: 50%;
                     border: 10px solid $pri_purp;
@@ -435,12 +424,8 @@
 
                 &::before {
                     content: '';
-                    height: 0;
-                    width: 0;
-                    position: absolute;
-                    top: 22px;
+                    @include caja_abs_top(10px, 10px, 22px,"t");
                     right: 30px;
-                    background-color: none;
                     border: 10px solid $sec_blue;
                     border-width: 10px 0 10px 10px;
                     border-color: transparent transparent transparent $sec_blue;
@@ -450,11 +435,8 @@
             .right {
                 &::after {
                     content: '';
-                    position: absolute;
-                    width: 10px;
-                    height: 10px;
+                    @include caja_abs_top(10px, 10px, 15px,"t");
                     background: $pri_blue;
-                    top: 15px;
                     left: -10px;
                     border-radius: 50%;
                     border: 10px solid $pri_purp;
@@ -462,10 +444,8 @@
 
                 &::before {
                     content: '';
-                    height: 0;
-                    width: 0;
-                    position: absolute;
-                    top: 22px;
+                    @include caja_abs_top(10px, 10px, 22px,"t");
+
                     left: 30px;
                     background-color: none;
                     border: 10px solid $sec_blue;

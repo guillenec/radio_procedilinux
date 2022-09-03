@@ -1,7 +1,20 @@
-
+// para las imagenes que usan cover y estan dentro de una caja contenedora
 @mixin img_100($widht, $height){
     position: relative;
     width: $widht;
     height: $height;
     object-fit: cover;
 }
+
+//para las cajas contenedoras dentro de una reolativa.. como en el caso de las targetas de los programas.
+@mixin  caja_abs_top($a, $b, $c ,$d){
+    position: absolute;
+    width: $a;
+    height: $b;
+
+    @if $d == "t" {
+        top: $c;
+    } @else if $d == "b"{
+        bottom: $c;
+    } 
+} 

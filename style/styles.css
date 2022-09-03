@@ -110,9 +110,10 @@ footer {
         flex-wrap: nowrap; }
         .header .nav_menu .logo .modo_osc .toggle_light {
           position: absolute;
-          display: block;
           width: 80px;
           height: 40px;
+          top: auto;
+          display: block;
           background: #23112c;
           border-radius: 100px;
           box-shadow: 0 4px 10px rgba(56, 26, 70, 0.527), inset 0 4px 4px rgba(129, 72, 153, 0.5), inset 0 -4px 4px rgba(101, 32, 133, 0.5);
@@ -120,10 +121,10 @@ footer {
           cursor: pointer; }
           .header .nav_menu .logo .modo_osc .toggle_light .indicador {
             position: absolute;
-            top: 0;
-            left: 0;
             width: 40px;
             height: 40px;
+            top: 0;
+            left: 0;
             background: linear-gradient(to bottom, #763794, #381a46);
             border-radius: 50%;
             transform: scale(0.9);
@@ -183,22 +184,23 @@ footer {
     margin-top: 0; }
     .main .banner_conteiner .video_banner {
       position: absolute;
-      top: 0;
-      left: 0;
       width: 100%;
       height: 100%;
+      top: 0;
+      left: 0;
       background: #23112c; }
       .main .banner_conteiner .video_banner video {
         position: absolute;
-        top: 0;
-        left: 0;
         width: 100%;
         height: 100%;
+        top: 0;
+        left: 0;
         object-fit: cover; }
     .main .banner_conteiner .caja_opaca {
       position: absolute;
       width: 40%;
       height: 100%;
+      top: 0;
       background: rgba(255, 255, 255, 0.308);
       box-shadow: 10px 0 15px rgba(0, 0, 0, 0.05);
       backdrop-filter: blur(10px);
@@ -382,10 +384,10 @@ footer {
           object-fit: cover; }
         .main .noticias .noticias_grid article .subtitulo_noti {
           position: absolute;
-          bottom: 3px;
-          left: 0;
           width: 98%;
           height: 40%;
+          bottom: 3px;
+          left: 0;
           margin-left: 1%;
           background: #0096f494;
           backdrop-filter: blur(5px);
@@ -461,7 +463,8 @@ footer {
               object-fit: cover; }
           .main .programas .linea_tiempo .caja .content_time .tit_targ_prog {
             width: calc(100% - 170px); }
-            .main .programas .linea_tiempo .caja .content_time .tit_targ_prog h2, .main .programas .linea_tiempo .caja .content_time .tit_targ_prog p {
+            .main .programas .linea_tiempo .caja .content_time .tit_targ_prog h2,
+            .main .programas .linea_tiempo .caja .content_time .tit_targ_prog p {
               display: block;
               width: 100%; }
             .main .programas .linea_tiempo .caja .content_time .tit_targ_prog h3 {
@@ -477,20 +480,19 @@ footer {
         position: absolute;
         width: 10px;
         height: 10px;
-        background: #0097f5;
         top: 15px;
+        background: #0097f5;
         right: -10px;
         border-radius: 50%;
         border: 10px solid #23112c;
         z-index: 1; }
       .main .programas .linea_tiempo .left::before {
         content: '';
-        height: 0;
-        width: 0;
         position: absolute;
+        width: 10px;
+        height: 10px;
         top: 22px;
         right: 30px;
-        background-color: none;
         border: 10px solid #0096f494;
         border-width: 10px 0 10px 10px;
         border-color: transparent transparent transparent #0096f494; }
@@ -499,16 +501,16 @@ footer {
         position: absolute;
         width: 10px;
         height: 10px;
-        background: #0097f5;
         top: 15px;
+        background: #0097f5;
         left: -10px;
         border-radius: 50%;
         border: 10px solid #23112c; }
       .main .programas .linea_tiempo .right::before {
         content: '';
-        height: 0;
-        width: 0;
         position: absolute;
+        width: 10px;
+        height: 10px;
         top: 22px;
         left: 30px;
         background-color: none;
@@ -562,6 +564,7 @@ footer {
             position: absolute;
             width: 100%;
             height: 100%;
+            top: 0;
             color: #ffffff;
             border: solid thin #23112c;
             display: grid;
@@ -1505,13 +1508,15 @@ $xl: 1200px;
         padding: 5px;
         overflow: hidden; }
         .main .programas .linea_tiempo .caja .content_time .img_prog img {
+          position: relative;
           width: 100%;
           height: 100%;
           object-fit: cover;
           border-radius: 3px; }
       .main .programas .linea_tiempo .caja .content_time .tit_targ_prog {
         width: calc(100% - 180px); }
-        .main .programas .linea_tiempo .caja .content_time .tit_targ_prog h2, .main .programas .linea_tiempo .caja .content_time .tit_targ_prog p {
+        .main .programas .linea_tiempo .caja .content_time .tit_targ_prog h2,
+        .main .programas .linea_tiempo .caja .content_time .tit_targ_prog p {
           display: block;
           width: 100%; }
   .main .programas .linea_tiempo .caja.left,
@@ -1808,6 +1813,7 @@ $xl: 1200px;
       .main .programas .linea_tiempo .caja .content_time .img_prog {
         margin-top: 20px; }
         .main .programas .linea_tiempo .caja .content_time .img_prog img {
+          position: relative;
           width: 100%;
           height: 100%;
           object-fit: cover;
