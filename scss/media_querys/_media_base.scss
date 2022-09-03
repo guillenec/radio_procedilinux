@@ -4,7 +4,7 @@ $md: 768px;
 $lg: 992px;
 $xl: 1200px;
 */
-@media screen and (max-width: $xl){
+    @media screen and (max-width: $xl){
 
     //ESTILOS HEADER
     .header {
@@ -108,6 +108,7 @@ $xl: 1200px;
     }
     
     @media screen and (max-width: $lg) {
+
         .width_80 {
             width: 90%;
         }
@@ -240,12 +241,12 @@ $xl: 1200px;
                 .caja_opaca {
                     width: 98%;
                     margin: 40% 1%;
-    
+                    
                     h1,
                     p {
                         width: 98%;
                     }
-    
+                    
                     h1 {
                         font-size: 4em;
                         line-height: 1.5em;
@@ -254,6 +255,7 @@ $xl: 1200px;
                     p {
                         font-size: 16px;
                     }
+                    
                 }
             }
     
@@ -534,7 +536,7 @@ $xl: 1200px;
                     p {
                         width: 98%;
                     }
-    
+                    
                     h1 {
                         font-size: 3.5em;
                         line-height: 1.5em;
@@ -542,7 +544,7 @@ $xl: 1200px;
     
                     p {
                         font-size: 15px;
-                    }
+                    } 
                 }
             }
     
