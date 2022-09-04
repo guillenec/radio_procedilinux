@@ -38,3 +38,10 @@ ya que como compartian las mismas propiedades , me podioa aorrar codigo al exten
             }
         }
 
+
+seo:
+se incorporaron los metas vistos en clases, meta author y copyright en todos los documentos.. 
+se incorporo un title en cada pagina y en el acorde a lo sugerido en clases.
+las imagenes que uso todas tienen su respectivo alt.
+etiqueta strong para resaltar texto especificos , solo importantes.
+ahun no cambio todos los valores a una misma unidad como me sugirieron.. lo antes posible apenas tenga tiempo lo are.
