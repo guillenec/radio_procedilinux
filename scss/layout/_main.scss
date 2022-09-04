@@ -103,6 +103,7 @@
                         width: 50px;
                         height: 50px;
                         background: $bg_a;
+                        transition: .7s;
 
                         //usaremos un map 
                         @each $name, $color in $colors_redes {
@@ -113,8 +114,7 @@
 
                         &:hover {
                             background: $bg_hover_1;
-                            transition: .7s;
-
+                            
                             ion-icon{
                                 color: $col_hover_1;
                             }

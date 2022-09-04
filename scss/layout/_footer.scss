@@ -20,13 +20,11 @@
             align-items: flex-start;
 
             a {
-                position: relative;
                 display: block;
-                width: 120px;
-                height: 120px;
+                @include img_100(120px,120px);
 
                 img {
-                    @include img_100(100%,100%);
+                    @extend  a;              
                 }
             }
 
@@ -50,19 +48,27 @@
 
                     a {
                         @include caja_abs_top(100%, 100%, 0, "t" );
-                        color: $bg_a;
                         border: solid thin $color_a;
                         display: grid;
                         place-content: center;
-                        transition: .5s;
-
-                        ion-icon {
-                            font-size: 30px;
+                        font-size: 30px;
+                        transition: .7s;
+                    
+                        //usaremos un map 
+                        @each $name,
+                        $color in $colors_redes {
+                            ion-icon.#{$name} {
+                                color: $color;
+                                transition: .7s;
+                            }            
                         }
 
                         &:hover {
-                            color: $bg_hover_1;
                             border: solid thin $bg_hover_1;
+                            ion-icon{
+                                color: $col_hover_1;
+                                transition: .7s;
+                            }
                         }
                     }
                 }

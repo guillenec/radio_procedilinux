@@ -77,7 +77,7 @@ footer {
         width: 60px;
         height: 60px;
         margin-left: 5px; }
-        .header .nav_menu .logo .img_logo a {
+        .header .nav_menu .logo .img_logo a, .header .nav_menu .logo .img_logo .footer .footer_head .footer_head_cuerpo a img, .footer .footer_head .footer_head_cuerpo a .header .nav_menu .logo .img_logo img {
           display: block;
           position: relative;
           background: #ffffff;
@@ -86,7 +86,7 @@ footer {
           border-radius: 50%;
           overflow: hidden;
           cursor: pointer; }
-          .header .nav_menu .logo .img_logo a img {
+          .header .nav_menu .logo .img_logo a img, .footer .footer_head .footer_head_cuerpo a .header .nav_menu .logo .img_logo img img {
             position: relative;
             width: 100%;
             height: 100%;
@@ -150,7 +150,7 @@ footer {
       .header .nav_menu .menu li {
         list-style: none;
         margin-left: 2px; }
-        .header .nav_menu .menu li a {
+        .header .nav_menu .menu li a, .header .nav_menu .menu li .footer .footer_head .footer_head_cuerpo a img, .footer .footer_head .footer_head_cuerpo a .header .nav_menu .menu li img {
           display: flex;
           justify-content: center;
           width: 120px;
@@ -163,7 +163,7 @@ footer {
           border: solid thin #ffffff;
           border-radius: 4px;
           padding: 10px; }
-          .header .nav_menu .menu li a:hover {
+          .header .nav_menu .menu li a:hover, .header .nav_menu .menu li .footer .footer_head .footer_head_cuerpo a img:hover, .footer .footer_head .footer_head_cuerpo a .header .nav_menu .menu li img:hover {
             background: #0097f5;
             color: #fff;
             transition: .9s; }
@@ -246,38 +246,54 @@ footer {
         .main .banner_conteiner .conteiner_buton .mini_redes li,
         .main .banner_conteiner .conteiner_buton .controls li {
           list-style: none; }
-          .main .banner_conteiner .conteiner_buton .mini_redes li a,
-          .main .banner_conteiner .conteiner_buton .controls li a {
+          .main .banner_conteiner .conteiner_buton .mini_redes li a, .main .banner_conteiner .conteiner_buton .mini_redes li .footer .footer_head .footer_head_cuerpo a img, .footer .footer_head .footer_head_cuerpo a .main .banner_conteiner .conteiner_buton .mini_redes li img,
+          .main .banner_conteiner .conteiner_buton .controls li a,
+          .main .banner_conteiner .conteiner_buton .controls li .footer .footer_head .footer_head_cuerpo a img,
+          .footer .footer_head .footer_head_cuerpo a .main .banner_conteiner .conteiner_buton .controls li img {
             display: flex;
             justify-content: center;
             align-items: center;
             width: 50px;
             height: 50px;
-            background: #ffffff; }
-            .main .banner_conteiner .conteiner_buton .mini_redes li a ion-icon.telegram,
-            .main .banner_conteiner .conteiner_buton .controls li a ion-icon.telegram {
+            background: #ffffff;
+            transition: .7s; }
+            .main .banner_conteiner .conteiner_buton .mini_redes li a ion-icon.telegram, .footer .footer_head .footer_head_cuerpo a .main .banner_conteiner .conteiner_buton .mini_redes li img ion-icon.telegram,
+            .main .banner_conteiner .conteiner_buton .controls li a ion-icon.telegram,
+            .footer .footer_head .footer_head_cuerpo a .main .banner_conteiner .conteiner_buton .controls li img ion-icon.telegram {
               color: #51aff8; }
-            .main .banner_conteiner .conteiner_buton .mini_redes li a ion-icon.facebook,
-            .main .banner_conteiner .conteiner_buton .controls li a ion-icon.facebook {
-              color: #2956a3; }
-            .main .banner_conteiner .conteiner_buton .mini_redes li a ion-icon.linkedin,
-            .main .banner_conteiner .conteiner_buton .controls li a ion-icon.linkedin {
+            .main .banner_conteiner .conteiner_buton .mini_redes li a ion-icon.facebook, .footer .footer_head .footer_head_cuerpo a .main .banner_conteiner .conteiner_buton .mini_redes li img ion-icon.facebook,
+            .main .banner_conteiner .conteiner_buton .controls li a ion-icon.facebook,
+            .footer .footer_head .footer_head_cuerpo a .main .banner_conteiner .conteiner_buton .controls li img ion-icon.facebook {
+              color: #3d7be7; }
+            .main .banner_conteiner .conteiner_buton .mini_redes li a ion-icon.linkedin, .footer .footer_head .footer_head_cuerpo a .main .banner_conteiner .conteiner_buton .mini_redes li img ion-icon.linkedin,
+            .main .banner_conteiner .conteiner_buton .controls li a ion-icon.linkedin,
+            .footer .footer_head .footer_head_cuerpo a .main .banner_conteiner .conteiner_buton .controls li img ion-icon.linkedin {
               color: #0076b8; }
-            .main .banner_conteiner .conteiner_buton .mini_redes li a ion-icon.instagram,
-            .main .banner_conteiner .conteiner_buton .controls li a ion-icon.instagram {
+            .main .banner_conteiner .conteiner_buton .mini_redes li a ion-icon.instagram, .footer .footer_head .footer_head_cuerpo a .main .banner_conteiner .conteiner_buton .mini_redes li img ion-icon.instagram,
+            .main .banner_conteiner .conteiner_buton .controls li a ion-icon.instagram,
+            .footer .footer_head .footer_head_cuerpo a .main .banner_conteiner .conteiner_buton .controls li img ion-icon.instagram {
               color: #d6249f; }
-            .main .banner_conteiner .conteiner_buton .mini_redes li a ion-icon.youtube,
-            .main .banner_conteiner .conteiner_buton .controls li a ion-icon.youtube {
+            .main .banner_conteiner .conteiner_buton .mini_redes li a ion-icon.youtube, .footer .footer_head .footer_head_cuerpo a .main .banner_conteiner .conteiner_buton .mini_redes li img ion-icon.youtube,
+            .main .banner_conteiner .conteiner_buton .controls li a ion-icon.youtube,
+            .footer .footer_head .footer_head_cuerpo a .main .banner_conteiner .conteiner_buton .controls li img ion-icon.youtube {
               color: #ce1312; }
-            .main .banner_conteiner .conteiner_buton .mini_redes li a ion-icon.whatsapp,
-            .main .banner_conteiner .conteiner_buton .controls li a ion-icon.whatsapp {
+            .main .banner_conteiner .conteiner_buton .mini_redes li a ion-icon.whatsapp, .footer .footer_head .footer_head_cuerpo a .main .banner_conteiner .conteiner_buton .mini_redes li img ion-icon.whatsapp,
+            .main .banner_conteiner .conteiner_buton .controls li a ion-icon.whatsapp,
+            .footer .footer_head .footer_head_cuerpo a .main .banner_conteiner .conteiner_buton .controls li img ion-icon.whatsapp {
               color: #25D366; }
-            .main .banner_conteiner .conteiner_buton .mini_redes li a:hover,
-            .main .banner_conteiner .conteiner_buton .controls li a:hover {
-              background: #0097f5;
-              transition: .7s; }
-              .main .banner_conteiner .conteiner_buton .mini_redes li a:hover ion-icon,
-              .main .banner_conteiner .conteiner_buton .controls li a:hover ion-icon {
+            .main .banner_conteiner .conteiner_buton .mini_redes li a ion-icon.twitch, .footer .footer_head .footer_head_cuerpo a .main .banner_conteiner .conteiner_buton .mini_redes li img ion-icon.twitch,
+            .main .banner_conteiner .conteiner_buton .controls li a ion-icon.twitch,
+            .footer .footer_head .footer_head_cuerpo a .main .banner_conteiner .conteiner_buton .controls li img ion-icon.twitch {
+              color: #6441a5; }
+            .main .banner_conteiner .conteiner_buton .mini_redes li a:hover, .main .banner_conteiner .conteiner_buton .mini_redes li .footer .footer_head .footer_head_cuerpo a img:hover, .footer .footer_head .footer_head_cuerpo a .main .banner_conteiner .conteiner_buton .mini_redes li img:hover,
+            .main .banner_conteiner .conteiner_buton .controls li a:hover,
+            .main .banner_conteiner .conteiner_buton .controls li .footer .footer_head .footer_head_cuerpo a img:hover,
+            .footer .footer_head .footer_head_cuerpo a .main .banner_conteiner .conteiner_buton .controls li img:hover {
+              background: #0097f5; }
+              .main .banner_conteiner .conteiner_buton .mini_redes li a:hover ion-icon, .main .banner_conteiner .conteiner_buton .mini_redes li .footer .footer_head .footer_head_cuerpo a img:hover ion-icon, .footer .footer_head .footer_head_cuerpo a .main .banner_conteiner .conteiner_buton .mini_redes li img:hover ion-icon,
+              .main .banner_conteiner .conteiner_buton .controls li a:hover ion-icon,
+              .main .banner_conteiner .conteiner_buton .controls li .footer .footer_head .footer_head_cuerpo a img:hover ion-icon,
+              .footer .footer_head .footer_head_cuerpo a .main .banner_conteiner .conteiner_buton .controls li img:hover ion-icon {
                 color: #fff; }
       .main .banner_conteiner .conteiner_buton .mini_redes {
         bottom: 15px;
@@ -337,7 +353,7 @@ footer {
         margin: 0; }
       .main .titulo_general .cont_anima .mid_h2 {
         text-align: center; }
-      .main .titulo_general .cont_anima a {
+      .main .titulo_general .cont_anima a, .main .titulo_general .cont_anima .footer .footer_head .footer_head_cuerpo a img, .footer .footer_head .footer_head_cuerpo a .main .titulo_general .cont_anima img {
         text-decoration: none;
         color: #23112c;
         font-family: "Oswald", sans-serif;
@@ -348,7 +364,7 @@ footer {
         padding: 5px 10px;
         border-radius: 3px;
         transition: .7s; }
-        .main .titulo_general .cont_anima a:hover {
+        .main .titulo_general .cont_anima a:hover, .main .titulo_general .cont_anima .footer .footer_head .footer_head_cuerpo a img:hover, .footer .footer_head .footer_head_cuerpo a .main .titulo_general .cont_anima img:hover {
           border: 1px solid #23112c;
           color: #fff;
           background: #0097f5; }
@@ -411,16 +427,16 @@ footer {
           align-items: flex-start;
           padding: 5px;
           overflow: hidden; }
-          .main .noticias .noticias_grid article .subtitulo_noti a,
+          .main .noticias .noticias_grid article .subtitulo_noti a, .main .noticias .noticias_grid article .subtitulo_noti .footer .footer_head .footer_head_cuerpo a img, .footer .footer_head .footer_head_cuerpo a .main .noticias .noticias_grid article .subtitulo_noti img,
           .main .noticias .noticias_grid article .subtitulo_noti p {
             text-decoration: none; }
-          .main .noticias .noticias_grid article .subtitulo_noti a {
+          .main .noticias .noticias_grid article .subtitulo_noti a, .main .noticias .noticias_grid article .subtitulo_noti .footer .footer_head .footer_head_cuerpo a img, .footer .footer_head .footer_head_cuerpo a .main .noticias .noticias_grid article .subtitulo_noti img {
             display: block;
             font-family: "Oswald", sans-serif;
             font-weight: 400;
             font-size: inherit;
             color: #fff; }
-            .main .noticias .noticias_grid article .subtitulo_noti a:hover {
+            .main .noticias .noticias_grid article .subtitulo_noti a:hover, .main .noticias .noticias_grid article .subtitulo_noti .footer .footer_head .footer_head_cuerpo a img:hover, .footer .footer_head .footer_head_cuerpo a .main .noticias .noticias_grid article .subtitulo_noti img:hover {
               color: #23112c;
               transition: .7s; }
           .main .noticias .noticias_grid article .subtitulo_noti p {
@@ -545,16 +561,12 @@ footer {
       align-content: center;
       justify-content: space-between;
       align-items: flex-start; }
-      .footer .footer_head .footer_head_cuerpo a {
-        position: relative;
+      .footer .footer_head .footer_head_cuerpo a, .footer .footer_head .footer_head_cuerpo a img {
         display: block;
+        position: relative;
         width: 120px;
-        height: 120px; }
-        .footer .footer_head .footer_head_cuerpo a img {
-          position: relative;
-          width: 100%;
-          height: 100%;
-          object-fit: cover; }
+        height: 120px;
+        object-fit: cover; }
       .footer .footer_head .footer_head_cuerpo ul.redes_pie {
         position: relative;
         display: block;
@@ -571,21 +583,42 @@ footer {
           height: 70px;
           width: 70px;
           list-style: none; }
-          .footer .footer_head .footer_head_cuerpo ul.redes_pie li a {
+          .footer .footer_head .footer_head_cuerpo ul.redes_pie li a, .footer .footer_head .footer_head_cuerpo ul.redes_pie li a img, .footer .footer_head .footer_head_cuerpo a ul.redes_pie li img {
             position: absolute;
             width: 100%;
             height: 100%;
             top: 0;
-            color: #ffffff;
             border: solid thin #23112c;
             display: grid;
             place-content: center;
-            transition: .5s; }
-            .footer .footer_head .footer_head_cuerpo ul.redes_pie li a ion-icon {
-              font-size: 30px; }
-            .footer .footer_head .footer_head_cuerpo ul.redes_pie li a:hover {
-              color: #0097f5;
+            font-size: 30px;
+            transition: .7s; }
+            .footer .footer_head .footer_head_cuerpo ul.redes_pie li a ion-icon.telegram, .footer .footer_head .footer_head_cuerpo a ul.redes_pie li img ion-icon.telegram {
+              color: #51aff8;
+              transition: .7s; }
+            .footer .footer_head .footer_head_cuerpo ul.redes_pie li a ion-icon.facebook, .footer .footer_head .footer_head_cuerpo a ul.redes_pie li img ion-icon.facebook {
+              color: #3d7be7;
+              transition: .7s; }
+            .footer .footer_head .footer_head_cuerpo ul.redes_pie li a ion-icon.linkedin, .footer .footer_head .footer_head_cuerpo a ul.redes_pie li img ion-icon.linkedin {
+              color: #0076b8;
+              transition: .7s; }
+            .footer .footer_head .footer_head_cuerpo ul.redes_pie li a ion-icon.instagram, .footer .footer_head .footer_head_cuerpo a ul.redes_pie li img ion-icon.instagram {
+              color: #d6249f;
+              transition: .7s; }
+            .footer .footer_head .footer_head_cuerpo ul.redes_pie li a ion-icon.youtube, .footer .footer_head .footer_head_cuerpo a ul.redes_pie li img ion-icon.youtube {
+              color: #ce1312;
+              transition: .7s; }
+            .footer .footer_head .footer_head_cuerpo ul.redes_pie li a ion-icon.whatsapp, .footer .footer_head .footer_head_cuerpo a ul.redes_pie li img ion-icon.whatsapp {
+              color: #25D366;
+              transition: .7s; }
+            .footer .footer_head .footer_head_cuerpo ul.redes_pie li a ion-icon.twitch, .footer .footer_head .footer_head_cuerpo a ul.redes_pie li img ion-icon.twitch {
+              color: #6441a5;
+              transition: .7s; }
+            .footer .footer_head .footer_head_cuerpo ul.redes_pie li a:hover, .footer .footer_head .footer_head_cuerpo ul.redes_pie li a img:hover, .footer .footer_head .footer_head_cuerpo a ul.redes_pie li img:hover {
               border: solid thin #0097f5; }
+              .footer .footer_head .footer_head_cuerpo ul.redes_pie li a:hover ion-icon, .footer .footer_head .footer_head_cuerpo ul.redes_pie li a img:hover ion-icon, .footer .footer_head .footer_head_cuerpo a ul.redes_pie li img:hover ion-icon {
+                color: #fff;
+                transition: .7s; }
   .footer .footer_main {
     position: relative;
     width: 100%;
@@ -617,7 +650,7 @@ footer {
             .footer .footer_main .container .footer_main_cuerpo .columna_1 .links_2 li {
               width: 100%;
               margin: 10px 0; }
-              .footer .footer_main .container .footer_main_cuerpo .columna_1 .links_2 li a {
+              .footer .footer_main .container .footer_main_cuerpo .columna_1 .links_2 li a, .footer .footer_main .container .footer_main_cuerpo .columna_1 .links_2 li .footer_head .footer_head_cuerpo a img, .footer .footer_head .footer_head_cuerpo a .footer_main .container .footer_main_cuerpo .columna_1 .links_2 li img {
                 display: block;
                 width: 100%;
                 font-family: "Oswald", sans-serif;
@@ -628,7 +661,7 @@ footer {
                 padding: 5px;
                 text-transform: capitalize;
                 transition: .7s; }
-                .footer .footer_main .container .footer_main_cuerpo .columna_1 .links_2 li a:hover {
+                .footer .footer_main .container .footer_main_cuerpo .columna_1 .links_2 li a:hover, .footer .footer_main .container .footer_main_cuerpo .columna_1 .links_2 li .footer_head .footer_head_cuerpo a img:hover, .footer .footer_head .footer_head_cuerpo a .footer_main .container .footer_main_cuerpo .columna_1 .links_2 li img:hover {
                   color: #ffff00; }
         .footer .footer_main .container .footer_main_cuerpo .columna_3 {
           display: flex;
@@ -727,7 +760,7 @@ footer {
               width: 100%;
               list-style: none;
               margin: 2px 0; }
-              .footer .footer_main .container .footer_main_cuerpo .columna_2 .contact_direct li a {
+              .footer .footer_main .container .footer_main_cuerpo .columna_2 .contact_direct li a, .footer .footer_main .container .footer_main_cuerpo .columna_2 .contact_direct li .footer_head .footer_head_cuerpo a img, .footer .footer_head .footer_head_cuerpo a .footer_main .container .footer_main_cuerpo .columna_2 .contact_direct li img {
                 width: 100%;
                 height: 100%;
                 display: flex;
@@ -743,7 +776,7 @@ footer {
                 font-size: 17px;
                 padding: 10px;
                 color: #23112c; }
-                .footer .footer_main .container .footer_main_cuerpo .columna_2 .contact_direct li a ion-icon {
+                .footer .footer_main .container .footer_main_cuerpo .columna_2 .contact_direct li a ion-icon, .footer .footer_head .footer_head_cuerpo a .footer_main .container .footer_main_cuerpo .columna_2 .contact_direct li img ion-icon {
                   padding: 0 10px 0 15px;
                   font-size: 23px; }
   .footer .footer_bot {
@@ -907,7 +940,7 @@ footer {
       justify-content: center;
       align-items: center;
       padding: 5px; }
-      .noticias_caja article .caja_text_noti a {
+      .noticias_caja article .caja_text_noti a, .noticias_caja article .caja_text_noti .footer .footer_head .footer_head_cuerpo a img, .footer .footer_head .footer_head_cuerpo a .noticias_caja article .caja_text_noti img {
         position: relative;
         display: block;
         width: 98%;
@@ -928,7 +961,7 @@ footer {
         font-size: 16px; }
     .noticias_caja article .caja_text_noti:hover {
       backdrop-filter: blur(10px); }
-    .noticias_caja article a:hover {
+    .noticias_caja article a:hover, .noticias_caja article .footer .footer_head .footer_head_cuerpo a img:hover, .footer .footer_head .footer_head_cuerpo a .noticias_caja article img:hover {
       color: #23112c;
       transition: .7s; }
   .noticias_caja .noticias_game {
@@ -1105,7 +1138,7 @@ footer {
         .contacto .cuerpo_contact .contacto_rapido .caja_rapido ul li {
           width: 100%;
           margin: 15px 0; }
-          .contacto .cuerpo_contact .contacto_rapido .caja_rapido ul li a {
+          .contacto .cuerpo_contact .contacto_rapido .caja_rapido ul li a, .contacto .cuerpo_contact .contacto_rapido .caja_rapido ul li .footer .footer_head .footer_head_cuerpo a img, .footer .footer_head .footer_head_cuerpo a .contacto .cuerpo_contact .contacto_rapido .caja_rapido ul li img {
             display: block;
             width: 100%;
             padding: 10px;
@@ -1118,10 +1151,10 @@ footer {
             justify-content: flex-start;
             align-items: center;
             transition: .7s; }
-            .contacto .cuerpo_contact .contacto_rapido .caja_rapido ul li a ion-icon {
+            .contacto .cuerpo_contact .contacto_rapido .caja_rapido ul li a ion-icon, .footer .footer_head .footer_head_cuerpo a .contacto .cuerpo_contact .contacto_rapido .caja_rapido ul li img ion-icon {
               padding: 0 10px 0 0;
               font-size: 25px; }
-            .contacto .cuerpo_contact .contacto_rapido .caja_rapido ul li a:hover {
+            .contacto .cuerpo_contact .contacto_rapido .caja_rapido ul li a:hover, .contacto .cuerpo_contact .contacto_rapido .caja_rapido ul li .footer .footer_head .footer_head_cuerpo a img:hover, .footer .footer_head .footer_head_cuerpo a .contacto .cuerpo_contact .contacto_rapido .caja_rapido ul li img:hover {
               color: #0097f5; }
     .contacto .cuerpo_contact .mapa iframe {
       width: 100%;
@@ -1462,11 +1495,11 @@ font-family: 'Quicksand', sans-serif;
                 backdrop-filter: blur(5px);
                 -webkit-backdrop-filter: blur(5px);
                 border-radius: 4px; }
-                .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body a {
+                .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body a, .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body .footer .footer_head .footer_head_cuerpo a img, .footer .footer_head .footer_head_cuerpo a .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body img {
                   text-decoration: none;
                   text-align: center;
                   color: #22102B; }
-                  .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body a h2 {
+                  .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body a h2, .footer .footer_head .footer_head_cuerpo a .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body img h2 {
                     font-family: "Oswald", sans-serif;
                     text-transform: capitalize; }
                 .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body ul {
@@ -1491,7 +1524,7 @@ $xl: 1200px;
     width: calc(100% - 350px); }
     .header .nav_menu .menu li {
       margin-left: 1px; }
-      .header .nav_menu .menu li a {
+      .header .nav_menu .menu li a, .header .nav_menu .menu li .footer .footer_head .footer_head_cuerpo a img, .footer .footer_head .footer_head_cuerpo a .header .nav_menu .menu li img {
         width: 99px;
         font-weight: 300px; }
   .main .programas .linea_tiempo::before {
@@ -1569,7 +1602,7 @@ $xl: 1200px;
     width: calc(100% - 70px); }
     .header .nav_menu .logo li {
       margin-left: 0; }
-      .header .nav_menu .logo li a {
+      .header .nav_menu .logo li a, .header .nav_menu .logo li .footer .footer_head .footer_head_cuerpo a img, .footer .footer_head .footer_head_cuerpo a .header .nav_menu .logo li img {
         width: 100%;
         font-size: 20px; }
   .header .nav_menu .toggle {
@@ -1605,7 +1638,7 @@ $xl: 1200px;
     border-top: thin solid #371c45d7; }
     .header .nav_menu .menu li {
       margin: 10px auto; }
-      .header .nav_menu .menu li a {
+      .header .nav_menu .menu li a, .header .nav_menu .menu li .footer .footer_head .footer_head_cuerpo a img, .footer .footer_head .footer_head_cuerpo a .header .nav_menu .menu li img {
         width: 90%;
         margin: auto;
         transition: .7s; }
@@ -1658,15 +1691,15 @@ $xl: 1200px;
     width: 99%;
     height: 50%;
     margin-left: .5%; }
-    .main .noticias .noticias_grid article .subtitulo_noti a,
+    .main .noticias .noticias_grid article .subtitulo_noti a, .main .noticias .noticias_grid article .subtitulo_noti .footer .footer_head .footer_head_cuerpo a img, .footer .footer_head .footer_head_cuerpo a .main .noticias .noticias_grid article .subtitulo_noti img,
     .main .noticias .noticias_grid article .subtitulo_noti p {
       text-decoration: none;
       color: #ffffff; }
-    .main .noticias .noticias_grid article .subtitulo_noti a {
+    .main .noticias .noticias_grid article .subtitulo_noti a, .main .noticias .noticias_grid article .subtitulo_noti .footer .footer_head .footer_head_cuerpo a img, .footer .footer_head .footer_head_cuerpo a .main .noticias .noticias_grid article .subtitulo_noti img {
       font-weight: 400;
       font-size: inherit;
       font-size: 23px; }
-      .main .noticias .noticias_grid article .subtitulo_noti a:hover {
+      .main .noticias .noticias_grid article .subtitulo_noti a:hover, .main .noticias .noticias_grid article .subtitulo_noti .footer .footer_head .footer_head_cuerpo a img:hover, .footer .footer_head .footer_head_cuerpo a .main .noticias .noticias_grid article .subtitulo_noti img:hover {
         color: #23112c;
         transition: .7s; }
     .main .noticias .noticias_grid article .subtitulo_noti p {
@@ -1707,7 +1740,7 @@ $xl: 1200px;
       align-content: center;
       justify-content: center;
       align-items: center; }
-      .footer .footer_head .footer_head_cuerpo a {
+      .footer .footer_head .footer_head_cuerpo a, .footer .footer_head .footer_head_cuerpo a img {
         width: 80px;
         height: 80px; }
       .footer .footer_head .footer_head_cuerpo ul.redes_pie {
@@ -1741,7 +1774,7 @@ $xl: 1200px;
       .footer .footer_main .container .footer_main_cuerpo .columna_1 .links_2 {
         width: 40%;
         padding: 5px; }
-        .footer .footer_main .container .footer_main_cuerpo .columna_1 .links_2 li a {
+        .footer .footer_main .container .footer_main_cuerpo .columna_1 .links_2 li a, .footer .footer_main .container .footer_main_cuerpo .columna_1 .links_2 li .footer_head .footer_head_cuerpo a img, .footer .footer_head .footer_head_cuerpo a .footer_main .container .footer_main_cuerpo .columna_1 .links_2 li img {
           font-weight: 400;
           font-size: 18px;
           color: #23112c;
@@ -1774,11 +1807,11 @@ $xl: 1200px;
           .footer .footer_main .container .footer_main_cuerpo .columna_2 .contact_direct li {
             width: 90%;
             height: auto; }
-            .footer .footer_main .container .footer_main_cuerpo .columna_2 .contact_direct li a {
+            .footer .footer_main .container .footer_main_cuerpo .columna_2 .contact_direct li a, .footer .footer_main .container .footer_main_cuerpo .columna_2 .contact_direct li .footer_head .footer_head_cuerpo a img, .footer .footer_head .footer_head_cuerpo a .footer_main .container .footer_main_cuerpo .columna_2 .contact_direct li img {
               font-size: 15px;
               padding: 10px;
               color: #ffffff; }
-              .footer .footer_main .container .footer_main_cuerpo .columna_2 .contact_direct li a ion-icon {
+              .footer .footer_main .container .footer_main_cuerpo .columna_2 .contact_direct li a ion-icon, .footer .footer_head .footer_head_cuerpo a .footer_main .container .footer_main_cuerpo .columna_2 .contact_direct li img ion-icon {
                 font-size: 20px; }
   .footer .footer_bot .footer_bot_cuerpo p {
     font-size: 14px; } }
@@ -1801,7 +1834,7 @@ $xl: 1200px;
     width: 99%;
     height: 50%;
     margin-left: .5%; }
-    .main .noticias .noticias_grid article .subtitulo_noti a {
+    .main .noticias .noticias_grid article .subtitulo_noti a, .main .noticias .noticias_grid article .subtitulo_noti .footer .footer_head .footer_head_cuerpo a img, .footer .footer_head .footer_head_cuerpo a .main .noticias .noticias_grid article .subtitulo_noti img {
       font-weight: 400;
       font-size: inherit;
       font-size: 20px; }
@@ -1862,7 +1895,7 @@ $xl: 1200px;
       grid-area: 7/1/9/13; }
   .noticias_caja article .caja_text_noti {
     padding: 2px; }
-    .noticias_caja article .caja_text_noti a {
+    .noticias_caja article .caja_text_noti a, .noticias_caja article .caja_text_noti .footer .footer_head .footer_head_cuerpo a img, .footer .footer_head .footer_head_cuerpo a .noticias_caja article .caja_text_noti img {
       font-size: 18px; }
     .noticias_caja article .caja_text_noti p {
       font-size: 15px; }
@@ -1950,9 +1983,9 @@ $xl: 1200px;
         .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body {
           width: 96%;
           height: 40%; }
-          .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body a {
+          .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body a, .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body .footer .footer_head .footer_head_cuerpo a img, .footer .footer_head .footer_head_cuerpo a .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body img {
             text-decoration: none; }
-            .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body a h2 {
+            .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body a h2, .footer .footer_head .footer_head_cuerpo a .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body img h2 {
               font-size: 23px; }
           .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body ul li p {
             font-size: 15px;
@@ -1968,7 +2001,7 @@ $xl: 1200px;
       height: 450px; }
       .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body {
         height: 30%; }
-        .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body a h2 {
+        .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body a h2, .footer .footer_head .footer_head_cuerpo a .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body img h2 {
           font-size: 23px; }
         .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body ul {
           list-style: none; }
@@ -2038,7 +2071,7 @@ $xl: 1200px;
       height: 450px; }
       .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body {
         height: 35%; }
-        .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body a h2 {
+        .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body a h2, .footer .footer_head .footer_head_cuerpo a .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body img h2 {
           font-size: 23px; }
         .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body ul {
           list-style: none; }
