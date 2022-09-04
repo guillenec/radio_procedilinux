@@ -22,11 +22,9 @@
         .video_banner {
             @include caja_abs_top(100%, 100%, 0 ,"t");
             left: 0;
-            background: $pri_purp;
 
             video {
-                @include caja_abs_top(100%, 100%, 0 ,"t");
-                left: 0;
+                @extend .video_banner;
                 object-fit: cover;
             }
         }
@@ -50,7 +48,7 @@
                 display: block;
                 width: 90%;
                 text-align: left;
-                color: $pri_purp;
+                color: $color_p;
                 margin-bottom: 0;
             }
 
@@ -71,7 +69,7 @@
 
             strong {
                 font-weight: 700;
-                color: #000000;
+                color: $stro;
             }
 
         }
@@ -104,13 +102,22 @@
                         align-items: center;
                         width: 50px;
                         height: 50px;
-                        background: $pri_white;
-                        color: $pri_purp;
+                        background: $bg_a;
+
+                        //usaremos un map 
+                        @each $name, $color in $colors_redes {
+                            ion-icon.#{$name}{
+                                color: $color;
+                            }
+                        }
 
                         &:hover {
-                            background: $pri_blue;
-                            color: $pri_white;
+                            background: $bg_hover_1;
                             transition: .7s;
+
+                            ion-icon{
+                                color: $col_hover_1;
+                            }
                         }
                     }
                 }
@@ -138,7 +145,7 @@
         width: 100%;
         height: 70px;
         min-height: 70px;
-        background: $pri_purp;
+        background: $bord_titulo;
         border-radius: 5px;
         display: flex;
         justify-content: space-between;
@@ -174,7 +181,7 @@
             position: absolute;
             inset: 4px;
             border-radius: 4px;
-            background: $pri_white;
+            background: $bg_principal;
             display: flex;
             align-content: center;
             justify-content: space-between;
@@ -185,7 +192,7 @@
             h2 {
                 font-family: $titulo, sans-serif;
                 text-transform: uppercase;
-                color: $pri_purp;
+                color: $color_a;
                 margin: 0;
             }
 
@@ -195,20 +202,20 @@
 
             a {
                 text-decoration: none;
-                color: $pri_purp;
-                font-family: $titulo, sans-serif;
+                color: $color_a;
+                font-family: $titulo;
                 text-transform: uppercase;
                 text-align: center;
                 font-weight: 400;
-                border: 1px solid $pri_blue;
+                border: 1px solid $bord_subt;
                 padding: 5px 10px;
                 border-radius: 3px;
                 transition: .7s;
 
                 &:hover {
-                    border: 1px solid $pri_purp;
-                    color: $pri_white;
-                    background: $pri_blue;
+                    border: 1px solid $bord_hover_1;
+                    color: $col_hover_1;
+                    background: $bg_hover_1;
                 }
             }
         }
@@ -272,7 +279,7 @@
                 width: 100%;
                 height: 100%;
                 border-radius: 4px;
-                border: solid 1px #333;
+                border: solid 1px $bord_titulo;
                 -webkit-box-shadow: $sombra_general;
                 -moz-box-shadow: $sombra_general;
                 box-shadow: $sombra_general;
@@ -286,7 +293,7 @@
                     @include caja_abs_top(98%, 40%, 3px,"b");
                     left: 0;
                     margin-left: 1%;
-                    background: $sec_blue;
+                    background: $caja_cont_noti;
                     backdrop-filter: blur(5px);
                     -webkit-backdrop-filter: blur(5px);
                     border-radius: 4px;
@@ -300,14 +307,14 @@
                     a,
                     p {
                         text-decoration: none;
-                        color: $pri_white;
                     }
 
                     a {
                         display: block;
-                        font-family: $titulo, sans-serif;
+                        font-family: $titulo;
                         font-weight: 400;
                         font-size: inherit;
+                        color: $color_a_w;
 
 
                         &:hover {
@@ -317,9 +324,9 @@
                     }
 
                     p {
-                        font-family: $parrafo, sans-serif;
+                        font-family: $parrafo;
                         font-weight: 400;
-                        color: $pri_purp;
+                        color: $color_p;
                     }
                 }
             }
@@ -344,7 +351,7 @@
                 bottom: 0;
                 width: 6px;
                 height: 100%;
-                background: $pri_blue;
+                background: $linea_tiempo;
                 left: 50%;
                 margin-left: -3px;
             }
@@ -356,7 +363,7 @@
 
                 .content_time {
                     position: relative;
-                    background: $sec_blue;
+                    background: $caja_cont_noti;
                     padding: 20px 30px;
                     border-radius: 5px;
                     -webkit-box-shadow: $sombra_general;
@@ -372,7 +379,7 @@
                         height: 200px;
                         border-radius: 5px;
                         object-fit: cover;
-                        background: $pri_white;
+                        background: $bg_principal;
                         padding: 5px;
                         overflow: hidden;
 
@@ -391,11 +398,11 @@
                         }
 
                         h3 {
-                            color: $pri_purp;
+                            color: $color_p;
                         }
 
                         p {
-                            color: $pri_purp;
+                            color: $color_p;
                         }
 
                     }
@@ -415,10 +422,9 @@
                 &::after {
                     content: '';
                     @include caja_abs_top(10px, 10px, 15px,"t");
-                    background: $pri_blue;
                     right: -10px;
                     border-radius: 50%;
-                    border: 10px solid $pri_purp;
+                    border: 10px solid $color_p;
                     z-index: 1;
                 }
 
@@ -426,9 +432,9 @@
                     content: '';
                     @include caja_abs_top(10px, 10px, 22px,"t");
                     right: 30px;
-                    border: 10px solid $sec_blue;
+                    border: 10px solid $caja_cont_noti;
                     border-width: 10px 0 10px 10px;
-                    border-color: transparent transparent transparent $sec_blue;
+                    border-color: transparent transparent transparent $caja_cont_noti;
                 }
             }
 
@@ -436,24 +442,21 @@
                 &::after {
                     content: '';
                     @include caja_abs_top(10px, 10px, 15px,"t");
-                    background: $pri_blue;
                     left: -10px;
                     border-radius: 50%;
-                    border: 10px solid $pri_purp;
+                    border: 10px solid $color_p;
                 }
 
                 &::before {
                     content: '';
                     @include caja_abs_top(10px, 10px, 22px,"t");
-
                     left: 30px;
                     background-color: none;
-                    border: 10px solid $sec_blue;
+                    border: 10px solid $caja_cont_noti;
                     border-width: 10px 10px 10px 0;
-                    border-color: transparent $sec_blue transparent transparent;
+                    border-color: transparent $caja_cont_noti transparent transparent;
                 }
             }
-
         }
     }
 }

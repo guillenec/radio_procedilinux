@@ -1,0 +1,40 @@
+se corrigio:
+
+1- armado del arbol de directorio, utilizacion de imports solo en main.
+organizacion simple:
+    utilities: funciones, variables, mixins.
+    base: tipografias y reseteo
+    layaout: estructura de la pagina, general, main header y footer.
+    views: estilos especificos para las paginas del proyecto: contacto, galeria, etc.
+    media_querys: para las diferentes vistas en pantalla, los estilos responsivos.
+    components: no usado de momento y creo que no lo usare. en casoo de usarlo sera para sacar componente por componente para poder reutilizar el codigo en otros pproyectos. 
+    ejemplo: reutilizar menu, boton de dia y noche, carrousel, linea de tiempo.. etc.
+
+
+mixin: 
+img_100 
+para las imagenes que usan cover y estan dentro de una caja contenedora.
+como uso muchas img con valor cober, se reutilizara en todo el codigo.
+
+caja_abs_top
+similar a la de arriba .para las cajas contenedoras dentro de una reolativa.. 
+como en el caso de las targetas de los programas.
+
+maps:
+$colors_redes: se usara de prueba par los iconos de redes en el mini muenu del banner video.
+si gusta y queda vien lo reutilizare.
+
+extend:
+extend de la clase video_banner (clase padre contenedora del video banner).
+ya que como compartian las mismas propiedades , me podioa aorrar codigo al extenderla en su clase hija video..
+
+.video_banner {
+            @include caja_abs_top(100%, 100%, 0 ,"t");
+            left: 0;
+
+            video {
+                @extend .video_banner;
+                object-fit: cover;
+            }
+        }
+

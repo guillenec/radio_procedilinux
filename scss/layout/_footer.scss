@@ -50,8 +50,8 @@
 
                     a {
                         @include caja_abs_top(100%, 100%, 0, "t" );
-                        color: $pri_white;
-                        border: solid thin $pri_purp;
+                        color: $bg_a;
+                        border: solid thin $color_a;
                         display: grid;
                         place-content: center;
                         transition: .5s;
@@ -61,8 +61,8 @@
                         }
 
                         &:hover {
-                            color: $pri_blue;
-                            border: solid thin $pri_blue;
+                            color: $bg_hover_1;
+                            border: solid thin $bg_hover_1;
                         }
                     }
                 }
@@ -74,7 +74,7 @@
         position: relative;
         width: 100%;
         height: auto;
-        background: $pri_blue;
+        background: $fo_m;
 
         .container {
             width: 100%;
@@ -111,17 +111,17 @@
                             a {
                                 display: block;
                                 width: 100%;
-                                font-family: $titulo, sans-serif;
+                                font-family: $titulo;
                                 font-weight: 500;
                                 font-size: 20px;
-                                color: $pri_white;
+                                color: $color_a_w;
                                 text-decoration: none;
                                 padding: 5px;
                                 text-transform: capitalize;
                                 transition: .7s;
 
                                 &:hover {
-                                    color: $pri_yellow;
+                                    color: $hover_yell;
                                 }
                             }
                         }
@@ -141,7 +141,7 @@
                         font-family: $parrafo, sans-serif;
                         text-transform: capitalize;
                         text-align: center;
-                        color: $pri_white;
+                        color: $fo_h2;
                         margin-top: 20px;
                     }
 
@@ -175,7 +175,7 @@
                                     position: absolute;
                                     content: '';
                                     height: 5px;
-                                    background: $pri_purp;
+                                    background: $fo_h;
                                     left: 0;
                                     top: 10px;
                                     width: 100%;
@@ -187,21 +187,21 @@
                                 width: 100%;
                                 margin: 5px 0;
                                 padding: 10px 10px;
-                                border: 3px solid $pri_purp;
-                                background: $pri_purp;
+                                border: 3px solid $fo_h;
+                                background: $fo_h;
                                 border-radius: 4px;
                                 font-size: 18px;
                                 outline: none;
                                 transition: .7s;
-                                color: $pri_white;
+                                color: $fo_h2;
 
                                 &:focus {
-                                    border: 3px solid $pri_yellow;
+                                    border: 3px solid $hover_yell;
                                 }
 
                                 &:focus+.label {
                                     top: -5px;
-                                    color: $pri_yellow;
+                                    color: $hover_yell;
                                     font-size: 18px;
                                 }
 
@@ -220,24 +220,24 @@
                             width: 60%;
                             margin: 5px 0;
                             padding: 10px 10px;
-                            border: 3px solid $pri_purp;
-                            background: $pri_purp;
+                            border: 3px solid $fo_h;
+                            background: $fo_h;
                             border-radius: 4px;
                             font-size: 15px;
                             outline: none;
                             transition: .5s;
-                            color: $pri_white;
+                            color: $fo_h2;
                             transition: .7s;
 
                             &:hover {
-                                border: 3px solid $pri_yellow;
-                                color: $pri_yellow;
+                                border: 3px solid $hover_yell;
+                                color: $hover_yell;
                             }
 
                             &:focus {
-                                border: 3px solid $pri_yellow;
-                                color: $pri_purp;
-                                background: $pri_yellow;
+                                border: 3px solid $hover_yell;
+                                color: $fo_h;
+                                background: $hover_yell;
                             }
                         }
                     }
@@ -267,12 +267,12 @@
                                 justify-content: flex-start;
                                 align-items: center;
                                 /*font-family: 'Oswald', sans-serif;*/
-                                font-family: $parrafo, sans-serif;
+                                font-family: $parrafo;
                                 text-decoration: none;
                                 font-weight: 500;
                                 font-size: 17px;
                                 padding: 10px;
-                                color: $pri_white;
+                                color: $fo_h;
 
                                 ion-icon {
                                     padding: 0 10px 0 15px;
@@ -302,9 +302,9 @@
 
             p {
                 display: block;
-                font-family: $parrafo, sans-serif;
+                font-family: $parrafo;
                 font-weight: 500;
-                color: $pri_purp;
+                color: $fo_h;
                 font-size: 18px;
                 text-align: center;
             }

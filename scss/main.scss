@@ -1,6 +1,7 @@
 //Utilidades : las funciones, variables mixins que se usaran. 
 @import './utilities/variables';
 @import './utilities/mixins';
+@import './utilities/_maps.scss';
 
 //Base: codigo base tipografias y reseteos
 @import './base/_reset.scss';
