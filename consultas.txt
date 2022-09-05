@@ -21,7 +21,8 @@ similar a la de arriba .para las cajas contenedoras dentro de una reolativa..
 como en el caso de las targetas de los programas.
 
 maps:
-$colors_redes: se usara de prueba par los iconos de redes en el mini muenu del banner video.
+$colors_redes: se usara de prueba par los iconos de redes en el mini
+menú del banner video y en el menu de redes del footer header.
 si gusta y queda vien lo reutilizare.
 
 extend:
@@ -44,4 +45,5 @@ se incorporaron los metas vistos en clases, meta author y copyright en todos los
 se incorporo un title en cada pagina y en el acorde a lo sugerido en clases.
 las imagenes que uso todas tienen su respectivo alt.
 etiqueta strong para resaltar texto especificos , solo importantes.
-ahun no cambio todos los valores a una misma unidad como me sugirieron.. lo antes posible apenas tenga tiempo lo are.
+ahun no cambio todos los valores a una misma unidad como me sugirieron.. 
+lo antes posible apenas tenga tiempo lo hare.
