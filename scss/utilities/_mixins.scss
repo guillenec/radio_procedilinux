@@ -12,13 +12,14 @@
     width: $a;
     height: $b;
 
-    @if $d == "t" {
+    @if $d == t {
         top: $c;
-    } @else if $d == "b"{
+    } @else if $d == b{
         bottom: $c;
     } 
 } 
 
+//mixin sin parametros ya que nos faltaba uno de este tipo 
 @mixin ancho_general() {
     width: 80%;
 

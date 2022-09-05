@@ -20,7 +20,7 @@
         margin-top: 0;
 
         .video_banner {
-            @include caja_abs_top(100%, 100%, 0 ,"t");
+            @include caja_abs_top(100%, 100%, 0 ,t);
             left: 0;
 
             video {
@@ -30,7 +30,7 @@
         }
 
         .caja_opaca {
-            @include caja_abs_top(40%, 100%, 0, "t");
+            @include caja_abs_top(40%, 100%, 0, t);
             background: $caja_opaca;
             box-shadow: 10px 0 15px rgba(0, 0, 0, 0.05);
             backdrop-filter: blur(10px);
@@ -290,7 +290,7 @@
                 }
 
                 .subtitulo_noti {
-                    @include caja_abs_top(98%, 40%, 3px,"b");
+                    @include caja_abs_top(98%, 40%, 3px, b);
                     left: 0;
                     margin-left: 1%;
                     background: $caja_cont_noti;
@@ -421,7 +421,7 @@
             .left {
                 &::after {
                     content: '';
-                    @include caja_abs_top(10px, 10px, 15px,"t");
+                    @include caja_abs_top(10px, 10px, 15px,t);
                     right: -10px;
                     border-radius: 50%;
                     border: 10px solid $color_p;
@@ -430,7 +430,7 @@
 
                 &::before {
                     content: '';
-                    @include caja_abs_top(10px, 10px, 22px,"t");
+                    @include caja_abs_top(10px, 10px, 22px,t);
                     right: 30px;
                     border: 10px solid $caja_cont_noti;
                     border-width: 10px 0 10px 10px;
@@ -441,7 +441,7 @@
             .right {
                 &::after {
                     content: '';
-                    @include caja_abs_top(10px, 10px, 15px,"t");
+                    @include caja_abs_top(10px, 10px, 15px,t);
                     left: -10px;
                     border-radius: 50%;
                     border: 10px solid $color_p;
@@ -449,7 +449,7 @@
 
                 &::before {
                     content: '';
-                    @include caja_abs_top(10px, 10px, 22px,"t");
+                    @include caja_abs_top(10px, 10px, 22px,t);
                     left: 30px;
                     background-color: none;
                     border: 10px solid $caja_cont_noti;

@@ -88,7 +88,7 @@
                 flex-wrap: nowrap;
 
                 .toggle_light{
-                    @include  caja_abs_top(80px, 40px, auto ,"t");
+                    @include  caja_abs_top(80px, 40px, auto ,t);
                     display: block;
                     background: $pri_purp;
                     border-radius: 100px;
@@ -99,7 +99,7 @@
                     cursor: pointer;
 
                     .indicador{
-                        @include  caja_abs_top(40px, 40px, 0 ,"t");
+                        @include  caja_abs_top(40px, 40px, 0 ,t);
                         left: 0;
                         background: linear-gradient(to bottom,#763794, #381a46);
                         border-radius: 50%;

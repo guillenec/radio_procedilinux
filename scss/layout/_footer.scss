@@ -47,7 +47,7 @@
                     list-style: none;
 
                     a {
-                        @include caja_abs_top(100%, 100%, 0, "t" );
+                        @include caja_abs_top(100%, 100%, 0, t );
                         border: solid thin $color_a;
                         display: grid;
                         place-content: center;
