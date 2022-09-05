@@ -1,4 +1,5 @@
 //estilos multiples para reutilizar codigo
+
 header,
 main,
 footer {
@@ -10,8 +11,10 @@ footer {
 .width_80 {
     //--mantiene el ancho en 80%
     position: relative;
-    width: 80%;
+    //width: 80%;
     margin: auto;
+    @include ancho_general();
+
 }
 
 .top_50 {

@@ -18,3 +18,20 @@
         bottom: $c;
     } 
 } 
+
+@mixin ancho_general() {
+    width: 80%;
+
+    @media screen and (max-width: $xl){
+        width: 90%;
+    }
+    @media screen and (max-width: $lg){
+        width: 96%;
+    }
+    @media screen and (max-width: $md){
+        width: 98%;
+    }
+    @media screen and (max-width: $sm){
+        width: 100%;
+    }
+}

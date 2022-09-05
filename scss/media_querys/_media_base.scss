@@ -112,9 +112,7 @@ $xl: 1200px;
 
 @media screen and (max-width: $lg) {
 
-    .width_80 {
-        width: 90%;
-    }
+    //.width_80 { width: 90%; }
 
     .header {
         .nav_menu.active {
@@ -235,9 +233,7 @@ $xl: 1200px;
 }
 
 @media screen and (max-width: $md) {
-    .width_80 {
-        width: 98%;
-    }
+    //.width_80 {  width: 98%; }
 
     .main {
         .banner_conteiner {
@@ -386,12 +382,11 @@ $xl: 1200px;
                 }
 
                 ul.redes_pie {
-
                     width: calc(100% - 80px);
                     height: 100%;
                     flex-direction: row;
                     flex-wrap: wrap;
-                    justify-content: center;
+                    justify-content: flex-end;
                     align-content: center;
                     align-items: center;
                     padding-left: 0;
@@ -528,9 +523,7 @@ $xl: 1200px;
 }
 
 @media screen and (max-width: $sm) {
-    .width_80 {
-        width: 100%;
-    }
+    // .width_80 { width: 100%;  }
 
     .main {
         .banner_conteiner {
@@ -633,6 +626,16 @@ $xl: 1200px;
 
                 .caja.right {
                     left: 40px;
+                }
+
+            }
+        }
+    }
+    .footer {
+        .footer_head {
+            .footer_head_cuerpo {
+                ul.redes_pie {
+                    justify-content: center;
                 }
 
             }

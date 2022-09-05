@@ -57,6 +57,52 @@
         $titulo_dancing: ('Dancing Script', cursive);
 
 }
+:root{
+--sombra_general:$sombra_general;
 
+//backgrounds
+--bg_head: $bg_header;
+--bg_a: $bg_a;
+--color_a: $color_a;
+--color_p: $color_p;
+--color_strong: $stro;
+
+--color_a_white:$color_a_w;
+
+//boton niight
+--bg_hover_a: $bg_hover_1;
+--color_hover_a: $col_hover_1;
+--color_hover_a:$bord_hover_1;
+--color_hover_yell:$hover_yell;
+
+//titulo general
+$bg_principal:#fff;
+$bg_secundario:#23112c;
+$bord_titulo:#23112c;
+$bord_subt:rgb(0, 151, 245);
+
+//BANNER
+$caja_opaca:rgba(255, 255, 255, 0.308);
+
+//NOTICIAS
+$caja_cont_noti:#0096f494;
+
+//PROGRAMA
+$linea_tiempo:rgb(0, 151, 245);
+
+//FOOTER
+$fo_h:#23112c;
+$fo_m:rgb(0, 151, 245);
+$fo_h2: #fff;
+
+//paleta de colores
+$pri_blue: rgb(0, 151, 245);
+$pri_purp: #23112c;
+$pri_white: #ffffff;
+$sec_blue:#0096f494;
+$sec_purp: #a806d1;
+
+$strong_titulo:#0000;
+}
 
 
