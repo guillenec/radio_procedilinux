@@ -43,7 +43,7 @@ $xl: 1200px;
 
                     .content_time {
                         position: relative;
-                        background: $sec_blue;
+                        background: var(--sec_blue);
                         padding: 20px 30px;
                         border-radius: 5px;
                         -webkit-box-shadow: $sombra_general;
@@ -98,9 +98,9 @@ $xl: 1200px;
                     top: 15px;
                     left: -2px;
                     background-color: none;
-                    border: 10px solid $sec_blue;
+                    border: 10px solid var(--sec_blue);
                     border-width: 15px 15px 15px 0;
-                    border-color: transparent $sec_blue transparent $sec_blue;
+                    border-color: transparent var(--sec_blue) transparent var(--sec_blue);
                     z-index: 1;
                 }
             }
@@ -353,9 +353,9 @@ $xl: 1200px;
                     top: 15px;
                     left: -2px;
                     background-color: none;
-                    border: 10px solid $sec_blue;
+                    border: 10px solid var(--sec_blue);
                     border-width: 15px 15px 15px 0;
-                    border-color: transparent $sec_blue transparent $sec_blue;
+                    border-color: transparent var(--sec_blue) transparent var(--sec_blue);
                     z-index: 1;
                 }
 
