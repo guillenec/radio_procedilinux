@@ -43,12 +43,8 @@ $xl: 1200px;
 
                     .content_time {
                         position: relative;
-                        background: var(--sec_blue);
                         padding: 20px 30px;
                         border-radius: 5px;
-                        -webkit-box-shadow: $sombra_general;
-                        -moz-box-shadow: $sombra_general;
-                        box-shadow: $sombra_general;
                         display: flex;
 
                         .img_prog {
@@ -56,7 +52,6 @@ $xl: 1200px;
                             height: 200px;
                             border-radius: 5px;
                             object-fit: cover;
-                            background: #fff;
                             padding: 5px;
                             overflow: hidden;
 
@@ -85,23 +80,14 @@ $xl: 1200px;
 
                 .left::after,
                 .right::after {
-                    top: 15px;
                     left: -38px;
                 }
 
                 .left::before,
                 .right::before {
-                    content: '';
-                    height: 0;
-                    width: 0;
-                    position: absolute;
-                    top: 15px;
+                    
                     left: -2px;
-                    background-color: none;
-                    border: 10px solid var(--sec_blue);
-                    border-width: 15px 15px 15px 0;
-                    border-color: transparent var(--sec_blue) transparent var(--sec_blue);
-                    z-index: 1;
+                    
                 }
             }
         }
@@ -163,12 +149,12 @@ $xl: 1200px;
                     position: absolute;
                     width: 30px;
                     height: 3px;
-                    background-color: $pri_purp;
+                    background-color: var(--toggle_color);
                 }
 
                 &::before {
                     transform: translateY(-10px);
-                    box-shadow: 0 10px #381A46;
+                    box-shadow: 0 10px var(--toggle_color);
                     transition: .5s;
                 }
 
@@ -215,11 +201,12 @@ $xl: 1200px;
                 justify-content: center;
                 align-items: center;
                 padding: 30px;
+                box-shadow: 0 0 0 10px var(--sombra_cajaopaca);
 
                 h1,
                 p {
                     text-align: left;
-                    color: $pri_purp;
+                    color: var(--toggle_color);
                     margin: 5px 0;
                     overflow: hidden;
                 }
@@ -303,7 +290,7 @@ $xl: 1200px;
 
 
                             &:hover {
-                                color: $pri_purp;
+                                color: var(--toggle_color);
                                 transition: .7s;
                             }
                         }
@@ -340,23 +327,12 @@ $xl: 1200px;
 
                 .left::after,
                 .right::after {
-                    top: 15px;
                     left: -38px;
                 }
 
                 .left::before,
                 .right::before {
-                    content: '';
-                    height: 0;
-                    width: 0;
-                    position: absolute;
-                    top: 15px;
                     left: -2px;
-                    background-color: none;
-                    border: 10px solid var(--sec_blue);
-                    border-width: 15px 15px 15px 0;
-                    border-color: transparent var(--sec_blue) transparent var(--sec_blue);
-                    z-index: 1;
                 }
 
             }
@@ -434,7 +410,7 @@ $xl: 1200px;
                                 a {
                                     font-weight: 400;
                                     font-size: 18px;
-                                    color: $pri_purp;
+                                    color: var(--toggle_color);
                                     overflow: hidden;
                                 }
                             }
@@ -608,13 +584,13 @@ $xl: 1200px;
                             border-radius: 7px;
 
                             h3 {
-                                color: $pri_purp;
+                                color: var(--toggle_color);
                                 font-size: 19px;
                             }
 
                             p {
                                 font-size: 15px;
-                                color: $pri_purp;
+                                color: var(--toggle_color);
                             }
                         }
                     }
