@@ -50,6 +50,7 @@ html[data-theme='light'] {
     --fo_h: #{$fo_h};
     --fo_m: #{$fo_m};
     --fo_h2:#{$fo_h2};
+    --fo_col3_p:#{$fo_col3_p};
 
     //paleta de colores
     --pri_blue:#{$pri_blue};
@@ -100,6 +101,7 @@ html[data-theme='dark'] {
     --fo_h: #{$fo_h_dark};
     --fo_m: #{$fo_m_dark};
     --fo_h2: #{$fo_h2_dark};
+    --fo_col3_p:#{$fo_col3_p_dark};
 
 //paleta de colores
     --pri_blue: #{$pri_blue_dark};
