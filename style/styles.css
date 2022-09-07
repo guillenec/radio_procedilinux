@@ -243,7 +243,7 @@ footer {
           border: solid thin var(--bg_header);
           border-radius: 4px;
           padding: 10px; }
-          .header .nav_menu .menu li a:hover, .header .nav_menu .menu li .footer .footer_head .footer_head_cuerpo a img:hover, .footer .footer_head .footer_head_cuerpo a .header .nav_menu .menu li img:hover {
+          .header .nav_menu .menu li a:hover, .header .nav_menu .menu li .footer .footer_head .footer_head_cuerpo a img:hover, .footer .footer_head .footer_head_cuerpo a .header .nav_menu .menu li img:hover, .header .nav_menu .menu li a.activa, .header .nav_menu .menu li .footer .footer_head .footer_head_cuerpo a img.activa, .footer .footer_head .footer_head_cuerpo a .header .nav_menu .menu li img.activa {
             background: var(--bg_hover_a);
             color: var(--color_hover_a);
             transition: .9s; }

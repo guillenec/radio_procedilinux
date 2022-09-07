@@ -161,7 +161,8 @@
                     border-radius: 4px;
                     padding: 10px;
 
-                    &:hover {
+                    &:hover, 
+                    &.activa {
                         background: var(--bg_hover_a);
                         color: var(--color_hover_a);
                         transition: .9s;
