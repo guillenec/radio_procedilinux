@@ -10,7 +10,109 @@ html {
     box-sizing: border-box;
 }
 
-body {
-    background: rgba(250, 246, 250, 0.699);
+html[data-theme='light'] {
+    --sombra_general: #{$sombra_general};
+
+    //backgrounds
+    --bg_header: #{$bg_header};
+    --toggle_color: #{$color_a};
+    --bg_a: #{$bg_a};
+    --color_a: #{$color_a};
+    --color_p: #{$color_p};
+    --color_strong: #{$stro};
+
+    --color_a_white: #{$color_a_w};
+
+    //boton niight
+    --bg_hover_a: #{$bg_hover_1};
+    --color_hover_a: #{$col_hover_1};
+    --color_bord_hover: #{$bord_hover_1};
+    --color_hover_yell: #{$hover_yell};
+
+    //titulo general
+    --bg_principal: #{$bg_principal};
+    --bg_secundario: #{$bg_secundario};
+    --borde_titulo: #{$bord_titulo};
+    --borde_sub: #{$bord_subt};
+
+    //BANNER
+    --caja_opaca: #{$caja_opaca};
+    --sombra_cajaopaca:#{rgba(35, 17, 44, 0.05)};
+    //NOTICIAS
+    --caja_cont_noti: #{$caja_cont_noti};
+    --borde_caja_noticia:#{$borde_caja_noti};
+
+    //PROGRAMA
+    --linea_tiempo: #{$linea_tiempo};
+    --triangulo_caja_prog: #{$triangulo_caja_prog};
+
+    //FOOTER
+    --fo_h: #{$fo_h};
+    --fo_m: #{$fo_m};
+    --fo_h2:#{$fo_h2};
+    --fo_col3_p:#{$fo_col3_p};
+
+    //paleta de colores
+    --pri_blue:#{$pri_blue};
+    --pri_purp:#{$pri_purp};
+    --pri_white:#{$pri_white};
+    --sec_blue:#{$sec_blue};
+    --sec_purp:#{$sec_purp};
+
+    --strong_titulo:#{$strong_titulo};
 }
+
+html[data-theme='dark'] {
+    --sombra_general: #{$sombra_general_dark};
+    //backgrounds
+    --bg_header: #{$bg_header_dark};
+    --toggle_color: #{$color_a_dark};
+    --bg_a: #{$bg_a_dark};
+    --color_a: #{$color_a_dark};
+    --color_p: #{$color_p_dark};
+    --color_strong: #{$stro_dark};
+
+    --color_a_white: #{$color_a_w_dark};
+
+    //boton niight
+    --bg_hover_a: #{$bg_hover_1_dark};
+    --color_hover_a: #{$col_hover_1_dark};
+    --bord_hover: #{$bord_hover_1_dark};
+    --color_hover_yell: #{$hover_yell_dark};
+
+    //titulo general
+    --bg_principal: #{$bg_principal_dark};
+    --bg_secundario: #{$bg_secundario_dark};
+    --borde_titulo: #{$bord_titulo_dark};
+    --borde_sub: #{$bord_subt_dark};
+    --borde_caja_noticia:#{$borde_caja_noti_dark};
+
+    //BANNER
+    --caja_opaca: #{$caja_opaca_dark};
+    --sombra_cajaopaca:#{rgba(248, 248, 248, 0.05)};
+
+    //NOTICIAS
+    --caja_cont_noti: #{$caja_cont_noti_dark};
+
+    //PROGRAMA
+    --linea_tiempo: #{$linea_tiempo_dark};
+    --triangulo_caja_prog: #{$triangulo_caja_prog_dark};
+//FOOTER
+    --fo_h: #{$fo_h_dark};
+    --fo_m: #{$fo_m_dark};
+    --fo_h2: #{$fo_h2_dark};
+    --fo_col3_p:#{$fo_col3_p_dark};
+
+//paleta de colores
+    --pri_blue: #{$pri_blue_dark};
+    --pri_purp: #{$pri_purp_dark};
+    --pri_white: #{$pri_white};
+    --sec_blue: #{$sec_blue_dark};
+    --sec_purp: #{$sec_purp_dark};
+
+    --strong_titulo: #{$strong_titulo_dark};
+}
+
+
+//body {...}
 

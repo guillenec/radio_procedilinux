@@ -1,51 +1,44 @@
-//LIGHT
+//VARIABLES MODO LIGHT
 //sombra cajas
-$sombra_general: (3px 5px 4px 1px hwb(0 0% 100% / 0.38));
-
+$sombra_general: (3px 5px 4px 1px rgba(0, 0, 0, 0.38));
 //backgrounds
 $bg_header:#ffffff;
 $bg_a:#ffffff;
 $color_a:#23112c;
 $color_p:#23112c;
 $stro:#000000;
-
 $color_a_w:#fff;
-
 //boton niight
 $bg_hover_1:rgb(0, 151, 245);
 $col_hover_1: #fff;
 $bord_hover_1:#23112c;
 $hover_yell: #ffff00;
-
 //titulo general
 $bg_principal:#fff;
 $bg_secundario:#23112c;
 $bord_titulo:#23112c;
 $bord_subt:rgb(0, 151, 245);
-
 //BANNER
-$caja_opaca:rgba(255, 255, 255, 0.308);
-
+$caja_opaca:rgba(255, 255, 255, 0.493);
 //NOTICIAS
-$caja_cont_noti:#0096f494;
-
+$caja_cont_noti:#0097f594;
+$borde_caja_noti:#fff;
 //PROGRAMA
 $linea_tiempo:rgb(0, 151, 245);
+$triangulo_caja_prog:#6BC3F9;
 
 //FOOTER
 $fo_h:#23112c;
 $fo_m:rgb(0, 151, 245);
 $fo_h2: #fff;
-
+$fo_col3_p:#23112c;
 //paleta de colores
 $pri_blue: rgb(0, 151, 245);
 $pri_purp: #23112c;
 $pri_white: #ffffff;
 $sec_blue:#0096f494;
 $sec_purp: #a806d1;
-
 $strong_titulo:#0000;
-
 //fuentes
 $titulo: ('Oswald', sans-serif);
 $parrafo: ('Quicksand', sans-serif);
@@ -55,3 +48,46 @@ $sm: 576px;
 $md: 768px;
 $lg: 992px;
 $xl: 1200px;
+
+
+// MODO DARK
+$sombra_general_dark: (3px 5px 4px 1px rgba(255, 255, 255, 0.38));
+$bg_header_dark:#23112c;
+$bg_a_dark:#23112c;
+$color_a_dark:#ffff;
+$color_p_dark:#ffff;
+$stro_dark:#ffff00;
+$color_a_w_dark:#23112c;        
+//boton niight
+$bg_hover_1_dark:#ffff;
+$col_hover_1_dark: rgb(0, 151, 245);
+$bord_hover_1_dark:#b743f1;
+$hover_yell_dark: rgb(0, 151, 245);
+//titulo general
+$bg_principal_dark:rgb(48, 49, 87);
+$bg_secundario_dark:#ffff;
+$bord_titulo_dark:#ffff;
+$bord_subt_dark:rgb(0, 151, 245);
+//BANNER
+$caja_opaca_dark:rgba(88, 49, 194, 0.308);
+//NOTICIAS
+$caja_cont_noti_dark:#5831c294;
+$borde_caja_noti_dark:#23112c;
+//PROGRAMA
+$linea_tiempo_dark:rgb(35, 17, 44);
+$triangulo_caja_prog_dark:#473196;
+
+//FOOTER
+$fo_h_dark:#23112c;
+$fo_m_dark:#5831c294;
+$fo_h2_dark: #fff;
+$fo_col3_p_dark:#fff;
+
+//paleta de colores
+$pri_blue_dark: rgb(0, 151, 245);
+$pri_purp_dark: #fff;
+$pri_white_dark: #23112c;
+$sec_blue_dark:#5831c294;
+$sec_purp_dark: #a806d1;
+$pri_yellow_dark:rgb(0, 98, 245);
+$strong_titulo_dark:rgb(222, 228, 253);
