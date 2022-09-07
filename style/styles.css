@@ -53,7 +53,7 @@ html[data-theme='dark'] {
   --bg_hover_a: #ffff;
   --color_hover_a: #0097f5;
   --bord_hover: #b743f1;
-  --color_hover_yell: #0062f5;
+  --color_hover_yell: #0097f5;
   --bg_principal: #303157;
   --bg_secundario: #ffff;
   --borde_titulo: #ffff;
@@ -65,7 +65,7 @@ html[data-theme='dark'] {
   --linea_tiempo: #23112c;
   --triangulo_caja_prog: #473196;
   --fo_h: #23112c;
-  --fo_m: #0097f5;
+  --fo_m: #5831c294;
   --fo_h2: #fff;
   --pri_blue: #0097f5;
   --pri_purp: #fff;
@@ -635,7 +635,7 @@ footer {
     position: relative;
     width: 100%;
     height: 120px;
-    background: #23112c; }
+    background: var(--fo_h); }
     .footer .footer_head .footer_head_cuerpo {
       position: relative;
       height: 100%;
@@ -670,7 +670,7 @@ footer {
             width: 100%;
             height: 100%;
             top: 0;
-            border: solid thin #23112c;
+            border: solid thin var(--foo_h);
             display: grid;
             place-content: center;
             font-size: 30px;
@@ -697,15 +697,15 @@ footer {
               color: #6441a5;
               transition: .7s; }
             .footer .footer_head .footer_head_cuerpo ul.redes_pie li a:hover, .footer .footer_head .footer_head_cuerpo ul.redes_pie li a img:hover, .footer .footer_head .footer_head_cuerpo a ul.redes_pie li img:hover {
-              border: solid thin #0097f5; }
+              border: solid thin var(--bg_hover_a); }
               .footer .footer_head .footer_head_cuerpo ul.redes_pie li a:hover ion-icon, .footer .footer_head .footer_head_cuerpo ul.redes_pie li a img:hover ion-icon, .footer .footer_head .footer_head_cuerpo a ul.redes_pie li img:hover ion-icon {
-                color: #fff;
+                color: var(--color_hover_a);
                 transition: .7s; }
   .footer .footer_main {
     position: relative;
     width: 100%;
     height: auto;
-    background: #0097f5; }
+    background: var(--fo_m); }
     .footer .footer_main .container {
       width: 100%;
       height: 100%; }
@@ -738,13 +738,13 @@ footer {
                 font-family: "Oswald", sans-serif;
                 font-weight: 500;
                 font-size: 20px;
-                color: #fff;
+                color: var(--color_a);
                 text-decoration: none;
                 padding: 5px;
                 text-transform: capitalize;
                 transition: .7s; }
                 .footer .footer_main .container .footer_main_cuerpo .columna_1 .links_2 li a:hover, .footer .footer_main .container .footer_main_cuerpo .columna_1 .links_2 li .footer_head .footer_head_cuerpo a img:hover, .footer .footer_head .footer_head_cuerpo a .footer_main .container .footer_main_cuerpo .columna_1 .links_2 li img:hover {
-                  color: #ffff00; }
+                  color: var(--color_hover_yell); }
         .footer .footer_main .container .footer_main_cuerpo .columna_3 {
           display: flex;
           height: auto;
@@ -753,10 +753,10 @@ footer {
           align-content: center; }
           .footer .footer_main .container .footer_main_cuerpo .columna_3 h2 {
             width: 90%;
-            font-family: "Quicksand", sans-serif, sans-serif;
+            font-family: "Quicksand", sans-serif;
             text-transform: capitalize;
             text-align: center;
-            color: #fff;
+            color: var(--fo_h2);
             margin-top: 20px; }
           .footer .footer_main .container .footer_main_cuerpo .columna_3 form {
             position: relative;
@@ -785,7 +785,7 @@ footer {
                   position: absolute;
                   content: '';
                   height: 5px;
-                  background: #23112c;
+                  background: var(--fo_h);
                   left: 0;
                   top: 10px;
                   width: 100%;
@@ -794,18 +794,18 @@ footer {
                 width: 100%;
                 margin: 5px 0;
                 padding: 10px 10px;
-                border: 3px solid #23112c;
-                background: #23112c;
+                border: 3px solid var(--fo_h);
+                background: var(--fo_h);
                 border-radius: 4px;
                 font-size: 18px;
                 outline: none;
                 transition: .7s;
-                color: #fff; }
+                color: var(--fo_h2); }
                 .footer .footer_main .container .footer_main_cuerpo .columna_3 form .content_input .text_input:focus {
-                  border: 3px solid #ffff00; }
+                  border: 3px solid var(--color_hover_yell); }
                 .footer .footer_main .container .footer_main_cuerpo .columna_3 form .content_input .text_input:focus + .label {
                   top: -5px;
-                  color: #ffff00;
+                  color: var(--color_hover_yell);
                   font-size: 18px; }
                 .footer .footer_main .container .footer_main_cuerpo .columna_3 form .content_input .text_input::placeholder {
                   font-size: 18px;
@@ -816,21 +816,21 @@ footer {
               width: 60%;
               margin: 5px 0;
               padding: 10px 10px;
-              border: 3px solid #23112c;
-              background: #23112c;
+              border: 3px solid var(--fo_h);
+              background: var(--fo_h);
               border-radius: 4px;
               font-size: 15px;
               outline: none;
               transition: .5s;
-              color: #fff;
+              color: var(--fo_h2);
               transition: .7s; }
               .footer .footer_main .container .footer_main_cuerpo .columna_3 form .input_sub:hover {
-                border: 3px solid #ffff00;
-                color: #ffff00; }
+                border: 3px solid var(--color_hover_yell);
+                color: var(--color_hover_yell); }
               .footer .footer_main .container .footer_main_cuerpo .columna_3 form .input_sub:focus {
-                border: 3px solid #ffff00;
-                color: #23112c;
-                background: #ffff00; }
+                border: 3px solid var(--color_hover_yell);
+                color: var(--fo_h);
+                background: var(--color_hover_yell); }
         .footer .footer_main .container .footer_main_cuerpo .columna_2 {
           height: 50%;
           display: flex; }
@@ -857,7 +857,7 @@ footer {
                 font-weight: 500;
                 font-size: 17px;
                 padding: 10px;
-                color: #23112c; }
+                color: var(--fo_h); }
                 .footer .footer_main .container .footer_main_cuerpo .columna_2 .contact_direct li a ion-icon, .footer .footer_head .footer_head_cuerpo a .footer_main .container .footer_main_cuerpo .columna_2 .contact_direct li img ion-icon {
                   padding: 0 10px 0 15px;
                   font-size: 23px; }
@@ -876,7 +876,7 @@ footer {
         display: block;
         font-family: "Quicksand", sans-serif;
         font-weight: 500;
-        color: #23112c;
+        color: var(--fo_h);
         font-size: 18px;
         text-align: center; }
 
@@ -1861,8 +1861,7 @@ $xl: 1200px;
             height: auto; }
             .footer .footer_main .container .footer_main_cuerpo .columna_2 .contact_direct li a, .footer .footer_main .container .footer_main_cuerpo .columna_2 .contact_direct li .footer_head .footer_head_cuerpo a img, .footer .footer_head .footer_head_cuerpo a .footer_main .container .footer_main_cuerpo .columna_2 .contact_direct li img {
               font-size: 15px;
-              padding: 10px;
-              color: #ffffff; }
+              padding: 10px; }
               .footer .footer_main .container .footer_main_cuerpo .columna_2 .contact_direct li a ion-icon, .footer .footer_head .footer_head_cuerpo a .footer_main .container .footer_main_cuerpo .columna_2 .contact_direct li img ion-icon {
                 font-size: 20px; }
   .footer .footer_bot .footer_bot_cuerpo p {
@@ -1916,11 +1915,9 @@ $xl: 1200px;
         width: 100%;
         border-radius: 7px; }
         .main .programas .linea_tiempo .caja .content_time .tit_targ_prog h3 {
-          color: var(--toggle_color);
           font-size: 19px; }
         .main .programas .linea_tiempo .caja .content_time .tit_targ_prog p {
-          font-size: 15px;
-          color: var(--toggle_color); }
+          font-size: 15px; }
   .main .programas .linea_tiempo .caja.left {
     left: 40px; }
   .main .programas .linea_tiempo .caja.right {
