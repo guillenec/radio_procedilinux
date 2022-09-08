@@ -31,6 +31,7 @@ html[data-theme='light'] {
   --borde_caja_noticia:#fff;
   --linea_tiempo: #0097f5;
   --triangulo_caja_prog: #6BC3F9;
+  --bg_calend:#fff;
   --fo_h: #23112c;
   --fo_m: #0097f5;
   --fo_h2:#fff;
@@ -65,6 +66,7 @@ html[data-theme='dark'] {
   --caja_cont_noti: #5831c294;
   --linea_tiempo: #23112c;
   --triangulo_caja_prog: #473196;
+  --bg_calend:rgba(158, 147, 207, 0.63);
   --fo_h: #23112c;
   --fo_m: #5831c294;
   --fo_h2: #fff;
@@ -1282,15 +1284,15 @@ font-family: 'Quicksand', sans-serif;
     align-items: flex-start;
     -webkit-box-shadow: var(--sombra_general);
     -moz-box-shadow: var(--sombra_general);
-    box-shadow: var(--sombra_general); }
+    box-shadow: var(--sombra_general);
+    border: solid thin rgba(51, 51, 51, 0.4); }
     .horarios_base .calendario_dia .cont_izq_dia {
       position: relative;
       width: 180px;
       height: 100%;
       background: var(--caja_cont_noti);
-      border-radius: 10px 10px 10px 10px;
-      padding: 5px;
-      border: solid thin; }
+      border-radius: 10px 8px 8px 10px;
+      padding: 5px; }
       .horarios_base .calendario_dia .cont_izq_dia .header_calend {
         width: 100%;
         height: 70px;
@@ -1307,11 +1309,11 @@ font-family: 'Quicksand', sans-serif;
         align-content: center;
         justify-content: center;
         align-items: center; }
-        .horarios_base .calendario_dia .cont_izq_dia .cuerpo_calend h1 {
+        .horarios_base .calendario_dia .cont_izq_dia .cuerpo_calend h2 {
           font-family: "Oswald", sans-serif;
           text-transform: capitalize;
           color: #ffffff; }
-        .horarios_base .calendario_dia .cont_izq_dia .cuerpo_calend h2 {
+        .horarios_base .calendario_dia .cont_izq_dia .cuerpo_calend h3 {
           font-family: "Oswald", sans-serif; }
     .horarios_base .calendario_dia .dias_semana.show {
       display: none; }
@@ -1324,6 +1326,7 @@ font-family: 'Quicksand', sans-serif;
         position: relative;
         width: 100%;
         height: 100%;
+        background: var(--bg_calend);
         border-radius: 0 10px 10px 0;
         display: grid;
         grid-template-columns: repeat(18, 1fr);
@@ -1340,7 +1343,7 @@ font-family: 'Quicksand', sans-serif;
           width: 100%;
           height: 100%; }
         .horarios_base .calendario_dia .dias_semana .accordion-body .hd_hs {
-          border: solid thin #0096f494;
+          border: solid thin var(--sec_blue);
           display: flex;
           align-content: center;
           justify-content: center;
@@ -1348,7 +1351,8 @@ font-family: 'Quicksand', sans-serif;
           .horarios_base .calendario_dia .dias_semana .accordion-body .hd_hs span {
             font-family: "Oswald", sans-serif;
             font-weight: 400;
-            text-align: center; }
+            text-align: center;
+            color: var(--color_p); }
         .horarios_base .calendario_dia .dias_semana .accordion-body section {
           display: flex;
           justify-content: center;
@@ -1357,9 +1361,9 @@ font-family: 'Quicksand', sans-serif;
           .horarios_base .calendario_dia .dias_semana .accordion-body section p {
             width: 100%;
             font-family: "Oswald", sans-serif;
-            font-weight: 600;
+            font-weight: 500;
             text-align: center;
-            color: #23112c;
+            color: var(--color_p);
             overflow: auto; }
         .horarios_base .calendario_dia .dias_semana .accordion-body .titulo_cal {
           grid-area: 1 / 1 / 1 / 19;
@@ -1374,7 +1378,8 @@ font-family: 'Quicksand', sans-serif;
             font-size: 30px;
             text-transform: capitalize;
             padding-right: 20px;
-            align-self: flex-end; }
+            align-self: flex-end;
+            color: var(--color_p); }
       .horarios_base .calendario_dia .dias_semana .titulo_cal {
         grid-area: 1 / 1 / 2 / 19; }
       .horarios_base .calendario_dia .dias_semana .hs1 {
@@ -1560,9 +1565,9 @@ font-family: 'Quicksand', sans-serif;
               align-content: flex-start;
               justify-content: center;
               align-items: center;
-              -webkit-box-shadow: 3px 5px 4px 1px rgba(0, 0, 0, 0.38);
-              -moz-box-shadow: 3px 5px 4px 1px rgba(0, 0, 0, 0.38);
-              box-shadow: 3px 5px 4px 1px rgba(0, 0, 0, 0.38); }
+              -webkit-box-shadow: var(--sombra_general);
+              -moz-box-shadow: var(--sombra_general);
+              box-shadow: var(--sombra_general); }
               .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card img {
                 position: relative;
                 width: 100%;
@@ -1570,11 +1575,11 @@ font-family: 'Quicksand', sans-serif;
                 object-fit: cover; }
               .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body {
                 position: absolute;
-                background: #23112c;
+                background: var(--pri_purp);
                 width: 96%;
                 height: 40%;
                 bottom: 10px;
-                background: #0096f494;
+                background: var(--sec_blue);
                 backdrop-filter: blur(5px);
                 -webkit-backdrop-filter: blur(5px);
                 border-radius: 4px; }
@@ -1584,7 +1589,8 @@ font-family: 'Quicksand', sans-serif;
                   color: #22102B; }
                   .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body a h2, .footer .footer_head .footer_head_cuerpo a .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body img h2 {
                     font-family: "Oswald", sans-serif;
-                    text-transform: capitalize; }
+                    text-transform: capitalize;
+                    color: var(--color_p); }
                 .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body ul {
                   list-style: none; }
                   .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body ul li {
@@ -1594,7 +1600,8 @@ font-family: 'Quicksand', sans-serif;
                     .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body ul li p {
                       font-family: "Quicksand", sans-serif;
                       font-weight: 500;
-                      padding-left: 5px; }
+                      padding-left: 5px;
+                      color: var(--color_p); }
 
 /*
 $sm: 576px;

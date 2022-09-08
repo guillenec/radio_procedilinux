@@ -37,8 +37,8 @@
     }
 }
 
-@mixin sombra_cajas($sombra) {
-    -webkit-box-shadow: $sombra;
-    -moz-box-shadow: $sombra;
-    box-shadow: $sombra;
+@mixin sombra_cajas() {
+    -webkit-box-shadow: var(--sombra_general);
+    -moz-box-shadow: var(--sombra_general);
+    box-shadow: var(--sombra_general);
 }
