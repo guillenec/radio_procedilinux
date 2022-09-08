@@ -1264,7 +1264,6 @@ font-family: 'Quicksand', sans-serif;
 .horarios_base {
   position: relative;
   height: auto;
-  color: #23112c;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -1275,23 +1274,23 @@ font-family: 'Quicksand', sans-serif;
     margin: 50px;
     width: auto;
     height: 500px;
-    background: #ffffff;
-    border: solid thin #0097f5;
+    border: solid thin var(--caja_opaca);
     border-radius: 10px;
     display: flex;
     align-content: center;
     justify-content: center;
     align-items: flex-start;
-    -webkit-box-shadow: 3px 5px 4px 1px rgba(0, 0, 0, 0.38);
-    -moz-box-shadow: 3px 5px 4px 1px rgba(0, 0, 0, 0.38);
-    box-shadow: 3px 5px 4px 1px rgba(0, 0, 0, 0.38); }
+    -webkit-box-shadow: var(--sombra_general);
+    -moz-box-shadow: var(--sombra_general);
+    box-shadow: var(--sombra_general); }
     .horarios_base .calendario_dia .cont_izq_dia {
       position: relative;
       width: 180px;
       height: 100%;
-      background: #0097f5;
+      background: var(--caja_cont_noti);
       border-radius: 10px 10px 10px 10px;
-      padding: 5px; }
+      padding: 5px;
+      border: solid thin; }
       .horarios_base .calendario_dia .cont_izq_dia .header_calend {
         width: 100%;
         height: 70px;

@@ -8,7 +8,6 @@ font-family: 'Quicksand', sans-serif;
 .horarios_base {
     position: relative;
     height: auto;
-    color: $pri_purp;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -20,24 +19,22 @@ font-family: 'Quicksand', sans-serif;
         margin: 50px;
         width: auto;
         height: 500px;
-        background: $pri_white;
-        border: solid thin $pri_blue;
+        border: solid thin var(--caja_opaca);
         border-radius: 10px;
         display: flex;
         align-content: center;
         justify-content: center;
         align-items: flex-start;
-        -webkit-box-shadow: $sombra_general;
-        -moz-box-shadow: $sombra_general;
-        box-shadow: $sombra_general;
+        @include sombra_cajas(var(--sombra_general));
 
         .cont_izq_dia {
             position: relative;
             width: 180px;
             height: 100%;
-            background: $pri_blue;
+            background: var(--caja_cont_noti);
             border-radius: 10px 10px 10px 10px;
             padding: 5px;
+            border: solid thin ;
 
             .header_calend {
                 width: 100%;
