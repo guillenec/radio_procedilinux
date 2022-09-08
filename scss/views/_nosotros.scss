@@ -1,0 +1,11 @@
+.nosotros_us{
+    h1{
+        color: var(--color_p);
+        text-transform: capitalize;
+        font-family: $titulo;
+    }
+    p{
+        color: var(--color_p);
+        font-family: $parrafo;
+    }
+} 

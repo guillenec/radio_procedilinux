@@ -8,11 +8,13 @@
         text-transform: capitalize;
         font-weight: 400;
         font-family: $titulo;
+        color: var(--color_p);
     }
     h2{
         font-family: $titulo;
         text-transform: capitalize;
         font-weight: 400;
+        color: var(--color_p);
     }
 
     p {
@@ -20,6 +22,7 @@
         font-family: $parrafo;
         font-weight: 500;
         line-height: 2rem;
+        color: var(--color_p);
     }
 
     .cuerpo_contact {
@@ -176,6 +179,7 @@
                             justify-content: flex-start;
                             align-items: center;
                             transition: .7s;
+                            color: var(--color_p);
 
                             ion-icon {
                                 padding: 0 10px 0 0;
