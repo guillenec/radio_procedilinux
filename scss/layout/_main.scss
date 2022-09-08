@@ -419,17 +419,6 @@
                     border: 10px solid var(--color_p);
                     z-index: 1;
                 }
-
-                &::before {
-                    content: '';
-                    @include caja_abs_top(10px, 10px, 28px,t);
-                    right: 28px;
-                    width: 28px;
-                    height: 28px;
-                    background: var(--triangulo_caja_prog);
-                    rotate: 45deg;
-                    z-index: 1;
-                }
             }
 
             .right {
@@ -439,18 +428,6 @@
                     left: -10px;
                     border-radius: 50%;
                     border: 10px solid var(--color_p);
-                }
-
-                &::before {
-                    content: '';
-                    @include caja_abs_top(10px, 10px, 22px,t);
-                    left: 30px;
-                    right: 28px;
-                    width: 28px;
-                    height: 28px;
-                    background: var(--triangulo_caja_prog);
-                    rotate: 45deg;
-                    z-index: 1;
                 }
             }
         }
