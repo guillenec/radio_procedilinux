@@ -288,14 +288,14 @@ footer {
       align-content: flex-start;
       align-items: center;
       overflow: hidden; }
-      .main .banner_conteiner .caja_opaca h1,
+      .main .banner_conteiner .caja_opaca h1, .main .banner_conteiner .caja_opaca .nosotros_us .caja_nosotros section div.somos_cont h2, .nosotros_us .caja_nosotros section div.somos_cont .main .banner_conteiner .caja_opaca h2,
       .main .banner_conteiner .caja_opaca p {
         display: block;
         width: 90%;
         text-align: left;
         color: var(--color_p);
         margin-bottom: 0; }
-      .main .banner_conteiner .caja_opaca h1 {
+      .main .banner_conteiner .caja_opaca h1, .main .banner_conteiner .caja_opaca .nosotros_us .caja_nosotros section div.somos_cont h2, .nosotros_us .caja_nosotros section div.somos_cont .main .banner_conteiner .caja_opaca h2 {
         margin-top: 100px;
         font-family: "Oswald", sans-serif;
         font-size: 5rem;
@@ -862,7 +862,7 @@ footer {
 .galeria {
   position: relative;
   height: auto; }
-  .galeria h1 {
+  .galeria h1, .galeria .nosotros_us .caja_nosotros section div.somos_cont h2, .nosotros_us .caja_nosotros section div.somos_cont .galeria h2 {
     color: var(--color_p); }
   .galeria p {
     color: var(--color_p); }
@@ -980,7 +980,7 @@ footer {
     width: 100%;
     height: 100%;
     border-radius: 3px;
-    border: solid 2px #0097F4;
+    border: solid 1px var(--bg_hover_a);
     -webkit-box-shadow: var(--sombra_general);
     -moz-box-shadow: var(--sombra_general);
     box-shadow: var(--sombra_general); }
@@ -1073,7 +1073,7 @@ footer {
 .contacto {
   position: relative;
   height: auto; }
-  .contacto h1 {
+  .contacto h1, .contacto .nosotros_us .caja_nosotros section div.somos_cont h2, .nosotros_us .caja_nosotros section div.somos_cont .contacto h2 {
     margin-top: 10px;
     text-align: left;
     text-transform: capitalize;
@@ -1586,14 +1586,36 @@ font-family: 'Quicksand', sans-serif;
                       padding-left: 5px;
                       color: var(--color_p); }
 
-.nosotros_us h1 {
-  color: var(--color_p);
-  text-transform: capitalize;
-  font-family: "Oswald", sans-serif; }
-
-.nosotros_us p {
-  color: var(--color_p);
-  font-family: "Quicksand", sans-serif; }
+.nosotros_us .caja_nosotros {
+  width: 100%;
+  height: auto; }
+  .nosotros_us .caja_nosotros section {
+    width: 100%;
+    height: 300px;
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center; }
+    .nosotros_us .caja_nosotros section.derecha {
+      flex-direction: row; }
+    .nosotros_us .caja_nosotros section.izquierda {
+      flex-direction: row-reverse; }
+    .nosotros_us .caja_nosotros section div.somos_cont {
+      width: 60%; }
+      .nosotros_us .caja_nosotros section div.somos_cont h1, .nosotros_us .caja_nosotros section div.somos_cont h2 {
+        font-family: "Oswald", sans-serif;
+        font-size: 3rem;
+        font-weight: 500;
+        color: var(--color_p); }
+      .nosotros_us .caja_nosotros section div.somos_cont p {
+        font-family: "Quicksand", sans-serif;
+        font-size: 1.2rem;
+        color: var(--color_p); }
+    .nosotros_us .caja_nosotros section img {
+      height: 100%;
+      object-fit: contain; }
 
 /*
 $sm: 576px;
@@ -1719,23 +1741,23 @@ $xl: 1200px;
       align-items: center;
       padding: 30px;
       box-shadow: 0 0 0 10px var(--sombra_cajaopaca); }
-      .main .banner_conteiner .caja_opaca h1,
+      .main .banner_conteiner .caja_opaca h1, .main .banner_conteiner .caja_opaca .nosotros_us .caja_nosotros section div.somos_cont h2, .nosotros_us .caja_nosotros section div.somos_cont .main .banner_conteiner .caja_opaca h2,
       .main .banner_conteiner .caja_opaca p {
         text-align: left;
         color: var(--toggle_color);
         margin: 5px 0;
         overflow: hidden; }
-      .main .banner_conteiner .caja_opaca h1 {
+      .main .banner_conteiner .caja_opaca h1, .main .banner_conteiner .caja_opaca .nosotros_us .caja_nosotros section div.somos_cont h2, .nosotros_us .caja_nosotros section div.somos_cont .main .banner_conteiner .caja_opaca h2 {
         margin-top: 0; } }
 
 @media screen and (max-width: 768px) {
   .main .banner_conteiner .caja_opaca {
     width: 98%;
     margin: 40% 1%; }
-    .main .banner_conteiner .caja_opaca h1,
+    .main .banner_conteiner .caja_opaca h1, .main .banner_conteiner .caja_opaca .nosotros_us .caja_nosotros section div.somos_cont h2, .nosotros_us .caja_nosotros section div.somos_cont .main .banner_conteiner .caja_opaca h2,
     .main .banner_conteiner .caja_opaca p {
       width: 98%; }
-    .main .banner_conteiner .caja_opaca h1 {
+    .main .banner_conteiner .caja_opaca h1, .main .banner_conteiner .caja_opaca .nosotros_us .caja_nosotros section div.somos_cont h2, .nosotros_us .caja_nosotros section div.somos_cont .main .banner_conteiner .caja_opaca h2 {
       font-size: 4em;
       line-height: 1.5em; }
     .main .banner_conteiner .caja_opaca p {
@@ -1871,10 +1893,10 @@ $xl: 1200px;
   .main .banner_conteiner .caja_opaca {
     width: 98%;
     margin: 30% 1%; }
-    .main .banner_conteiner .caja_opaca h1,
+    .main .banner_conteiner .caja_opaca h1, .main .banner_conteiner .caja_opaca .nosotros_us .caja_nosotros section div.somos_cont h2, .nosotros_us .caja_nosotros section div.somos_cont .main .banner_conteiner .caja_opaca h2,
     .main .banner_conteiner .caja_opaca p {
       width: 98%; }
-    .main .banner_conteiner .caja_opaca h1 {
+    .main .banner_conteiner .caja_opaca h1, .main .banner_conteiner .caja_opaca .nosotros_us .caja_nosotros section div.somos_cont h2, .nosotros_us .caja_nosotros section div.somos_cont .main .banner_conteiner .caja_opaca h2 {
       font-size: 3.5em;
       line-height: 1.5em; }
     .main .banner_conteiner .caja_opaca p {
@@ -2077,7 +2099,7 @@ $xl: 1200px;
       .horarios_base .calendario_dia .cont_izq_dia .cuerpo_calend {
         width: 100%;
         height: 150px; }
-        .horarios_base .calendario_dia .cont_izq_dia .cuerpo_calend h1 {
+        .horarios_base .calendario_dia .cont_izq_dia .cuerpo_calend h1, .horarios_base .calendario_dia .cont_izq_dia .cuerpo_calend .nosotros_us .caja_nosotros section div.somos_cont h2, .nosotros_us .caja_nosotros section div.somos_cont .horarios_base .calendario_dia .cont_izq_dia .cuerpo_calend h2 {
           font-family: "Oswald", sans-serif; }
         .horarios_base .calendario_dia .cont_izq_dia .cuerpo_calend h2 {
           font-family: "Quicksand", sans-serif; }
@@ -2136,3 +2158,46 @@ $xl: 1200px;
       position: relative;
       width: 300px;
       height: 400px; } }
+
+@media screen and (max-width: 992px) {
+  .nosotros_us .caja_nosotros {
+    width: 100%;
+    height: auto; }
+    .nosotros_us .caja_nosotros section.derecha {
+      flex-direction: row; }
+    .nosotros_us .caja_nosotros section.izquierda {
+      flex-direction: row-reverse; }
+    .nosotros_us .caja_nosotros section div.somos_cont {
+      width: 60%; }
+      .nosotros_us .caja_nosotros section div.somos_cont h1, .nosotros_us .caja_nosotros section div.somos_cont h2 {
+        font-weight: 500;
+        font-size: 2.5rem; }
+      .nosotros_us .caja_nosotros section div.somos_cont p {
+        font-size: 1.1rem; } }
+
+@media screen and (max-width: 768px) {
+  .nosotros_us .caja_nosotros {
+    width: 100%;
+    height: auto; }
+    .nosotros_us .caja_nosotros section {
+      width: 100%;
+      height: auto;
+      flex-direction: column;
+      flex-wrap: wrap;
+      text-align: center;
+      align-items: center; }
+      .nosotros_us .caja_nosotros section.derecha {
+        flex-direction: row; }
+      .nosotros_us .caja_nosotros section.izquierda {
+        flex-direction: row-reverse; }
+      .nosotros_us .caja_nosotros section div.somos_cont {
+        width: 100%; }
+        .nosotros_us .caja_nosotros section div.somos_cont h1, .nosotros_us .caja_nosotros section div.somos_cont h2 {
+          font-weight: 500;
+          font-size: 2rem; }
+        .nosotros_us .caja_nosotros section div.somos_cont p {
+          font-size: 1rem; }
+      .nosotros_us .caja_nosotros section img {
+        margin-top: 10px;
+        width: 100%;
+        height: 250px; } }
