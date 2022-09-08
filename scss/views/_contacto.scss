@@ -96,9 +96,7 @@
                         outline: none;
                         transition: .5s;
                         color: $pri_white;
-                        -webkit-box-shadow: $sombra_general;
-                        -moz-box-shadow: $sombra_general;
-                        box-shadow: $sombra_general;
+                        @include sombra_cajas();
 
                         &:focus {
                             border: 3px solid $pri_blue;
@@ -137,9 +135,8 @@
                     color: #a806d1;
                     border: $pri_blue thin solid;
                     transition: .5s;
-                    -webkit-box-shadow: $sombra_general;
-                    -moz-box-shadow: $sombra_general;
-                    box-shadow: $sombra_general;
+                    @include sombra_cajas();
+
                 }
 
                 .btn:hover {
@@ -201,9 +198,8 @@
                 height: 240px;
                 border-radius: 5px;
                 border: solid 2px $pri_blue;
-                -webkit-box-shadow: $sombra_general;
-                -moz-box-shadow: $sombra_general;
-                box-shadow: $sombra_general;
+                @include sombra_cajas();
+
             }
         }
     }

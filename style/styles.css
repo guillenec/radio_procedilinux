@@ -947,9 +947,9 @@ footer {
     .galeria .cont_galeria .img_16,
     .galeria .cont_galeria .img_17 {
       border: solid 5px #0097f5;
-      -webkit-box-shadow: 3px 5px 4px 1px rgba(0, 0, 0, 0.38);
-      -moz-box-shadow: 3px 5px 4px 1px rgba(0, 0, 0, 0.38);
-      box-shadow: 3px 5px 4px 1px rgba(0, 0, 0, 0.38); }
+      -webkit-box-shadow: var(--sombra_general);
+      -moz-box-shadow: var(--sombra_general);
+      box-shadow: var(--sombra_general); }
       .galeria .cont_galeria .img_1 img,
       .galeria .cont_galeria .img_2 img,
       .galeria .cont_galeria .img_3 img,
@@ -1002,9 +1002,9 @@ footer {
     height: 100%;
     border-radius: 3px;
     border: solid 2px #0097F4;
-    -webkit-box-shadow: 3px 5px 4px 1px rgba(0, 0, 0, 0.38);
-    -moz-box-shadow: 3px 5px 4px 1px rgba(0, 0, 0, 0.38);
-    box-shadow: 3px 5px 4px 1px rgba(0, 0, 0, 0.38); }
+    -webkit-box-shadow: var(--sombra_general);
+    -moz-box-shadow: var(--sombra_general);
+    box-shadow: var(--sombra_general); }
     .noticias_caja article img {
       position: relative;
       width: 100%;
@@ -1173,9 +1173,9 @@ footer {
             outline: none;
             transition: .5s;
             color: #ffffff;
-            -webkit-box-shadow: 3px 5px 4px 1px rgba(0, 0, 0, 0.38);
-            -moz-box-shadow: 3px 5px 4px 1px rgba(0, 0, 0, 0.38);
-            box-shadow: 3px 5px 4px 1px rgba(0, 0, 0, 0.38); }
+            -webkit-box-shadow: var(--sombra_general);
+            -moz-box-shadow: var(--sombra_general);
+            box-shadow: var(--sombra_general); }
             .contacto .cuerpo_contact .form_contact form div input:focus,
             .contacto .cuerpo_contact .form_contact form div textarea:focus {
               border: 3px solid #0097f5; }
@@ -1206,9 +1206,9 @@ footer {
           color: #a806d1;
           border: #0097f5 thin solid;
           transition: .5s;
-          -webkit-box-shadow: 3px 5px 4px 1px rgba(0, 0, 0, 0.38);
-          -moz-box-shadow: 3px 5px 4px 1px rgba(0, 0, 0, 0.38);
-          box-shadow: 3px 5px 4px 1px rgba(0, 0, 0, 0.38); }
+          -webkit-box-shadow: var(--sombra_general);
+          -moz-box-shadow: var(--sombra_general);
+          box-shadow: var(--sombra_general); }
         .contacto .cuerpo_contact .form_contact form .btn:hover {
           color: #ffffff;
           background: #0097f5;
@@ -1247,9 +1247,9 @@ footer {
       height: 240px;
       border-radius: 5px;
       border: solid 2px #0097f5;
-      -webkit-box-shadow: 3px 5px 4px 1px rgba(0, 0, 0, 0.38);
-      -moz-box-shadow: 3px 5px 4px 1px rgba(0, 0, 0, 0.38);
-      box-shadow: 3px 5px 4px 1px rgba(0, 0, 0, 0.38); }
+      -webkit-box-shadow: var(--sombra_general);
+      -moz-box-shadow: var(--sombra_general);
+      box-shadow: var(--sombra_general); }
   .contacto .titulo_cont,
   .contacto .form_contact,
   .contacto .contacto_rapido,
