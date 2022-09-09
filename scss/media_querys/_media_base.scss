@@ -28,6 +28,19 @@ $xl: 1200px;
     }
 
     .main {
+        .noticias_grid {        
+            article {
+                .subtitulo_noti {
+                    a{
+                        font-size: 1.5rem;
+                    }
+
+                    p {
+                        font-size: 1rem;                        
+                    }
+                }
+            }
+        }
 
         .programas {
             .linea_tiempo {
@@ -96,9 +109,9 @@ $xl: 1200px;
 
 }
 
+// lg: 992px;
 @media screen and (max-width: $lg) {
 
-    //.width_80 { width: 90%; }
 
     .header {
         .nav_menu.active {
@@ -216,6 +229,31 @@ $xl: 1200px;
                 }
             }
         }
+        .noticias {
+    
+            .noticias_grid {
+    
+                .col1_1 {
+                    grid-area: 5/5/9/9;
+                }
+    
+                .col2 {
+                    grid-area: 1/1/5/9;
+    
+                }
+                article {
+                    .subtitulo_noti {
+                        a{
+                            font-size: 1.3rem;
+                        }
+    
+                        p {
+                            font-size: .9rem;                        
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -248,60 +286,37 @@ $xl: 1200px;
         //Noticias
         .noticias {
             .noticias_grid {
-
+                height: 900px;
+                grid-template-rows: repeat(10, 1fr);
 
                 .col2 {
                     grid-area: 1/1/5/13;
                 }
 
                 .col1_1 {
-                    grid-area: 5/1/7/7;
+                    grid-area: 5/1/8/7;
                 }
 
                 .col1_2 {
-                    grid-area: 5/7/7/13;
+                    grid-area: 5/7/8/13;
                 }
 
                 .col3_1 {
-                    grid-area: 7/1/9/7;
+                    grid-area: 8/1/11/7;
                 }
 
                 .col3_2 {
-                    grid-area: 7/7/9/13;
+                    grid-area: 8/7/11/13;
                 }
 
                 article {
-
                     .subtitulo_noti {
-                        width: 99%;
-                        height: 50%;
-                        margin-left: .5%;
-
-                        a,
-                        p {
-                            text-decoration: none;
-                            color: $pri_white;
-                        }
-
-                        a {
-                            font-weight: 400;
-                            font-size: inherit;
-                            font-size: 23px;
-
-                            &:hover {
-                                color: var(--toggle_color);
-                                transition: .5s;
-                            }
-                        }
-
-                        p {
-                            font-weight: 400;
-                            font-size: 18px;
+                        &:hover{
+                            @include caja_abs_top(98%, 100%, 40%, t);
+                            transition: .9s;
                         }
                     }
                 }
-
-                //--- fin ---
 
             }
         }
@@ -526,25 +541,19 @@ $xl: 1200px;
             .noticias_grid {
                 article {
                     .subtitulo_noti {
-                        width: 99%;
-                        height: 50%;
-                        margin-left: .5%;
-
-                        a {
-                            font-weight: 400;
-                            font-size: inherit;
-                            font-size: 20px;
+                        a{
+                            font-size: 1.2rem;
                         }
-
+    
                         p {
-                            font-weight: 300;
-                            font-size: 15px;
+                            font-size: .8rem;                        
+                        }
+                        &:hover{
+                            @include caja_abs_top(98%, 100%, 30%, t);
+                            transition: .9s;
                         }
                     }
                 }
-
-                //--- fin ---
-
             }
         }
 

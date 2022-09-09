@@ -247,7 +247,7 @@
             display: grid;
             grid-template-columns: repeat(12, 1fr);
             grid-template-rows: repeat(8, 1fr);
-            gap: 12px 10px;
+            gap: 15px 15px;
 
 
             .col1_1 {
@@ -281,16 +281,17 @@
                 overflow: hidden;
                 display: flex;
                 justify-content: center;
+                overflow: hidden;
 
                 img {
                     @include img_100(100%, 100%);
                 }
 
                 .subtitulo_noti {
-                    @include caja_abs_top(98%, 40%, 3px, b);
+                    @include caja_abs_top(98%, 100%, 75%, t);
                     background: var(--caja_cont_noti);
                     box-shadow: 0 0 0 5px var(--sombra_cajaopaca);
-                    backdrop-filter: blur(10px);
+                    backdrop-filter: blur(0px);
                     border-radius: 0 0 4px 4px;
                     //columna, contendra los items
                     display: flex;
@@ -298,6 +299,12 @@
                     align-items: flex-start;
                     padding: 5px;
                     overflow: hidden;
+                    transition: .9s;
+
+                    &:hover{
+                        @include caja_abs_top(98%, 100%, 50%, t);
+                        transition: .9s;
+                    }
 
                     a,
                     p {
@@ -319,7 +326,7 @@
                     }
 
                     p {
-                        font-family:var(--color_p);
+                        font-family:var(--parrafo);
                         font-weight: 400;
                         color: var(--color_p);
                     }
