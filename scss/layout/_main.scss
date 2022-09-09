@@ -76,8 +76,9 @@
 
         .conteiner_buton {
             position: relative;
-            min-height: 100vh;
-            background: #22102b54;
+            width: 100%;
+            min-height: 100%;
+            background: var(--filtro_video);
 
             display: flex;
             justify-content: flex-start;
