@@ -68,8 +68,7 @@
             }
 
             strong {
-                font-weight: 700;
-                color: var(--color_strong);
+                @include resaltado_strong();
             }
 
         }

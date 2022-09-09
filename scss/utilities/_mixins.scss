@@ -42,3 +42,8 @@
     -moz-box-shadow: var(--sombra_general);
     box-shadow: var(--sombra_general);
 }
+
+@mixin resaltado_strong() {
+    font-weight: 700;
+    color: var(--color_strong);
+}

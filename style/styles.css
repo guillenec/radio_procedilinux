@@ -2186,7 +2186,10 @@ $xl: 1200px;
         font-weight: 500;
         font-size: 2.5rem; }
       .nosotros_us .caja_nosotros section div.somos_cont p {
-        font-size: 1.1rem; } }
+        font-size: 1.1rem; }
+        .nosotros_us .caja_nosotros section div.somos_cont p strong {
+          font-weight: 700;
+          color: var(--color_strong); } }
 
 @media screen and (max-width: 768px) {
   .nosotros_us .caja_nosotros {
