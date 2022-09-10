@@ -45,6 +45,8 @@
         height: 100%;
         border-radius: 3px;
         border: solid 1px var(--bg_hover_a);
+        display: flex;
+        justify-content: center;
         @include sombra_cajas();
 
         img {
@@ -52,53 +54,47 @@
         }
 
         .caja_text_noti {
-            position: absolute;
-            bottom: 5%;
-            left: 1%;
-            width: 98%;
-            height: auto;
+            @include caja_abs_top(98%, 100%, 70%, t);
             background: var(--caja_cont_noti);
             backdrop-filter: blur(5px);
-            -webkit-backdrop-filter: blur(5px);
+            box-shadow: 0 0 0 5px var(--sombra_cajaopaca);
             border-radius: 1px;
-            border: 1px solid rgba(255, 255, 255, 0.18);
+            border: 1px solid var(--borde_caja_noticia);
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            align-items: flex-start;
+            justify-content: flex-start;
             align-items: center;
             padding: 5px;
+            transition: .9s;
+
+            &:hover{
+                @include caja_abs_top(98%, 53%, 45%, t);
+                backdrop-filter: blur(10px);
+                overflow: auto;
+                transition: .9s;
+            }
 
             a {
-                position: relative;
                 display: block;
-                width: 98%;
-                height: 100%;
-                font-family: 'Oswald', sans-serif;
+                font-family: $titulo;
                 text-decoration: none;
                 color: $pri_white;
                 font-size: 20px;
                 font-weight: 400;
-                padding: 5 10px;
-                text-align: left;
+                &:hover {
+                    color: $hover_yell;
+                    transition: .7s;
+                }
+                
             }
 
             p {
-                position: relative;
                 display: block;
-                width: 98%;
-                color: $pri_purp;
-                font-family: 'Quicksand', sans-serif;
+                color: var(--color_a);
+                font-family:$parrafo;
                 font-size: 16px;
             }
-        }
-
-        .caja_text_noti:hover {
-            backdrop-filter: blur(10px);
-        }
-
-        a:hover {
-            color: $pri_purp;
-            transition: .7s;
         }
     }
 

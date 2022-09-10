@@ -28,6 +28,7 @@ html[data-theme='light'] {
     --color_hover_a: #{$col_hover_1};
     --color_bord_hover: #{$bord_hover_1};
     --color_hover_yell: #{$hover_yell};
+    --hover_ff:#{#fff};
 
     //titulo general
     --bg_principal: #{$bg_principal};
@@ -81,6 +82,8 @@ html[data-theme='dark'] {
     --color_hover_a: #{$col_hover_1_dark};
     --bord_hover: #{$bord_hover_1_dark};
     --color_hover_yell: #{$hover_yell_dark};
+    --hover_ff:#{#fff};
+
 
     //titulo general
     --bg_principal: #{$bg_principal_dark};
