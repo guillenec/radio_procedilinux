@@ -3,6 +3,25 @@
 @media screen and (max-width: $md) {
 
     .noticias_caja {
+        .noticia_titulo{
+            width: 100%;
+            height: auto;
+            flex-direction: column;
+            flex-wrap: wrap;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            
+            div.somos_cont{
+                width: 60%;
+                @include textos_principales(); 
+            }
+            img{
+                margin-top: 10px;
+                width: 100%;
+                height: 250px;
+            }
+        }
 
         .noticias_music {
             position: relative;
