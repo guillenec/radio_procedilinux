@@ -2,6 +2,9 @@
     position: relative;
     height: auto;
 
+    @include titulo_mas_img ( '.galeria_titulo' , '.g_titulo_hijo');
+
+
     h1{
         color: var(--color_p);
     }

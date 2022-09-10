@@ -1,3 +1,7 @@
+/*permite que el titulo contenido e imagenes del comienzo se podocopnen una al alado de
+la otra y se mantenga la misma disposiciones para todas las paginas.
+ademas de hacer responsive tanto la caja como a sus hijos, incluyendo texto e img
+*/
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Oswald:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Oswald:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap");
 html {
@@ -873,6 +877,93 @@ footer {
 .galeria {
   position: relative;
   height: auto; }
+  .galeria .galeria_titulo {
+    width: 100%;
+    height: 300px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center; }
+    .galeria .galeria_titulo .g_titulo_hijo {
+      width: 60%; }
+      .galeria .galeria_titulo .g_titulo_hijo h1, .galeria .galeria_titulo .g_titulo_hijo .nosotros_us .caja_nosotros section div.somos_cont h2, .nosotros_us .caja_nosotros section div.somos_cont .galeria .galeria_titulo .g_titulo_hijo h2, .galeria .galeria_titulo .g_titulo_hijo h2 {
+        font-family: "Oswald", sans-serif;
+        font-size: 3rem;
+        font-weight: 500;
+        color: var(--color_p); }
+      .galeria .galeria_titulo .g_titulo_hijo p {
+        font-family: "Quicksand", sans-serif;
+        font-size: 1.2rem;
+        color: var(--color_p); }
+        .galeria .galeria_titulo .g_titulo_hijo p strong {
+          font-weight: 700;
+          color: var(--color_strong); }
+      @media screen and (max-width: 1200px) {
+        .galeria .galeria_titulo .g_titulo_hijo h1, .galeria .galeria_titulo .g_titulo_hijo .nosotros_us .caja_nosotros section div.somos_cont h2, .nosotros_us .caja_nosotros section div.somos_cont .galeria .galeria_titulo .g_titulo_hijo h2 {
+          font-size: 2.5rem; }
+        .galeria .galeria_titulo .g_titulo_hijo p {
+          font-size: 1.2rem; } }
+      @media screen and (max-width: 992px) {
+        .galeria .galeria_titulo .g_titulo_hijo h1, .galeria .galeria_titulo .g_titulo_hijo .nosotros_us .caja_nosotros section div.somos_cont h2, .nosotros_us .caja_nosotros section div.somos_cont .galeria .galeria_titulo .g_titulo_hijo h2 {
+          font-size: 2rem; }
+        .galeria .galeria_titulo .g_titulo_hijo p {
+          font-size: 1rem; } }
+      @media screen and (max-width: 768px) {
+        .galeria .galeria_titulo .g_titulo_hijo {
+          width: 98%; } }
+      @media screen and (max-width: 576px) {
+        .galeria .galeria_titulo .g_titulo_hijo {
+          width: 94%; } }
+    .galeria .galeria_titulo img {
+      height: 100%;
+      object-fit: contain; }
+  @media screen and (max-width: 768px) {
+    .galeria .galeria_titulo {
+      width: 100%;
+      height: auto;
+      flex-direction: column;
+      flex-wrap: wrap;
+      text-align: center;
+      justify-content: center;
+      align-items: center; }
+      .galeria .galeria_titulo .g_titulo_hijo {
+        width: 60%; }
+        .galeria .galeria_titulo .g_titulo_hijo h1, .galeria .galeria_titulo .g_titulo_hijo .nosotros_us .caja_nosotros section div.somos_cont h2, .nosotros_us .caja_nosotros section div.somos_cont .galeria .galeria_titulo .g_titulo_hijo h2, .galeria .galeria_titulo .g_titulo_hijo h2 {
+          font-family: "Oswald", sans-serif;
+          font-size: 3rem;
+          font-weight: 500;
+          color: var(--color_p); }
+        .galeria .galeria_titulo .g_titulo_hijo p {
+          font-family: "Quicksand", sans-serif;
+          font-size: 1.2rem;
+          color: var(--color_p); }
+          .galeria .galeria_titulo .g_titulo_hijo p strong {
+            font-weight: 700;
+            color: var(--color_strong); } }
+    @media screen and (max-width: 768px) and (max-width: 1200px) {
+      .galeria .galeria_titulo .g_titulo_hijo h1, .galeria .galeria_titulo .g_titulo_hijo .nosotros_us .caja_nosotros section div.somos_cont h2, .nosotros_us .caja_nosotros section div.somos_cont .galeria .galeria_titulo .g_titulo_hijo h2 {
+        font-size: 2.5rem; }
+      .galeria .galeria_titulo .g_titulo_hijo p {
+        font-size: 1.2rem; } }
+    @media screen and (max-width: 768px) and (max-width: 992px) {
+      .galeria .galeria_titulo .g_titulo_hijo h1, .galeria .galeria_titulo .g_titulo_hijo .nosotros_us .caja_nosotros section div.somos_cont h2, .nosotros_us .caja_nosotros section div.somos_cont .galeria .galeria_titulo .g_titulo_hijo h2 {
+        font-size: 2rem; }
+      .galeria .galeria_titulo .g_titulo_hijo p {
+        font-size: 1rem; } }
+    @media screen and (max-width: 768px) and (max-width: 768px) {
+      .galeria .galeria_titulo .g_titulo_hijo {
+        width: 98%; } }
+    @media screen and (max-width: 768px) and (max-width: 576px) {
+      .galeria .galeria_titulo .g_titulo_hijo {
+        width: 94%; } }
+  @media screen and (max-width: 768px) {
+      .galeria .galeria_titulo img {
+        margin-top: 10px;
+        width: 100%;
+        height: 250px; } }
   .galeria h1, .galeria .nosotros_us .caja_nosotros section div.somos_cont h2, .nosotros_us .caja_nosotros section div.somos_cont .galeria h2 {
     color: var(--color_p); }
   .galeria p {
@@ -967,7 +1058,6 @@ footer {
   height: auto; }
   .noticias_caja .noticia_titulo {
     width: 100%;
-    height: auto;
     height: 300px;
     margin-top: 100px;
     display: flex;
@@ -976,41 +1066,83 @@ footer {
     align-content: center;
     justify-content: space-between;
     align-items: center; }
-    .noticias_caja .noticia_titulo.derecha {
-      flex-direction: row; }
-    .noticias_caja .noticia_titulo div.somos_cont {
+    .noticias_caja .noticia_titulo .somos_cont {
       width: 60%; }
-      .noticias_caja .noticia_titulo div.somos_cont h1, .noticias_caja .noticia_titulo .nosotros_us .caja_nosotros section div.somos_cont h2, .nosotros_us .caja_nosotros section .noticias_caja .noticia_titulo div.somos_cont h2, .noticias_caja .noticia_titulo div.somos_cont h2 {
+      .noticias_caja .noticia_titulo .somos_cont h1, .noticias_caja .noticia_titulo .nosotros_us .caja_nosotros section div.somos_cont h2, .nosotros_us .caja_nosotros section .noticias_caja .noticia_titulo div.somos_cont h2, .noticias_caja .noticia_titulo .somos_cont h2 {
         font-family: "Oswald", sans-serif;
         font-size: 3rem;
         font-weight: 500;
         color: var(--color_p); }
-      .noticias_caja .noticia_titulo div.somos_cont p {
+      .noticias_caja .noticia_titulo .somos_cont p {
         font-family: "Quicksand", sans-serif;
         font-size: 1.2rem;
         color: var(--color_p); }
-        .noticias_caja .noticia_titulo div.somos_cont p strong {
+        .noticias_caja .noticia_titulo .somos_cont p strong {
           font-weight: 700;
           color: var(--color_strong); }
       @media screen and (max-width: 1200px) {
-        .noticias_caja .noticia_titulo div.somos_cont h1, .noticias_caja .noticia_titulo .nosotros_us .caja_nosotros section div.somos_cont h2, .nosotros_us .caja_nosotros section .noticias_caja .noticia_titulo div.somos_cont h2 {
+        .noticias_caja .noticia_titulo .somos_cont h1, .noticias_caja .noticia_titulo .nosotros_us .caja_nosotros section div.somos_cont h2, .nosotros_us .caja_nosotros section .noticias_caja .noticia_titulo div.somos_cont h2 {
           font-size: 2.5rem; }
-        .noticias_caja .noticia_titulo div.somos_cont p {
+        .noticias_caja .noticia_titulo .somos_cont p {
           font-size: 1.2rem; } }
       @media screen and (max-width: 992px) {
-        .noticias_caja .noticia_titulo div.somos_cont h1, .noticias_caja .noticia_titulo .nosotros_us .caja_nosotros section div.somos_cont h2, .nosotros_us .caja_nosotros section .noticias_caja .noticia_titulo div.somos_cont h2 {
+        .noticias_caja .noticia_titulo .somos_cont h1, .noticias_caja .noticia_titulo .nosotros_us .caja_nosotros section div.somos_cont h2, .nosotros_us .caja_nosotros section .noticias_caja .noticia_titulo div.somos_cont h2 {
           font-size: 2rem; }
-        .noticias_caja .noticia_titulo div.somos_cont p {
+        .noticias_caja .noticia_titulo .somos_cont p {
           font-size: 1rem; } }
       @media screen and (max-width: 768px) {
-        .noticias_caja .noticia_titulo div.somos_cont {
+        .noticias_caja .noticia_titulo .somos_cont {
           width: 98%; } }
       @media screen and (max-width: 576px) {
-        .noticias_caja .noticia_titulo div.somos_cont {
+        .noticias_caja .noticia_titulo .somos_cont {
           width: 94%; } }
     .noticias_caja .noticia_titulo img {
       height: 100%;
       object-fit: contain; }
+  @media screen and (max-width: 768px) {
+    .noticias_caja .noticia_titulo {
+      width: 100%;
+      height: auto;
+      flex-direction: column;
+      flex-wrap: wrap;
+      text-align: center;
+      justify-content: center;
+      align-items: center; }
+      .noticias_caja .noticia_titulo .somos_cont {
+        width: 60%; }
+        .noticias_caja .noticia_titulo .somos_cont h1, .noticias_caja .noticia_titulo .nosotros_us .caja_nosotros section div.somos_cont h2, .nosotros_us .caja_nosotros section .noticias_caja .noticia_titulo div.somos_cont h2, .noticias_caja .noticia_titulo .somos_cont h2 {
+          font-family: "Oswald", sans-serif;
+          font-size: 3rem;
+          font-weight: 500;
+          color: var(--color_p); }
+        .noticias_caja .noticia_titulo .somos_cont p {
+          font-family: "Quicksand", sans-serif;
+          font-size: 1.2rem;
+          color: var(--color_p); }
+          .noticias_caja .noticia_titulo .somos_cont p strong {
+            font-weight: 700;
+            color: var(--color_strong); } }
+    @media screen and (max-width: 768px) and (max-width: 1200px) {
+      .noticias_caja .noticia_titulo .somos_cont h1, .noticias_caja .noticia_titulo .nosotros_us .caja_nosotros section div.somos_cont h2, .nosotros_us .caja_nosotros section .noticias_caja .noticia_titulo div.somos_cont h2 {
+        font-size: 2.5rem; }
+      .noticias_caja .noticia_titulo .somos_cont p {
+        font-size: 1.2rem; } }
+    @media screen and (max-width: 768px) and (max-width: 992px) {
+      .noticias_caja .noticia_titulo .somos_cont h1, .noticias_caja .noticia_titulo .nosotros_us .caja_nosotros section div.somos_cont h2, .nosotros_us .caja_nosotros section .noticias_caja .noticia_titulo div.somos_cont h2 {
+        font-size: 2rem; }
+      .noticias_caja .noticia_titulo .somos_cont p {
+        font-size: 1rem; } }
+    @media screen and (max-width: 768px) and (max-width: 768px) {
+      .noticias_caja .noticia_titulo .somos_cont {
+        width: 98%; } }
+    @media screen and (max-width: 768px) and (max-width: 576px) {
+      .noticias_caja .noticia_titulo .somos_cont {
+        width: 94%; } }
+  @media screen and (max-width: 768px) {
+      .noticias_caja .noticia_titulo img {
+        margin-top: 10px;
+        width: 100%;
+        height: 250px; } }
   .noticias_caja .noticias_music {
     position: relative;
     width: 100%;
@@ -2007,50 +2139,6 @@ $xl: 1200px;
     justify-content: center; } }
 
 @media screen and (max-width: 768px) {
-  .noticias_caja .noticia_titulo {
-    width: 100%;
-    height: auto;
-    flex-direction: column;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: center;
-    align-items: center; }
-    .noticias_caja .noticia_titulo div.somos_cont {
-      width: 60%; }
-      .noticias_caja .noticia_titulo div.somos_cont h1, .noticias_caja .noticia_titulo .nosotros_us .caja_nosotros section div.somos_cont h2, .nosotros_us .caja_nosotros section .noticias_caja .noticia_titulo div.somos_cont h2, .noticias_caja .noticia_titulo div.somos_cont h2 {
-        font-family: "Oswald", sans-serif;
-        font-size: 3rem;
-        font-weight: 500;
-        color: var(--color_p); }
-      .noticias_caja .noticia_titulo div.somos_cont p {
-        font-family: "Quicksand", sans-serif;
-        font-size: 1.2rem;
-        color: var(--color_p); }
-        .noticias_caja .noticia_titulo div.somos_cont p strong {
-          font-weight: 700;
-          color: var(--color_strong); } }
-    @media screen and (max-width: 768px) and (max-width: 1200px) {
-      .noticias_caja .noticia_titulo div.somos_cont h1, .noticias_caja .noticia_titulo .nosotros_us .caja_nosotros section div.somos_cont h2, .nosotros_us .caja_nosotros section .noticias_caja .noticia_titulo div.somos_cont h2 {
-        font-size: 2.5rem; }
-      .noticias_caja .noticia_titulo div.somos_cont p {
-        font-size: 1.2rem; } }
-    @media screen and (max-width: 768px) and (max-width: 992px) {
-      .noticias_caja .noticia_titulo div.somos_cont h1, .noticias_caja .noticia_titulo .nosotros_us .caja_nosotros section div.somos_cont h2, .nosotros_us .caja_nosotros section .noticias_caja .noticia_titulo div.somos_cont h2 {
-        font-size: 2rem; }
-      .noticias_caja .noticia_titulo div.somos_cont p {
-        font-size: 1rem; } }
-    @media screen and (max-width: 768px) and (max-width: 768px) {
-      .noticias_caja .noticia_titulo div.somos_cont {
-        width: 98%; } }
-    @media screen and (max-width: 768px) and (max-width: 576px) {
-      .noticias_caja .noticia_titulo div.somos_cont {
-        width: 94%; } }
-
-@media screen and (max-width: 768px) {
-    .noticias_caja .noticia_titulo img {
-      margin-top: 10px;
-      width: 100%;
-      height: 250px; }
   .noticias_caja .noticias_music {
     position: relative;
     grid-template-rows: repeat(8, 1fr);

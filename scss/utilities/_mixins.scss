@@ -94,3 +94,62 @@
     }
 }
 
+/*permite que el titulo contenido e imagenes del comienzo se podocopnen una al alado de
+la otra y se mantenga la misma disposiciones para todas las paginas.
+ademas de hacer responsive tanto la caja como a sus hijos, incluyendo texto e img
+*///puede se usadoo como componente
+@mixin titulo_mas_img ($caja_cont, $caja_hija){
+    #{$caja_cont} {
+        width: 100%;
+        height: 300px;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: space-between;
+        align-items: center;
+
+        #{$caja_hija}{
+            width: 60%;
+            @include textos_principales(); 
+        }
+        img{
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    
+    @media screen and (max-width: $xl){
+        
+    }
+    @media screen and (max-width: $lg){
+
+    }
+    @media screen and (max-width: $md){
+        #{$caja_cont} {
+            width: 100%;
+            height: auto;
+            flex-direction: column;
+            flex-wrap: wrap;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            
+            #{$caja_hija}{
+                width: 60%;
+                @include textos_principales(); 
+            }
+            img{
+                margin-top: 10px;
+                width: 100%;
+                height: 250px;
+            }
+        }
+
+    }
+    @media screen and (max-width: $sm){
+
+    }
+}
+
