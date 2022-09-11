@@ -73,6 +73,10 @@
                 backdrop-filter: blur(10px);
                 overflow: auto;
                 transition: .9s;
+
+                &::-webkit-scrollbar {
+                    display: none;
+                }
             }
 
             a {

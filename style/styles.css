@@ -1207,6 +1207,8 @@ footer {
         backdrop-filter: blur(10px);
         overflow: auto;
         transition: .9s; }
+        .noticias_caja article .caja_text_noti:hover::-webkit-scrollbar {
+          display: none; }
       .noticias_caja article .caja_text_noti a, .noticias_caja article .caja_text_noti .footer .footer_head .footer_head_cuerpo a img, .footer .footer_head .footer_head_cuerpo a .noticias_caja article .caja_text_noti img {
         display: block;
         font-family: "Oswald", sans-serif;
