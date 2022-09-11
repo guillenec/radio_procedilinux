@@ -309,14 +309,6 @@ $xl: 1200px;
                     grid-area: 8/7/11/13;
                 }
 
-                article {
-                    .subtitulo_noti {
-                        &:hover{
-                            @include caja_abs_top(98%, 100%, 40%, t);
-                            transition: .9s;
-                        }
-                    }
-                }
 
             }
         }
