@@ -1,6 +1,6 @@
 //VARIABLES MODO LIGHT
 //sombra cajas
-$sombra_general: (3px 5px 4px 1px #00000061);
+$sombra_general: (3px 5px 4px 1px rgba(0, 0, 0, 0.38));
 //backgrounds
 $bg_header:#ffffff;
 $bg_a:#ffffff;
@@ -52,6 +52,7 @@ $lg: 992px;
 $xl: 1200px;
 
 
+
 // MODO DARK
 $sombra_general_dark: (3px 5px 4px 1px rgba(255, 255, 255, 0.38));
 $bg_header_dark:#23112c;
@@ -62,7 +63,7 @@ $strong_dark:#ffff00;
 $color_a_w_dark:#23112c;        
 //boton niight
 $bg_hover_1_dark:#ffff;
-$col_hover_1_dark: rgb(0, 151, 245);
+$col_hover_1_dark: #0097f5;
 $bord_hover_1_dark:#b743f1;
 $hover_yell_dark: rgb(0, 151, 245);
 //titulo general

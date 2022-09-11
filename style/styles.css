@@ -13,7 +13,7 @@ html {
   box-sizing: border-box; }
 
 html[data-theme='light'] {
-  --sombra_general: 3px 5px 4px 1px #00000061;
+  --sombra_general: 3px 5px 4px 1px rgba(0, 0, 0, 0.38);
   --bg_header: #ffffff;
   --toggle_color: #23112c;
   --bg_a: #ffffff;
@@ -627,11 +627,122 @@ footer {
   .main .podcast {
     position: relative;
     height: auto;
-    background: tomato; }
+    background: #e0e5ec; }
     .main .podcast .reproductor {
+      width: 100%;
+      height: 1000px;
+      background: wheat;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; }
+      .main .podcast .reproductor .container_rep {
+        background: var(--bg_principal);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 90%; }
+        .main .podcast .reproductor .container_rep .player {
+          width: 300px;
+          height: 550px;
+          background: var(--bg_header);
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          border-radius: 10px;
+          box-shadow: 9px 9px 15px rgba(163, 177, 198, 0.6), -9px -9px 15px rgba(255, 255, 255, 0.5); }
+          .main .podcast .reproductor .container_rep .player .controls {
+            width: 95%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px; }
+            .main .podcast .reproductor .container_rep .player .controls .btn {
+              cursor: pointer;
+              border-radius: 50%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              box-shadow: -8px -8px 20px 0px #fff9,  -6px -6px 6px 0px #fff9, 8px 8px 20px #0001,  5px 5px 6px 0px #0001;
+              color: #797d7f;
+              border: none;
+              font-weight: 600;
+              font-size: 22px; }
+              .main .podcast .reproductor .container_rep .player .controls .btn:active {
+                box-shadow: inset -8px -8px 20px #fff9, inset -5px -5px 5px #fff9, inset 8px 8px 20px #0003, inset 5px 5px 6px 0px #0001; }
+              .main .podcast .reproductor .container_rep .player .controls .btn.small {
+                min-width: 50px;
+                min-height: 50px; }
+              .main .podcast .reproductor .container_rep .player .controls .btn.medium {
+                min-width: 55px;
+                min-height: 55px;
+                color: var(--color_a);
+                margin: 0;
+                font-size: 18px; }
+                .main .podcast .reproductor .container_rep .player .controls .btn.medium.blue {
+                  background: var(--bg_hover_a);
+                  color: var(--hover_ff); }
+                .main .podcast .reproductor .container_rep .player .controls .btn.medium .hide {
+                  display: none; }
+            .main .podcast .reproductor .container_rep .player .controls .titulo_play {
+              font-weight: 600;
+              font-family: "Quicksand", sans-serif;
+              font-size: 1rem;
+              color: #a1a1a1;
+              text-transform: uppercase;
+              letter-spacing: 2px;
+              margin: 0; }
+          .main .podcast .reproductor .container_rep .player .album {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            overflow: hidden;
+            border-radius: 50%;
+            box-shadow: 2px 2px 7px #a3b1c6, -2px -2px 7px #a3b1c6, -8px -8px 50px rgba(255, 255, 255, 0.6), 3px 3px 25px rgba(0, 0, 0, 0.6); }
+            .main .podcast .reproductor .container_rep .player .album img {
+              position: relative;
+              width: 100%;
+              height: 100%;
+              object-fit: cover; }
+          .main .podcast .reproductor .container_rep .player .artista, .main .podcast .reproductor .container_rep .player .song, .main .podcast .reproductor .container_rep .player .duracion {
+            width: 90%;
+            text-align: center;
+            font-weight: 600;
+            font-family: "Quicksand", sans-serif;
+            font-size: 1rem;
+            color: #a1a1a1;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin: 20px 0 0 0;
+            padding: 10px 0px; }
+          .main .podcast .reproductor .container_rep .player .song {
+            font-size: .8rem;
+            margin: 0 0 10px 0; }
+          .main .podcast .reproductor .container_rep .player .level {
+            width: 90%;
+            padding: 10px 0;
+            background: var(--bg_principal);
+            height: 9px;
+            border-radius: 3px;
+            border: solid thin #a1a1a12f; }
+          .main .podcast .reproductor .container_rep .player .duracion {
+            font-size: .9rem;
+            margin: 0 0 10px 0;
+            display: flex; }
+            .main .podcast .reproductor .container_rep .player .duracion .start {
+              flex: 1;
+              text-align: left; }
+            .main .podcast .reproductor .container_rep .player .duracion .end {
+              flex: 1;
+              text-align: right; }
+          .main .podcast .reproductor .container_rep .player .audio {
+            visibility: hidden;
+            height: 10px; }
+    .main .podcast .caja_pod {
       width: 50%;
-      height: 700px;
-      background: wheat; }
+      height: 1000px;
+      background: #6274da; }
 
 .footer {
   position: relative;
