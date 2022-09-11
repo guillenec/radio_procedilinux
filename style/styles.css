@@ -624,6 +624,14 @@ footer {
         left: -10px;
         border-radius: 50%;
         border: 10px solid var(--color_p); }
+  .main .podcast {
+    position: relative;
+    height: auto;
+    background: tomato; }
+    .main .podcast .reproductor {
+      width: 50%;
+      height: 700px;
+      background: wheat; }
 
 .footer {
   position: relative;
@@ -1812,7 +1820,8 @@ font-family: 'Quicksand', sans-serif;
         color: var(--color_p); }
     .nosotros_us .caja_nosotros section img {
       height: 100%;
-      object-fit: contain; }
+      object-fit: contain;
+      filter: drop-shadow(8px 8px 4px #faea10); }
 
 /*
 $sm: 576px;
