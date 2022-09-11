@@ -23,26 +23,13 @@
             div.somos_cont{
                 width: 60%;
 
-                h1{
-                    font-family: $titulo;
-                    font-size: 3rem;
-                    font-weight: 500;
-                    color: var(--color_p);
-                }
-                h2{
-                    @extend h1;
-                }
-                p{
-                    font-family: $parrafo;
-                    font-size: 1.2rem;
-                    color: var(--color_p);
-                }
+                @include textos_principales();
             }
             img{
                 height: 100%;
                 object-fit: contain;
                 //filtro de prueba, sacable
-                filter: drop-shadow(8px 8px 4px #faea10);
+                filter: drop-shadow(5px 5px 4px var(--color_strong));
             }
 
         }

@@ -50,14 +50,18 @@
 
 @mixin textos_principales() {
     h1,h2 {
+        display: block;
+        width: 100%;
         font-family: $titulo;
-        font-size: 3rem;
+        font-size: 2.8rem;
         font-weight: 500;
         color: var(--color_p);
+        text-transform: capitalize;
     }
 
-            
     p {
+        display: block;
+        width: 100%;
         font-family: $parrafo;
         font-size: 1.2rem;
         color: var(--color_p);
@@ -68,29 +72,44 @@
     }
 
     @media screen and (max-width: $xl) {
-        h1 {
+        h1, h2 {
             font-size: 2.5rem;
+        }
+        
+        p {
+            font-size: 1.3rem;
+        }
+        
+    }
+    
+    @media screen and (max-width: $lg){
+        h1, h2 {
+            font-size: 2.2rem;
         }
         
         p {
             font-size: 1.2rem;
         }
     }
-    
-    @media screen and (max-width: $lg){
-        h1 {
+    @media screen and (max-width: $md){
+        h1, h2 {
             font-size: 2rem;
         }
         
         p {
-            font-size: 1rem;
+            font-size: 1.2rem;
+            
         }
     }
-    @media screen and (max-width: $md){
-        width: 98%;
-    }
     @media screen and (max-width: $sm){
-        width: 94%;
+        h1, h2 {
+            font-size: 1.8rem;
+        }
+        
+        p {
+            font-size: 1.1rem;
+            
+        }
     }
 }
 
@@ -117,6 +136,7 @@ ademas de hacer responsive tanto la caja como a sus hijos, incluyendo texto e im
         img{
             height: 100%;
             object-fit: contain;
+            filter: drop-shadow(5px 5px 4px var(--color_strong));
         }
     }
     
@@ -137,7 +157,7 @@ ademas de hacer responsive tanto la caja como a sus hijos, incluyendo texto e im
             align-items: center;
             
             #{$caja_hija}{
-                width: 60%;
+                width: 80%;
                 @include textos_principales(); 
             }
             img{
@@ -149,7 +169,12 @@ ademas de hacer responsive tanto la caja como a sus hijos, incluyendo texto e im
 
     }
     @media screen and (max-width: $sm){
-
+        #{$caja_cont} {
+            
+            #{$caja_hija}{
+                width: 100%;
+            }
+        }
     }
 }
 
