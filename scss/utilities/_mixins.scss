@@ -113,8 +113,7 @@
     }
 }
 
-/*permite que el titulo contenido e imagenes del comienzo se podocopnen una al alado de
-la otra y se mantenga la misma disposiciones para todas las paginas.
+/*permite que el titulo contenido e imagenes del comienzo se ajusten una al alado de la otra y se mantenga la misma disposiciones para todas las paginas.
 ademas de hacer responsive tanto la caja como a sus hijos, incluyendo texto e img
 *///puede se usadoo como componente
 @mixin titulo_mas_img ($caja_cont, $caja_hija){
@@ -176,5 +175,9 @@ ademas de hacer responsive tanto la caja como a sus hijos, incluyendo texto e im
             }
         }
     }
+}
+
+@mixin flex_row_column(){
+    
 }
 

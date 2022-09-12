@@ -254,6 +254,28 @@ $xl: 1200px;
                 }
             }
         }
+        .podcast {
+            height: auto;
+    
+            .reproductor {
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                align-content: center;
+                justify-content: flex-start;
+                align-items: center;
+
+                .container_rep {
+                    width: 80%;
+                }
+            }
+            .caja_pod {
+                width: 80%;
+            } 
+        }
+    
     }
 }
 
@@ -342,6 +364,19 @@ $xl: 1200px;
                 }
 
             }
+        }
+
+        .podcast {
+            height: auto;
+    
+            .reproductor {
+                .container_rep {
+                    width: 90%;
+                }
+            }
+            .caja_pod {
+                width: 90%;
+            } 
         }
     }
 
@@ -528,7 +563,6 @@ $xl: 1200px;
             }
         }
 
-        //Noticias
         .noticias {
             .noticias_grid {
                 article {
@@ -602,6 +636,19 @@ $xl: 1200px;
                 }
 
             }
+        }
+
+        .podcast {
+            height: auto;
+    
+            .reproductor {
+                .container_rep {
+                    width: 100%;
+                }
+            }
+            .caja_pod {
+                width: 100%;
+            } 
         }
     }
     .footer {

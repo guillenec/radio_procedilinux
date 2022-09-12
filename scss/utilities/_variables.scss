@@ -29,13 +29,29 @@ $linea_tiempo:rgb(0, 151, 245);
 $triangulo_caja_prog:#6BC3F9;
 $bg_calend:#fff;
 
+//PODCAST
+$shadow_pod: (9px 9px 16px #a6a8ab,
+            -9px -9px 16px #ffffff);
+$bg_pod_boton: (linear-gradient(145deg, #ffffff, #d9dcdf));
+$shadow_boton: (9px 9px 16px #b0b2b5,
+            -9px -9px 16px #ffffff);
+$shadow_boton_hover:(inset 9px 9px 29px #b0b2b5,
+            inset -9px -9px 29px #ffffff);
+//boton de play
+$bg_boton_play:(linear-gradient(145deg, #00a2ff, #0088dd));  
+$shadow_boton_blay:(9px 9px 38px #0071b8,
+            -9px -9px 38px #00bdff);
+$shadow_boton_play_hover:(inset 9px 9px 38px #0071b8,
+            inset -9px -9px 38px #00bdff);            
+$bg_boton_play:(#0097f5);
+
 //FOOTER
 $fo_h:#23112c;
 $fo_m:rgb(0, 151, 245);
 $fo_h2: #fff;
 $fo_col3_p:#23112c;
 //paleta de colores
-$pri_blue: rgb(0, 151, 245);
+$pri_blue: #0097f5;
 $pri_purp: #23112c;
 $pri_white: #ffffff;
 $sec_blue:#0096f494;
@@ -70,7 +86,7 @@ $hover_yell_dark: rgb(0, 151, 245);
 $bg_principal_dark:rgb(48, 49, 87);
 $bg_secundario_dark:#ffff;
 $bord_titulo_dark:#ffff;
-$bord_subt_dark:rgb(0, 151, 245);
+$bord_subt_dark:hwb(203 0% 4%);
 //BANNER
 $caja_opaca_dark:rgba(88, 49, 194, 0.308);
 $filtro_video_dark:rgba(73, 40, 90, 0.3);
@@ -82,6 +98,16 @@ $borde_caja_noti_dark:#23112c;
 $linea_tiempo_dark:rgb(35, 17, 44);
 $triangulo_caja_prog_dark:#473196;
 $bg_calend_dark:rgba(158, 147, 207, 0.63);
+
+//PODCAST
+$shadow_pod_dark: (10px 10px 20px #21223c,
+            -10px -10px 20px #3f4072);
+$bg_pod_boton_dark: (linear-gradient(145deg, #33345d, #2b2c4e));
+$shadow_boton_dark: (9px 9px 18px #21223c,
+            -9px -9px 18px #3f4072);
+$shadow_boton_hover_dark:(inset 9px 9px 18px #21223c,
+            inset -9px -9px 18px #3f4072);
+//boton de play
 
 //FOOTER
 $fo_h_dark:#23112c;
@@ -97,3 +123,4 @@ $sec_blue_dark:#5831c294;
 $sec_purp_dark: #a806d1;
 $pri_yellow_dark:rgb(0, 98, 245);
 $strong_titulo_dark:rgb(222, 228, 253);
+

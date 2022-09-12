@@ -1,5 +1,4 @@
-/*permite que el titulo contenido e imagenes del comienzo se podocopnen una al alado de
-la otra y se mantenga la misma disposiciones para todas las paginas.
+/*permite que el titulo contenido e imagenes del comienzo se ajusten una al alado de la otra y se mantenga la misma disposiciones para todas las paginas.
 ademas de hacer responsive tanto la caja como a sus hijos, incluyendo texto e img
 */
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Oswald:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap");
@@ -38,6 +37,14 @@ html[data-theme='light'] {
   --linea_tiempo: #0097f5;
   --triangulo_caja_prog: #6BC3F9;
   --bg_calend:#fff;
+  --shadow_pod:9px 9px 16px #a6a8ab, -9px -9px 16px #ffffff;
+  --bg_pod_boton:linear-gradient(145deg, #ffffff, #d9dcdf);
+  --shadow_boton:9px 9px 16px #b0b2b5, -9px -9px 16px #ffffff;
+  --shadow_boton_hove:inset 9px 9px 29px #b0b2b5, inset -9px -9px 29px #ffffff;
+  --bg_boton_play:#0097f5;
+  --shadow_boton_blay:9px 9px 38px #0071b8, -9px -9px 38px #00bdff;
+  --shadow_boton_play_hover:inset 9px 9px 38px #0071b8, inset -9px -9px 38px #00bdff;
+  --bg_boton_play:#0097f5;
   --fo_h: #23112c;
   --fo_m: #0097f5;
   --fo_h2:#fff;
@@ -66,7 +73,7 @@ html[data-theme='dark'] {
   --bg_principal: #303157;
   --bg_secundario: #ffff;
   --borde_titulo: #ffff;
-  --borde_sub: #0097f5;
+  --borde_sub: hwb(203 0% 4%);
   --borde_caja_noticia:#23112c;
   --caja_opaca: rgba(88, 49, 194, 0.308);
   --sombra_cajaopaca:rgba(248, 248, 248, 0.05);
@@ -75,6 +82,14 @@ html[data-theme='dark'] {
   --linea_tiempo: #23112c;
   --triangulo_caja_prog: #473196;
   --bg_calend:rgba(158, 147, 207, 0.63);
+  --bg_boton_play:#0097f5;
+  --shadow_boton_blay:9px 9px 38px #0071b8, -9px -9px 38px #00bdff;
+  --shadow_boton_play_hover:inset 9px 9px 38px #0071b8, inset -9px -9px 38px #00bdff;
+  --bg_boton_play:#0097f5;
+  --shadow_pod:10px 10px 20px #21223c, -10px -10px 20px #3f4072;
+  --bg_pod_boton:linear-gradient(145deg, #33345d, #2b2c4e);
+  --shadow_boton:9px 9px 18px #21223c, -9px -9px 18px #3f4072;
+  --shadow_boton_hove:inset 9px 9px 18px #21223c, inset -9px -9px 18px #3f4072;
   --fo_h: #23112c;
   --fo_m: #5831c294;
   --fo_h2: #fff;
@@ -626,12 +641,10 @@ footer {
         border: 10px solid var(--color_p); }
   .main .podcast {
     position: relative;
-    height: auto;
-    background: #e0e5ec; }
+    height: auto; }
     .main .podcast .reproductor {
       width: 100%;
       height: 1000px;
-      background: wheat;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap; }
@@ -689,13 +702,13 @@ footer {
         .main .podcast .reproductor .container_rep .player {
           width: 300px;
           height: 550px;
-          background: var(--bg_header);
+          background: var(--bg_principal);
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
           border-radius: 10px;
-          box-shadow: 9px 9px 15px rgba(163, 177, 198, 0.6), -9px -9px 15px rgba(255, 255, 255, 0.5); }
+          box-shadow: var(--shadow_pod); }
           .main .podcast .reproductor .container_rep .player .controls {
             width: 95%;
             display: flex;
@@ -708,25 +721,31 @@ footer {
               display: flex;
               justify-content: center;
               align-items: center;
-              box-shadow: -8px -8px 20px 0px #fff9,  -6px -6px 6px 0px #fff9, 8px 8px 20px #0001,  5px 5px 6px 0px #0001;
-              color: #797d7f;
+              background: var(--bg_pod_boton);
+              box-shadow: var(--shadow_boton);
+              color: var(--bg_hover_a);
               border: none;
               font-weight: 600;
               font-size: 22px; }
               .main .podcast .reproductor .container_rep .player .controls .btn:active {
-                box-shadow: inset -8px -8px 20px #fff9, inset -5px -5px 5px #fff9, inset 8px 8px 20px #0003, inset 5px 5px 6px 0px #0001; }
+                background: var(--bg_principal);
+                box-shadow: var(--shadow_boton_hove); }
               .main .podcast .reproductor .container_rep .player .controls .btn.small {
                 min-width: 50px;
                 min-height: 50px; }
               .main .podcast .reproductor .container_rep .player .controls .btn.medium {
                 min-width: 55px;
                 min-height: 55px;
-                color: var(--color_a);
+                color: var(--bg_hover_a);
                 margin: 0;
                 font-size: 18px; }
                 .main .podcast .reproductor .container_rep .player .controls .btn.medium.blue {
-                  background: var(--bg_hover_a);
-                  color: var(--hover_ff); }
+                  background: var(--bg_boton_play);
+                  color: var(--hover_ff);
+                  box-shadow: var(--shadow_boton_blay); }
+                  .main .podcast .reproductor .container_rep .player .controls .btn.medium.blue:active {
+                    background: var(--bg_boton_play);
+                    box-shadow: var(--shadow_boton_play_hover); }
                 .main .podcast .reproductor .container_rep .player .controls .btn.medium .hide {
                   display: none; }
             .main .podcast .reproductor .container_rep .player .controls .titulo_play {
@@ -1518,24 +1537,45 @@ footer {
 .contacto {
   position: relative;
   height: auto; }
-  .contacto h1 {
-    margin-top: 10px;
-    text-align: left;
-    text-transform: capitalize;
-    font-weight: 400;
+  .contacto h1, .contacto h2 {
+    display: block;
+    width: 100%;
     font-family: "Oswald", sans-serif;
-    color: var(--color_p); }
-  .contacto h2 {
-    font-family: "Oswald", sans-serif;
-    text-transform: capitalize;
-    font-weight: 400;
-    color: var(--color_p); }
-  .contacto p {
-    margin-top: 10px;
-    font-family: "Quicksand", sans-serif;
+    font-size: 2.8rem;
     font-weight: 500;
-    line-height: 2rem;
+    color: var(--color_p);
+    text-transform: capitalize; }
+  .contacto p {
+    display: block;
+    width: 100%;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.2rem;
     color: var(--color_p); }
+    .contacto p strong {
+      font-weight: 700;
+      color: var(--color_strong); }
+  @media screen and (max-width: 1200px) {
+    .contacto h1, .contacto h2 {
+      font-size: 2.5rem; }
+    .contacto p {
+      font-size: 1.3rem; } }
+  @media screen and (max-width: 992px) {
+    .contacto h1, .contacto h2 {
+      font-size: 2.2rem; }
+    .contacto p {
+      font-size: 1.2rem; } }
+  @media screen and (max-width: 768px) {
+    .contacto h1, .contacto h2 {
+      font-size: 2rem; }
+    .contacto p {
+      font-size: 1.2rem; } }
+  @media screen and (max-width: 576px) {
+    .contacto h1, .contacto h2 {
+      font-size: 1.8rem; }
+    .contacto p {
+      font-size: 1.1rem; } }
+  .contacto h1, .contacto h2 {
+    text-align: center; }
   .contacto .cuerpo_contact {
     position: relative;
     margin-top: 30px;
@@ -1673,6 +1713,7 @@ footer {
     .contacto .cuerpo_contact .mapa iframe {
       width: 100%;
       height: 240px;
+      margin-top: 20px;
       border-radius: 5px;
       border: solid 2px #0097f5;
       -webkit-box-shadow: var(--sombra_general);
@@ -2234,7 +2275,22 @@ $xl: 1200px;
   .main .noticias .noticias_grid article .subtitulo_noti a, .main .noticias .noticias_grid article .subtitulo_noti .footer .footer_head .footer_head_cuerpo a img, .footer .footer_head .footer_head_cuerpo a .main .noticias .noticias_grid article .subtitulo_noti img {
     font-size: 1.3rem; }
   .main .noticias .noticias_grid article .subtitulo_noti p {
-    font-size: .9rem; } }
+    font-size: .9rem; }
+  .main .podcast {
+    height: auto; }
+    .main .podcast .reproductor {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-content: center;
+      justify-content: flex-start;
+      align-items: center; }
+      .main .podcast .reproductor .container_rep {
+        width: 80%; }
+    .main .podcast .caja_pod {
+      width: 80%; } }
 
 @media screen and (max-width: 768px) {
   .main .banner_conteiner .caja_opaca {
@@ -2277,6 +2333,12 @@ $xl: 1200px;
   .main .programas .linea_tiempo .left::before,
   .main .programas .linea_tiempo .right::before {
     left: -2px; }
+  .main .podcast {
+    height: auto; }
+    .main .podcast .reproductor .container_rep {
+      width: 90%; }
+    .main .podcast .caja_pod {
+      width: 90%; }
   .footer .footer_head {
     height: 190px; }
     .footer .footer_head .footer_head_cuerpo {
@@ -2414,6 +2476,12 @@ $xl: 1200px;
     left: 40px; }
   .main .programas .linea_tiempo .caja.right {
     left: 40px; }
+  .main .podcast {
+    height: auto; }
+    .main .podcast .reproductor .container_rep {
+      width: 100%; }
+    .main .podcast .caja_pod {
+      width: 100%; }
   .footer .footer_head .footer_head_cuerpo ul.redes_pie {
     justify-content: center; } }
 

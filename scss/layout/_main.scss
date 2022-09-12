@@ -441,12 +441,10 @@
         .podcast {
             position: relative;
             height: auto;
-            background: #e0e5ec;
     
             .reproductor {
                 width: 100%;
                 height: 1000px;
-                background: wheat;
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
@@ -469,18 +467,16 @@
                     h2{
                         text-align: center;
                     }
-    
                     .player {
                         width: 300px;
                         height: 550px;
-                        background: var(--bg_header);
+                        background: var(--bg_principal);
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;
                         border-radius: 10px;
-                        box-shadow: 9px 9px 15px rgba(163, 177, 198, 0.6),
-                        -9px -9px 15px rgba(255, 255, 255, 0.5);
+                        box-shadow: var(--shadow_pod);
 
                         .controls{
                             width: 95%;
@@ -495,20 +491,16 @@
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
-                                box-shadow: -8px -8px 20px 0px #fff9, 
-                                -6px -6px 6px 0px #fff9,
-                                8px 8px 20px #0001, 
-                                5px 5px 6px 0px #0001;
-                                color: #797d7f;
+                                background: var(--bg_pod_boton);
+                                box-shadow: var(--shadow_boton);
+                                color: var(--bg_hover_a);
                                 border: none;
                                 font-weight: 600;
                                 font-size: 22px;
 
                                 &:active{
-                                    box-shadow: inset -8px -8px 20px #fff9,
-                                    inset -5px -5px 5px #fff9,
-                                    inset 8px 8px 20px #0003,
-                                    inset 5px 5px 6px 0px #0001;
+                                    background: var(--bg_principal);
+                                    box-shadow: var(--shadow_boton_hove);
                                 }
                                 &.small{
                                     min-width: 50px;
@@ -517,13 +509,18 @@
                                 &.medium{
                                     min-width: 55px;
                                     min-height: 55px;
-                                    color: var(--color_a);
+                                    color: var(--bg_hover_a);
                                     margin: 0;
                                     font-size: 18px;
 
                                     &.blue{
-                                        background: var(--bg_hover_a);
+                                        background: var(--bg_boton_play);
                                         color: var(--hover_ff);
+                                        box-shadow: var(--shadow_boton_blay);
+                                        &:active{
+                                            background: var(--bg_boton_play);
+                                            box-shadow: var(--shadow_boton_play_hover);
+                                        }
                                     }
                                     .hide{
                                         display: none;
