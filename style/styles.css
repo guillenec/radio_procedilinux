@@ -851,6 +851,10 @@ footer {
           font-size: 1.1rem; } }
       .main .podcast .caja_pod h2 {
         text-align: center; }
+      .main .podcast .caja_pod .podcast_1 {
+        width: 100%; }
+        .main .podcast .caja_pod .podcast_1 iframe {
+          box-shadow: var(--shadow_pod); }
 
 .footer {
   position: relative;

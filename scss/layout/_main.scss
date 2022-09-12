@@ -615,6 +615,13 @@
                 h2{
                     text-align: center;
                 }
+                .podcast_1{
+                    width: 100%;
+                    
+                    iframe{
+                        box-shadow: var(--shadow_pod);
+                    }
+                }
             } 
         }
 }
