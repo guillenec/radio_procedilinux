@@ -498,6 +498,10 @@
                                 font-weight: 600;
                                 font-size: 22px;
 
+                                i{
+                                    line-height: 0;
+                                }
+
                                 &:active{
                                     background: var(--bg_principal);
                                     box-shadow: var(--shadow_boton_hove);

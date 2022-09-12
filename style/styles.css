@@ -727,6 +727,8 @@ footer {
               border: none;
               font-weight: 600;
               font-size: 22px; }
+              .main .podcast .reproductor .container_rep .player .controls .btn i {
+                line-height: 0; }
               .main .podcast .reproductor .container_rep .player .controls .btn:active {
                 background: var(--bg_principal);
                 box-shadow: var(--shadow_boton_hove); }
