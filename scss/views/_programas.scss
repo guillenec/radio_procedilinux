@@ -15,7 +15,8 @@ font-family: 'Quicksand', sans-serif;
     justify-content: center;
     align-items: center;
 
-    
+    @include titulo_mas_img ( '.programas_titulo' , '.titulo_prog_content');
+
     .calendario_dia {
         margin: 50px;
         width: auto;

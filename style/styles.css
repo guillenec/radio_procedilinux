@@ -1745,6 +1745,115 @@ font-family: 'Quicksand', sans-serif;
   align-content: center;
   justify-content: center;
   align-items: center; }
+  .horarios_base .programas_titulo {
+    width: 100%;
+    height: 300px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center; }
+    .horarios_base .programas_titulo .titulo_prog_content {
+      width: 60%; }
+      .horarios_base .programas_titulo .titulo_prog_content h1, .horarios_base .programas_titulo .titulo_prog_content h2 {
+        display: block;
+        width: 100%;
+        font-family: "Oswald", sans-serif;
+        font-size: 2.8rem;
+        font-weight: 500;
+        color: var(--color_p);
+        text-transform: capitalize; }
+      .horarios_base .programas_titulo .titulo_prog_content p {
+        display: block;
+        width: 100%;
+        font-family: "Quicksand", sans-serif;
+        font-size: 1.2rem;
+        color: var(--color_p); }
+        .horarios_base .programas_titulo .titulo_prog_content p strong {
+          font-weight: 700;
+          color: var(--color_strong); }
+      @media screen and (max-width: 1200px) {
+        .horarios_base .programas_titulo .titulo_prog_content h1, .horarios_base .programas_titulo .titulo_prog_content h2 {
+          font-size: 2.5rem; }
+        .horarios_base .programas_titulo .titulo_prog_content p {
+          font-size: 1.3rem; } }
+      @media screen and (max-width: 992px) {
+        .horarios_base .programas_titulo .titulo_prog_content h1, .horarios_base .programas_titulo .titulo_prog_content h2 {
+          font-size: 2.2rem; }
+        .horarios_base .programas_titulo .titulo_prog_content p {
+          font-size: 1.2rem; } }
+      @media screen and (max-width: 768px) {
+        .horarios_base .programas_titulo .titulo_prog_content h1, .horarios_base .programas_titulo .titulo_prog_content h2 {
+          font-size: 2rem; }
+        .horarios_base .programas_titulo .titulo_prog_content p {
+          font-size: 1.2rem; } }
+      @media screen and (max-width: 576px) {
+        .horarios_base .programas_titulo .titulo_prog_content h1, .horarios_base .programas_titulo .titulo_prog_content h2 {
+          font-size: 1.8rem; }
+        .horarios_base .programas_titulo .titulo_prog_content p {
+          font-size: 1.1rem; } }
+    .horarios_base .programas_titulo img {
+      height: 100%;
+      object-fit: contain;
+      filter: drop-shadow(5px 5px 4px var(--color_strong)); }
+  @media screen and (max-width: 768px) {
+    .horarios_base .programas_titulo {
+      width: 100%;
+      height: auto;
+      flex-direction: column;
+      flex-wrap: wrap;
+      text-align: center;
+      justify-content: center;
+      align-items: center; }
+      .horarios_base .programas_titulo .titulo_prog_content {
+        width: 80%; }
+        .horarios_base .programas_titulo .titulo_prog_content h1, .horarios_base .programas_titulo .titulo_prog_content h2 {
+          display: block;
+          width: 100%;
+          font-family: "Oswald", sans-serif;
+          font-size: 2.8rem;
+          font-weight: 500;
+          color: var(--color_p);
+          text-transform: capitalize; }
+        .horarios_base .programas_titulo .titulo_prog_content p {
+          display: block;
+          width: 100%;
+          font-family: "Quicksand", sans-serif;
+          font-size: 1.2rem;
+          color: var(--color_p); }
+          .horarios_base .programas_titulo .titulo_prog_content p strong {
+            font-weight: 700;
+            color: var(--color_strong); } }
+    @media screen and (max-width: 768px) and (max-width: 1200px) {
+      .horarios_base .programas_titulo .titulo_prog_content h1, .horarios_base .programas_titulo .titulo_prog_content h2 {
+        font-size: 2.5rem; }
+      .horarios_base .programas_titulo .titulo_prog_content p {
+        font-size: 1.3rem; } }
+    @media screen and (max-width: 768px) and (max-width: 992px) {
+      .horarios_base .programas_titulo .titulo_prog_content h1, .horarios_base .programas_titulo .titulo_prog_content h2 {
+        font-size: 2.2rem; }
+      .horarios_base .programas_titulo .titulo_prog_content p {
+        font-size: 1.2rem; } }
+    @media screen and (max-width: 768px) and (max-width: 768px) {
+      .horarios_base .programas_titulo .titulo_prog_content h1, .horarios_base .programas_titulo .titulo_prog_content h2 {
+        font-size: 2rem; }
+      .horarios_base .programas_titulo .titulo_prog_content p {
+        font-size: 1.2rem; } }
+    @media screen and (max-width: 768px) and (max-width: 576px) {
+      .horarios_base .programas_titulo .titulo_prog_content h1, .horarios_base .programas_titulo .titulo_prog_content h2 {
+        font-size: 1.8rem; }
+      .horarios_base .programas_titulo .titulo_prog_content p {
+        font-size: 1.1rem; } }
+  @media screen and (max-width: 768px) {
+      .horarios_base .programas_titulo img {
+        margin-top: 10px;
+        width: 100%;
+        height: 250px; } }
+  @media screen and (max-width: 576px) {
+    .horarios_base .programas_titulo .titulo_prog_content {
+      width: 100%; } }
   .horarios_base .calendario_dia {
     margin: 50px;
     width: auto;
