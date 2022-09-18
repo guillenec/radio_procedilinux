@@ -96,29 +96,30 @@
                     <p>muchas gracias...</p>
                 </section>
                 <section class="col-sm-6 form_contact">
-                    <form action="#" method="POST">
+                    <form action="" method="POST" id="form">
                         <div class="mb-3">
-                            <input type="text" id="nombre_inp" class="form-control" placeholder="nombre" required>
+                            <input type="text" id="nombre_inp" name="nombre" class="form-control" placeholder="nombre" required>
                             <label for="nombre_inp" class="form-label">nombre</label>
                         </div>
                         <div class="mb-3">
-                            <input type="number" id="edad_inp" class="form-control" placeholder="edad" required>
+                            <input type="number" id="edad_inp" name="edad" class="form-control" placeholder="edad" required>
                             <label for="edad_inp" class="form-label">edad</label>
                         </div>
                         <div class="mb-3">
-                            <input type="email" id="email_inp" class="form-control" placeholder="email" required>
+                            <input type="email" id="email_inp" name="email" class="form-control" placeholder="email" required>
                             <label for="email_inp" class="form-label">email</label>
                         </div>
                         <div class="mb-3">
-                            <input type="number" id="tel_inp" class="form-control" placeholder="telefono" required>
+                            <input type="number" id="tel_inp" name="tel" class="form-control" placeholder="telefono" required>
                             <label for="tel_inp" class="form-label">telefono</label>
                         </div>
                         <div class="mb-3">
-                            <textarea class="form-control" placeholder="Leave a comment here" id="motivo"></textarea>
+                            <textarea class="form-control" name="informacion" placeholder="Leave a comment here" id="motivo"></textarea>
                             <label for="motivo_inp" class="form-label">motivo</label>
                         </div>
                         <input class="btn btn-primary form_boton" type="submit" value="enviar">
                     </form>
+                    <a href="mailto:procedilinux@gmail.com" id="envia_mail"></a>
                 </section>
                 <section class="col-sm-6 contacto_rapido">
                     <h2>contacto rapido</h2>
@@ -236,6 +237,7 @@
     <!-- para el toggle -->
     <script src="../js/toggle.js"></script>
     <script src="../js/modo_oscuro.js"></script>
+    <script src="../js/formulario.js"></script>
 
     <!--Icons open-source-->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
