@@ -3,6 +3,99 @@ body{
     background: var(--bg_principal);
 }
 
+//preloader
+.hidden{ //esta clase me permitira evitar scrolear en la precarga
+    overflow: hidden; 
+}
+.none{ //me permitira ocultar la precarga
+    display: none;
+}
+.preloader{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background: $bg_hover_1;
+    z-index: 10;
+
+    .astro_agua{
+        margin-top: 0;
+        margin-left: 0;
+        animation: flotando 20s ease infinite;
+    }
+
+    @keyframes flotando {
+        0%{
+            transform:rotate(0deg);
+        }
+        25%{
+            transform:rotate(25deg);
+        }
+        50%{           
+            transform: rotate(50deg);
+        }
+        75%{
+            transform: rotate(30deg);
+        }
+        100%{
+            transform: rotate(0deg);
+        }
+    }
+
+    .patito1{
+        margin-top: 0;
+        margin-left: 0;
+        transform: scaleX(-1);
+        animation: move_pato1 20s infinite;
+    }
+    .patito2{
+        margin-top: 0;
+        margin-left: 0;
+        animation: move_pato2 20s infinite;
+    }
+
+    @keyframes move_pato1 {
+        0%{
+            transform:translate(0px, 0px);
+        }
+        25%{
+            transform:translate(-80px,-80px);
+        }
+        50%{           
+            transform:translate(-100px,-150px);
+        }
+        75%{
+            transform:translate(-50px,-50px);
+        }
+        100%{
+            transform:translate(0px, 0px);
+        }
+    }
+    @keyframes move_pato2 {
+        0%{
+            transform:translate(0px, 0px);
+        }
+        25%{
+            transform:translate(80px,80px);
+        }
+        50%{           
+            transform:translate(100px,150px);
+        }
+        75%{
+            transform:translate(50px,50px);
+        }
+        100%{
+            transform:translate(0px, 0px);
+        }
+    }
+
+}
+
+//estructura general general
 header,
 main,
 footer {

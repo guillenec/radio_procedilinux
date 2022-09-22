@@ -270,10 +270,11 @@ $xl: 1200px;
                 .container_rep {
                     width: 80%;
                 }
+                .caja_pod {
+                    width: 80%;
+                } 
             }
-            .caja_pod {
-                width: 80%;
-            } 
+            
         }
     
     }
@@ -371,11 +372,13 @@ $xl: 1200px;
             .reproductor {
                 .container_rep {
                     width: 90%;
+                    
                 }
+                .caja_pod {
+                    width: 90%;
+                } 
             }
-            .caja_pod {
-                width: 90%;
-            } 
+            
         }
     }
 
@@ -644,10 +647,13 @@ $xl: 1200px;
                 .container_rep {
                     width: 100%;
                 }
+                .caja_pod {
+                    width: 100%;
+                    .podcast_1{
+                        width: 100%;
+                    }
+                } 
             }
-            .caja_pod {
-                width: 100%;
-            } 
         }
     }
     .footer {

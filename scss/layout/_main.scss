@@ -438,7 +438,7 @@
     }
 
     // SECCION PODCAST
-        .podcast {
+    .podcast {
             position: relative;
             height: auto;
     
@@ -453,7 +453,7 @@
                     background: var(--bg_principal);
                     display: flex;
                     width: 50%;
-                    height: 700px;
+                    height: 800px;
                     padding: 20px;
                     display: flex;
                     flex-direction: column;
@@ -547,7 +547,7 @@
                             width: 150px;
                             height: 150px;
                             overflow: hidden;
-                            border-radius: 50%;
+                            border-radius: 10px;
                             box-shadow: 2px 2px 7px rgb(163, 177, 198),
                             -2px -2px 7px rgb(163, 177, 198),
                             -8px -8px 50px rgba(255, 255, 255, 0.6),
@@ -604,6 +604,7 @@
                     }
                 }
             } 
+
             .caja_pod {
                 width: 50%;
                 height: 1000px;
@@ -621,7 +622,7 @@
                 }
                 .podcast_1{
                     width: 100%;
-                    
+
                     iframe{
                         box-shadow: var(--shadow_pod);
                     }
