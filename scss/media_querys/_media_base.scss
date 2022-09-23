@@ -28,6 +28,34 @@ $xl: 1200px;
     }
 
     .main {
+        .banner_conteiner {
+            position: relative;
+            height: 100vh;
+
+            .caja_opaca {
+                @include caja_abs_top(90%, 50%, 12%, t);
+                margin-left:5%;
+                flex-direction: column;
+                align-content: flex-start;
+                justify-content: center;
+                align-items: center;
+                padding: 30px;
+                box-shadow: 0 0 0 10px var(--sombra_cajaopaca);
+
+
+                h1,
+                p {
+                    text-align: left;
+                    color: var(--toggle_color);
+                    margin: 5px 0;
+                    overflow: hidden;
+                }
+
+                h1 {
+                    margin-top: 0;
+                }
+            }
+        }
         .noticias_grid {        
             article {
                 .subtitulo_noti {
@@ -206,9 +234,8 @@ $xl: 1200px;
             height: 100vh;
 
             .caja_opaca {
-                width: 90%;
-                height: auto;
-                margin: 11% 5%;
+                @include caja_abs_top(90%, auto, 12%, t);
+                margin-left:5%;
                 flex-direction: column;
                 align-content: flex-start;
                 justify-content: center;
@@ -229,6 +256,7 @@ $xl: 1200px;
                 }
             }
         }
+
         .noticias {
     
             .noticias_grid {
@@ -279,6 +307,25 @@ $xl: 1200px;
     
     }
 }
+@media screen and (max-height:768px) {
+    .caja_opaca {
+        @include caja_abs_top(90%, auto, 10px, b);
+        flex-direction: column;
+        align-content: flex-start;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+        box-shadow: 0 0 0 10px var(--sombra_cajaopaca);
+
+        h1{
+            font-size: 2.8rem !important;
+        }
+        p{
+            line-height: 1rem;
+        }
+    }
+
+}
 
 @media screen and (max-width: $md) {
     //.width_80 {  width: 98%; }
@@ -286,21 +333,16 @@ $xl: 1200px;
     .main {
         .banner_conteiner {
             .caja_opaca {
-                width: 98%;
-                margin: 40% 1%;
-
-                h1,
-                p {
-                    width: 98%;
-                }
+                @include caja_abs_top(98%, auto, 12%, t);
+                margin-left:1%;
 
                 h1 {
-                    font-size: 4em;
-                    line-height: 1.5em;
+                    font-size: 2.5rem;
+                    line-height: 1.9rem;
                 }
 
                 p {
-                    font-size: 16px;
+                    font-size: 1rem;
                 }
 
             }
@@ -542,27 +584,24 @@ $xl: 1200px;
 
 @media screen and (max-width: $sm) {
     // .width_80 { width: 100%;  }
-
+    
     .main {
-        .banner_conteiner {
-            .caja_opaca {
-                width: 98%;
-                margin: 30% 1%;
+        .banner_conteiner {   
 
-                h1,
-                p {
-                    width: 98%;
-                }
+            .caja_opaca {
+                @include caja_abs_top(98%, min-content, 15%, t);
+                margin-left:1%;
 
                 h1 {
-                    font-size: 3.5em;
-                    line-height: 1.5em;
+                    font-size: 3em;
+                    line-height: 1em;
                 }
 
                 p {
-                    font-size: 15px;
+                    font-size: 1rem;
                 }
             }
+        
         }
 
         .noticias {

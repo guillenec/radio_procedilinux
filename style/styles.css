@@ -364,7 +364,7 @@ footer {
         object-fit: cover; }
     .main .banner_conteiner .caja_opaca {
       position: absolute;
-      width: 40%;
+      width: 50%;
       height: 100%;
       top: 0;
       background: var(--caja_opaca);
@@ -381,6 +381,7 @@ footer {
       .main .banner_conteiner .caja_opaca h1,
       .main .banner_conteiner .caja_opaca p {
         display: block;
+        position: relative;
         width: 90%;
         text-align: left;
         color: var(--color_p);
@@ -2330,6 +2331,29 @@ $xl: 1200px;
       .header .nav_menu .menu li a, .header .nav_menu .menu li .footer .footer_head .footer_head_cuerpo a img, .footer .footer_head .footer_head_cuerpo a .header .nav_menu .menu li img {
         width: 99px;
         font-weight: 300px; }
+  .main .banner_conteiner {
+    position: relative;
+    height: 100vh; }
+    .main .banner_conteiner .caja_opaca {
+      position: absolute;
+      width: 90%;
+      height: 50%;
+      top: 12%;
+      margin-left: 5%;
+      flex-direction: column;
+      align-content: flex-start;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+      box-shadow: 0 0 0 10px var(--sombra_cajaopaca); }
+      .main .banner_conteiner .caja_opaca h1,
+      .main .banner_conteiner .caja_opaca p {
+        text-align: left;
+        color: var(--toggle_color);
+        margin: 5px 0;
+        overflow: hidden; }
+      .main .banner_conteiner .caja_opaca h1 {
+        margin-top: 0; }
   .main .noticias_grid article .subtitulo_noti a, .main .noticias_grid article .subtitulo_noti .footer .footer_head .footer_head_cuerpo a img, .footer .footer_head .footer_head_cuerpo a .main .noticias_grid article .subtitulo_noti img {
     font-size: 1.5rem; }
   .main .noticias_grid article .subtitulo_noti p {
@@ -2435,9 +2459,11 @@ $xl: 1200px;
     position: relative;
     height: 100vh; }
     .main .banner_conteiner .caja_opaca {
+      position: absolute;
       width: 90%;
       height: auto;
-      margin: 11% 5%;
+      top: 12%;
+      margin-left: 5%;
       flex-direction: column;
       align-content: flex-start;
       justify-content: center;
@@ -2476,18 +2502,35 @@ $xl: 1200px;
       .main .podcast .reproductor .caja_pod {
         width: 80%; } }
 
+@media screen and (max-height: 768px) {
+  .caja_opaca {
+    position: absolute;
+    width: 90%;
+    height: auto;
+    bottom: 10px;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    box-shadow: 0 0 0 10px var(--sombra_cajaopaca); }
+    .caja_opaca h1 {
+      font-size: 2.8rem !important; }
+    .caja_opaca p {
+      line-height: 1rem; } }
+
 @media screen and (max-width: 768px) {
   .main .banner_conteiner .caja_opaca {
+    position: absolute;
     width: 98%;
-    margin: 40% 1%; }
-    .main .banner_conteiner .caja_opaca h1,
-    .main .banner_conteiner .caja_opaca p {
-      width: 98%; }
+    height: auto;
+    top: 12%;
+    margin-left: 1%; }
     .main .banner_conteiner .caja_opaca h1 {
-      font-size: 4em;
-      line-height: 1.5em; }
+      font-size: 2.5rem;
+      line-height: 1.9rem; }
     .main .banner_conteiner .caja_opaca p {
-      font-size: 16px; }
+      font-size: 1rem; }
   .main .noticias .noticias_grid {
     height: 900px;
     grid-template-rows: repeat(10, 1fr); }
@@ -2608,16 +2651,16 @@ $xl: 1200px;
 
 @media screen and (max-width: 576px) {
   .main .banner_conteiner .caja_opaca {
+    position: absolute;
     width: 98%;
-    margin: 30% 1%; }
-    .main .banner_conteiner .caja_opaca h1,
-    .main .banner_conteiner .caja_opaca p {
-      width: 98%; }
+    height: min-content;
+    top: 15%;
+    margin-left: 1%; }
     .main .banner_conteiner .caja_opaca h1 {
-      font-size: 3.5em;
-      line-height: 1.5em; }
+      font-size: 3em;
+      line-height: 1em; }
     .main .banner_conteiner .caja_opaca p {
-      font-size: 15px; }
+      font-size: 1rem; }
   .main .noticias .noticias_grid article .subtitulo_noti a, .main .noticias .noticias_grid article .subtitulo_noti .footer .footer_head .footer_head_cuerpo a img, .footer .footer_head .footer_head_cuerpo a .main .noticias .noticias_grid article .subtitulo_noti img {
     font-size: 1.2rem; }
   .main .noticias .noticias_grid article .subtitulo_noti p {
