@@ -41,9 +41,20 @@ ya que como compartian las mismas propiedades , me podioa aorrar codigo al exten
 
 
 seo:
-se incorporaron los metas vistos en clases, meta author y copyright en todos los documentos.. 
-se incorporo un title en cada pagina y en el acorde a lo sugerido en clases.
-las imagenes que uso todas tienen su respectivo alt.
-etiqueta strong para resaltar texto especificos , solo importantes.
-ahun no cambio todos los valores a una misma unidad como me sugirieron.. 
-lo antes posible apenas tenga tiempo lo hare.
+se incorporaron no solo los meta generales, tambien para facebook y twitter, tambien el script para uso de google analyticas. 
+
+
+Ultima correccion: se me borraron alguinas cosas nose xq .
+se acomodo el banner para que se vea bien en telefono horizontales.
+
+formulario de contactos funcionando de forma rustica.
+
+links en cada a y su correspondiete link + targets _blank.
+
+animacion de precarga con las img de los iconos optimizadas para que ocupen menos de 100k. la imagen de precarga tiene una precarga de 1s aproposito, para que se pueda apreciar. 
+
+se añadio completamente la  seccion banners que sugeri en el wireframe.
+
+variables corregidas segun sugerencia de vero.
+-
+
