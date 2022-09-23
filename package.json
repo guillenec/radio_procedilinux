@@ -4,7 +4,7 @@
     "nodemon": "^2.0.19"
   },
   "name": "guille_webradio",
-  "description": "//RADIO GUILLE COMPILAXIOPN SASS//",
+  "description": "procedilinux pagina ejemplo de radio web + service web",
   "version": "1.0.0",
   "main": "index.js",
   "devDependencies": {},

@@ -2445,7 +2445,7 @@ $xl: 1200px;
     position: absolute;
     display: block;
     width: 100%;
-    height: calc(100% - 70px);
+    height: 700px;
     margin-top: 70px;
     padding: 10px 20px;
     border-top: thin solid #371c45d7; }
