@@ -308,7 +308,8 @@ $xl: 1200px;
     
     }
 }
-@media screen and (max-height:768px) {
+
+@media (max-height:768px){
     .caja_opaca {
         @include caja_abs_top(90%, auto, 10px, b);
         flex-direction: column;
@@ -321,12 +322,13 @@ $xl: 1200px;
         h1{
             font-size: 2.8rem !important;
         }
+
         p{
-            line-height: 1rem;
+            line-height: 1.3rem;
         }
     }
-
 }
+
 
 @media screen and (max-width: $md) {
     //.width_80 {  width: 98%; }

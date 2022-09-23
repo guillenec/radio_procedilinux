@@ -10,6 +10,7 @@ html {
     box-sizing: border-box;
 }
 
+
 html[data-theme='light'] {
     --sombra_general: #{$sombra_general};
 
@@ -142,6 +143,7 @@ html[data-theme='dark'] {
 
     --strong_titulo: #{$strong_titulo_dark};
 }
+
 
 
 //body {...}

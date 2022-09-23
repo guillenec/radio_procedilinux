@@ -1,3 +1,128 @@
+/*
+html[data-theme='light'] {
+    //VARIABLES MODO LIGHT
+    //sombra cajas
+    $sombra_general: (3px 5px 4px 1px rgba(0, 0, 0, 0.38));
+    //backgrounds
+    $bg_header:#ffffff;
+    $bg_a:#ffffff;
+    $color_a:#23112c;
+    $color_p:#23112c;
+    $strong:#a806d1;
+    $color_a_w:#fff;
+    //boton niight
+    $bg_hover_1:rgb(0, 151, 245);
+    $col_hover_1: #fff;
+    $bord_hover_1:#23112c;
+    $hover_yell: #ffff00;
+    //titulo general
+    $bg_principal:#f1f4f8;
+    $bg_secundario:#23112c;
+    $bord_titulo:#23112c;
+    $bord_subt:rgb(0, 151, 245);
+    //BANNER
+    $caja_opaca:rgba(255, 255, 255, 0.493);
+    $filtro_video:rgba(0, 151, 245, 0.2);
+    //NOTICIAS
+    $caja_cont_noti:#0097f594;
+    $borde_caja_noti:#fff;
+    //PROGRAMA
+    $linea_tiempo:rgb(0, 151, 245);
+    $triangulo_caja_prog:#6BC3F9;
+    $bg_calend:#fff;
+
+    //PODCAST
+    $shadow_pod: (9px 9px 16px #a6a8ab,
+                -9px -9px 16px #ffffff);
+    $bg_pod_boton: (linear-gradient(145deg, #ffffff, #d9dcdf));
+    $shadow_boton: (9px 9px 16px #b0b2b5,
+                -9px -9px 16px #ffffff);
+    $shadow_boton_hover:(inset 9px 9px 29px #b0b2b5,
+                inset -9px -9px 29px #ffffff);
+    //boton de play
+    $bg_boton_play:(linear-gradient(145deg, #00a2ff, #0088dd));  
+    $shadow_boton_blay:(9px 9px 38px #0071b8,
+                -9px -9px 38px #00bdff);
+    $shadow_boton_play_hover:(inset 9px 9px 38px #0071b8,
+                inset -9px -9px 38px #00bdff);            
+    $bg_boton_play:(#0097f5);
+
+    //FOOTER
+    $fo_h:#23112c;
+    $fo_m:rgb(0, 151, 245);
+    $fo_h2: #fff;
+    $fo_col3_p:#23112c;
+    //paleta de colores
+    $pri_blue: #0097f5;
+    $pri_purp: #23112c;
+    $pri_white: #ffffff;
+    $sec_blue:#0096f494;
+    $sec_purp: #a806d1;
+    $strong_titulo:#0000;
+}
+
+html[data-theme='dark'] {
+    // MODO DARK
+    $sombra_general: (3px 5px 4px 1px rgba(255, 255, 255, 0.38));
+    //backgrounds
+    $bg_header:#23112c;
+    $bg_a:#23112c;
+    $color_a:#ffff;
+    $color_p:#ffff;
+    $strong:#ffff00;
+    $color_a_w:#23112c;        
+    //boton niight
+    $bg_hover_1:#ffff;
+    $col_hover_1: #0097f5;
+    $bord_hover_1:#b743f1;
+    $hover_yell: rgb(0, 151, 245);    
+    //titulo general
+    $bg_principal:rgb(48, 49, 87);
+    $bg_secundario:#ffff;
+    $bord_titulo:#ffff;
+    $bord_subt:hwb(203 0% 4%);
+    //BANNER
+    $caja_opaca:rgba(88, 49, 194, 0.308);
+    $filtro_video:rgba(73, 40, 90, 0.3);
+    //NOTICIAS
+    $caja_cont_noti:#5831c294;
+    $borde_caja_noti:#23112c;
+    //PROGRAMA
+    $linea_tiempo:rgb(35, 17, 44);
+    $triangulo_caja_prog:#473196;
+    $bg_calend:rgba(158, 147, 207, 0.63);
+
+    //PODCAST
+    $shadow_pod: (10px 10px 20px #21223c,
+                -10px -10px 20px #3f4072);
+    $bg_pod_boton: (linear-gradient(145deg, #33345d, #2b2c4e));
+    $shadow_boton: (9px 9px 18px #21223c,
+                -9px -9px 18px #3f4072);
+    $shadow_boton_hover:(inset 9px 9px 18px #21223c,
+                inset -9px -9px 18px #3f4072);
+     //boton de play
+    $bg_boton_play: (linear-gradient(145deg, #00a2ff, #0088dd));
+        $shadow_boton_blay: (9px 9px 38px #0071b8,
+            -9px -9px 38px #00bdff);
+        $shadow_boton_play_hover: (inset 9px 9px 38px #0071b8,
+            inset -9px -9px 38px #00bdff);
+        $bg_boton_play: (#0097f5);
+
+    //FOOTER
+    $fo_h:#23112c;
+    $fo_m:#5831c294;
+    $fo_h2: #fff;
+    $fo_col3_p:#fff;
+    //paleta de colores
+    $pri_blue: rgb(0, 151, 245);
+    $pri_purp: #fff;
+    $pri_white: #23112c;
+    $sec_blue:#5831c294;
+    $sec_purp: #a806d1;
+    $pri_yellow:rgb(0, 98, 245);
+    $strong_titulo:rgb(222, 228, 253);
+}
+*/
 /*permite que el titulo contenido e imagenes del comienzo se ajusten una al alado de la otra y se mantenga la misma disposiciones para todas las paginas.
 ademas de hacer responsive tanto la caja como a sus hijos, incluyendo texto e img
 */
@@ -2502,7 +2627,7 @@ $xl: 1200px;
       .main .podcast .reproductor .caja_pod {
         width: 80%; } }
 
-@media screen and (max-height: 768px) {
+@media (max-height: 768px) {
   .caja_opaca {
     position: absolute;
     width: 90%;
@@ -2517,7 +2642,7 @@ $xl: 1200px;
     .caja_opaca h1 {
       font-size: 2.8rem !important; }
     .caja_opaca p {
-      line-height: 1rem; } }
+      line-height: 1.3rem; } }
 
 @media screen and (max-width: 768px) {
   .main .banner_conteiner .caja_opaca {
