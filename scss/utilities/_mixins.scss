@@ -19,6 +19,35 @@
     } 
 } 
 
+//mixin para flexbox general
+@mixin caja_flex($al_content, $j_content, $al_item, $direccion:row, $wrap:wrap) {
+    display: flex;
+    flex-direction: $direccion;
+    flex-wrap: $wrap;
+    align-content: $al_content;
+    justify-content: $j_content;
+    align-items: $al_item;
+    
+}
+
+//permite añadir una caja relativa y posicionarla, si se ingrea en la penultima posicion "mw" se toma un valor final como min width
+@mixin caja_relative($ancho, $alto, $margen:auto, $padding:auto,$m:unset ,$min_widht:unset){
+    position: relative;
+    width: $ancho;
+    height: $alto;
+    margin: $margen;
+    padding: $padding;
+    @if ($m == mw ) {
+        min-width: $min_widht;
+    }
+}
+
+@mixin grid_gen($g_t_col_1, $g_t_col_2, $g_t_row_1, $g_t_row_2, $gap){
+    display: grid;
+    grid-template-columns: repeat($g_t_col_1 , $g_t_col_2);
+    grid-template-rows: repeat($g_t_row_1 , $g_t_row_2);
+    gap: $gap;
+}
 //mixin sin parametros ya que nos faltaba uno de este tipo 
 @mixin ancho_general() {
     width: 80%;
@@ -113,6 +142,34 @@
     }
 }
 
+@mixin fuente_gen($fuente, $f_weight, $f_size, $align, $color:inerit) {
+    
+    font-family: $fuente;
+    font-size:$f_size;
+    font-weight: $f_weight;
+    text-align: $align;
+    color: $color;
+
+    @media screen and (max-width: $xl) {
+        
+    }
+    
+    @media screen and (max-width: $lg){
+        @if ($f_weight > 400 ) && ($f_size > 1rem ){
+            font-weight:400;
+            font-size: 1rem;
+        }
+    }
+    @media screen and (max-width: $md){
+        @if ($f_weight >= 400 ) && ($f_size > 1rem ){
+            font-weight:300;
+            font-size: .8rem;
+        }
+    }
+    @media screen and (max-width: $sm){
+        
+    }
+}
 /*permite que el titulo contenido e imagenes del comienzo se ajusten una al alado de la otra y se mantenga la misma disposiciones para todas las paginas.
 ademas de hacer responsive tanto la caja como a sus hijos, incluyendo texto e img
 *///puede se usadoo como componente
@@ -177,7 +234,5 @@ ademas de hacer responsive tanto la caja como a sus hijos, incluyendo texto e im
     }
 }
 
-@mixin flex_row_column(){
-    
-}
+
 
