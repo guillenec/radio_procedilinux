@@ -142,32 +142,33 @@
     }
 }
 
+//érmite añadir una fuente su peso, tamaño , aliniacion y color, si no se pasa color o animacion quedan inerit
+//tambien va adaptando la fuente restandole valor en rem  
 @mixin fuente_gen($fuente, $f_weight, $f_size, $align, $color:inerit) {
-    
     font-family: $fuente;
-    font-size:$f_size;
+    font-size: $f_size;
     font-weight: $f_weight;
     text-align: $align;
     color: $color;
 
     @media screen and (max-width: $xl) {
-        
+        @if ($f_weight > 400 ) && ($f_size > 1rem ){
+            font-weight:300;
+            font-size: calc(#{$f_size} - .1rem);
+        }
     }
     
     @media screen and (max-width: $lg){
-        @if ($f_weight > 400 ) && ($f_size > 1rem ){
-            font-weight:400;
-            font-size: 1rem;
-        }
+        font-size: calc(#{$f_size} - .1rem);
+
     }
     @media screen and (max-width: $md){
         @if ($f_weight >= 400 ) && ($f_size > 1rem ){
-            font-weight:300;
-            font-size: .8rem;
+            font-size: calc(#{$f_size} - .2rem);
         }
     }
     @media screen and (max-width: $sm){
-        
+        font-size: calc(#{$f_size} - .3rem);
     }
 }
 /*permite que el titulo contenido e imagenes del comienzo se ajusten una al alado de la otra y se mantenga la misma disposiciones para todas las paginas.

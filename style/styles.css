@@ -2153,23 +2153,23 @@ font-family: 'Quicksand', sans-serif;
           background: var(--sec_blue); }
           .horarios_base .calendario_dia .dias_semana .accordion-body .hd_hs span {
             font-family: "Oswald", sans-serif;
-            font-weight: 400;
-            text-align: center;
-            color: var(--color_p);
-            font-size: .9rem;
-            font-family: "Oswald", sans-serif;
             font-size: 1rem;
             font-weight: 500;
             text-align: center;
             color: var(--color_p); }
-            @media screen and (max-width: 992px) {
-              .horarios_base .calendario_dia .dias_semana .accordion-body .hd_hs span {
-                font-weight: 400;
-                font-size: 1rem; } }
-            @media screen and (max-width: 768px) {
+            @media screen and (max-width: 1200px) {
               .horarios_base .calendario_dia .dias_semana .accordion-body .hd_hs span {
                 font-weight: 300;
-                font-size: .8rem; } }
+                font-size: calc(1rem - .1rem); } }
+            @media screen and (max-width: 992px) {
+              .horarios_base .calendario_dia .dias_semana .accordion-body .hd_hs span {
+                font-size: calc(1rem - .1rem); } }
+            @media screen and (max-width: 768px) {
+              .horarios_base .calendario_dia .dias_semana .accordion-body .hd_hs span {
+                font-size: calc(1rem - .2rem); } }
+            @media screen and (max-width: 576px) {
+              .horarios_base .calendario_dia .dias_semana .accordion-body .hd_hs span {
+                font-size: calc(1rem - .3rem); } }
         .horarios_base .calendario_dia .dias_semana .accordion-body section {
           display: flex;
           flex-direction: row;
@@ -2179,15 +2179,27 @@ font-family: 'Quicksand', sans-serif;
           align-items: center;
           overflow: hidden; }
           .horarios_base .calendario_dia .dias_semana .accordion-body section p {
-            font-family: Arial, Helvetica, sans-serif;
+            overflow: auto;
+            font-family: serif;
+            font-size: 1rem;
             font-weight: 400;
             text-align: center;
-            color: #23112c;
-            overflow: auto;
-            font-size: .8rem; }
+            color: var(--color_p); }
+            @media screen and (max-width: 1200px) {
+              .horarios_base .calendario_dia .dias_semana .accordion-body section p {
+                font-weight: 300;
+                font-size: calc(1rem - .1rem); } }
+            @media screen and (max-width: 992px) {
+              .horarios_base .calendario_dia .dias_semana .accordion-body section p {
+                font-size: calc(1rem - .1rem); } }
+            @media screen and (max-width: 768px) {
+              .horarios_base .calendario_dia .dias_semana .accordion-body section p {
+                font-size: calc(1rem - .2rem); } }
+            @media screen and (max-width: 576px) {
+              .horarios_base .calendario_dia .dias_semana .accordion-body section p {
+                font-size: calc(1rem - .3rem); } }
         .horarios_base .calendario_dia .dias_semana .accordion-body .titulo_cal {
           grid-area: 1 / 1 / 1 / 21;
-          border-radius: 0 10px 0 0;
           display: flex;
           flex-direction: row;
           flex-wrap: wrap;
@@ -2195,12 +2207,25 @@ font-family: 'Quicksand', sans-serif;
           justify-content: flex-end;
           align-items: flex-end; }
           .horarios_base .calendario_dia .dias_semana .accordion-body .titulo_cal h2 {
-            font-family: "Dancing Script", cursive;
-            font-size: 30px;
             text-transform: capitalize;
-            padding-right: 20px;
-            align-self: flex-end;
+            font-family: "Dancing Script", cursive;
+            font-size: 2rem;
+            font-weight: 400;
+            text-align: end;
             color: var(--color_p); }
+            @media screen and (max-width: 1200px) {
+              .horarios_base .calendario_dia .dias_semana .accordion-body .titulo_cal h2 {
+                font-weight: 300;
+                font-size: calc(2rem - .1rem); } }
+            @media screen and (max-width: 992px) {
+              .horarios_base .calendario_dia .dias_semana .accordion-body .titulo_cal h2 {
+                font-size: calc(2rem - .1rem); } }
+            @media screen and (max-width: 768px) {
+              .horarios_base .calendario_dia .dias_semana .accordion-body .titulo_cal h2 {
+                font-size: calc(2rem - .2rem); } }
+            @media screen and (max-width: 576px) {
+              .horarios_base .calendario_dia .dias_semana .accordion-body .titulo_cal h2 {
+                font-size: calc(2rem - .3rem); } }
       .horarios_base .calendario_dia .dias_semana .titulo_cal {
         grid-area: 1 / 1 / 2 / 19; }
       .horarios_base .calendario_dia .dias_semana .hs1 {
@@ -2423,28 +2448,46 @@ font-family: 'Quicksand', sans-serif;
   .programas_carou .caja_carrusel {
     position: relative;
     width: 100%;
-    height: auto; }
+    height: auto;
+    margin: 0;
+    padding: 0; }
     .programas_carou .caja_carrusel .carousel {
-      height: auto; }
+      position: relative;
+      width: 100%;
+      height: auto;
+      margin: 0;
+      padding: 0; }
       .programas_carou .caja_carrusel .carousel .carousel-inner {
+        position: relative;
         width: 100%;
-        height: 100%;
-        display: flex; }
+        height: 500px;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-content: flex-start;
+        align-items: center; }
         .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item {
           height: 100%;
           width: 100%; }
           .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row {
             position: relative;
             width: 100%;
-            height: auto;
-            --bs-gutter-x: 0;
-            padding: 10px; }
+            height: 100%;
+            margin: 0;
+            padding: 10px;
+            --bs-gutter-x: 0; }
             .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card {
               position: relative;
               width: 300px;
-              height: 450px;
+              height: 420px;
               margin: auto;
               padding: 5px;
+              display: flex;
+              flex-direction: row;
+              flex-wrap: wrap;
               align-content: flex-start;
               justify-content: center;
               align-items: center;
@@ -2458,18 +2501,16 @@ font-family: 'Quicksand', sans-serif;
                 object-fit: cover; }
               .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body {
                 position: absolute;
-                background: var(--pri_purp);
                 width: 96%;
                 height: 40%;
-                bottom: 10px;
+                bottom: 8px;
                 background: var(--sec_blue);
                 backdrop-filter: blur(5px);
                 -webkit-backdrop-filter: blur(5px);
                 border-radius: 4px; }
                 .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body a, .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body .footer .footer_head .footer_head_cuerpo a img, .footer .footer_head .footer_head_cuerpo a .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body img {
                   text-decoration: none;
-                  text-align: center;
-                  color: #22102B; }
+                  text-align: center; }
                   .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body a h2, .footer .footer_head .footer_head_cuerpo a .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body img h2 {
                     font-family: "Oswald", sans-serif;
                     text-transform: capitalize;
@@ -2477,9 +2518,7 @@ font-family: 'Quicksand', sans-serif;
                 .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body ul {
                   list-style: none; }
                   .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body ul li {
-                    display: block;
-                    width: 100%;
-                    margin-top: 5px; }
+                    display: block; }
                     .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body ul li p {
                       font-family: "Quicksand", sans-serif;
                       font-weight: 500;
@@ -3073,25 +3112,32 @@ $xl: 1200px;
     .galeria .cont_galeria .img_11 {
       grid-area: 19 /1 /20 /13; } }
 
+/*
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+*/
 @media screen and (max-width: 1200px) {
-  .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item {
-    height: 100%;
-    width: 100%; }
-    .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row {
-      width: 100%;
-      height: auto;
-      --bs-gutter-x: 0;
-      padding: 10px; }
-      .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card {
-        width: 250px;
-        height: 360px; }
-        .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body {
-          width: 96%;
-          height: 40%; }
-          .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body a, .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body .footer .footer_head .footer_head_cuerpo a img, .footer .footer_head .footer_head_cuerpo a .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body img {
-            text-decoration: none; }
-            .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body a h2, .footer .footer_head .footer_head_cuerpo a .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body img h2 {
-              font-size: 23px; }
+  .programas_carou .caja_carrusel .carousel .carousel-inner {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    margin: 0;
+    padding: 0; }
+    .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item {
+      height: 100%;
+      width: 100%; }
+      .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row {
+        --bs-gutter-x: 0; }
+        .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card {
+          position: relative;
+          width: 250px;
+          height: 350px;
+          margin: auto;
+          padding: 5px; }
+          .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body a h2, .footer .footer_head .footer_head_cuerpo a .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body img h2 {
+            font-size: 23px; }
           .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body ul li p {
             font-size: 15px;
             font-weight: 500; } }
