@@ -9,7 +9,8 @@ font-family: 'Quicksand', sans-serif;
     @include caja_relative(80%, auto ,auto, 5px);
     @include caja_flex(center, center, center);
     @include titulo_mas_img ( '.programas_titulo' , '.titulo_prog_content');
-
+    margin-top: 100px;
+    
     .calendario_dia {
         @include caja_relative(auto, 600px ,50px 10px, unset ,mw ,30% );
         @include caja_flex(center,center,flex-start);
