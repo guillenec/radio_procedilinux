@@ -20,7 +20,7 @@
 } 
 
 //mixin para flexbox general
-@mixin caja_flex($al_content, $j_content, $al_item, $direccion:row, $wrap:wrap) {
+@mixin caja_flex($al_content, $j_content, $al_item, $direccion:row, $wrap:wrap ) {
     display: flex;
     flex-direction: $direccion;
     flex-wrap: $wrap;

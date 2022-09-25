@@ -1933,20 +1933,10 @@ font-family: 'Dancing Script', cursive;
 font-family: 'Oswald', sans-serif;
 font-family: 'Quicksand', sans-serif;
 */
-.horarios_base {
+.contenedor_base_prog {
   position: relative;
-  width: 80%;
-  height: auto;
-  margin: auto;
-  padding: 5px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-  margin-top: 100px; }
-  .horarios_base .programas_titulo {
+  height: auto; }
+  .contenedor_base_prog .programas_titulo {
     width: 100%;
     height: 300px;
     margin-top: 100px;
@@ -1956,9 +1946,9 @@ font-family: 'Quicksand', sans-serif;
     align-content: center;
     justify-content: space-between;
     align-items: center; }
-    .horarios_base .programas_titulo .titulo_prog_content {
+    .contenedor_base_prog .programas_titulo .titulo_prog_content {
       width: 60%; }
-      .horarios_base .programas_titulo .titulo_prog_content h1, .horarios_base .programas_titulo .titulo_prog_content h2 {
+      .contenedor_base_prog .programas_titulo .titulo_prog_content h1, .contenedor_base_prog .programas_titulo .titulo_prog_content h2 {
         display: block;
         width: 100%;
         font-family: "Oswald", sans-serif;
@@ -1966,41 +1956,41 @@ font-family: 'Quicksand', sans-serif;
         font-weight: 500;
         color: var(--color_p);
         text-transform: capitalize; }
-      .horarios_base .programas_titulo .titulo_prog_content p {
+      .contenedor_base_prog .programas_titulo .titulo_prog_content p {
         display: block;
         width: 100%;
         font-family: "Quicksand", sans-serif;
         font-size: 1.2rem;
         color: var(--color_p); }
-        .horarios_base .programas_titulo .titulo_prog_content p strong {
+        .contenedor_base_prog .programas_titulo .titulo_prog_content p strong {
           font-weight: 700;
           color: var(--color_strong); }
       @media screen and (max-width: 1200px) {
-        .horarios_base .programas_titulo .titulo_prog_content h1, .horarios_base .programas_titulo .titulo_prog_content h2 {
+        .contenedor_base_prog .programas_titulo .titulo_prog_content h1, .contenedor_base_prog .programas_titulo .titulo_prog_content h2 {
           font-size: 2.5rem; }
-        .horarios_base .programas_titulo .titulo_prog_content p {
+        .contenedor_base_prog .programas_titulo .titulo_prog_content p {
           font-size: 1.3rem; } }
       @media screen and (max-width: 992px) {
-        .horarios_base .programas_titulo .titulo_prog_content h1, .horarios_base .programas_titulo .titulo_prog_content h2 {
+        .contenedor_base_prog .programas_titulo .titulo_prog_content h1, .contenedor_base_prog .programas_titulo .titulo_prog_content h2 {
           font-size: 2.2rem; }
-        .horarios_base .programas_titulo .titulo_prog_content p {
+        .contenedor_base_prog .programas_titulo .titulo_prog_content p {
           font-size: 1.2rem; } }
       @media screen and (max-width: 768px) {
-        .horarios_base .programas_titulo .titulo_prog_content h1, .horarios_base .programas_titulo .titulo_prog_content h2 {
+        .contenedor_base_prog .programas_titulo .titulo_prog_content h1, .contenedor_base_prog .programas_titulo .titulo_prog_content h2 {
           font-size: 2rem; }
-        .horarios_base .programas_titulo .titulo_prog_content p {
+        .contenedor_base_prog .programas_titulo .titulo_prog_content p {
           font-size: 1.2rem; } }
       @media screen and (max-width: 576px) {
-        .horarios_base .programas_titulo .titulo_prog_content h1, .horarios_base .programas_titulo .titulo_prog_content h2 {
+        .contenedor_base_prog .programas_titulo .titulo_prog_content h1, .contenedor_base_prog .programas_titulo .titulo_prog_content h2 {
           font-size: 1.8rem; }
-        .horarios_base .programas_titulo .titulo_prog_content p {
+        .contenedor_base_prog .programas_titulo .titulo_prog_content p {
           font-size: 1.1rem; } }
-    .horarios_base .programas_titulo img {
+    .contenedor_base_prog .programas_titulo img {
       height: 100%;
       object-fit: contain;
       filter: drop-shadow(5px 5px 4px var(--color_strong)); }
   @media screen and (max-width: 768px) {
-    .horarios_base .programas_titulo {
+    .contenedor_base_prog .programas_titulo {
       width: 100%;
       height: auto;
       flex-direction: column;
@@ -2008,9 +1998,9 @@ font-family: 'Quicksand', sans-serif;
       text-align: center;
       justify-content: center;
       align-items: center; }
-      .horarios_base .programas_titulo .titulo_prog_content {
+      .contenedor_base_prog .programas_titulo .titulo_prog_content {
         width: 80%; }
-        .horarios_base .programas_titulo .titulo_prog_content h1, .horarios_base .programas_titulo .titulo_prog_content h2 {
+        .contenedor_base_prog .programas_titulo .titulo_prog_content h1, .contenedor_base_prog .programas_titulo .titulo_prog_content h2 {
           display: block;
           width: 100%;
           font-family: "Oswald", sans-serif;
@@ -2018,430 +2008,443 @@ font-family: 'Quicksand', sans-serif;
           font-weight: 500;
           color: var(--color_p);
           text-transform: capitalize; }
-        .horarios_base .programas_titulo .titulo_prog_content p {
+        .contenedor_base_prog .programas_titulo .titulo_prog_content p {
           display: block;
           width: 100%;
           font-family: "Quicksand", sans-serif;
           font-size: 1.2rem;
           color: var(--color_p); }
-          .horarios_base .programas_titulo .titulo_prog_content p strong {
+          .contenedor_base_prog .programas_titulo .titulo_prog_content p strong {
             font-weight: 700;
             color: var(--color_strong); } }
     @media screen and (max-width: 768px) and (max-width: 1200px) {
-      .horarios_base .programas_titulo .titulo_prog_content h1, .horarios_base .programas_titulo .titulo_prog_content h2 {
+      .contenedor_base_prog .programas_titulo .titulo_prog_content h1, .contenedor_base_prog .programas_titulo .titulo_prog_content h2 {
         font-size: 2.5rem; }
-      .horarios_base .programas_titulo .titulo_prog_content p {
+      .contenedor_base_prog .programas_titulo .titulo_prog_content p {
         font-size: 1.3rem; } }
     @media screen and (max-width: 768px) and (max-width: 992px) {
-      .horarios_base .programas_titulo .titulo_prog_content h1, .horarios_base .programas_titulo .titulo_prog_content h2 {
+      .contenedor_base_prog .programas_titulo .titulo_prog_content h1, .contenedor_base_prog .programas_titulo .titulo_prog_content h2 {
         font-size: 2.2rem; }
-      .horarios_base .programas_titulo .titulo_prog_content p {
+      .contenedor_base_prog .programas_titulo .titulo_prog_content p {
         font-size: 1.2rem; } }
     @media screen and (max-width: 768px) and (max-width: 768px) {
-      .horarios_base .programas_titulo .titulo_prog_content h1, .horarios_base .programas_titulo .titulo_prog_content h2 {
+      .contenedor_base_prog .programas_titulo .titulo_prog_content h1, .contenedor_base_prog .programas_titulo .titulo_prog_content h2 {
         font-size: 2rem; }
-      .horarios_base .programas_titulo .titulo_prog_content p {
+      .contenedor_base_prog .programas_titulo .titulo_prog_content p {
         font-size: 1.2rem; } }
     @media screen and (max-width: 768px) and (max-width: 576px) {
-      .horarios_base .programas_titulo .titulo_prog_content h1, .horarios_base .programas_titulo .titulo_prog_content h2 {
+      .contenedor_base_prog .programas_titulo .titulo_prog_content h1, .contenedor_base_prog .programas_titulo .titulo_prog_content h2 {
         font-size: 1.8rem; }
-      .horarios_base .programas_titulo .titulo_prog_content p {
+      .contenedor_base_prog .programas_titulo .titulo_prog_content p {
         font-size: 1.1rem; } }
   @media screen and (max-width: 768px) {
-      .horarios_base .programas_titulo img {
+      .contenedor_base_prog .programas_titulo img {
         margin-top: 10px;
         width: 100%;
         height: 250px; } }
   @media screen and (max-width: 576px) {
-    .horarios_base .programas_titulo .titulo_prog_content {
+    .contenedor_base_prog .programas_titulo .titulo_prog_content {
       width: 100%; } }
-  .horarios_base .calendario_dia {
+  .contenedor_base_prog .horarios_base {
     position: relative;
-    width: auto;
-    height: 600px;
-    margin: 50px 10px;
-    padding: unset;
-    min-width: 30%;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 5px;
+    margin-top: 50px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
-    align-items: flex-start; }
-    .horarios_base .calendario_dia .cont_izq_dia {
+    align-items: center; }
+    .contenedor_base_prog .horarios_base .calendario_dia {
       position: relative;
-      width: 180px;
-      height: 100%;
-      margin: auto;
-      padding: 5px;
-      background: var(--caja_cont_noti);
-      border-radius: 10px 8px 8px 10px;
-      -webkit-box-shadow: var(--sombra_general);
-      -moz-box-shadow: var(--sombra_general);
-      box-shadow: var(--sombra_general);
-      border: solid thin rgba(51, 51, 51, 0.4); }
-      .horarios_base .calendario_dia .cont_izq_dia .header_calend {
+      width: auto;
+      height: 600px;
+      margin: 50px 10px;
+      padding: unset;
+      min-width: 30%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-content: center;
+      justify-content: center;
+      align-items: flex-start; }
+      .contenedor_base_prog .horarios_base .calendario_dia .cont_izq_dia {
         position: relative;
-        width: 100%;
-        height: 70px;
-        margin: 0;
-        padding: 0;
-        background: transparent;
-        border: 0; }
-        .horarios_base .calendario_dia .cont_izq_dia .header_calend .accordion-header button:focus:not(:focus-visible) {
-          z-index: 0;
-          transition: .5s; }
-      .horarios_base .calendario_dia .cont_izq_dia .cuerpo_calend {
-        position: relative;
-        width: 100%;
-        height: 200px;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-content: center;
-        justify-content: center;
-        align-items: center; }
-        .horarios_base .calendario_dia .cont_izq_dia .cuerpo_calend h2 {
-          font-family: "Oswald", sans-serif;
-          text-transform: capitalize;
-          color: #ffffff; }
-        .horarios_base .calendario_dia .cont_izq_dia .cuerpo_calend h3 {
-          font-family: "Oswald", sans-serif; }
-    .horarios_base .calendario_dia .dias_semana.show {
-      display: none; }
-    .horarios_base .calendario_dia .dias_semana {
-      position: relative;
-      width: 800px;
-      height: 100%;
-      margin: 0 0 0 5px;
-      padding: auto;
-      min-width: 600px;
-      display: block;
-      -webkit-box-shadow: var(--sombra_general);
-      -moz-box-shadow: var(--sombra_general);
-      box-shadow: var(--sombra_general);
-      border: solid thin rgba(51, 51, 51, 0.4);
-      border-radius: 0 10px 10px 0; }
-      .horarios_base .calendario_dia .dias_semana .accordion-body {
-        position: relative;
-        width: 100%;
+        width: 180px;
         height: 100%;
         margin: auto;
+        padding: 5px;
+        background: var(--caja_cont_noti);
+        border-radius: 10px 8px 8px 10px;
+        -webkit-box-shadow: var(--sombra_general);
+        -moz-box-shadow: var(--sombra_general);
+        box-shadow: var(--sombra_general);
+        border: solid thin rgba(51, 51, 51, 0.4); }
+        .contenedor_base_prog .horarios_base .calendario_dia .cont_izq_dia .header_calend {
+          position: relative;
+          width: 100%;
+          height: 70px;
+          margin: 0;
+          padding: 0;
+          background: transparent;
+          border: 0; }
+          .contenedor_base_prog .horarios_base .calendario_dia .cont_izq_dia .header_calend .accordion-header button:focus:not(:focus-visible) {
+            z-index: 0;
+            transition: .5s; }
+        .contenedor_base_prog .horarios_base .calendario_dia .cont_izq_dia .cuerpo_calend {
+          position: relative;
+          width: 100%;
+          height: 200px;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          align-content: center;
+          justify-content: center;
+          align-items: center; }
+          .contenedor_base_prog .horarios_base .calendario_dia .cont_izq_dia .cuerpo_calend h2 {
+            font-family: "Oswald", sans-serif;
+            text-transform: capitalize;
+            color: #ffffff; }
+          .contenedor_base_prog .horarios_base .calendario_dia .cont_izq_dia .cuerpo_calend h3 {
+            font-family: "Oswald", sans-serif; }
+      .contenedor_base_prog .horarios_base .calendario_dia .dias_semana.show {
+        display: none; }
+      .contenedor_base_prog .horarios_base .calendario_dia .dias_semana {
+        position: relative;
+        width: 800px;
+        height: 100%;
+        margin: 0 0 0 5px;
         padding: auto;
-        background: var(--bg_calend);
-        border-radius: 0 10px 10px 0;
-        display: grid;
-        grid-template-columns: repeat(20, 1fr);
-        grid-template-rows: repeat(11, 1fr);
-        gap: 4px 4px; }
-        .horarios_base .calendario_dia .dias_semana .accordion-body div {
+        min-width: 600px;
+        display: block;
+        -webkit-box-shadow: var(--sombra_general);
+        -moz-box-shadow: var(--sombra_general);
+        box-shadow: var(--sombra_general);
+        border: solid thin rgba(51, 51, 51, 0.4);
+        border-radius: 0 10px 10px 0; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .accordion-body {
           position: relative;
           width: 100%;
           height: 100%;
           margin: auto;
           padding: auto;
-          border: solid thin #22102b54; }
-        .horarios_base .calendario_dia .dias_semana .accordion-body .hd_hs {
-          border: solid thin var(--sec_blue);
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-          align-content: center;
-          justify-content: center;
-          align-items: center;
-          background: var(--sec_blue); }
-          .horarios_base .calendario_dia .dias_semana .accordion-body .hd_hs span {
-            font-family: "Oswald", sans-serif;
-            font-size: 1rem;
-            font-weight: 500;
-            text-align: center;
-            color: var(--color_p); }
-            @media screen and (max-width: 1200px) {
-              .horarios_base .calendario_dia .dias_semana .accordion-body .hd_hs span {
-                font-weight: 300;
-                font-size: calc(1rem - .1rem); } }
-            @media screen and (max-width: 992px) {
-              .horarios_base .calendario_dia .dias_semana .accordion-body .hd_hs span {
-                font-size: calc(1rem - .1rem); } }
-            @media screen and (max-width: 768px) {
-              .horarios_base .calendario_dia .dias_semana .accordion-body .hd_hs span {
-                font-size: calc(1rem - .2rem); } }
-            @media screen and (max-width: 576px) {
-              .horarios_base .calendario_dia .dias_semana .accordion-body .hd_hs span {
-                font-size: calc(1rem - .3rem); } }
-        .horarios_base .calendario_dia .dias_semana .accordion-body section {
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-          align-content: center;
-          justify-content: center;
-          align-items: center;
-          overflow: hidden; }
-          .horarios_base .calendario_dia .dias_semana .accordion-body section p {
-            overflow: auto;
-            font-family: serif;
-            font-size: 1rem;
-            font-weight: 400;
-            text-align: center;
-            color: var(--color_p); }
-            @media screen and (max-width: 1200px) {
-              .horarios_base .calendario_dia .dias_semana .accordion-body section p {
-                font-weight: 300;
-                font-size: calc(1rem - .1rem); } }
-            @media screen and (max-width: 992px) {
-              .horarios_base .calendario_dia .dias_semana .accordion-body section p {
-                font-size: calc(1rem - .1rem); } }
-            @media screen and (max-width: 768px) {
-              .horarios_base .calendario_dia .dias_semana .accordion-body section p {
-                font-size: calc(1rem - .2rem); } }
-            @media screen and (max-width: 576px) {
-              .horarios_base .calendario_dia .dias_semana .accordion-body section p {
-                font-size: calc(1rem - .3rem); } }
-        .horarios_base .calendario_dia .dias_semana .accordion-body .titulo_cal {
-          grid-area: 1 / 1 / 1 / 21;
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-          align-content: center;
-          justify-content: flex-end;
-          align-items: flex-end; }
-          .horarios_base .calendario_dia .dias_semana .accordion-body .titulo_cal h2 {
-            text-transform: capitalize;
-            font-family: "Dancing Script", cursive;
-            font-size: 2rem;
-            font-weight: 400;
-            text-align: end;
-            color: var(--color_p); }
-            @media screen and (max-width: 1200px) {
-              .horarios_base .calendario_dia .dias_semana .accordion-body .titulo_cal h2 {
-                font-weight: 300;
-                font-size: calc(2rem - .1rem); } }
-            @media screen and (max-width: 992px) {
-              .horarios_base .calendario_dia .dias_semana .accordion-body .titulo_cal h2 {
-                font-size: calc(2rem - .1rem); } }
-            @media screen and (max-width: 768px) {
-              .horarios_base .calendario_dia .dias_semana .accordion-body .titulo_cal h2 {
-                font-size: calc(2rem - .2rem); } }
-            @media screen and (max-width: 576px) {
-              .horarios_base .calendario_dia .dias_semana .accordion-body .titulo_cal h2 {
-                font-size: calc(2rem - .3rem); } }
-      .horarios_base .calendario_dia .dias_semana .titulo_cal {
-        grid-area: 1 / 1 / 2 / 19; }
-      .horarios_base .calendario_dia .dias_semana .hs1 {
-        grid-area: 2 / 1 / 3 / 3; }
-      .horarios_base .calendario_dia .dias_semana .hs2 {
-        grid-area: 2 / 3 / 3 / 5; }
-      .horarios_base .calendario_dia .dias_semana .hs3 {
-        grid-area: 2 / 5 / 3 / 7; }
-      .horarios_base .calendario_dia .dias_semana .hs4 {
-        grid-area: 2 / 7 / 3 / 9; }
-      .horarios_base .calendario_dia .dias_semana .hs5 {
-        grid-area: 2 / 9 / 3 / 11; }
-      .horarios_base .calendario_dia .dias_semana .hs6 {
-        grid-area: 2 / 11 / 3 / 13; }
-      .horarios_base .calendario_dia .dias_semana .hs7 {
-        grid-area: 2 / 13 / 3 / 15; }
-      .horarios_base .calendario_dia .dias_semana .hs8 {
-        grid-area: 2 / 15 / 3 / 17; }
-      .horarios_base .calendario_dia .dias_semana .hs9 {
-        grid-area: 2 / 17 / 3 / 19; }
-      .horarios_base .calendario_dia .dias_semana .hs10 {
-        grid-area: 2 / 19 / 3 / 21; }
-      .horarios_base .calendario_dia .dias_semana .col1_f1 {
-        grid-area: 3 / 1 / 4 / 3; }
-      .horarios_base .calendario_dia .dias_semana .col2_f1 {
-        grid-area: 3 / 3 / 4 / 5; }
-      .horarios_base .calendario_dia .dias_semana .col3_f1 {
-        grid-area: 3 / 5 / 4 / 7; }
-      .horarios_base .calendario_dia .dias_semana .col4_f1 {
-        grid-area: 3 / 7 / 4 / 9; }
-      .horarios_base .calendario_dia .dias_semana .col5_f1 {
-        grid-area: 3 / 9 / 4 / 11; }
-      .horarios_base .calendario_dia .dias_semana .col6_f1 {
-        grid-area: 3 / 11 / 4 / 13; }
-      .horarios_base .calendario_dia .dias_semana .col7_f1 {
-        grid-area: 3 / 13 / 4 / 15; }
-      .horarios_base .calendario_dia .dias_semana .col8_f1 {
-        grid-area: 3 / 15 / 4 / 17; }
-      .horarios_base .calendario_dia .dias_semana .col9_f1 {
-        grid-area: 3 / 17 / 4 / 19; }
-      .horarios_base .calendario_dia .dias_semana .col10_f1 {
-        grid-area: 3 / 19 / 4 / 21; }
-      .horarios_base .calendario_dia .dias_semana .col1_f2 {
-        grid-area: 4 / 1 / 5 / 3; }
-      .horarios_base .calendario_dia .dias_semana .col2_f2 {
-        grid-area: 4 / 3 / 5 / 5; }
-      .horarios_base .calendario_dia .dias_semana .col3_f2 {
-        grid-area: 4 / 5 / 5 / 7; }
-      .horarios_base .calendario_dia .dias_semana .col4_f2 {
-        grid-area: 4 / 7 / 5 / 9; }
-      .horarios_base .calendario_dia .dias_semana .col5_f2 {
-        grid-area: 4 / 9 / 5 / 11; }
-      .horarios_base .calendario_dia .dias_semana .col6_f2 {
-        grid-area: 4 / 11 / 5 / 13; }
-      .horarios_base .calendario_dia .dias_semana .col7_f2 {
-        grid-area: 4 / 13 / 5 / 15; }
-      .horarios_base .calendario_dia .dias_semana .col8_f2 {
-        grid-area: 4 / 15 / 5 / 17; }
-      .horarios_base .calendario_dia .dias_semana .col9_f2 {
-        grid-area: 4 / 17 / 5 / 19; }
-      .horarios_base .calendario_dia .dias_semana .col10_f2 {
-        grid-area: 4 / 19 / 5 / 21; }
-      .horarios_base .calendario_dia .dias_semana .col1_f3 {
-        grid-area: 5 / 1 / 6 / 3; }
-      .horarios_base .calendario_dia .dias_semana .col2_f3 {
-        grid-area: 5 / 3 / 6 / 5; }
-      .horarios_base .calendario_dia .dias_semana .col3_f3 {
-        grid-area: 5 / 5 / 6 / 7; }
-      .horarios_base .calendario_dia .dias_semana .col4_f3 {
-        grid-area: 5 / 7 / 6 / 9; }
-      .horarios_base .calendario_dia .dias_semana .col5_f3 {
-        grid-area: 5 / 9 / 6 / 11; }
-      .horarios_base .calendario_dia .dias_semana .col6_f3 {
-        grid-area: 5 / 11 / 6 / 13; }
-      .horarios_base .calendario_dia .dias_semana .col7_f3 {
-        grid-area: 5 / 13 / 6 / 15; }
-      .horarios_base .calendario_dia .dias_semana .col8_f3 {
-        grid-area: 5 / 15 / 6 / 17; }
-      .horarios_base .calendario_dia .dias_semana .col9_f3 {
-        grid-area: 5 / 17 / 6 / 19; }
-      .horarios_base .calendario_dia .dias_semana .col10_f3 {
-        grid-area: 5 / 19 / 6 / 21; }
-      .horarios_base .calendario_dia .dias_semana .col1_f4 {
-        grid-area: 6 / 1 / 7 / 3; }
-      .horarios_base .calendario_dia .dias_semana .col2_f4 {
-        grid-area: 6 / 3 / 7 / 5; }
-      .horarios_base .calendario_dia .dias_semana .col3_f4 {
-        grid-area: 6 / 5 / 7 / 7; }
-      .horarios_base .calendario_dia .dias_semana .col4_f4 {
-        grid-area: 6 / 7 / 7 / 9; }
-      .horarios_base .calendario_dia .dias_semana .col5_f4 {
-        grid-area: 6 / 9 / 7 / 11; }
-      .horarios_base .calendario_dia .dias_semana .col6_f4 {
-        grid-area: 6 / 11 / 7 / 13; }
-      .horarios_base .calendario_dia .dias_semana .col7_f4 {
-        grid-area: 6 / 13 / 7 / 15; }
-      .horarios_base .calendario_dia .dias_semana .col8_f4 {
-        grid-area: 6 / 15 / 7 / 17; }
-      .horarios_base .calendario_dia .dias_semana .col9_f4 {
-        grid-area: 6 / 17 / 7 / 19; }
-      .horarios_base .calendario_dia .dias_semana .col10_f4 {
-        grid-area: 6 / 19 / 7 / 21; }
-      .horarios_base .calendario_dia .dias_semana .col1_f5 {
-        grid-area: 7 / 1 / 8 / 3; }
-      .horarios_base .calendario_dia .dias_semana .col2_f5 {
-        grid-area: 7 / 3 / 8 / 5; }
-      .horarios_base .calendario_dia .dias_semana .col3_f5 {
-        grid-area: 7 / 5 / 8 / 7; }
-      .horarios_base .calendario_dia .dias_semana .col4_f5 {
-        grid-area: 7 / 7 / 8 / 9; }
-      .horarios_base .calendario_dia .dias_semana .col5_f5 {
-        grid-area: 7 / 9 / 8 / 11; }
-      .horarios_base .calendario_dia .dias_semana .col6_f5 {
-        grid-area: 7 / 11 / 8 / 13; }
-      .horarios_base .calendario_dia .dias_semana .col7_f5 {
-        grid-area: 7 / 13 / 8 / 15; }
-      .horarios_base .calendario_dia .dias_semana .col8_f5 {
-        grid-area: 7 / 15 / 8 / 17; }
-      .horarios_base .calendario_dia .dias_semana .col9_f5 {
-        grid-area: 7 / 17 / 8 / 19; }
-      .horarios_base .calendario_dia .dias_semana .col10_f5 {
-        grid-area: 7 / 19 / 8 / 21; }
-      .horarios_base .calendario_dia .dias_semana .col1_f6 {
-        grid-area: 8 / 1 / 9 / 3; }
-      .horarios_base .calendario_dia .dias_semana .col2_f6 {
-        grid-area: 8 / 3 / 9 / 5; }
-      .horarios_base .calendario_dia .dias_semana .col3_f6 {
-        grid-area: 8 / 5 / 9 / 7; }
-      .horarios_base .calendario_dia .dias_semana .col4_f6 {
-        grid-area: 8 / 7 / 9 / 9; }
-      .horarios_base .calendario_dia .dias_semana .col5_f6 {
-        grid-area: 8 / 9 / 9 / 11; }
-      .horarios_base .calendario_dia .dias_semana .col6_f6 {
-        grid-area: 8 / 11 / 9 / 13; }
-      .horarios_base .calendario_dia .dias_semana .col7_f6 {
-        grid-area: 8 / 13 / 9 / 15; }
-      .horarios_base .calendario_dia .dias_semana .col9_f6 {
-        grid-area: 8 / 17 / 9 / 19; }
-      .horarios_base .calendario_dia .dias_semana .col8_f6 {
-        grid-area: 8 / 15 / 9 / 17; }
-      .horarios_base .calendario_dia .dias_semana .col10_f6 {
-        grid-area: 8 / 19 / 9 / 21; }
-      .horarios_base .calendario_dia .dias_semana .col1_f7 {
-        grid-area: 9 / 1 / 10 / 3; }
-      .horarios_base .calendario_dia .dias_semana .col2_f7 {
-        grid-area: 9 / 3 / 10 / 5; }
-      .horarios_base .calendario_dia .dias_semana .col3_f7 {
-        grid-area: 9 / 5 / 10 / 7; }
-      .horarios_base .calendario_dia .dias_semana .col4_f7 {
-        grid-area: 9 / 7 / 10 / 9; }
-      .horarios_base .calendario_dia .dias_semana .col5_f7 {
-        grid-area: 9 / 9 / 10 / 11; }
-      .horarios_base .calendario_dia .dias_semana .col6_f7 {
-        grid-area: 9 / 11 / 10 / 13; }
-      .horarios_base .calendario_dia .dias_semana .col7_f7 {
-        grid-area: 9 / 13 / 10 / 15; }
-      .horarios_base .calendario_dia .dias_semana .col8_f7 {
-        grid-area: 9 / 15 / 10 / 17; }
-      .horarios_base .calendario_dia .dias_semana .col9_f7 {
-        grid-area: 9 / 17 / 10 / 19; }
-      .horarios_base .calendario_dia .dias_semana .col10_f7 {
-        grid-area: 9 / 19 / 10 / 21; }
-      .horarios_base .calendario_dia .dias_semana .col1_f8 {
-        grid-area: 10 / 1 / 11 / 3; }
-      .horarios_base .calendario_dia .dias_semana .col2_f8 {
-        grid-area: 10 / 3 / 11 / 5; }
-      .horarios_base .calendario_dia .dias_semana .col3_f8 {
-        grid-area: 10 / 5 / 11 / 7; }
-      .horarios_base .calendario_dia .dias_semana .col4_f8 {
-        grid-area: 10 / 7 / 11 / 9; }
-      .horarios_base .calendario_dia .dias_semana .col5_f8 {
-        grid-area: 10 / 9 / 11 / 11; }
-      .horarios_base .calendario_dia .dias_semana .col6_f8 {
-        grid-area: 10 / 11 / 11 / 13; }
-      .horarios_base .calendario_dia .dias_semana .col7_f8 {
-        grid-area: 10 / 13 / 11 / 15; }
-      .horarios_base .calendario_dia .dias_semana .col8_f8 {
-        grid-area: 10 / 15 / 11 / 17; }
-      .horarios_base .calendario_dia .dias_semana .col9_f8 {
-        grid-area: 10 / 17 / 11 / 19;
-        border-radius: 0 0 10px 0; }
-      .horarios_base .calendario_dia .dias_semana .col10_f8 {
-        grid-area: 10 / 19 / 11 / 21;
-        border-radius: 0 0 10px 0; }
-      .horarios_base .calendario_dia .dias_semana .prog_1 {
-        grid-area: 3 / 1 / 4 / 3;
-        background: #f05353da;
-        width: 100%;
-        height: 100%; }
-      .horarios_base .calendario_dia .dias_semana .prog_2 {
-        grid-area: 4 / 2 / 5 / 6;
-        background: #f5bd45cb; }
-      .horarios_base .calendario_dia .dias_semana .prog_3 {
-        grid-area: 5 / 7 / 6 / 10;
-        background: #759ef7ea; }
-      .horarios_base .calendario_dia .dias_semana .prog_4 {
-        grid-area: 6 / 10 / 7 / 13;
-        background: #3df583dc; }
-      .horarios_base .calendario_dia .dias_semana .prog_5 {
-        grid-area: 7 / 12 / 8 / 14;
-        background: #53cbf0d0; }
-      .horarios_base .calendario_dia .dias_semana .prog_6 {
-        grid-area: 8 / 14 / 9 / 16;
-        background: #b84df7e8; }
-      .horarios_base .calendario_dia .dias_semana .prog_7 {
-        grid-area: 9 / 16 / 10 / 18;
-        background: rgba(255, 255, 0, 0.842); }
-      .horarios_base .calendario_dia .dias_semana .prog_8 {
-        grid-area: 10 / 18 / 11 / 21;
-        background: rgba(255, 123, 0, 0.842);
-        border-radius: 0 0 10px 0; }
-      .horarios_base .calendario_dia .dias_semana .prog_1, .horarios_base .calendario_dia .dias_semana .prog_2, .horarios_base .calendario_dia .dias_semana .prog_3, .horarios_base .calendario_dia .dias_semana .prog_4, .horarios_base .calendario_dia .dias_semana .prog_5, .horarios_base .calendario_dia .dias_semana .prog_6, .horarios_base .calendario_dia .dias_semana .prog_7, .horarios_base .calendario_dia .dias_semana .prog_8 {
-        position: absolute;
-        width: 100%;
-        height: 100%; }
+          background: var(--bg_calend);
+          border-radius: 0 10px 10px 0;
+          display: grid;
+          grid-template-columns: repeat(20, 1fr);
+          grid-template-rows: repeat(11, 1fr);
+          gap: 4px 4px; }
+          .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .accordion-body div {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            margin: auto;
+            padding: auto;
+            border: solid thin #22102b54; }
+          .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .accordion-body .hd_hs {
+            border: solid thin var(--sec_blue);
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            background: var(--sec_blue); }
+            .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .accordion-body .hd_hs span {
+              font-family: "Oswald", sans-serif;
+              font-size: 1rem;
+              font-weight: 500;
+              text-align: center;
+              color: var(--color_p); }
+              @media screen and (max-width: 1200px) {
+                .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .accordion-body .hd_hs span {
+                  font-weight: 300;
+                  font-size: calc(1rem - .1rem); } }
+              @media screen and (max-width: 992px) {
+                .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .accordion-body .hd_hs span {
+                  font-size: calc(1rem - .1rem); } }
+              @media screen and (max-width: 768px) {
+                .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .accordion-body .hd_hs span {
+                  font-size: calc(1rem - .2rem); } }
+              @media screen and (max-width: 576px) {
+                .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .accordion-body .hd_hs span {
+                  font-size: calc(1rem - .3rem); } }
+          .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .accordion-body section {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden; }
+            .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .accordion-body section p {
+              overflow: auto;
+              font-family: serif;
+              font-size: 1rem;
+              font-weight: 400;
+              text-align: center;
+              color: var(--color_p); }
+              @media screen and (max-width: 1200px) {
+                .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .accordion-body section p {
+                  font-weight: 300;
+                  font-size: calc(1rem - .1rem); } }
+              @media screen and (max-width: 992px) {
+                .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .accordion-body section p {
+                  font-size: calc(1rem - .1rem); } }
+              @media screen and (max-width: 768px) {
+                .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .accordion-body section p {
+                  font-size: calc(1rem - .2rem); } }
+              @media screen and (max-width: 576px) {
+                .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .accordion-body section p {
+                  font-size: calc(1rem - .3rem); } }
+          .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .accordion-body .titulo_cal {
+            grid-area: 1 / 1 / 1 / 21;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: flex-end;
+            align-items: flex-end; }
+            .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .accordion-body .titulo_cal h2 {
+              text-transform: capitalize;
+              font-family: "Dancing Script", cursive;
+              font-size: 2rem;
+              font-weight: 400;
+              text-align: end;
+              color: var(--color_p); }
+              @media screen and (max-width: 1200px) {
+                .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .accordion-body .titulo_cal h2 {
+                  font-weight: 300;
+                  font-size: calc(2rem - .1rem); } }
+              @media screen and (max-width: 992px) {
+                .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .accordion-body .titulo_cal h2 {
+                  font-size: calc(2rem - .1rem); } }
+              @media screen and (max-width: 768px) {
+                .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .accordion-body .titulo_cal h2 {
+                  font-size: calc(2rem - .2rem); } }
+              @media screen and (max-width: 576px) {
+                .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .accordion-body .titulo_cal h2 {
+                  font-size: calc(2rem - .3rem); } }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .titulo_cal {
+          grid-area: 1 / 1 / 2 / 19; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .hs1 {
+          grid-area: 2 / 1 / 3 / 3; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .hs2 {
+          grid-area: 2 / 3 / 3 / 5; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .hs3 {
+          grid-area: 2 / 5 / 3 / 7; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .hs4 {
+          grid-area: 2 / 7 / 3 / 9; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .hs5 {
+          grid-area: 2 / 9 / 3 / 11; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .hs6 {
+          grid-area: 2 / 11 / 3 / 13; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .hs7 {
+          grid-area: 2 / 13 / 3 / 15; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .hs8 {
+          grid-area: 2 / 15 / 3 / 17; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .hs9 {
+          grid-area: 2 / 17 / 3 / 19; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .hs10 {
+          grid-area: 2 / 19 / 3 / 21; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col1_f1 {
+          grid-area: 3 / 1 / 4 / 3; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col2_f1 {
+          grid-area: 3 / 3 / 4 / 5; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col3_f1 {
+          grid-area: 3 / 5 / 4 / 7; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col4_f1 {
+          grid-area: 3 / 7 / 4 / 9; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col5_f1 {
+          grid-area: 3 / 9 / 4 / 11; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col6_f1 {
+          grid-area: 3 / 11 / 4 / 13; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col7_f1 {
+          grid-area: 3 / 13 / 4 / 15; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col8_f1 {
+          grid-area: 3 / 15 / 4 / 17; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col9_f1 {
+          grid-area: 3 / 17 / 4 / 19; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col10_f1 {
+          grid-area: 3 / 19 / 4 / 21; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col1_f2 {
+          grid-area: 4 / 1 / 5 / 3; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col2_f2 {
+          grid-area: 4 / 3 / 5 / 5; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col3_f2 {
+          grid-area: 4 / 5 / 5 / 7; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col4_f2 {
+          grid-area: 4 / 7 / 5 / 9; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col5_f2 {
+          grid-area: 4 / 9 / 5 / 11; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col6_f2 {
+          grid-area: 4 / 11 / 5 / 13; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col7_f2 {
+          grid-area: 4 / 13 / 5 / 15; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col8_f2 {
+          grid-area: 4 / 15 / 5 / 17; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col9_f2 {
+          grid-area: 4 / 17 / 5 / 19; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col10_f2 {
+          grid-area: 4 / 19 / 5 / 21; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col1_f3 {
+          grid-area: 5 / 1 / 6 / 3; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col2_f3 {
+          grid-area: 5 / 3 / 6 / 5; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col3_f3 {
+          grid-area: 5 / 5 / 6 / 7; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col4_f3 {
+          grid-area: 5 / 7 / 6 / 9; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col5_f3 {
+          grid-area: 5 / 9 / 6 / 11; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col6_f3 {
+          grid-area: 5 / 11 / 6 / 13; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col7_f3 {
+          grid-area: 5 / 13 / 6 / 15; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col8_f3 {
+          grid-area: 5 / 15 / 6 / 17; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col9_f3 {
+          grid-area: 5 / 17 / 6 / 19; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col10_f3 {
+          grid-area: 5 / 19 / 6 / 21; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col1_f4 {
+          grid-area: 6 / 1 / 7 / 3; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col2_f4 {
+          grid-area: 6 / 3 / 7 / 5; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col3_f4 {
+          grid-area: 6 / 5 / 7 / 7; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col4_f4 {
+          grid-area: 6 / 7 / 7 / 9; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col5_f4 {
+          grid-area: 6 / 9 / 7 / 11; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col6_f4 {
+          grid-area: 6 / 11 / 7 / 13; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col7_f4 {
+          grid-area: 6 / 13 / 7 / 15; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col8_f4 {
+          grid-area: 6 / 15 / 7 / 17; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col9_f4 {
+          grid-area: 6 / 17 / 7 / 19; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col10_f4 {
+          grid-area: 6 / 19 / 7 / 21; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col1_f5 {
+          grid-area: 7 / 1 / 8 / 3; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col2_f5 {
+          grid-area: 7 / 3 / 8 / 5; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col3_f5 {
+          grid-area: 7 / 5 / 8 / 7; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col4_f5 {
+          grid-area: 7 / 7 / 8 / 9; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col5_f5 {
+          grid-area: 7 / 9 / 8 / 11; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col6_f5 {
+          grid-area: 7 / 11 / 8 / 13; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col7_f5 {
+          grid-area: 7 / 13 / 8 / 15; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col8_f5 {
+          grid-area: 7 / 15 / 8 / 17; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col9_f5 {
+          grid-area: 7 / 17 / 8 / 19; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col10_f5 {
+          grid-area: 7 / 19 / 8 / 21; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col1_f6 {
+          grid-area: 8 / 1 / 9 / 3; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col2_f6 {
+          grid-area: 8 / 3 / 9 / 5; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col3_f6 {
+          grid-area: 8 / 5 / 9 / 7; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col4_f6 {
+          grid-area: 8 / 7 / 9 / 9; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col5_f6 {
+          grid-area: 8 / 9 / 9 / 11; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col6_f6 {
+          grid-area: 8 / 11 / 9 / 13; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col7_f6 {
+          grid-area: 8 / 13 / 9 / 15; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col9_f6 {
+          grid-area: 8 / 17 / 9 / 19; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col8_f6 {
+          grid-area: 8 / 15 / 9 / 17; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col10_f6 {
+          grid-area: 8 / 19 / 9 / 21; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col1_f7 {
+          grid-area: 9 / 1 / 10 / 3; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col2_f7 {
+          grid-area: 9 / 3 / 10 / 5; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col3_f7 {
+          grid-area: 9 / 5 / 10 / 7; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col4_f7 {
+          grid-area: 9 / 7 / 10 / 9; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col5_f7 {
+          grid-area: 9 / 9 / 10 / 11; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col6_f7 {
+          grid-area: 9 / 11 / 10 / 13; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col7_f7 {
+          grid-area: 9 / 13 / 10 / 15; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col8_f7 {
+          grid-area: 9 / 15 / 10 / 17; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col9_f7 {
+          grid-area: 9 / 17 / 10 / 19; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col10_f7 {
+          grid-area: 9 / 19 / 10 / 21; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col1_f8 {
+          grid-area: 10 / 1 / 11 / 3; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col2_f8 {
+          grid-area: 10 / 3 / 11 / 5; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col3_f8 {
+          grid-area: 10 / 5 / 11 / 7; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col4_f8 {
+          grid-area: 10 / 7 / 11 / 9; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col5_f8 {
+          grid-area: 10 / 9 / 11 / 11; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col6_f8 {
+          grid-area: 10 / 11 / 11 / 13; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col7_f8 {
+          grid-area: 10 / 13 / 11 / 15; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col8_f8 {
+          grid-area: 10 / 15 / 11 / 17; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col9_f8 {
+          grid-area: 10 / 17 / 11 / 19;
+          border-radius: 0 0 10px 0; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .col10_f8 {
+          grid-area: 10 / 19 / 11 / 21;
+          border-radius: 0 0 10px 0; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .prog_1 {
+          grid-area: 3 / 1 / 4 / 3;
+          background: #f05353da;
+          width: 100%;
+          height: 100%; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .prog_2 {
+          grid-area: 4 / 2 / 5 / 6;
+          background: #f5bd45cb; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .prog_3 {
+          grid-area: 5 / 7 / 6 / 10;
+          background: #759ef7ea; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .prog_4 {
+          grid-area: 6 / 10 / 7 / 13;
+          background: #3df583dc; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .prog_5 {
+          grid-area: 7 / 12 / 8 / 14;
+          background: #53cbf0d0; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .prog_6 {
+          grid-area: 8 / 14 / 9 / 16;
+          background: #b84df7e8; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .prog_7 {
+          grid-area: 9 / 16 / 10 / 18;
+          background: rgba(255, 255, 0, 0.842); }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .prog_8 {
+          grid-area: 10 / 18 / 11 / 21;
+          background: rgba(255, 123, 0, 0.842);
+          border-radius: 0 0 10px 0; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .prog_1, .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .prog_2, .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .prog_3, .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .prog_4, .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .prog_5, .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .prog_6, .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .prog_7, .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .prog_8 {
+          position: absolute;
+          width: 100%;
+          height: 100%; }
 
 .programas_carou {
   position: relative;
@@ -3180,59 +3183,72 @@ $xl: 1200px;
               font-size: 17px; } }
 
 @media screen and (max-width: 768px) {
-  .horarios_base .calendario_dia {
+  .contenedor_base_prog .horarios_base {
+    position: relative;
     width: 100%;
     height: auto;
+    margin: auto;
+    padding: 5px;
+    margin-top: 50px;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    align-content: flex-start;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 30px 1% 0 1%; }
-    .horarios_base .calendario_dia .cont_izq_dia {
-      width: 100%;
-      height: 230px;
-      border-radius: 10px 10px 0 0; }
-      .horarios_base .calendario_dia .cont_izq_dia .header_calend {
-        width: 100%;
-        height: 70px; }
-      .horarios_base .calendario_dia .cont_izq_dia .cuerpo_calend {
-        width: 100%;
-        height: 150px; }
-        .horarios_base .calendario_dia .cont_izq_dia .cuerpo_calend h1 {
-          font-family: "Oswald", sans-serif; }
-        .horarios_base .calendario_dia .cont_izq_dia .cuerpo_calend h2 {
-          font-family: "Quicksand", sans-serif; }
-    .horarios_base .calendario_dia .dias_semana {
+    align-content: center;
+    justify-content: center;
+    align-items: center; }
+    .contenedor_base_prog .horarios_base .calendario_dia {
       position: relative;
-      display: block;
-      min-width: auto;
       width: 100%;
-      height: 100%; }
-      .horarios_base .calendario_dia .dias_semana .accordion-body {
-        gap: 5px 5px;
-        align-content: center;
-        justify-content: start;
-        align-items: center;
-        justify-items: stretch;
+      height: auto;
+      margin: 20px auto;
+      padding: auto;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-content: center;
+      justify-content: flex-start;
+      align-items: flex-start;
+      overflow: hidden;
+      box-sizing: border-box; }
+      .contenedor_base_prog .horarios_base .calendario_dia .cont_izq_dia {
         position: relative;
-        padding: 2px; }
-        .horarios_base .calendario_dia .dias_semana .accordion-body .hd_hs span {
-          font-family: "Oswald", sans-serif, sans-serif;
-          font-weight: 300;
-          text-align: center; }
-        .horarios_base .calendario_dia .dias_semana .accordion-body section p {
-          font-weight: 400; }
-        .horarios_base .calendario_dia .dias_semana .accordion-body .titulo_cal {
-          border-radius: 0 0 0 0; }
-          .horarios_base .calendario_dia .dias_semana .accordion-body .titulo_cal h2 {
-            font-size: 25px; }
-        .horarios_base .calendario_dia .dias_semana .accordion-body .col1_f6 {
-          grid-area: 8 / 1 / 9 / 3;
-          border-radius: 0 0 0 10px; }
-        .horarios_base .calendario_dia .dias_semana .accordion-body .col9_f6 {
-          grid-area: 8 / 17 / 9 / 19;
-          border-radius: 0 0 10px 0; }
+        width: 100%;
+        height: 230px;
+        margin: auto;
+        padding: auto;
+        border-radius: 10px 10px 0 0; }
+        .contenedor_base_prog .horarios_base .calendario_dia .cont_izq_dia .header_calend {
+          position: relative;
+          width: 100%;
+          height: 70px;
+          margin: 0;
+          padding: 0; }
+        .contenedor_base_prog .horarios_base .calendario_dia .cont_izq_dia .cuerpo_calend {
+          position: relative;
+          width: 100%;
+          height: 150px;
+          margin: 0;
+          padding: 0; }
+          .contenedor_base_prog .horarios_base .calendario_dia .cont_izq_dia .cuerpo_calend h1 {
+            font-family: "Oswald", sans-serif; }
+          .contenedor_base_prog .horarios_base .calendario_dia .cont_izq_dia .cuerpo_calend h2 {
+            font-family: "Quicksand", sans-serif; }
+      .contenedor_base_prog .horarios_base .calendario_dia .dias_semana {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        padding: auto;
+        border-radius: 0 0 10px 10px;
+        min-width: 570px; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .accordion-body {
+          gap: 5px 5px;
+          padding: 2px;
+          border-radius: 0 0 10px 10px; }
+          .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .accordion-body .titulo_cal {
+            padding: 5px 10px 0 0; }
+            .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .accordion-body .titulo_cal h2 {
+              font-size: 25px; }
   .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row {
     --bs-gutter-x: 0; }
     .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body a h2, .footer .footer_head .footer_head_cuerpo a .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body img h2 {
@@ -3243,6 +3259,65 @@ $xl: 1200px;
         font-size: 15px; } }
 
 @media screen and (max-width: 576px) {
+  .contenedor_base_prog .horarios_base {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 5px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center; }
+    .contenedor_base_prog .horarios_base .calendario_dia {
+      position: relative;
+      width: 100%;
+      height: auto;
+      margin: 20px auto;
+      padding: auto;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-content: center;
+      justify-content: flex-start;
+      align-items: flex-start; }
+      .contenedor_base_prog .horarios_base .calendario_dia .cont_izq_dia {
+        position: relative;
+        width: 180%;
+        height: 230px;
+        margin: auto;
+        padding: auto;
+        border-radius: 10px 10px 10px 10px; }
+        .contenedor_base_prog .horarios_base .calendario_dia .cont_izq_dia .header_calend {
+          position: relative;
+          width: 100%;
+          height: 70px;
+          margin: 0;
+          padding: 0; }
+        .contenedor_base_prog .horarios_base .calendario_dia .cont_izq_dia .cuerpo_calend {
+          position: relative;
+          width: 100%;
+          height: 150px;
+          margin: 0;
+          padding: 0; }
+      .contenedor_base_prog .horarios_base .calendario_dia .dias_semana {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        padding: auto;
+        min-width: 0;
+        border-radius: 0 0 10px 10px; }
+        .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .accordion-body {
+          gap: 5px 5px;
+          padding: 2px; }
+          .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .accordion-body .titulo_cal {
+            padding: 5px 10px 0 0; }
+            .contenedor_base_prog .horarios_base .calendario_dia .dias_semana .accordion-body .titulo_cal h2 {
+              font-size: 25px; }
   .programas_carou .caja_carrusel .carousel .carousel-inner {
     position: relative;
     width: 100%;
