@@ -30,12 +30,9 @@ $xl: 1200px;
                                         }
                             
                                         ul {
-                            
                                             li {
-
                                                 p {
                                                     font-size: 15px;
-                                                    font-weight: 500;
                                                 }
                                             }
                                         }
@@ -55,20 +52,20 @@ $xl: 1200px;
         .caja_carrusel {
             .carousel {
                 .carousel-inner {
+                    @include caja_relative(100%, 850px, 0, 0);
+
                     .carousel-item {
                         .row {
-                            min-height: 1000px;
                             --bs-gutter-x: 0;
 
                             .card {
-                                position: relative;
-                                width: 350px;
-                                height: 450px;       
+                                @include caja_relative(250px, 350px, auto, 5px);
+                                @include caja_flex(space-around, center, center);     
 
                                 .card-body {
-                                    height: 30%;
+                                    @include caja_abs_top(96%, 45%, 8px ,b);
+                                    
                                     a {
-
                                         h2 {
                                             font-size: 23px;
                                         }
@@ -195,18 +192,11 @@ $xl: 1200px;
                 .carousel-inner {
                     .carousel-item {
                         .row {
-                            height: auto;
                             --bs-gutter-x: 0;
 
                             .card {
-                                position: relative;
-                                width: 300px;
-                                height: 450px;       
-
                                 .card-body {
-                                    height: 35%;
                                     a {
-
                                         h2 {
                                             font-size: 23px;
                                         }
@@ -214,7 +204,6 @@ $xl: 1200px;
 
                                     ul {
                                         list-style: none;
-
                                         li {
                                             p {
                                                 font-size: 15px;
@@ -237,17 +226,14 @@ $xl: 1200px;
         .caja_carrusel {
             .carousel {
                 .carousel-inner {
+                    @include caja_relative(100%, 1200px, 0, 0);
+
                     .carousel-item {
                         .row {
-                            height: auto;
                             --bs-gutter-x: 0;
 
                             .card {
-                                margin-top: 15px;
-                                position: relative;
-                                width: 300px;
-                                height: 400px;       
-
+                                @include caja_relative(250px, 350px, auto, 5px);
                             }
                         }
                     }

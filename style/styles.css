@@ -2524,6 +2524,10 @@ font-family: 'Quicksand', sans-serif;
                       font-weight: 500;
                       padding-left: 5px;
                       color: var(--color_p); }
+      .programas_carou .caja_carrusel .carousel button ion-icon {
+        font-size: 2rem;
+        color: var(--color_p);
+        filter: drop-shadow(5px 5px 4px var(--color_strong)); }
 
 .nosotros_us .caja_nosotros {
   width: 100%;
@@ -3139,25 +3143,40 @@ $xl: 1200px;
           .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body a h2, .footer .footer_head .footer_head_cuerpo a .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body img h2 {
             font-size: 23px; }
           .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body ul li p {
-            font-size: 15px;
-            font-weight: 500; } }
+            font-size: 15px; } }
 
 @media screen and (max-width: 992px) {
-  .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row {
-    min-height: 1000px;
-    --bs-gutter-x: 0; }
-    .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card {
-      position: relative;
-      width: 350px;
-      height: 450px; }
-      .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body {
-        height: 30%; }
-        .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body a h2, .footer .footer_head .footer_head_cuerpo a .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body img h2 {
-          font-size: 23px; }
-        .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body ul {
-          list-style: none; }
-          .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body ul li p {
-            font-size: 17px; } }
+  .programas_carou .caja_carrusel .carousel .carousel-inner {
+    position: relative;
+    width: 100%;
+    height: 850px;
+    margin: 0;
+    padding: 0; }
+    .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row {
+      --bs-gutter-x: 0; }
+      .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card {
+        position: relative;
+        width: 250px;
+        height: 350px;
+        margin: auto;
+        padding: 5px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: space-around;
+        justify-content: center;
+        align-items: center; }
+        .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body {
+          position: absolute;
+          width: 96%;
+          height: 45%;
+          bottom: 8px; }
+          .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body a h2, .footer .footer_head .footer_head_cuerpo a .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body img h2 {
+            font-size: 23px; }
+          .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body ul {
+            list-style: none; }
+            .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body ul li p {
+              font-size: 17px; } }
 
 @media screen and (max-width: 768px) {
   .horarios_base .calendario_dia {
@@ -3214,30 +3233,29 @@ $xl: 1200px;
           grid-area: 8 / 17 / 9 / 19;
           border-radius: 0 0 10px 0; }
   .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row {
-    height: auto;
     --bs-gutter-x: 0; }
-    .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card {
-      position: relative;
-      width: 300px;
-      height: 450px; }
-      .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body {
-        height: 35%; }
-        .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body a h2, .footer .footer_head .footer_head_cuerpo a .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body img h2 {
-          font-size: 23px; }
-        .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body ul {
-          list-style: none; }
-          .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body ul li p {
-            font-size: 15px; } }
+    .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body a h2, .footer .footer_head .footer_head_cuerpo a .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body img h2 {
+      font-size: 23px; }
+    .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body ul {
+      list-style: none; }
+      .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body ul li p {
+        font-size: 15px; } }
 
 @media screen and (max-width: 576px) {
-  .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row {
-    height: auto;
-    --bs-gutter-x: 0; }
-    .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card {
-      margin-top: 15px;
-      position: relative;
-      width: 300px;
-      height: 400px; } }
+  .programas_carou .caja_carrusel .carousel .carousel-inner {
+    position: relative;
+    width: 100%;
+    height: 1200px;
+    margin: 0;
+    padding: 0; }
+    .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row {
+      --bs-gutter-x: 0; }
+      .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card {
+        position: relative;
+        width: 250px;
+        height: 350px;
+        margin: auto;
+        padding: 5px; } }
 
 @media screen and (max-width: 992px) {
   .nosotros_us .caja_nosotros {

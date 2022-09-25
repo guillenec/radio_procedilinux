@@ -512,6 +512,13 @@ font-family: 'Quicksand', sans-serif;
 
                 }
             }
+            button{
+                ion-icon{
+                    font-size: 2rem;
+                    color: var(--color_p);
+                    filter: drop-shadow(5px 5px 4px var(--color_strong));
+                }
+            }
         }
     }
 }
