@@ -2692,8 +2692,11 @@ $xl: 1200px;
     .header .nav_menu .logo li {
       margin-left: 0; }
       .header .nav_menu .logo li a, .header .nav_menu .logo li .footer .footer_head .footer_head_cuerpo a img, .footer .footer_head .footer_head_cuerpo a .header .nav_menu .logo li img {
-        width: 100%;
-        font-size: 20px; }
+        font-size: 20px;
+        width: 100%; }
+    .header .nav_menu .logo .name_marca {
+      width: 200px;
+      text-align: center; }
   .header .nav_menu .toggle {
     position: relative;
     width: 60px;
@@ -2721,7 +2724,7 @@ $xl: 1200px;
     position: absolute;
     display: block;
     width: 100%;
-    height: 700px;
+    height: auto;
     margin-top: 70px;
     padding: 10px 20px;
     border-top: thin solid #371c45d7; }
@@ -2926,6 +2929,60 @@ $xl: 1200px;
     font-size: 14px; } }
 
 @media screen and (max-width: 576px) {
+  .header .nav_menu.active {
+    height: 450px; }
+  .header .nav_menu .logo {
+    position: relative;
+    width: calc(100% - 70px); }
+    .header .nav_menu .logo li {
+      margin-left: 0; }
+      .header .nav_menu .logo li a, .header .nav_menu .logo li .footer .footer_head .footer_head_cuerpo a img, .footer .footer_head .footer_head_cuerpo a .header .nav_menu .logo li img {
+        font-size: 20px;
+        width: 100%; }
+    .header .nav_menu .logo .img_logo {
+      position: relative;
+      width: 60px;
+      height: 60px; }
+    .header .nav_menu .logo .name_marca {
+      width: 120px;
+      text-align: center; }
+  .header .nav_menu .toggle {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s ease-in-out;
+    margin-top: 5px; }
+    .header .nav_menu .toggle::before, .header .nav_menu .toggle::after {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 3px;
+      background-color: var(--toggle_color); }
+    .header .nav_menu .toggle::before {
+      transform: translateY(-10px);
+      box-shadow: 0 10px var(--toggle_color);
+      transition: .5s; }
+    .header .nav_menu .toggle::after {
+      transform: translateY(10px);
+      transition: .5s; }
+  .header .nav_menu .menu {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 70px;
+    padding: 10px 20px;
+    border-top: thin solid #371c45d7; }
+    .header .nav_menu .menu li {
+      margin: 10px auto; }
+      .header .nav_menu .menu li a, .header .nav_menu .menu li .footer .footer_head .footer_head_cuerpo a img, .footer .footer_head .footer_head_cuerpo a .header .nav_menu .menu li img {
+        width: 90%;
+        margin: auto;
+        transition: .7s; }
   .main .banner_conteiner .caja_opaca {
     position: absolute;
     width: 98%;
