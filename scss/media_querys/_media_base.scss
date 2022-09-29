@@ -369,11 +369,11 @@ $xl: 1200px;
                 .mini_redes{
                     position: relative;
                     width: 115px;
-                    height: 200px;
+                    height: 150px;
                     display: flex;  
-                    justify-content: center;
+                    justify-content: flex-end;
                     border-radius: 10px;
-                    overflow: hidden;
+                    overflow: inherit;
                     box-shadow: none;
     
                     .min_toggle{
@@ -406,15 +406,18 @@ $xl: 1200px;
                     }
                     li{
                         position: absolute;
-                        left: -50px;
-                        transform-origin: 100px;
-                        transform: rotate(0deg) translateX(70px);
+                        left: -80px;
+                        bottom: 15px;
+                        transform-origin: 96px;
+                        transform: rotate(0deg) translateX(85px);
                         transition: ease-in .7s;
 
                         a{
                             width: 10px;
                             height: 10px;
                             @include sombra_cajas();
+                            z-index: 0;
+                            border-radius: 8px;
                         }
                     }
                     &.activa{
@@ -423,9 +426,13 @@ $xl: 1200px;
                             transition: .9s;
                         }
                         li{
-                            transform: translateY(calc(1px * var(--i))) translateX(105px);
+                            transform: rotate(calc(-298deg / 10 * var(--i))) translateX(206px);
+                            bottom: 0px;
+
                             a{
-                                @include caja_relative(50px, 50px);
+                                @include caja_relative(40px, 40px);
+                                transform: rotate(calc(-298deg / -10 * var(--i)));
+
                             }
                             z-index: 1;
                         }

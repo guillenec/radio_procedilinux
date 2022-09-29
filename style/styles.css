@@ -2873,11 +2873,11 @@ $xl: 1200px;
     .main .banner_conteiner .conteiner_buton .mini_redes {
       position: relative;
       width: 115px;
-      height: 200px;
+      height: 150px;
       display: flex;
-      justify-content: center;
+      justify-content: flex-end;
       border-radius: 10px;
-      overflow: hidden;
+      overflow: inherit;
       box-shadow: none;
       /*li {
                         list-style: none;    
@@ -2926,28 +2926,33 @@ $xl: 1200px;
             color: var(--color_hover_a); }
       .main .banner_conteiner .conteiner_buton .mini_redes li {
         position: absolute;
-        left: -50px;
-        transform-origin: 100px;
-        transform: rotate(0deg) translateX(70px);
+        left: -80px;
+        bottom: 15px;
+        transform-origin: 96px;
+        transform: rotate(0deg) translateX(85px);
         transition: ease-in .7s; }
         .main .banner_conteiner .conteiner_buton .mini_redes li a, .main .banner_conteiner .conteiner_buton .mini_redes li .footer .footer_head .footer_head_cuerpo a img, .footer .footer_head .footer_head_cuerpo a .main .banner_conteiner .conteiner_buton .mini_redes li img {
           width: 10px;
           height: 10px;
           -webkit-box-shadow: var(--sombra_general);
           -moz-box-shadow: var(--sombra_general);
-          box-shadow: var(--sombra_general); }
+          box-shadow: var(--sombra_general);
+          z-index: 0;
+          border-radius: 8px; }
       .main .banner_conteiner .conteiner_buton .mini_redes.activa .min_toggle {
         transform: rotate(315deg);
         transition: .9s; }
       .main .banner_conteiner .conteiner_buton .mini_redes.activa li {
-        transform: translateY(calc(1px * var(--i))) translateX(105px);
+        transform: rotate(calc(-298deg / 10 * var(--i))) translateX(206px);
+        bottom: 0px;
         z-index: 1; }
         .main .banner_conteiner .conteiner_buton .mini_redes.activa li a, .main .banner_conteiner .conteiner_buton .mini_redes.activa li .footer .footer_head .footer_head_cuerpo a img, .footer .footer_head .footer_head_cuerpo a .main .banner_conteiner .conteiner_buton .mini_redes.activa li img {
           position: relative;
-          width: 50px;
-          height: 50px;
+          width: 40px;
+          height: 40px;
           margin: auto;
-          padding: auto; }
+          padding: auto;
+          transform: rotate(calc(-298deg / -10 * var(--i))); }
   .main .noticias .noticias_grid {
     height: 900px;
     grid-template-rows: repeat(10, 1fr); }
