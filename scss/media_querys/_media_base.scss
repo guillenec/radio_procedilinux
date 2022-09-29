@@ -424,6 +424,7 @@ $xl: 1200px;
                         .min_toggle{
                             transform: rotate(315deg);
                             transition: .9s;
+                            z-index: 1;
                         }
                         li{
                             transform: rotate(calc(-298deg / 10 * var(--i))) translateX(206px);
@@ -432,9 +433,10 @@ $xl: 1200px;
                             a{
                                 @include caja_relative(40px, 40px);
                                 transform: rotate(calc(-298deg / -10 * var(--i)));
+                                z-index: 0;
+
 
                             }
-                            z-index: 1;
                         }
                     }
 

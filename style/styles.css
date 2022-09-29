@@ -2941,18 +2941,19 @@ $xl: 1200px;
           border-radius: 8px; }
       .main .banner_conteiner .conteiner_buton .mini_redes.activa .min_toggle {
         transform: rotate(315deg);
-        transition: .9s; }
+        transition: .9s;
+        z-index: 1; }
       .main .banner_conteiner .conteiner_buton .mini_redes.activa li {
         transform: rotate(calc(-298deg / 10 * var(--i))) translateX(206px);
-        bottom: 0px;
-        z-index: 1; }
+        bottom: 0px; }
         .main .banner_conteiner .conteiner_buton .mini_redes.activa li a, .main .banner_conteiner .conteiner_buton .mini_redes.activa li .footer .footer_head .footer_head_cuerpo a img, .footer .footer_head .footer_head_cuerpo a .main .banner_conteiner .conteiner_buton .mini_redes.activa li img {
           position: relative;
           width: 40px;
           height: 40px;
           margin: auto;
           padding: auto;
-          transform: rotate(calc(-298deg / -10 * var(--i))); }
+          transform: rotate(calc(-298deg / -10 * var(--i)));
+          z-index: 0; }
   .main .noticias .noticias_grid {
     height: 900px;
     grid-template-rows: repeat(10, 1fr); }
