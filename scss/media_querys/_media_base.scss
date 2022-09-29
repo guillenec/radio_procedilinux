@@ -356,6 +356,100 @@ $xl: 1200px;
 
             }
 
+            //MINI REDES
+            .conteiner_buton {
+                position: relative;
+                width: 100%;
+                min-height: 100%;
+                background: var(--filtro_video);
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-end;
+    
+                .mini_redes{
+                    position: relative;
+                    width: 103px;
+                    height: 200px;
+                    display: flex;  
+                    justify-content: center;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    box-shadow: none;
+    
+                    .min_toggle{
+                        @include caja_flex(center, center, center ); 
+                        @include caja_relative(50px, 50px);
+                        position: absolute;
+                        background: var(--bg_a);
+                        transition: .7s;
+                        align-self: center;
+                        left: 0;
+                        cursor: pointer;
+                        border: solid 2px var(--color_hover_a);
+                        border-radius: 50%;
+                        transition: transform 1.25s;
+                        z-index: 1;
+
+                        ion-icon{
+                            font-size: 1.5rem;
+                            color:var(--color_a);
+
+                        }
+    
+                        &:hover {
+                            background: var(--bg_hover_a);
+                            
+                            ion-icon{
+                                color:var(--color_hover_a);
+                            }
+                        }
+                    }
+                    li{
+                        position: absolute;
+                        left: -50px;
+                        transform-origin: 100px;
+                        transform: rotate(0deg) translateX(70px);
+                        transition: ease-in .7s;
+
+                        a{
+                            width: 10px;
+                            height: 10px;
+                            @include sombra_cajas();
+                        }
+                    }
+                    &.activa{
+                        .min_toggle{
+                            transform: rotate(315deg);
+                            transition: .9s;
+                        }
+                        li{
+                            transform: translateY(calc(1px * var(--i))) translateX(100px);
+                            a{
+                                @include caja_relative(50px, 50px);
+                            }
+                            z-index: 1;
+                        }
+                    }
+
+                    
+                    /*li {
+                        list-style: none;    
+                        align-self: flex-end;
+                        a{ 
+                            ion-icon{
+
+                            }
+                            &:hover {
+                                background: var(--bg_hover_a);
+                                
+                                ion-icon{
+                                    color:var(--color_hover_a);
+                                }
+                            }
+                        }
+                    }*/
+                }
+            }
         }
 
         //seccion noticias

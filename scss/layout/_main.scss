@@ -87,22 +87,25 @@
             align-items: center;
 
             .mini_redes,
-            .controls {
+            .controls{
                 position: absolute;
                 display: flex;
                 border-radius: 10px;
                 overflow: hidden;
                 @include sombra_cajas();
 
+                .min_toggle{
+                    display:none;
+                    ion-icon{
+                        color:var(--color_hover_p);
+                    }
+                }
                 li {
-                    list-style: none;
-                    
-                    a {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        width: 50px;
-                        height: 50px;
+                    list-style: none;                   
+                    a{ 
+                        @include caja_flex(center, center, center ); 
+                        @include caja_relative(50px, 50px);
+                        border-radius: 8px;
                         background: var(--bg_a);
                         transition: .7s;
 
@@ -110,9 +113,9 @@
                         @each $name, $color in $colors_redes {
                             ion-icon.#{$name}{
                                 color: $color;
+                                font-size: 1.2rem;
                             }
                         }
-
                         &:hover {
                             background: var(--bg_hover_a);
                             
@@ -120,7 +123,9 @@
                                 color:var(--color_hover_a);
                             }
                         }
+                        
                     }
+
                 }
             }
 

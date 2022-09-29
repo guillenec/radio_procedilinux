@@ -416,6 +416,8 @@ footer {
           box-shadow: 0 4px 10px rgba(56, 26, 70, 0.527), inset 0 4px 4px rgba(129, 72, 153, 0.5), inset 0 -4px 4px rgba(101, 32, 133, 0.5);
           transition: .7s;
           cursor: pointer; }
+          .header .nav_menu .logo .modo_osc .toggle_light else {
+            top: t; }
           .header .nav_menu .logo .modo_osc .toggle_light .indicador {
             position: absolute;
             width: 40px;
@@ -427,6 +429,8 @@ footer {
             transform: scale(0.9);
             box-shadow: 0 3px 10px #1d0727, inset 0 3px 3px rgba(98, 59, 120, 0.878), inset 0 -2px 2px 2px rgba(100, 61, 120, 0.878);
             transition: .7s; }
+            .header .nav_menu .logo .modo_osc .toggle_light .indicador else {
+              top: t; }
           .header .nav_menu .logo .modo_osc .toggle_light.oscuro {
             background: #fff;
             box-shadow: inset 0 4px 10px rgba(56, 26, 70, 0.527), inset 0 4px 4px rgba(129, 72, 153, 0.5), inset 0 -4px 4px rgba(101, 32, 133, 0.5);
@@ -485,6 +489,8 @@ footer {
       height: 100%;
       top: 0;
       left: 0; }
+      .main .banner_conteiner .video_banner else {
+        top: t; }
       .main .banner_conteiner .video_banner video {
         object-fit: cover; }
     .main .banner_conteiner .caja_opaca {
@@ -503,6 +509,8 @@ footer {
       align-content: flex-start;
       align-items: center;
       overflow: hidden; }
+      .main .banner_conteiner .caja_opaca else {
+        top: t; }
       .main .banner_conteiner .caja_opaca h1,
       .main .banner_conteiner .caja_opaca p {
         display: block;
@@ -542,6 +550,12 @@ footer {
         -webkit-box-shadow: var(--sombra_general);
         -moz-box-shadow: var(--sombra_general);
         box-shadow: var(--sombra_general); }
+        .main .banner_conteiner .conteiner_buton .mini_redes .min_toggle,
+        .main .banner_conteiner .conteiner_buton .controls .min_toggle {
+          display: none; }
+          .main .banner_conteiner .conteiner_buton .mini_redes .min_toggle ion-icon,
+          .main .banner_conteiner .conteiner_buton .controls .min_toggle ion-icon {
+            color: var(--color_hover_p); }
         .main .banner_conteiner .conteiner_buton .mini_redes li,
         .main .banner_conteiner .conteiner_buton .controls li {
           list-style: none; }
@@ -550,40 +564,54 @@ footer {
           .main .banner_conteiner .conteiner_buton .controls li .footer .footer_head .footer_head_cuerpo a img,
           .footer .footer_head .footer_head_cuerpo a .main .banner_conteiner .conteiner_buton .controls li img {
             display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: center;
             justify-content: center;
             align-items: center;
+            position: relative;
             width: 50px;
             height: 50px;
+            margin: auto;
+            padding: auto;
+            border-radius: 8px;
             background: var(--bg_a);
             transition: .7s; }
             .main .banner_conteiner .conteiner_buton .mini_redes li a ion-icon.telegram, .footer .footer_head .footer_head_cuerpo a .main .banner_conteiner .conteiner_buton .mini_redes li img ion-icon.telegram,
             .main .banner_conteiner .conteiner_buton .controls li a ion-icon.telegram,
             .footer .footer_head .footer_head_cuerpo a .main .banner_conteiner .conteiner_buton .controls li img ion-icon.telegram {
-              color: #51aff8; }
+              color: #51aff8;
+              font-size: 1.2rem; }
             .main .banner_conteiner .conteiner_buton .mini_redes li a ion-icon.facebook, .footer .footer_head .footer_head_cuerpo a .main .banner_conteiner .conteiner_buton .mini_redes li img ion-icon.facebook,
             .main .banner_conteiner .conteiner_buton .controls li a ion-icon.facebook,
             .footer .footer_head .footer_head_cuerpo a .main .banner_conteiner .conteiner_buton .controls li img ion-icon.facebook {
-              color: #3d7be7; }
+              color: #3d7be7;
+              font-size: 1.2rem; }
             .main .banner_conteiner .conteiner_buton .mini_redes li a ion-icon.linkedin, .footer .footer_head .footer_head_cuerpo a .main .banner_conteiner .conteiner_buton .mini_redes li img ion-icon.linkedin,
             .main .banner_conteiner .conteiner_buton .controls li a ion-icon.linkedin,
             .footer .footer_head .footer_head_cuerpo a .main .banner_conteiner .conteiner_buton .controls li img ion-icon.linkedin {
-              color: #0076b8; }
+              color: #0076b8;
+              font-size: 1.2rem; }
             .main .banner_conteiner .conteiner_buton .mini_redes li a ion-icon.instagram, .footer .footer_head .footer_head_cuerpo a .main .banner_conteiner .conteiner_buton .mini_redes li img ion-icon.instagram,
             .main .banner_conteiner .conteiner_buton .controls li a ion-icon.instagram,
             .footer .footer_head .footer_head_cuerpo a .main .banner_conteiner .conteiner_buton .controls li img ion-icon.instagram {
-              color: #d6249f; }
+              color: #d6249f;
+              font-size: 1.2rem; }
             .main .banner_conteiner .conteiner_buton .mini_redes li a ion-icon.youtube, .footer .footer_head .footer_head_cuerpo a .main .banner_conteiner .conteiner_buton .mini_redes li img ion-icon.youtube,
             .main .banner_conteiner .conteiner_buton .controls li a ion-icon.youtube,
             .footer .footer_head .footer_head_cuerpo a .main .banner_conteiner .conteiner_buton .controls li img ion-icon.youtube {
-              color: #ce1312; }
+              color: #ce1312;
+              font-size: 1.2rem; }
             .main .banner_conteiner .conteiner_buton .mini_redes li a ion-icon.whatsapp, .footer .footer_head .footer_head_cuerpo a .main .banner_conteiner .conteiner_buton .mini_redes li img ion-icon.whatsapp,
             .main .banner_conteiner .conteiner_buton .controls li a ion-icon.whatsapp,
             .footer .footer_head .footer_head_cuerpo a .main .banner_conteiner .conteiner_buton .controls li img ion-icon.whatsapp {
-              color: #25D366; }
+              color: #25D366;
+              font-size: 1.2rem; }
             .main .banner_conteiner .conteiner_buton .mini_redes li a ion-icon.twitch, .footer .footer_head .footer_head_cuerpo a .main .banner_conteiner .conteiner_buton .mini_redes li img ion-icon.twitch,
             .main .banner_conteiner .conteiner_buton .controls li a ion-icon.twitch,
             .footer .footer_head .footer_head_cuerpo a .main .banner_conteiner .conteiner_buton .controls li img ion-icon.twitch {
-              color: #6441a5; }
+              color: #6441a5;
+              font-size: 1.2rem; }
             .main .banner_conteiner .conteiner_buton .mini_redes li a:hover, .main .banner_conteiner .conteiner_buton .mini_redes li .footer .footer_head .footer_head_cuerpo a img:hover, .footer .footer_head .footer_head_cuerpo a .main .banner_conteiner .conteiner_buton .mini_redes li img:hover,
             .main .banner_conteiner .conteiner_buton .controls li a:hover,
             .main .banner_conteiner .conteiner_buton .controls li .footer .footer_head .footer_head_cuerpo a img:hover,
@@ -728,6 +756,8 @@ footer {
           align-items: center;
           padding: 5px;
           transition: .9s; }
+          .main .noticias .noticias_grid article .subtitulo_noti else {
+            top: t; }
           .main .noticias .noticias_grid article .subtitulo_noti:hover {
             position: absolute;
             width: 98%;
@@ -736,6 +766,8 @@ footer {
             backdrop-filter: blur(10px);
             overflow: auto;
             transition: .9s; }
+            .main .noticias .noticias_grid article .subtitulo_noti:hover else {
+              top: t; }
             .main .noticias .noticias_grid article .subtitulo_noti:hover::-webkit-scrollbar {
               display: none; }
           .main .noticias .noticias_grid article .subtitulo_noti a, .main .noticias .noticias_grid article .subtitulo_noti .footer .footer_head .footer_head_cuerpo a img, .footer .footer_head .footer_head_cuerpo a .main .noticias .noticias_grid article .subtitulo_noti img {
@@ -823,6 +855,8 @@ footer {
         border-radius: 50%;
         border: 10px solid var(--color_p);
         z-index: 1; }
+        .main .programas .linea_tiempo .left::after else {
+          top: t; }
       .main .programas .linea_tiempo .right::after {
         content: '';
         position: absolute;
@@ -832,6 +866,8 @@ footer {
         left: -10px;
         border-radius: 50%;
         border: 10px solid var(--color_p); }
+        .main .programas .linea_tiempo .right::after else {
+          top: t; }
   .main .podcast {
     position: relative;
     height: auto; }
@@ -1099,6 +1135,8 @@ footer {
             place-content: center;
             font-size: 30px;
             transition: .7s; }
+            .footer .footer_head .footer_head_cuerpo ul.redes_pie li a else, .footer .footer_head .footer_head_cuerpo a ul.redes_pie li img else {
+              top: t; }
             .footer .footer_head .footer_head_cuerpo ul.redes_pie li a ion-icon.telegram, .footer .footer_head .footer_head_cuerpo a ul.redes_pie li img ion-icon.telegram {
               color: #51aff8;
               transition: .7s; }
@@ -1667,6 +1705,8 @@ footer {
       align-items: center;
       padding: 5px;
       transition: .9s; }
+      .noticias_caja article .caja_text_noti else {
+        top: t; }
       .noticias_caja article .caja_text_noti:hover {
         position: absolute;
         width: 98%;
@@ -1675,6 +1715,8 @@ footer {
         backdrop-filter: blur(10px);
         overflow: auto;
         transition: .9s; }
+        .noticias_caja article .caja_text_noti:hover else {
+          top: t; }
         .noticias_caja article .caja_text_noti:hover::-webkit-scrollbar {
           display: none; }
       .noticias_caja article .caja_text_noti a, .noticias_caja article .caja_text_noti .footer .footer_head .footer_head_cuerpo a img, .footer .footer_head .footer_head_cuerpo a .noticias_caja article .caja_text_noti img {
@@ -2512,6 +2554,8 @@ font-family: 'Quicksand', sans-serif;
                 backdrop-filter: blur(5px);
                 -webkit-backdrop-filter: blur(5px);
                 border-radius: 4px; }
+                .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body else {
+                  top: b; }
                 .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body a, .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body .footer .footer_head .footer_head_cuerpo a img, .footer .footer_head .footer_head_cuerpo a .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body img {
                   text-decoration: none;
                   text-align: center; }
@@ -2622,6 +2666,8 @@ $xl: 1200px;
       align-items: center;
       padding: 30px;
       box-shadow: 0 0 0 10px var(--sombra_cajaopaca); }
+      .main .banner_conteiner .caja_opaca else {
+        top: t; }
       .main .banner_conteiner .caja_opaca h1,
       .main .banner_conteiner .caja_opaca p {
         text-align: left;
@@ -2749,6 +2795,8 @@ $xl: 1200px;
       align-items: center;
       padding: 30px;
       box-shadow: 0 0 0 10px var(--sombra_cajaopaca); }
+      .main .banner_conteiner .caja_opaca else {
+        top: t; }
       .main .banner_conteiner .caja_opaca h1,
       .main .banner_conteiner .caja_opaca p {
         text-align: left;
@@ -2793,6 +2841,8 @@ $xl: 1200px;
     align-items: center;
     padding: 30px;
     box-shadow: 0 0 0 10px var(--sombra_cajaopaca); }
+    .caja_opaca else {
+      top: b; }
     .caja_opaca h1 {
       font-size: 2.8rem !important; }
     .caja_opaca p {
@@ -2805,11 +2855,99 @@ $xl: 1200px;
     height: auto;
     top: 12%;
     margin-left: 1%; }
+    .main .banner_conteiner .caja_opaca else {
+      top: t; }
     .main .banner_conteiner .caja_opaca h1 {
       font-size: 2.5rem;
       line-height: 1.9rem; }
     .main .banner_conteiner .caja_opaca p {
       font-size: 1rem; }
+  .main .banner_conteiner .conteiner_buton {
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    background: var(--filtro_video);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end; }
+    .main .banner_conteiner .conteiner_buton .mini_redes {
+      position: relative;
+      width: 103px;
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: none;
+      /*li {
+                        list-style: none;    
+                        align-self: flex-end;
+                        a{ 
+                            ion-icon{
+
+                            }
+                            &:hover {
+                                background: var(--bg_hover_a);
+                                
+                                ion-icon{
+                                    color:var(--color_hover_a);
+                                }
+                            }
+                        }
+                    }*/ }
+      .main .banner_conteiner .conteiner_buton .mini_redes .min_toggle {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 50px;
+        height: 50px;
+        margin: auto;
+        padding: auto;
+        position: absolute;
+        background: var(--bg_a);
+        transition: .7s;
+        align-self: center;
+        left: 0;
+        cursor: pointer;
+        border: solid 2px var(--color_hover_a);
+        border-radius: 50%;
+        transition: transform 1.25s;
+        z-index: 1; }
+        .main .banner_conteiner .conteiner_buton .mini_redes .min_toggle ion-icon {
+          font-size: 1.5rem;
+          color: var(--color_a); }
+        .main .banner_conteiner .conteiner_buton .mini_redes .min_toggle:hover {
+          background: var(--bg_hover_a); }
+          .main .banner_conteiner .conteiner_buton .mini_redes .min_toggle:hover ion-icon {
+            color: var(--color_hover_a); }
+      .main .banner_conteiner .conteiner_buton .mini_redes li {
+        position: absolute;
+        left: -50px;
+        transform-origin: 100px;
+        transform: rotate(0deg) translateX(70px);
+        transition: ease-in .7s; }
+        .main .banner_conteiner .conteiner_buton .mini_redes li a, .main .banner_conteiner .conteiner_buton .mini_redes li .footer .footer_head .footer_head_cuerpo a img, .footer .footer_head .footer_head_cuerpo a .main .banner_conteiner .conteiner_buton .mini_redes li img {
+          width: 10px;
+          height: 10px;
+          -webkit-box-shadow: var(--sombra_general);
+          -moz-box-shadow: var(--sombra_general);
+          box-shadow: var(--sombra_general); }
+      .main .banner_conteiner .conteiner_buton .mini_redes.activa .min_toggle {
+        transform: rotate(315deg);
+        transition: .9s; }
+      .main .banner_conteiner .conteiner_buton .mini_redes.activa li {
+        transform: translateY(calc(1px * var(--i))) translateX(100px);
+        z-index: 1; }
+        .main .banner_conteiner .conteiner_buton .mini_redes.activa li a, .main .banner_conteiner .conteiner_buton .mini_redes.activa li .footer .footer_head .footer_head_cuerpo a img, .footer .footer_head .footer_head_cuerpo a .main .banner_conteiner .conteiner_buton .mini_redes.activa li img {
+          position: relative;
+          width: 50px;
+          height: 50px;
+          margin: auto;
+          padding: auto; }
   .main .noticias .noticias_grid {
     height: 900px;
     grid-template-rows: repeat(10, 1fr); }
@@ -2989,6 +3127,8 @@ $xl: 1200px;
     height: min-content;
     top: 15%;
     margin-left: 1%; }
+    .main .banner_conteiner .caja_opaca else {
+      top: t; }
     .main .banner_conteiner .caja_opaca h1 {
       font-size: 3em;
       line-height: 1em; }
@@ -3004,6 +3144,8 @@ $xl: 1200px;
     height: 100%;
     top: 30%;
     transition: .9s; }
+    .main .noticias .noticias_grid article .subtitulo_noti:hover else {
+      top: t; }
   .main .programas .linea_tiempo::before {
     left: 10px;
     margin-left: -1px; }
@@ -3232,6 +3374,8 @@ $xl: 1200px;
           width: 96%;
           height: 45%;
           bottom: 8px; }
+          .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body else {
+            top: b; }
           .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body a h2, .footer .footer_head .footer_head_cuerpo a .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body img h2 {
             font-size: 23px; }
           .programas_carou .caja_carrusel .carousel .carousel-inner .carousel-item .row .card .card-body ul {

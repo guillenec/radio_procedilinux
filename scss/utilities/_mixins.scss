@@ -7,7 +7,7 @@
 }
 
 //para las cajas contenedoras dentro de una reolativa.. como en el caso de las targetas de los programas.
-@mixin caja_abs_top($a, $b, $c ,$d){
+@mixin caja_abs_top($a, $b, $c ,$d:auto){
     position: absolute;
     width: $a;
     height: $b;
@@ -16,7 +16,9 @@
         top: $c;
     } @else if $d == b{
         bottom: $c;
-    } 
+    } else{
+        top: $d;
+    }
 } 
 
 //mixin para flexbox general
