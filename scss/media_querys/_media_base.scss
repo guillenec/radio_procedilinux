@@ -368,7 +368,7 @@ $xl: 1200px;
     
                 .mini_redes{
                     position: relative;
-                    width: 103px;
+                    width: 115px;
                     height: 200px;
                     display: flex;  
                     justify-content: center;
@@ -423,7 +423,7 @@ $xl: 1200px;
                             transition: .9s;
                         }
                         li{
-                            transform: translateY(calc(1px * var(--i))) translateX(100px);
+                            transform: translateY(calc(1px * var(--i))) translateX(105px);
                             a{
                                 @include caja_relative(50px, 50px);
                             }

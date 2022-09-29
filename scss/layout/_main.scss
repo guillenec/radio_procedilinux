@@ -90,7 +90,7 @@
             .controls{
                 position: absolute;
                 display: flex;
-                border-radius: 10px;
+                border-radius: 8px;
                 overflow: hidden;
                 @include sombra_cajas();
 
@@ -105,7 +105,7 @@
                     a{ 
                         @include caja_flex(center, center, center ); 
                         @include caja_relative(50px, 50px);
-                        border-radius: 8px;
+                        border-radius: 0;
                         background: var(--bg_a);
                         transition: .7s;
 

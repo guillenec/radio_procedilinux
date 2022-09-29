@@ -545,7 +545,7 @@ footer {
       .main .banner_conteiner .conteiner_buton .controls {
         position: absolute;
         display: flex;
-        border-radius: 10px;
+        border-radius: 8px;
         overflow: hidden;
         -webkit-box-shadow: var(--sombra_general);
         -moz-box-shadow: var(--sombra_general);
@@ -574,7 +574,7 @@ footer {
             height: 50px;
             margin: auto;
             padding: auto;
-            border-radius: 8px;
+            border-radius: 0;
             background: var(--bg_a);
             transition: .7s; }
             .main .banner_conteiner .conteiner_buton .mini_redes li a ion-icon.telegram, .footer .footer_head .footer_head_cuerpo a .main .banner_conteiner .conteiner_buton .mini_redes li img ion-icon.telegram,
@@ -2872,7 +2872,7 @@ $xl: 1200px;
     align-items: flex-end; }
     .main .banner_conteiner .conteiner_buton .mini_redes {
       position: relative;
-      width: 103px;
+      width: 115px;
       height: 200px;
       display: flex;
       justify-content: center;
@@ -2940,7 +2940,7 @@ $xl: 1200px;
         transform: rotate(315deg);
         transition: .9s; }
       .main .banner_conteiner .conteiner_buton .mini_redes.activa li {
-        transform: translateY(calc(1px * var(--i))) translateX(100px);
+        transform: translateY(calc(1px * var(--i))) translateX(105px);
         z-index: 1; }
         .main .banner_conteiner .conteiner_buton .mini_redes.activa li a, .main .banner_conteiner .conteiner_buton .mini_redes.activa li .footer .footer_head .footer_head_cuerpo a img, .footer .footer_head .footer_head_cuerpo a .main .banner_conteiner .conteiner_buton .mini_redes.activa li img {
           position: relative;
