@@ -353,6 +353,7 @@ footer {
     width: 98%;
     height: 70px;
     margin: auto;
+    padding: auto;
     border-radius: 5px;
     background: var(--bg_header);
     -webkit-box-shadow: var(--sombra_general);
