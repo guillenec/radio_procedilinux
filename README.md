@@ -1,6 +1,6 @@
 # Radio Procedilinux.
-#### 👤 Estudiante: Guillermo Agustín Neculqueo
-
+#### 👤 [Guillermo Agustín Neculqueo](@guillenec)
+#### 
 #### 🏠 [Homepage](https://procedilinux.netlify.app/index.html)
 
 <div> 
