@@ -6,23 +6,16 @@
 <div> 
   <h1 align="center">Procedilinux Radio</h1>
   <p>
-    Esta pagina se creo, para fines educativos, para en un futuro poder brindar un servicio. 
-    Buscando realizar algo similar o seguir con esta base para un proyecto mas grande, ya sea realizar paginas web como freelancer o como una web par el portafolio.Espero que les guste mi maquetado artesanal.
+    Esta pagina se creo, para fines educativos, para en un futuro poder brindar un servicio. Buscando realizar algo similar o seguir con esta base para un proyecto mas grande, ya sea realizar paginas web como freelancer o como una web par el portafolio.Espero que les guste mi maquetado artesanal.
 
   </p>
 </div>
 
 
-<<<<<<< HEAD
 ## Vistazo de Procedilinux
-=======
-##Vistazo de Procedilinux
->>>>>>> 66a350676e10026e7eb97b33074556dedb93c67f
 ![screenshot of HTTRiRi website](https://res.cloudinary.com/dpiwmbsog/image/upload/v1664606697/imgs/procedilinux_modos_gxipud.png)
 
 ## Contenido de la pagina.
-
-En la misma encontrara 5 secciones:
 1. inicio: se incluye un banner con vido , una bienvenida y mini redes sociales, una seccion de noticias destacadas, una linea de tiempo con programas destacados, una seccion de podcast y obviamente el footer con informacion de contactos.
 
 2. noticias: breve descripción, seccion noticias de musica. noticias game y noticias de tecnologia , principalmente sobre linux.
