@@ -11,14 +11,8 @@ body{
     display: none;
 }
 .preloader{
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+    @include caja_abs_top(100%, 100vh, 0 ,t);
+    @include caja_flex(center, center, center);
     background: $bg_hover_1;
     z-index: 10;
 

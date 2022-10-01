@@ -237,15 +237,19 @@ body {
 
 .preloader {
   position: absolute;
-  top: 0;
   width: 100%;
   height: 100vh;
+  top: 0;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
   justify-content: center;
   align-items: center;
-  align-content: center;
   background: #0097f5;
   z-index: 10; }
+  .preloader else {
+    top: t; }
   .preloader .astro_agua {
     margin-top: 0;
     margin-left: 0;

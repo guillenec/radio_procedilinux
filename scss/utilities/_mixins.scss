@@ -7,17 +7,17 @@
 }
 
 //para las cajas contenedoras dentro de una reolativa.. como en el caso de las targetas de los programas.
-@mixin caja_abs_top($a, $b, $c ,$d:auto){
+@mixin caja_abs_top($white, $height, $margen ,$tipo_margen:auto){
     position: absolute;
-    width: $a;
-    height: $b;
+    width: $white;
+    height: $height;
 
-    @if $d == t {
-        top: $c;
-    } @else if $d == b{
-        bottom: $c;
+    @if $tipo_margen == t {
+        top: $margen;
+    } @else if $tipo_margen == b {
+        bottom: $margen;
     } else{
-        top: $d;
+        top: $tipo_margen;
     }
 } 
 
