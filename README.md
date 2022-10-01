@@ -1,7 +1,7 @@
 # Radio Procedilinux.
 #### 👤 Estudiante: Guillermo Agustín Neculqueo
 
-#### 🏠 Homepage: <a href="https://procedilinux.netlify.app/index.html"><img src="https://www.netlify.com/img/deploy/button.svg" alt="deploy to netlify button"></a>
+#### 🏠 [Homepage](https://procedilinux.netlify.app/index.html)
 
 <div> 
   <h1 align="center">Procedilinux Radio</h1>
