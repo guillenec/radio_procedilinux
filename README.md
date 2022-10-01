@@ -6,8 +6,10 @@
   </p>
 </div>
 
+
 ## :pushpin: Vistazo de Procedilinux
 ![screenshot of HTTRiRi website](https://res.cloudinary.com/dpiwmbsog/image/upload/v1664606697/imgs/procedilinux_modos_gxipud.png)
+
 
 ## :desktop_computer: Contenido de la pagina.
 1. inicio: se incluye un banner con video, una bienvenida y mini redes sociales, una sección de noticias destacadas, una linea de tiempo con programas destacados, una sección de podcast y obviamente el footer con información de contactos.
@@ -23,8 +25,10 @@ Nota Importante: la sección programas en el index y en la pagina programas, no 
 
 6. contactos: información de contactos y un formulario personalizado, siguiendo la estética de la pagina, un iframne de una radio cualquiera y termina de completar la información de contactos el footer donde ya se encuentran as redes sociales, por lo que no me pareció necesario en esta parte.
 
+
 ## 👍 Espero te guste. 
 Espero sea de tu agrado mi web.. a futuro incorporare una seccion tutoriales, no solo relacionado con una radio, tambien sobre desarrollo web, y linux en general.
+
 
 ## :octocat: Mi contacto
 #### :bust_in_silhouette: [Guillermo Agustín Neculqueo](@guillenec)
