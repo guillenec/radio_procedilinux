@@ -13,7 +13,11 @@
 </div>
 
 
+<<<<<<< HEAD
 ## Vistazo de Procedilinux
+=======
+##Vistazo de Procedilinux
+>>>>>>> 66a350676e10026e7eb97b33074556dedb93c67f
 ![screenshot of HTTRiRi website](https://res.cloudinary.com/dpiwmbsog/image/upload/v1664606697/imgs/procedilinux_modos_gxipud.png)
 
 ## Contenido de la pagina.
