@@ -1,8 +1,3 @@
-# Radio Procedilinux.
-#### 👤 [Guillermo Agustín Neculqueo](@guillenec)
-#### 
-#### 🏠 [Homepage](https://procedilinux.netlify.app/index.html)
-
 <div> 
   <h1 align="center">Procedilinux Radio</h1>
   <p>
@@ -12,10 +7,10 @@
 </div>
 
 
-## Vistazo de Procedilinux
+## :pushpin: Vistazo de Procedilinux
 ![screenshot of HTTRiRi website](https://res.cloudinary.com/dpiwmbsog/image/upload/v1664606697/imgs/procedilinux_modos_gxipud.png)
 
-## 🖥️ Contenido de la pagina.
+## :desktop_computer: Contenido de la pagina.
 1. inicio: se incluye un banner con vido , una bienvenida y mini redes sociales, una seccion de noticias destacadas, una linea de tiempo con programas destacados, una seccion de podcast y obviamente el footer con informacion de contactos.
 
 2. noticias: breve descripción, seccion noticias de musica. noticias game y noticias de tecnologia , principalmente sobre linux.
@@ -33,5 +28,8 @@ Nota Importante: la seccion programas en el index y en la pagina programas, no c
 Espero sea de tu agrado mi web.. a futuro incorporare una seccion tutoriales, no solo relacionado con una radio, tambien sobre desarrollo web, y linux en general.
 
 ## :octocat: Mi contacto
-:octocat:	
+#### :bust_in_silhouette: [Guillermo Agustín Neculqueo](@guillenec)
+#### :house: [Homepage](https://procedilinux.netlify.app/index.html)	
+
+#### :envelope: [guillermoneculqueo@gmail](guillermoneculqueo@gmail.com)
 
