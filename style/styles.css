@@ -1719,7 +1719,8 @@ footer {
         top: 45%;
         backdrop-filter: blur(10px);
         overflow: auto;
-        transition: .9s; }
+        transition: .9s;
+        color: #1c1c1ca6; }
         .noticias_caja article .caja_text_noti:hover else {
           top: t; }
         .noticias_caja article .caja_text_noti:hover::-webkit-scrollbar {
