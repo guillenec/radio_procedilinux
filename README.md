@@ -49,7 +49,7 @@ Procedilinux Radio es una página creada con fines educativos y aspira a convert
 - Responsividad en todos los elementos
 
 ## Autor
-- **Nombre:** [Tu Nombre]
-- **Fecha de Creación:** [Fecha]
+- **Nombre:** @guillenec
+- **Fecha de Creación:** algun momento de 2022
 
 Espero que disfrutes explorando Procedilinux Radio. ¡Gracias por visitar nuestro proyecto!
