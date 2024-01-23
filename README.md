@@ -1,42 +1,55 @@
-<div> 
-  <h1 align="center">Procedilinux Radio</h1>
-  <p>
-    Esta pagina se creo, para fines educativos, para en un futuro poder brindar un servicio. Buscando realizar algo similar o seguir con esta base para un proyecto mas grande, ya sea realizar paginas web como freelancer o como una web par el portafolio. Espero que les guste mi maquetado artesanal.
+# Procedilinux Radio
 
-  </p>
-</div>
+![Procedilinux Radio - Inicio](https://i.postimg.cc/fbW6SFMd/radio-Procedilinux-home.png)
 
-<br>
+## Descripción del Proyecto
 
-## :pushpin: Vistazo de Procedilinux
-![screenshot of HTTRiRi website](https://res.cloudinary.com/dpiwmbsog/image/upload/v1664606697/imgs/procedilinux_modos_gxipud.png)
+Procedilinux Radio es una página creada con fines educativos y aspira a convertirse en un servicio de radio en el futuro. Este proyecto fue desarrollado como parte del curso de HTML y CSS de Coderhouse. La página está diseñada de manera artesanal, utilizando HTML, CSS y JavaScript, incluyendo tecnologías como CSS Grid, Flexbox y Bootstrap.
 
-<br>
+## Contenido de la Página
 
-## :desktop_computer: Contenido de la pagina.
-1. inicio: se incluye un banner con video, una bienvenida y mini redes sociales, una sección de noticias destacadas, una linea de tiempo con programas destacados, una sección de podcast y obviamente el footer con información de contactos.
+### Inicio
+- Banner con video promocional.
+- Bienvenida y enlaces a redes sociales.
+- Sección de noticias destacadas con diseño responsive.
+- Línea de tiempo con programas destacados.
+- Sección de podcast con reproductor de música personalizado.
+- Footer con información de contacto y redes sociales.
 
-2. noticias: breve descripción, sección noticias de música. noticias game y noticias de tecnología , principalmente sobre Linux.
+![Procedilinux Radio - Inicio - Sección Cards](https://i.postimg.cc/8zG8Nc3t/radio-Procedilinux-home-cards.png)
 
-3. programas: breve descripción, horarios programación de la radio y un carrusel con los programas destacados y su miniatura.
-Nota Importante: la sección programas en el index y en la pagina programas, no contendrán datos fijos, la idea es traerlos desde una base de datos ya creada. 
+### Noticias
+- Noticias de música, gaming y tecnología.
+- Diseño modular y responsivo.
 
-4. nosotros: una descripción clara de lo que hacemos y los servicios que se brindan. con diferentes imágenes solo para cuidar la estética.
+![Procedilinux Radio - Noticias](https://i.postimg.cc/YCz59kBk/radio-Procedilinux-noticias.png)
 
-5. galería: breve descripción y una galería con imágenes relacionas a su fin, en los diferentes tamaños de pantalla las posiciones cambia apropósito, en el modo mini, menor a 500 px, quedan espacios vacíos, pensados para que las imágenes se vean bien.
+### Programas
+- Calendarios y horarios de programación.
+- Carrusel con programas destacados.
+- Sección de nuestros programas con tarjetas personalizadas.
 
-6. contactos: información de contactos y un formulario personalizado, siguiendo la estética de la pagina, un iframne de una radio cualquiera y termina de completar la información de contactos el footer donde ya se encuentran as redes sociales, por lo que no me pareció necesario en esta parte.
+### Nosotros
+- Descripción clara de los servicios brindados.
+- Imágenes que reflejan la identidad y estética de la página.
 
-<br>
+### Galería
+- Galería de imágenes con disposición responsive.
+- Espacios pensados para una visualización adecuada en diferentes tamaños de pantalla.
 
-## 👍 Espero te guste. 
-Espero sea de tu agrado mi web.. a futuro incorporare una seccion tutoriales, no solo relacionado con una radio, tambien sobre desarrollo web, y linux en general.
+### Contactos
+- Información de contacto y formulario personalizado.
+- Reproductor de radio mediante iframe.
+- Footer con fecha de creación y nombre del creador.
 
-<br>
+## Tecnologías Utilizadas
+- HTML
+- CSS (con Grid, Flexbox y Bootstrap)
+- JavaScript
+- Responsividad en todos los elementos
 
-## :octocat: Mi contacto
-#### :bust_in_silhouette: [Guillermo Agustín Neculqueo](@guillenec)
-#### :house: [Homepage](https://procedilinux.netlify.app/index.html)	
+## Autor
+- **Nombre:** [Tu Nombre]
+- **Fecha de Creación:** [Fecha]
 
-#### :envelope: [guillermoneculqueo@gmail](guillermoneculqueo@gmail.com)
-
+Espero que disfrutes explorando Procedilinux Radio. ¡Gracias por visitar nuestro proyecto!
